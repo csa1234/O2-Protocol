@@ -1,0 +1,76 @@
+/* -- Typography
+-------------------------------------- -- */
+
+body {
+    font-size: 16px;
+    color: $para-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $secondary-font;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2.4rem;
+}
+
+h1 {
+    font-size: 4.2rem;
+    line-height: 6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    line-height: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+    color: $para-color;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin-bottom: 2rem;
+    li {
+        line-height: 28px;
+        color: $para-color;
+    }
+}
+
+.common-list {
+    padding-left: 0;
+    li {
+        list-style-position: inside;
+        font-size: 16px;
+        line-height: 3.6rem;
+    }
+}
