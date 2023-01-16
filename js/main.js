@@ -8,25 +8,22 @@ let web3;
 // Connect to MetaMask
 function connectMetaMask() {
     // Check if MetaMask is installed
-    // code to connect to MetaMask goes here
-      
-    if (typeof window.ethereum !== 'undefined' && window.ethereum.isMetaMask) {
+    if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
         var web3 = new Web3(window.ethereum);
-        
         window.ethereum.enable().then(function (accounts) {
+            // Hide the connect button
             document.getElementById("connectButton").style.display = 'none';
+            // Display the connected message and account address
+            var account = document.getElementById("account");
+            account.style.display = 'block';
+            account.innerHTML = "Connected to: " + accounts[0].slice(0,6) + '...' + accounts[0].slice(-4);
             console.log("Connect button clicked");
-            
         });
-    } else if (typeof window.web3 !== 'undefined' && window.web3.currentProvider.isMetaMask) {
-        var web3 = new Web3(window.web3.currentProvider);
-        document.getElementById("connectButton").style.display = 'none';
-        console.log("Connect button clicked");
     } else {
         alert('Please install MetaMask');
     }
-    
 }
+
 
 
 // Add an event listener for when the DOM is fully loaded
