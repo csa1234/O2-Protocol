@@ -1,0 +1,79 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/c9bc4f82030d6c9db2149c16636a35178a858a75/contracts/token/ERC20/utils/SafeERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/c9bc4f82030d6c9db2149c16636a35178a858a75/contracts/security/Pausable.sol";
+
+contract PausableToken is Pausable {
+    // Public variables of the token
+    string public name = "TEST O2 Protocol"; // Name of the token
+    string public symbol = "TESTO2P"; // Symbol of the token
+    uint8 public decimal = 18; // Decimal places of the token
+    uint256 public totalSupply = 100000000; // Total supply of the token
+    mapping (address => uint256) public balanceOf; // Mapping of the token balances
+    mapping (address => mapping (address => uint256)) public allowance;
+    address public owner;
+    address public backupAddress;
+    bool public emergency;
+    event Transfer(address indexed from, address indexed to, uint256 value); // Event for token transfer
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+    event Pause();
+    event Unpause();
+    
+    constructor() {
+        owner = msg.sender;
+        balanceOf[msg.sender] = totalSupply;
+    }
+    //...
+    function transfer(address _to, uint256 _value) public whenNotPaused {
+    require(balanceOf[msg.sender] >= _value && _value > 0);
+    balanceOf[msg.sender] -= _value;
+    balanceOf[_to] += _value;
+    emit Transfer(msg.sender, _to, _value);
+    }
+    // Allow another contract to spend some tokens in your behalf
+    function approve(address _spender, uint256 _value) public whenNotPaused returns (bool) {
+    require(_spender != address(0)); // Check if the spender address is not null
+    allowance[msg.sender][_spender] = _value;
+    emit Approval(msg.sender, _spender, _value);
+    return true;
+    }
+    // A contract attempts to get the coins
+    function transferFrom(address _from, address _to, uint256 _value) public whenNotPaused returns (bool) {
+    require(_to != address(0)); // Check if the to address is not null
+    require(balanceOf[_from] >= _value && allowance[_from][msg.sender] >= _value); // Check if the balance and allowance are sufficient
+    balanceOf[_from] -= _value;
+    balanceOf[_to] += _value;
+    allowance[_from][msg.sender] -= _value;
+    emit Transfer(_from, _to, _value);
+    return true;
+    }
+    // Emergency function to pause the contract
+    function emergencyPause() public {
+    require(msg.sender == owner || msg.sender == backupAddress); // Check if the sender is the owner or backup address
+    emergency = true;
+    emit Pause();
+    }
+
+    // Emergency function to resume the contract
+    function emergencyResume() public {
+        require(msg.sender == owner || msg.sender == backupAddress); // Check if the sender is the owner or backup address
+        emergency = false;
+        emit Unpause();
+    }
+
+    // Add Secondary Backup Address
+    function addSecondaryBackupAddress(address _newBackup) public {
+        require(msg.sender == owner); // Check if the sender is the owner
+        backupAddress = _newBackup;
+    }
+    // Remove Secondary Backup Address
+    function removeSecondaryBackupAddress() public {
+        require(msg.sender == owner || msg.sender == backupAddress); // Check if the sender is the owner or backup address
+        require(backupAddress != address(0)); // Check if the backup address is not null
+        backupAddress = address(0);
+    }
+}
+
