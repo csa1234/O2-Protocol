@@ -5,26 +5,81 @@
 // Initialize web3
 let web3;
 
+
+
+
+
 // Connect to MetaMask
+
 function connectMetaMask() {
     // Check if MetaMask is installed
     if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
-        var web3 = new Web3(window.ethereum);
-        window.ethereum.enable().then(function (accounts) {
-            // Hide the connect button
-            document.getElementById("connectButton").style.display = 'none';
-            // Display the connected message and account address
-            var account = document.getElementById("account");
-            account.style.display = 'block';
-            account.innerHTML = "Connected to: " + accounts[0].slice(0,6) + '...' + accounts[0].slice(-4);
-            console.log("Connect button clicked");
+      var web3 = new Web3(window.ethereum);
+      window.ethereum.enable().then(async function (accounts) {
+        // Store the connected account information in local storage
+        localStorage.setItem("connectedAccount", accounts[0]);
+        // Hide the connect button
+        document.getElementById("connectButton").style.display = 'none';
+        // Display the connected message and account address
+        var account = document.getElementById("account");
+        account.style.display = 'block';
+        account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
+  
+        // Define the token contract ABI and address
+        const tokenAddress = "0x61612Ba3bEbA5D46cF652e67e9789f6C1cA17B83";
+        const tokenABI = [{
+          "constant": true,
+          "inputs": [{
+            "name": "_owner",
+            "type": "address"
+          }],
+          "name": "balanceOf",
+          "outputs": [{
+            "name": "balance",
+            "type": "uint256"
+          }],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "name",
+          "outputs": [{
+            "name": "",
+            "type": "string"
+          }],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        }];
+  
+        // Get the token contract instance
+        const tokenContract = new web3.eth.Contract(tokenABI, tokenAddress);
+  
+        // Get the token name
+        const tokenName = await tokenContract.methods.name().call();
+  
+        // Call the balanceOf function of the token contract
+        tokenContract.methods.balanceOf(accounts[0]).call().then(function(balance) {
+          // Divide the balance by 10^18 to remove the 18 decimals
+          balance = balance / 10**18;
+  
+          // Format the balance with a comma separator
+          const formattedBalance = balance.toLocaleString();
+  
+          // Display the token balance and name
+          account.innerHTML += `<br>Token: ${tokenName} <br> Balance: ${formattedBalance}`;
         });
+      });
     } else {
-        alert('Please install MetaMask');
+      alert('Please install MetaMask');
     }
-}
+  }
+  
 
-
+  
 
 // Add an event listener for when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
