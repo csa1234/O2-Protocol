@@ -188,11 +188,11 @@ pragma solidity ^0.8.17;
         }
         
         function timer() internal {
-            currentTime = block.timestamp;
-            timePassed = (currentTime - claimtime);
-            if (timePassed >= 1){  //MODIFICAR A 86400    
+            //currentTime = block.timestamp;
+            //timePassed = (currentTime - claimtime);
+            //if (timePassed >= 1){  //MODIFICAR A 86400    
                 claim24h = true;
-            }
+            //}
         }
     }    
 
