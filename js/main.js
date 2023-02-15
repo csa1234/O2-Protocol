@@ -5,400 +5,69 @@
 // Initialize web3
 let web3;
 
-// Get the "PURCHASE O2P TOKENS" link
-const buyTokensLink = document.querySelector(".btn.secondary-btn");
-
-// Add an event listener to the link
-buyTokensLink.addEventListener("click", async function() {
-  // Show the purchase modal
-  $('#purchaseModal').modal('show');
-});
-
-// Get the purchase button HTML element
-const purchaseButton = document.querySelector(".btn.secondary-btn");
-
-// Add a click event listener to the purchase button
-purchaseButton.addEventListener("click", async function() {
-  try {
-    // Get the value of the "Amount of Tokens" input field
-    const _amount = document.getElementById("tokenAmount").value;
-
-    // Call the buyTokens function in the Crowdsale contract with the specified token amount
-    const contractAddress = "0x8524d58Ff0A25E72Cc77220C973a75d14dc56eeb";
-    const contractAbi = [
-        {
-            "inputs": [],
-            "stateMutability": "nonpayable",
-            "type": "constructor"
-        },
-        {
-            "anonymous": false,
-            "inputs": [],
-            "name": "Pause",
-            "type": "event"
-        },
-        {
-            "inputs": [],
-            "name": "_forwardFunds",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "approve_claim",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
+async function buyTokens() {
+    if (window.ethereum) {
+      try {
+        // Prompt user to connect Metamask to your Dapp and get selected address
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const account = accounts[0];
+  
+        // Create a new Web3 instance using Metamask provider
+        const web3 = new Web3(window.ethereum);
+  
+        // Contract address and ABI
+        const contractAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
+        const abi = [{
             "inputs": [],
             "name": "buyTokens",
             "outputs": [],
             "stateMutability": "payable",
             "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "claimVesting",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "owner",
-            "outputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "pause",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "paused",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round0_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round0_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round1_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round1_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round2_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round2_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round3_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round3_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_newOwner",
-                    "type": "address"
-                }
-            ],
-            "name": "setNewOwner",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_round",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setRound",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "bool",
-                    "name": "_vestingStart",
-                    "type": "bool"
-                }
-            ],
-            "name": "setVesting",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_newtreasury",
-                    "type": "address"
-                }
-            ],
-            "name": "set_treasury",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "token",
-            "outputs": [
-                {
-                    "internalType": "contract ERC20",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "unpause",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "name": "vestingInfo",
-            "outputs": [
-                {
-                    "internalType": "address",
-                    "name": "user",
-                    "type": "address"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "totalVestedTokens",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "dailyVestedTokens",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "claimAmount",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "vestingStart",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        }
-    ];
-    const contractInstance = new web3.eth.Contract(contractAbi, contractAddress);
-    const result = await contractInstance.methods.buyTokens(_amount).send({from: web3.eth.accounts[0], value: web3.utils.toWei("1", "ether"), gas: 300000, gasPrice: web3.utils.toWei('10', 'gwei')});
-
-    console.log(result);
-
-    // Hide the purchase modal
-    $('#purchaseModal').modal('hide');
-  } catch (error) {
-    console.error(error);
+        }];
+  
+        // Create a new contract instance
+        const contract = new web3.eth.Contract(abi, contractAddress);
+  
+        // Get the amount of tokens from the input field
+        const amount = document.getElementById("_amount").value;
+  
+        // Convert amount to wei
+        const amountWei = web3.utils.toWei(amount, "ether");
+  
+        // Send transaction to the contract
+        const result = await contract.methods.buyTokens().send({
+          from: account,
+          value: amountWei
+        });
+  
+        // Handle success
+        console.log(result);
+  
+      } catch (error) {
+        // Handle error
+        console.error(error);
+      }
+    } else {
+      // Metamask not found
+      console.error("Metamask not found");
+    }
   }
-});
-
+  
+  
+  
 function purchaseTokens() {
   // Show the purchase modal
   $('#purchaseModal').modal('show');
 }
 
-
-
-
 // Connect to MetaMask
-
 function connectMetaMask() {
     // Check if MetaMask is installed
-    
     document.querySelector(".progress").style.display = "block";
-    
     document.getElementById("progressText").style.display = "block";
-    
     if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
       var web3 = new Web3(window.ethereum);
-      window.ethereum.enable().then(async function (accounts) {
+      window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
         // Store the connected account information in local storage
         localStorage.setItem("connectedAccount", accounts[0]);
         // Hide the connect button
@@ -460,10 +129,6 @@ function connectMetaMask() {
       alert('Please install MetaMask');
     }
   }
-  
-
-  
-
 // Add an event listener for when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Check if web3 has been injected by the browser (Mist/MetaMask)
@@ -517,16 +182,19 @@ const initialize = () => {
       MetaMaskClientCheck();
 }
 
-
-const onClickConnect = async () => {
-    try {
-      // Will open the MetaMask UI
-      // You should disable this button while the request is pending!
-      await ethereum.request({ method: 'eth_requestAccounts' });
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  async function onConnect() {
+    // Prompt user to connect their wallet
+    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  
+    // Use the first account returned by MetaMask
+    const account = accounts[0];
+  
+    // Set the account in web3
+    web3.eth.defaultAccount = account;
+    
+    // ...
+  }
+  
 
 $(function () {
 

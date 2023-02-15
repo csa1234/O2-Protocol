@@ -1428,23 +1428,22 @@
     <script src="js/vendor/amcharts.min.js"></script>
     <script src="js/vendor/pie.min.js"></script>
     <!-- Bitcoin -->
-    <script src="js/vendor/widget.js"></script>
+    <!--<script src="js/vendor/widget.js"></script>-->
     <!-- wow js -->
     <script src="js/vendor/wow.min.js"></script>
     <!-- Custom js -->
     <script src="js/main.js"></script>
     <!-- Google map -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Cn2XCz3_n_J57QSN_rw6gwtQDWQJ3MM&callback=initMap">
-    </script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Cn2XCz3_n_J57QSN_rw6gwtQDWQJ3MM&callback=initMap">
+    </script>-->
     <!-- Web 3 libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7/web3.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Modal -->
-    <!-- Modal -->
-<div class="modal" id="purchaseModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal" id="purchaseModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
       
         <!-- Modal Header -->
         <div class="modal-header">
@@ -1460,10 +1459,9 @@
         
         <!-- Modal footer -->
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary" id="purchaseTokens" onclick="document.querySelector('.btn.secondary-btn').click();">Purchase</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="purchaseButton" onclick="buyTokens()">Purchase</button>
         </div>
-
         
       </div>
     </div>
