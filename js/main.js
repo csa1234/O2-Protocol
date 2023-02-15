@@ -5,6 +5,17 @@
 // Initialize web3
 let web3;
 
+// Get the "PURCHASE O2P TOKENS" link
+const buyTokensLink = document.querySelector(".btn.secondary-btn");
+
+// Add an event listener to the link
+buyTokensLink.addEventListener("click", async function() {
+  // Show the purchase modal
+  $('#purchaseModal').modal('show');
+});
+
+// Get the "Purchase" button in the modal window
+const purchaseButton = document.getElementById("purchaseButton");
 
 
 
@@ -13,6 +24,11 @@ let web3;
 
 function connectMetaMask() {
     // Check if MetaMask is installed
+    
+    document.querySelector(".progress").style.display = "block";
+    
+    document.getElementById("progressText").style.display = "block";
+    
     if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
       var web3 = new Web3(window.ethereum);
       window.ethereum.enable().then(async function (accounts) {

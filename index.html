@@ -190,11 +190,13 @@
                             <h4>ICO ENDS IN</h4>
                             <div class="countdown">
                                 <div id="clock"></div>
-                                <div class="progress">
-                                    <div class="progress-bar" data-transitiongoal="0"></div>
+                                <div class="progress" style="display: none;">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-transitiongoal="54"></div>
+                                  
                                 </div>
                                 <!-- End of .progress -->
-                                <p>$0 of $5,625,000</p>
+                                
+                                <p id="progressText" style="display: none;">$0 of $5,625,000</p>
                                 <a href="#" class="btn secondary-btn">PURCHASE O2P TOKENS</a>
                                 <br>
                                 <a href="#" id="connectButton" class="btn secondary-btn" onclick="connectMetaMask()">CONNECT WALLET</a>
@@ -1434,8 +1436,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7/web3.min.js"></script>
     <script src="js/main.js"></script>
 
+    <!-- Modal -->
+    <!-- Modal -->
+<div class="modal" id="purchaseModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Purchase Tokens</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <label for="_amount">Amount of Tokens:</label>
+          <input type="text" class="form-control" id="_amount" placeholder="Enter amount of tokens">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="purchaseButton">Purchase</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+      
 
-    
 </body>
 
 </html>
