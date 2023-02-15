@@ -17,7 +17,22 @@ buyTokensLink.addEventListener("click", async function() {
 // Get the "Purchase" button in the modal window
 const purchaseButton = document.getElementById("purchaseButton");
 
+// Add an event listener to the button
+purchaseButton.addEventListener("click", async function() {
+  try {
+    // Get the value of the "Amount of Tokens" input field
+    const _amount = document.getElementById("tokenAmount").value;
 
+    // Call the buyTokens function in the Crowdsale contract with the specified token amount
+    const result = await crowdsaleInstance.methods.buyTokens(_amount).send({from: web3.eth.accounts[0], value: web3.utils.toWei("1", "ether"), gas: 300000, gasPrice: web3.utils.toWei('10', 'gwei')});
+    console.log(result);
+
+    // Hide the purchase modal
+    $('#purchaseModal').modal('hide');
+  } catch (error) {
+    console.error(error);
+  }
+});
 
 
 // Connect to MetaMask
