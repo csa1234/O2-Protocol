@@ -287,6 +287,37 @@ $(function () {
         }
     });
 
+    // Define a translations object with the text in both English and Spanish
+        const translations = {
+            'en': {
+            'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
+            'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
+            },
+            'es': {
+            'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
+            'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+            }
+        };
+        
+        // Define a function to update the text in the banner based on the selected language
+        function updateBannerText(language) {
+            const bannerTitle = document.querySelector('[data-translate="banner-title"]');
+            const bannerDescription = document.querySelector('[data-translate="banner-description"]');
+            
+            if (translations[language]) {
+            bannerTitle.innerHTML = translations[language]['banner-title'];
+            bannerDescription.innerHTML = translations[language]['banner-description'];
+            }
+        }
+        
+        // Add an event listener to the language selector dropdown to update the banner text when a new language is selected
+        const languageDropdown = document.querySelector('.o-langualge .dropdown-menu');
+        languageDropdown.addEventListener('click', function(event) {
+            const selectedLanguage = event.target.innerText.toLowerCase();
+            updateBannerText(selectedLanguage);
+        });
+  
+
     //Background image rotation on scroll
     function AnimateRotate(d) {
         var elem = $(".banner-poly-bg");
