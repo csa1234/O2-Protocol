@@ -136,11 +136,8 @@ function purchaseTokens() {
 }
 
 // Connect to MetaMask
-// Connect to MetaMask
 function connectMetaMask() {
     // Check if MetaMask is installed
-    document.querySelector(".progress").style.display = "block";
-    document.getElementById("progressText").style.display = "block";
     if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
       web3 = new Web3(window.ethereum);
       window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
@@ -148,10 +145,9 @@ function connectMetaMask() {
         localStorage.setItem("connectedAccount", accounts[0]);
         // Hide the connect button
         document.getElementById("connectButton").style.display = 'none';
-        // Display the connected message and account address
-        var account = document.getElementById("account");
-        account.style.display = 'block';
-        account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
+        
+        
+        
   
         // Define the vesting contract ABI and address
         const vestingAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
@@ -190,28 +186,35 @@ function connectMetaMask() {
           "type": "function"
         }];
   
-        // Get the vesting contract instance
-        const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
-        // Get the connected account's address
-        const userAddress = accounts[0];
-        // Call the vestingInfo function of the vesting contract, passing the user's address
-        vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
-          // Display the total vested tokens
-          const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
-          account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
-  
           // Change the button to display disconnect
           const connectButton = document.getElementById("connectButton2");
           connectButton.innerHTML = "Disconnect";
           connectButton.onclick = disconnectMetaMask;
+          document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+          document.getElementById("progressText").style.display = "block";
+          document.querySelector(".progress").style.display = "block";
+          // Display the connected message and account address
+          var account = document.getElementById("account");
+          account.style.display = 'block';
+          account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
+          // Get the vesting contract instance
+          const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
+          // Get the connected account's address
+          const userAddress = accounts[0];
+          // Call the vestingInfo function of the vesting contract, passing the user's address
+          vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
+          // Display the total vested tokens
+          const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
+          account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
         }).catch(function(err) {
-          console.error(err);
-          alert('Error retrieving vesting information');
+          /*console.error(err);
+          alert('Error retrieving vesting information');*/
+          
         });
   
       }).catch(function(err) {
         console.error(err);
-        alert('User rejected connection request');
+        alert('Please install Metamask Wallet: https://metamask.io');
       });
     } else {
       alert('Please install MetaMask');
@@ -230,6 +233,11 @@ function connectMetaMask() {
     // Hide the connected message and account address
     var account = document.getElementById("account");
     account.style.display = 'none';
+
+    document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = 'none';
+    document.getElementById("progressText").style.display = 'none';
+    document.querySelector(".progress").style.display = 'none';
+    document.getElementById("connectButton").style.display = "block";
   
     // Change the button back to display connect
     const connectButton = document.getElementById("connectButton2");
@@ -333,7 +341,7 @@ $(function () {
     wow.init();
 
     //jQuery countdown plugin
-    $('#clock').countdown('2023/01/20').on('update.countdown', function (event) {
+    $('#clock').countdown('2023/03/01').on('update.countdown', function (event) {
         var _DateInput = '' +
             '<div><span>%-D</span> Day%!d</div>' +
             '<div><span>%H</span> Hours</div>' +
@@ -696,7 +704,7 @@ $(function () {
 
 
 //Google map
-function initMap() {
+/*function initMap() {
     var _location = {
         lat: 40.712811,
         lng: -73.997745
@@ -710,6 +718,6 @@ function initMap() {
         map: map
         // icon: "images/marker.png"
     });
-}
+}*/
 
 window.connectMetaMask = connectMetaMask;
