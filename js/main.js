@@ -1,10 +1,3 @@
-/* -- Strict mode enabled -- */
-'use strict';
-
-
-// Initialize web3
-let web3;
-
 async function buyTokens() {
     if (window.ethereum) {
       try {
@@ -13,7 +6,7 @@ async function buyTokens() {
         const account = accounts[0];
   
         // Create a new Web3 instance using Metamask provider
-        const web3 = new Web3(window.ethereum);
+        const web31 = new Web3(window.ethereum);
   
         // Contract address and ABI
         const contractAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
@@ -26,13 +19,13 @@ async function buyTokens() {
         }];
   
         // Create a new contract instance
-        const contract = new web3.eth.Contract(abi, contractAddress);
+        const contract = new web31.eth.Contract(abi, contractAddress);
   
         // Get the amount of tokens from the input field
         const amount = document.getElementById("_amount").value;
   
         // Convert amount to wei
-        const amountWei = web3.utils.toWei(amount, "ether");
+        const amountWei = web31.utils.toWei(amount, "ether");
   
         // Send transaction to the contract
         const result = await contract.methods.buyTokens().send({
@@ -66,7 +59,7 @@ function connectMetaMask() {
     document.querySelector(".progress").style.display = "block";
     document.getElementById("progressText").style.display = "block";
     if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
-      var web3 = new Web3(window.ethereum);
+      web3 = new Web3(window.ethereum);
       window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
         // Store the connected account information in local storage
         localStorage.setItem("connectedAccount", accounts[0]);
@@ -124,7 +117,8 @@ function connectMetaMask() {
           // Display the token balance and name
           account.innerHTML += `<br>Token: ${tokenName} <br> Balance: ${formattedBalance}`;
         });
-      });
+    });
+
     } else {
       alert('Please install MetaMask');
     }
@@ -132,7 +126,7 @@ function connectMetaMask() {
 // Add an event listener for when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Check if web3 has been injected by the browser (Mist/MetaMask)
-    if (typeof web3 !== 'undefined') {
+    if (web3 !== 'undefined') {
         // Use the web3 provider that has been injected
         web3 = new Web3(web3.currentProvider);
         if(web3.currentProvider.isMetaMask){
@@ -153,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   
-const initialize = () => {
+     const initialize = () => {
     //Basic Actions Section
     const onboardButton = document.getElementById('connectButton');
   
@@ -190,6 +184,7 @@ const initialize = () => {
     const account = accounts[0];
   
     // Set the account in web3
+
     web3.eth.defaultAccount = account;
     
     // ...
@@ -364,7 +359,7 @@ $(function () {
             // By defailt it looks for an image tag:
             opener: function (openerElement) {
                 // openerElement is the element on which popup was initialized, in this case its <a> tag
-                // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                // you don't need to add "opener" option if this code matches your needs, it's default one.
                 return openerElement.is('img') ? openerElement : openerElement.find('img');
             }
         }
