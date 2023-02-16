@@ -1454,7 +1454,9 @@
         <!-- Modal body -->
         <div class="modal-body">
           <label for="_amount" style="color: rgb(255, 253, 252); font-size: 16px;">Enter amount in MATIC to buy O2P<br>Current price: 0.45 MATIC per 1 token O2P</label>
-          <input type="text" class="form-control" id="_amount" placeholder="Enter MATIC amount" style="font-size: 16px;">
+          
+          <input type="text" class="form-control" id="_amount" placeholder="Enter MATIC amount" style="font-size: 18px; font-weight: bold;">
+
         </div>
         
         <!-- Modal footer -->
@@ -1463,11 +1465,37 @@
           <button type="button" class="btn btn-primary" id="purchaseButton" onclick="buyTokens()">Purchase</button>
         </div>
         
-      </div>
+    </div>
     </div>
 </div>
 
+<!-- Success Modal -->
+<div class="modal" id="successModal">
+    
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #1f3268;"> 
+                    
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Purchase Successful</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+       <!-- Modal body -->
+<div class="modal-body">
+    <p style="font-size: 18px; color: white;">You just purchased <span id="successAmount"></span> O2P tokens.</p>
+</div>
 
+<!-- Modal footer -->
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+
+  
+      </div>
+    </div>
+  </div>
+  
       
 
 </body>

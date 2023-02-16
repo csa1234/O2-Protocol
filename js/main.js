@@ -42,8 +42,7 @@ let initialize = () => {
     // ...
   }
 
-
-async function buyTokens() {
+  async function buyTokens() {
     if (window.ethereum) {
       try {
         // Prompt user to connect Metamask to your Dapp and get selected address
@@ -51,26 +50,60 @@ async function buyTokens() {
         const account = accounts[0];
   
         // Create a new Web3 instance using Metamask provider
-        const web31 = new Web3(window.ethereum);
+        const web3 = new Web3(window.ethereum);
   
         // Contract address and ABI
         const contractAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
-        const abi = [{
+        const abi = [
+          {
             "inputs": [],
             "name": "buyTokens",
             "outputs": [],
             "stateMutability": "payable",
             "type": "function"
-        }];
+          },
+          {
+            "inputs": [],
+            "name": "rate",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ];
   
         // Create a new contract instance
-        const contract = new web31.eth.Contract(abi, contractAddress);
+        const contract = new web3.eth.Contract(abi, contractAddress);
   
         // Get the amount of tokens from the input field
         const amount = document.getElementById("_amount").value;
   
+        // Get the rate from the contract
+        const rate = await contract.methods.rate().call();
+        
+        //set rate value
+        var currentRate;
+        if (rate == 1) {
+            currentRate = 0.45;
+            
+        } else if (rate == 2) {
+            currentRate == 0.65;
+           
+        } else if (rate == 3) {
+            currentRate == 0.85;
+
+        }
+  
+        // Calculate the amount of tokens to purchase based on the rate
+        const tokensToPurchase = (amount / currentRate);
+  
         // Convert amount to wei
-        const amountWei = web31.utils.toWei(amount, "ether");
+        const amountWei = web3.utils.toWei(amount, "ether");
   
         // Send transaction to the contract
         const result = await contract.methods.buyTokens().send({
@@ -78,8 +111,12 @@ async function buyTokens() {
           value: amountWei
         });
   
-        // Handle success
-        console.log(result);
+        // Hide the purchase modal
+        $("#purchaseModal").modal("hide");
+  
+        // Display the success modal with the amount of tokens purchased
+        $("#successAmount").text(tokensToPurchase.toFixed(8));
+        $("#successModal").modal("show");
   
       } catch (error) {
         // Handle error
@@ -91,7 +128,7 @@ async function buyTokens() {
     }
   }
   
-  
+
   
 function purchaseTokens() {
   // Show the purchase modal

@@ -97,7 +97,7 @@ pragma solidity ^0.8.17;
         function buyTokens() public payable {
             require(paused == false);
             require(msg.value > 0);
-            uint256 tokens = msg.value.mul(rate);
+            uint256 tokens = msg.value.div(rate);
             require (supply >= 0, "The token cap has been reached.");
             vestingInfo[msg.sender].totalVestedTokens += tokens;
             vestingInfo[msg.sender].dailyVestedTokens = (vestingInfo[msg.sender].totalVestedTokens / 365);
