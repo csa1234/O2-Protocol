@@ -131,8 +131,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn secondary-btn" href="#">BUY TOKENS</a>
-                                         
+                        <a class="btn secondary-btn" id="connectButton2" onclick="connectMetaMask()">Connect</a>
                     </li>
 
                     <li class="o-langualge">
@@ -861,9 +860,9 @@
                                 <p>O2 Protocol will utilize a vesting model of 12 months for each financial round at an average
                                     of 8.33% monthly vesting to avoid price dump and pump fluctuations.
                                     <br>
-                                    <br>● Seed round: O2P token price will be offered at 0.45 USDT per token
-                                    <br>● Private Sale A: O2P token price will be offered at 0.65 USDT per token
-                                    <br>● Private Sale B: O2P token price will be offered at 0.85 USDT per token</p>
+                                    <br>● Seed round: O2P token price will be offered at 0.45 MATIC per token
+                                    <br>● Private Sale A: O2P token price will be offered at 0.65 MATIC per token
+                                    <br>● Private Sale B: O2P token price will be offered at 0.85 MATIC per token</p>
 
                                 <div class="progressbar-block row">
                                     <div class="col-md-6">
@@ -1442,20 +1441,20 @@
     <script src="js/main.js"></script>
 
     <!-- Modal -->
-    <div class="modal" id="purchaseModal">
-        <div class="modal-dialog">
-        <div class="modal-content">
+<div class="modal" id="purchaseModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #1f3268;">
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Purchase Tokens</h4>
+          <h4 class="modal-title">Purchase O2P Tokens - Seed Round</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-          <label for="_amount">Amount of Tokens:</label>
-          <input type="text" class="form-control" id="_amount" placeholder="Enter amount of tokens">
+          <label for="_amount" style="color: rgb(255, 253, 252); font-size: 16px;">Enter amount in MATIC to buy O2P<br>Current price: 0.45 MATIC per 1 token O2P</label>
+          <input type="text" class="form-control" id="_amount" placeholder="Enter MATIC amount" style="font-size: 16px;">
         </div>
         
         <!-- Modal footer -->
@@ -1466,7 +1465,9 @@
         
       </div>
     </div>
-  </div>
+</div>
+
+
       
 
 </body>

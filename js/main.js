@@ -1,3 +1,48 @@
+let initialize = () => {
+        
+    //Basic Actions Section
+    const onboardButton = document.getElementById('connectButton');
+  
+    //Created check function to see if the MetaMask extension is installed
+    const isMetaMaskInstalled = () => {
+      //Have to check the ethereum binding on the window object to see if it's installed
+      const { ethereum } = window;
+      return Boolean(ethereum && ethereum.isMetaMask);
+    };
+  
+    //------Inserted Code------\\
+    const MetaMaskClientCheck = () => {
+        //Now we check to see if Metmask is installed
+        if (!isMetaMaskInstalled()) {
+          //If it isn't installed we ask the user to click to install it
+          onboardButton.innerText = 'Click here to install MetaMask!';
+          //When the button is clicked we call this function
+          onboardButton.onclick = onClickInstall;
+          //The button is now disabled
+          onboardButton.disabled = true;
+        } else {
+          //If it is installed we change our button text
+          onboardButton.innerText = 'Connect';
+        }
+      };
+      MetaMaskClientCheck();
+}
+
+  async function onConnect() {
+    // Prompt user to connect their wallet
+    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  
+    // Use the first account returned by MetaMask
+    const account = accounts[0];
+  
+    // Set the account in web3
+
+    web3.eth.defaultAccount = account;
+    
+    // ...
+  }
+
+
 async function buyTokens() {
     if (window.ethereum) {
       try {
@@ -54,6 +99,7 @@ function purchaseTokens() {
 }
 
 // Connect to MetaMask
+// Connect to MetaMask
 function connectMetaMask() {
     // Check if MetaMask is installed
     document.querySelector(".progress").style.display = "block";
@@ -70,59 +116,91 @@ function connectMetaMask() {
         account.style.display = 'block';
         account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
   
-        // Define the token contract ABI and address
-        const tokenAddress = "0x61612Ba3bEbA5D46cF652e67e9789f6C1cA17B83";
-        const tokenABI = [{
-          "constant": true,
-          "inputs": [{
-            "name": "_owner",
-            "type": "address"
-          }],
-          "name": "balanceOf",
-          "outputs": [{
-            "name": "balance",
-            "type": "uint256"
-          }],
-          "payable": false,
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "constant": true,
-          "inputs": [],
-          "name": "name",
-          "outputs": [{
-            "name": "",
-            "type": "string"
-          }],
-          "payable": false,
+        // Define the vesting contract ABI and address
+        const vestingAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
+        const vestingABI = [{
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "name": "vestingInfo",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalVestedTokens",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "dailyVestedTokens",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "claimAmount",
+              "type": "uint256"
+            }
+          ],
           "stateMutability": "view",
           "type": "function"
         }];
   
-        // Get the token contract instance
-        const tokenContract = new web3.eth.Contract(tokenABI, tokenAddress);
+        // Get the vesting contract instance
+        const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
+        // Get the connected account's address
+        const userAddress = accounts[0];
+        // Call the vestingInfo function of the vesting contract, passing the user's address
+        vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
+          // Display the total vested tokens
+          const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
+          account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
   
-        // Get the token name
-        const tokenName = await tokenContract.methods.name().call();
-  
-        // Call the balanceOf function of the token contract
-        tokenContract.methods.balanceOf(accounts[0]).call().then(function(balance) {
-          // Divide the balance by 10^18 to remove the 18 decimals
-          balance = balance / 10**18;
-  
-          // Format the balance with a comma separator
-          const formattedBalance = balance.toLocaleString();
-  
-          // Display the token balance and name
-          account.innerHTML += `<br>Token: ${tokenName} <br> Balance: ${formattedBalance}`;
+          // Change the button to display disconnect
+          const connectButton = document.getElementById("connectButton2");
+          connectButton.innerHTML = "Disconnect";
+          connectButton.onclick = disconnectMetaMask;
+        }).catch(function(err) {
+          console.error(err);
+          alert('Error retrieving vesting information');
         });
-    });
-
+  
+      }).catch(function(err) {
+        console.error(err);
+        alert('User rejected connection request');
+      });
     } else {
       alert('Please install MetaMask');
     }
   }
+  
+  
+  
+  function disconnectMetaMask() {
+    // Clear the connected account information from local storage
+    localStorage.removeItem("connectedAccount");
+  
+    // Display the connect button
+    document.getElementById("connectButton2").style.display = 'block';
+  
+    // Hide the connected message and account address
+    var account = document.getElementById("account");
+    account.style.display = 'none';
+  
+    // Change the button back to display connect
+    const connectButton = document.getElementById("connectButton2");
+    connectButton.innerHTML = "Connect";
+    connectButton.onclick = connectMetaMask;
+  
+  }
+  
 // Add an event listener for when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Check if web3 has been injected by the browser (Mist/MetaMask)
@@ -145,52 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('MetaMask is not installed')
     }
 });
-
-  
-     const initialize = () => {
-    //Basic Actions Section
-    const onboardButton = document.getElementById('connectButton');
-  
-    //Created check function to see if the MetaMask extension is installed
-    const isMetaMaskInstalled = () => {
-      //Have to check the ethereum binding on the window object to see if it's installed
-      const { ethereum } = window;
-      return Boolean(ethereum && ethereum.isMetaMask);
-    };
-  
-    //------Inserted Code------\\
-    const MetaMaskClientCheck = () => {
-        //Now we check to see if Metmask is installed
-        if (!isMetaMaskInstalled()) {
-          //If it isn't installed we ask the user to click to install it
-          onboardButton.innerText = 'Click here to install MetaMask!';
-          //When the button is clicked we call this function
-          onboardButton.onclick = onClickInstall;
-          //The button is now disabled
-          onboardButton.disabled = true;
-        } else {
-          //If it is installed we change our button text
-          onboardButton.innerText = 'Connect';
-        }
-      };
-      MetaMaskClientCheck();
-}
-
-  async function onConnect() {
-    // Prompt user to connect their wallet
-    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-  
-    // Use the first account returned by MetaMask
-    const account = accounts[0];
-  
-    // Set the account in web3
-
-    web3.eth.defaultAccount = account;
-    
-    // ...
-  }
-  
-
+   
 $(function () {
 
     var _window = $(window),
