@@ -292,10 +292,15 @@ $(function () {
             'en': {
             'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
+            'banner-feature': 'Features',
+
+
+
             },
             'es': {
             'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
             'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+            'banner-feature': 'Características'
             }
         };
         
@@ -303,10 +308,17 @@ $(function () {
         function updateBannerText(language) {
             const bannerTitle = document.querySelector('[data-translate="banner-title"]');
             const bannerDescription = document.querySelector('[data-translate="banner-description"]');
+            const bannerFeature = document.querySelector('[data-translate="banner-feature"]');
+
+
+
             
             if (translations[language]) {
             bannerTitle.innerHTML = translations[language]['banner-title'];
             bannerDescription.innerHTML = translations[language]['banner-description'];
+            bannerFeature.innerHTML = translations[language]['banner-feature'];
+
+
             }
         }
         
