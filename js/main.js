@@ -188,7 +188,9 @@ function connectMetaMask() {
   
           // Change the button to display disconnect
           const connectButton = document.getElementById("connectButton2");
-          connectButton.innerHTML = "Disconnect";
+          connectButton.innerHTML = "Discon.";
+          
+
           connectButton.onclick = disconnectMetaMask;
           document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
           document.getElementById("progressText").style.display = "block";
@@ -290,34 +292,165 @@ $(function () {
     // Define a translations object with the text in both English and Spanish
         const translations = {
             'en': {
+            
+            //top banners titles
+            'top-features': 'Features',
+            'top-products': 'Products',
+            'top-roadmap': 'Roadmap',
+            'top-about': 'About',
+            'top-team': 'Team',
+            'top-token': 'Token',
+            'top-contact': 'Contact',
+            
+            
+            
             'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
             'banner-feature': 'Features',
+            'bottom-product': 'Products',
+            'bottom-roadmap': 'Roadmap',
+            'bottom-token': 'Token',
+            'top-blog':'Blog',
+            
 
 
 
             },
             'es': {
-            'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
-            'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
-            'banner-feature': 'Características'
-            }
-        };
-        
-        // Define a function to update the text in the banner based on the selected language
-        function updateBannerText(language) {
-            const bannerTitle = document.querySelector('[data-translate="banner-title"]');
-            const bannerDescription = document.querySelector('[data-translate="banner-description"]');
-            const bannerFeature = document.querySelector('[data-translate="banner-feature"]');
-
-
+            
+            //top banners
+            'top-features': 'Caract.',
+            'top-products': 'Productos',
+            'top-roadmap': 'Hoja de ruta',
+            'top-about': 'Acerca',
+            'top-team': 'Equipo',
+            'top-token': 'Token',
+            'top-blog':'Blog',
+            'top-contact': 'Contacto',
+            
 
             
-            if (translations[language]) {
-            bannerTitle.innerHTML = translations[language]['banner-title'];
-            bannerDescription.innerHTML = translations[language]['banner-description'];
-            bannerFeature.innerHTML = translations[language]['banner-feature'];
+            
+            'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
+            'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+            'bottom-feature': 'Características',
+            'bottom-product': 'Productos',
+            'bottom-roadmap': 'Hoja de ruta',
 
+
+            },
+            'pr': {
+                
+                //top banners
+                'top-features': 'Caract.',
+                'top-products': 'Produtos',
+                'top-roadmap': 'Roteiro',
+                'top-about': 'Sobre',
+                'top-team': 'Equipe',
+                'top-token': 'Token',
+                'top-blog':'Blog',
+                'top-contact': 'Contato',
+                
+                'banner-title': 'Financiamento de compensação de carbono e cultivo de criptomoedas alavancado Regenerative DeFi',
+                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'bottom-feature': 'Características',
+                'bottom-product': 'Productos',
+                'bottom-roadmap': 'Hoja de ruta',
+            },
+            'kr': {
+                //top banners
+                'top-features': '특징',
+                'top-products': '제품',
+                'top-roadmap': '로드맵',
+                'top-about': '에 대한',
+                'top-team': '팀',
+                'top-token': '토큰',
+                'top-blog':'블로그',
+                'top-contact': '연락하다',
+                
+                
+                'banner-title': '탄소 상쇄 금융 및 레버리지 암호화 농업 재생 DeFi',
+                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'bottom-feature': 'Características',
+                'bottom-product': 'Productos',
+                'bottom-roadmap': 'Hoja de ruta',
+            },
+            'ch': {
+                //top banners
+                'top-features': '特徵',
+                'top-products': '產品',
+                'top-roadmap': '路線圖',
+                'top-about': '關於',
+                'top-team': '團隊',
+                'top-token': '代幣',
+                'top-blog':'博客',
+                'top-contact': '接觸',
+                
+                'banner-title': '碳抵消融資和槓桿加密農業 Regenerative DeFi',
+                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'bottom-feature': 'Características',
+                'bottom-product': 'Productos',
+                'bottom-roadmap': 'Hoja de ruta',
+            },
+            'jp': {
+                //top banners
+                'top-features': '特徴',
+                'top-products': '製品',
+                'top-roadmap': 'ロードマップ',
+                'top-about': 'だいたい',
+                'top-team': 'チーム',
+                'top-token': 'トークン',
+                'top-blog':'ブログ',
+                'top-contact': 'コンタクト',
+                
+                'banner-title': 'カーボン オフセット ファイナンシングとレバレッジド クリプト ファーミング リジェネレーティブ DeFi',
+                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'bottom-feature': 'Características',
+                'bottom-product': 'Productos',
+                'bottom-roadmap': 'Hoja de ruta',
+            }
+        }
+        
+        // Define a function to update the text in the banner based on the selected language
+        function updateBannerText(Lang) {
+            //top banners titles
+            const topFeatures = document.querySelector('[data-translate="top-features"]');
+            const topProduct = document.querySelector('[data-translate="top-products"]');
+            const topRoadmap = document.querySelector('[data-translate="top-roadmap"]');
+            const topAbout = document.querySelector('[data-translate="top-about"]');
+            const topTeam = document.querySelector('[data-translate="top-team"]');
+            const topToken = document.querySelector('[data-translate="top-token"]');
+            const topBlog = document.querySelector('[data-translate="top-blog"]');
+            const topContact = document.querySelector('[data-translate="top-contact"]');
+            
+            
+
+
+            const bannerTitle = document.querySelector('[data-translate="banner-title"]');
+            const bannerDescription = document.querySelector('[data-translate="banner-description"]');
+            const bottomFeature = document.querySelector('[data-translate="bottom-feature"]');
+            const bottomProduct = document.querySelector('[data-translate="bottom-product"]');
+            const bottomRoadmap = document.querySelector('[data-translate="bottom-roadmap"]');
+            
+            if (translations[Lang]) {
+            //top banner titles
+            topFeatures.innerHTML = translations[Lang]['top-features'];
+            topProduct.innerHTML = translations[Lang]['top-products'];
+            topRoadmap.innerHTML = translations[Lang]['top-roadmap'];
+            topAbout.innerHTML = translations[Lang]['top-about'];
+            topTeam.innerHTML = translations[Lang]['top-team'];
+            topToken.innerHTML = translations[Lang]['top-token'];
+            topBlog.innerHTML = translations[Lang]['top-blog'];
+            topContact.innerHTML = translations[Lang]['top-contact'];
+            
+            
+
+            
+            bannerTitle.innerHTML = translations[Lang]['banner-title'];
+            bannerDescription.innerHTML = translations[Lang]['banner-description'];
+            bottomFeature.innerHTML = translations[Lang]['bottom-feature'];
+            bottomProduct.innerHTML = translations[Lang]['bottom-product'];
+            bottomRoadmap.innerHTML = translations[Lang]['bottom-roadmap'];
 
             }
         }

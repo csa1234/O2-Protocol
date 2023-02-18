@@ -7,8 +7,20 @@
 <!--<![endif]-->
 
 <head>
-
     
+    <style>
+		#onepage-menu.navbar-nav li.nav-item a.nav-link {
+			font-size: 14.9px; /* set the font size to your desired value */
+		}
+	</style>
+
+    <style>
+        .o-langualge .dropdown-toggle span {
+            font-size: 14px; /* set the font size to your desired value */
+        }
+    </style>
+
+        
     <!-- Basic metas
     ======================================== -->
     <meta charset="utf-8">
@@ -23,7 +35,7 @@
 
     <!-- Page Title
     ======================================== -->
-    <title>O2 Protocol, Carbon offset, ICO Landing Page</title>
+    <title>O2 Protocol - Carbon Offset</title>
 
     <!-- links for favicon
     ======================================== -->
@@ -83,7 +95,8 @@
 
     <!-- navbar starts
 ============================================ -->
-    <nav class="c-onepage-navbar navbar navbar-expand-lg">
+    <nav class="c-onepage-navbar navbar navbar-expand-lg custom width"> 
+        
         <div class="container">
             <a class="navbar-brand page-scroll" href="#banner">
                 <img src="images/brand-logo.png" alt="brand logo">
@@ -98,36 +111,37 @@
             <!-- End of .navbar-toggler -->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto" id="onepage-menu">
+                <ul class="navbar-nav" id="onepage-menu">
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features
+                        <a class="nav-link" href="#features" data-translate="top-features">Features
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#product">Product</a>
+                        <a class="nav-link" href="#product" data-translate="top-products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#roadmap">Roadmap
+                        <a class="nav-link" href="#roadmap" data-translate="top-roadmap">Roadmap
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About
+                        <a class="nav-link" href="#about" data-translate="top-about">About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team
+                        <a class="nav-link" href="#team" data-translate="top-team">Team
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tokens">Tokens
+                        <a class="nav-link" href="#tokens" data-translate="top-token">Token
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog
+                        <a class="nav-link" href="#blog" data-translate="top-blog">Blog
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact
+                        <a class="nav-link" href="#contact" data-translate="top-contact">Contact
                         </a>
                     </li>
                     <li class="nav-item">
@@ -137,24 +151,27 @@
                     <li class="o-langualge">
                         <div class="dropdown text-xs-right ml-auto">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span>En</span>
+                                <span>Lang</span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Es</a>
-                                <a class="dropdown-item" href="#">Jp</a>
-                                <a class="dropdown-item" href="#">Kr</a>
-                                <a class="dropdown-item" href="#">Ch</a>
+                                <a class="dropdown-item" href="#">EN</a>
+                                <a class="dropdown-item" href="#">ES</a>
+                                <a class="dropdown-item" href="#">PR</a>
+                                <a class="dropdown-item" href="#">KR</a>
+                                <a class="dropdown-item" href="#">CH</a>
+                                <a class="dropdown-item" href="#">JP</a>
                             </div>
                             <!-- End of .dropdown-menu -->
                         </div>
                         <!-- End of .dropdown -->
                     </li>
-                    
+                
                 </ul>
             </div>
         </div>
         <!-- End of .container -->
+    
     </nav>
     <!-- End of .navbar -->
 
@@ -1195,16 +1212,16 @@
                                 <h6>ICO FUNDING</h6>
                                 <ul class="footer-widget">
                                     <li>
-                                        <a href="#features" data-translate="banner-feature">Features</a>
+                                        <a href="#features" data-translate="bottom-feature">Features</a>
                                     </li>
                                     <li>
-                                        <a href="#product">Product</a>
+                                        <a href="#product" data-translate="bottom-product">Product</a>
                                     </li>
                                     <li>
-                                        <a href="#roadmap">Roadmap</a>
+                                        <a href="#roadmap" data-translate="bottom-roadmap">Roadmap</a>
                                     </li>
                                     <li>
-                                        <a href="#tokens">Token</a>
+                                        <a href="#tokens" data-translate="bottom-token">Token</a>
                                     </li>
                                 </ul>
                                 <!-- End of .company-footer-widget -->
