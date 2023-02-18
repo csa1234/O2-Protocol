@@ -303,9 +303,18 @@ $(function () {
             'top-contact': 'Contact',
             
             
-            
+            //middle description
             'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
+            'intro-video': 'Intro Video',
+            'financial-text1': 'SEED ROUND STARTS IN',
+            //'PRIVATE ROUND A STARTS IN',
+            //'PRIVATE ROUND B STARTS IN',
+
+                     
+
+
+            //bottom
             'banner-feature': 'Features',
             'bottom-product': 'Products',
             'bottom-roadmap': 'Roadmap',
@@ -328,11 +337,18 @@ $(function () {
             'top-blog':'Blog',
             'top-contact': 'Contacto',
             
-
-            
-            
+            //middle description
             'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
             'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+            'intro-video': 'Video de Introduccion',
+            'financial-text1': 'RONDA SEMILLA EMPIEZA EN',
+            // 'RONDA PRIVADA A EMPIEZA EN',
+            // 'RONDA PRIVADA B EMPIEZA EN',
+
+
+
+            
+            //bottom
             'bottom-feature': 'Características',
             'bottom-product': 'Productos',
             'bottom-roadmap': 'Hoja de ruta',
@@ -351,8 +367,18 @@ $(function () {
                 'top-blog':'Blog',
                 'top-contact': 'Contato',
                 
+                //middle description
                 'banner-title': 'Financiamento de compensação de carbono e cultivo de criptomoedas alavancado Regenerative DeFi',
-                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'banner-description': 'Agricultura de criptografia alavancada com tokens de compensação de carbono gerando fluxo de dinheiro receita através do financiamento de certificação e tokenização de projetos de compensação de carbono.',
+                'intro-video': 'Vídeo de introdução',
+                'financial-text1': 'RODADA DE SEMENTES COMEÇA EM',
+                //'RODADA A PRIVADA COMEÇA EM',
+                //'RODADA B PRIVADA COMEÇA EM',
+
+
+
+                
+                //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
                 'bottom-roadmap': 'Hoja de ruta',
@@ -369,8 +395,18 @@ $(function () {
                 'top-contact': '연락하다',
                 
                 
+                //middle description
                 'banner-title': '탄소 상쇄 금융 및 레버리지 암호화 농업 재생 DeFi',
-                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'banner-description': '자금 흐름을 생성하는 탄소 상쇄 토큰으로 레버리지 암호화 농업 탄소 상쇄 프로젝트 인증 및 토큰화 자금 조달을 통한 수입.',
+                'intro-video': '소개 영상',
+                'financial-text1': '시드 라운드 시작',
+                //'프라이빗 라운드 A 시작',
+                //'프라이빗 라운드 B는 에서 시작합니다.',
+
+
+
+                
+                //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
                 'bottom-roadmap': 'Hoja de ruta',
@@ -386,8 +422,17 @@ $(function () {
                 'top-blog':'博客',
                 'top-contact': '接觸',
                 
-                'banner-title': '碳抵消融資和槓桿加密農業 Regenerative DeFi',
-                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                //middle description
+                'banner-title': '碳抵消融資和槓桿加密農業再生 DeFi',
+                'banner-description': '利用碳抵消代幣產生資金流的槓桿加密農業通過碳抵消項目認證和代幣化融資獲得收入。',
+                'intro-video': '簡介視頻',
+                'financial-text1': '種子輪開始於',
+                //'私人A輪開始於',
+                //'私人 B 輪開始於',
+
+
+                
+                //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
                 'bottom-roadmap': 'Hoja de ruta',
@@ -403,8 +448,17 @@ $(function () {
                 'top-blog':'ブログ',
                 'top-contact': 'コンタクト',
                 
+                //middle description
                 'banner-title': 'カーボン オフセット ファイナンシングとレバレッジド クリプト ファーミング リジェネレーティブ DeFi',
-                'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
+                'banner-description': 'マネー フローを生成するカーボン オフセット トークンを使用した仮想通貨ファーミングの活用 カーボンオフセットプロジェクトの認証とトークン化の資金調達による収入。',
+                'intro-video': '紹介ビデオ',
+                'financial-text1': 'シードラウンド開始',
+                //'プライベートラウンドA開始',
+                //'プライベート ラウンド B 開始時間',
+                    
+
+
+                //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
                 'bottom-roadmap': 'Hoja de ruta',
@@ -422,6 +476,11 @@ $(function () {
             const topToken = document.querySelector('[data-translate="top-token"]');
             const topBlog = document.querySelector('[data-translate="top-blog"]');
             const topContact = document.querySelector('[data-translate="top-contact"]');
+            const introVideo = document.querySelector('[data-translate="intro-video"]');
+            const playIcon = document.createElement('i');
+            playIcon.className = 'fas fa-play';
+            const FinancialText1 = document.querySelector('[data-translate="financial-text1"] h4');
+
             
             
 
@@ -431,6 +490,7 @@ $(function () {
             const bottomFeature = document.querySelector('[data-translate="bottom-feature"]');
             const bottomProduct = document.querySelector('[data-translate="bottom-product"]');
             const bottomRoadmap = document.querySelector('[data-translate="bottom-roadmap"]');
+            
             
             if (translations[Lang]) {
             //top banner titles
@@ -442,6 +502,10 @@ $(function () {
             topToken.innerHTML = translations[Lang]['top-token'];
             topBlog.innerHTML = translations[Lang]['top-blog'];
             topContact.innerHTML = translations[Lang]['top-contact'];
+            introVideo.innerHTML = translations[Lang]['intro-video'];
+            introVideo.innerHTML = `<span>${playIcon.outerHTML}</span>${translations[Lang]['intro-video']}`;
+            FinancialText1.innerHTML = translations[Lang]['financial-text1'];
+            
             
             
 
@@ -516,13 +580,17 @@ $(function () {
     });
     wow.init();
 
+
+
+
     //jQuery countdown plugin
+
     $('#clock').countdown('2023/03/01').on('update.countdown', function (event) {
         var _DateInput = '' +
-            '<div><span>%-D</span> Day%!d</div>' +
-            '<div><span>%H</span> Hours</div>' +
-            '<div><span>%M</span> Minutes</div>' +
-            '<div><span>%S</span> Seconds</div>';
+        '<div><span>%-D</span> Day%!d</div>' +
+        '<div><span>%H</span> Hours</div>' +
+        '<div><span>%M</span> Minutes</div>' +
+        '<div><span>%S</span> Seconds</div>';
         var $this = $(this).html(event.strftime(_DateInput));
     });
 
