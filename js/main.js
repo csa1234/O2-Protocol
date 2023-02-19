@@ -301,17 +301,35 @@ $(function () {
             'top-team': 'Team',
             'top-token': 'Token',
             'top-contact': 'Contact',
+            'connect': 'Connect',
             
             
             //middle description
             'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
+            'whitepaper': 'WHITEPAPER',
             'intro-video': 'Intro Video',
             'financial-text1': 'SEED ROUND STARTS IN',
             //'PRIVATE ROUND A STARTS IN',
             //'PRIVATE ROUND B STARTS IN',
 
-                     
+            'connectwallet':'CONNECT WALLET',
+
+
+            //get whitelisted
+            'getwhitelisted':'Get whitelisted to participate:',
+            'toparticipate':'To participate on the Financial rounds & airdrop, please complete the tasks on the following link:<br><a href="http//:www......">Please go to http//:www......</a>',
+            
+            //how to claim
+            'howtoclaim':'How to claim your purchased tokens:',
+            'howtoclaim2':'After all financial rounds end, you will be able to claim your purchased tokens at a vesting rate of 0.27% daily<br>While you receive your vesting tokens, you will also receive yield income from the staking vault for the locked remaining vested tokens',
+            
+            //how it works
+            'howitworks':'How it works:',
+            'stephow': '1) O2 Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner<br>2) Verra certifications is then tokenized thru Toucan Protocol NFT<br>3) The NFT is then swaped to USDT<br>4) O2 Protocol keeps 50% of the USDT and 50% goes to the project owner<br>5) 50% of the USDT is swaped to buy back O2P token and remaining will be used<br>   to finance new projects certifcation and provide liquidity to the pools',
+            
+                    
+            
 
 
             //bottom
@@ -336,18 +354,35 @@ $(function () {
             'top-token': 'Token',
             'top-blog':'Blog',
             'top-contact': 'Contacto',
+            'connect': 'Conectar',
             
             //middle description
             'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
             'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
-            'intro-video': 'Video de Introduccion',
+            'whitepaper': 'WHITEPAPER',
+            'intro-video': 'Video de Introducción',
             'financial-text1': 'RONDA SEMILLA EMPIEZA EN',
             // 'RONDA PRIVADA A EMPIEZA EN',
             // 'RONDA PRIVADA B EMPIEZA EN',
 
+            'connectwallet':'CONECTAR BILLETERA',
 
-
+             //get whitelisted
+            'getwhitelisted':'Consigue tu acceso de lista blanca para participar',
+            'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo, complete las tareas en el siguiente enlace:<br><a href="http//:www......">Por favor ingresa a: http//:www......</a>',
             
+            //how to claim
+            'howtoclaim':'Cómo reclamar sus tokens comprados:',
+            'howtoclaim2':'Después de que finalicen todas las rondas financieras, podrá reclamar sus tokens comprados a una tasa de adquisición del 0,27% diario<br>Mientras recibe sus tokens adquiridos, también recibirá ingresos de rendimiento de la bóveda de participación para los tokens adquiridos restantes que sigan bloqueados.',
+            
+            //how it works
+            'howitworks':'Como funciona:',
+            'stephow': '1) O2 Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado con un acuerdo legal con el propietario del proyecto<br>2) Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT<br>3) Los NFT luego se cambian a USDT<br>4) O2 Protocol se queda con el 50 % del USDT y el otro 50 % va al propietario del proyecto<br>5) El 50% del USDT se intercambia para recomprar el token O2P y se utilizará el resto<br>   para financiar la certifcación de nuevos proyectos y dotar de liquidez a las piscinas de liquidez',
+            
+                    
+            
+
+
             //bottom
             'bottom-feature': 'Características',
             'bottom-product': 'Productos',
@@ -366,17 +401,33 @@ $(function () {
                 'top-token': 'Token',
                 'top-blog':'Blog',
                 'top-contact': 'Contato',
+                'connect': 'Conectar',
                 
                 //middle description
                 'banner-title': 'Financiamento de compensação de carbono e cultivo de criptomoedas alavancado Regenerative DeFi',
                 'banner-description': 'Agricultura de criptografia alavancada com tokens de compensação de carbono gerando fluxo de dinheiro receita através do financiamento de certificação e tokenização de projetos de compensação de carbono.',
+                'whitepaper': 'WHITEPAPER',
                 'intro-video': 'Vídeo de introdução',
                 'financial-text1': 'RODADA DE SEMENTES COMEÇA EM',
                 //'RODADA A PRIVADA COMEÇA EM',
                 //'RODADA B PRIVADA COMEÇA EM',
 
+                'connectwallet':'CONECTAR CARTEIRA',
 
-
+                //get whitelisted
+                'getwhitelisted':'Obtenha seu acesso à lista de permissões para participar',
+                'toparticipate':'Para participar das rodadas financeiras e airdrop, conclua as tarefas no seguinte link:<br><a href="http//:www......">Por favor vá a: http//:www. .. ...</a>',
+                
+                //how to claim
+                'howtoclaim':'Como reivindicar seus tokens comprados:',
+                'howtoclaim2':'Depois que todas as rodadas financeiras terminarem, você poderá reivindicar seus tokens comprados a uma taxa de aquisição diária de 0,27%.<br>Enquanto você recebe seus Tokens Adquiridos, você também receberá receita de desempenho do Cofre da Estaca por quaisquer Tokens Adquiridos restantes que ainda estiverem bloqueados.',
+                
+                //how it works
+                'howitworks':'Como funciona:',
+                'stephow': '1) O2 Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto<br>2) As certificações de Verra luego são tokenizadas através do Protocolo Toucan NFT<br>3) NFTs são então alterados para USDT<br>4) O2 Protocol fica com 50% do USDT e os outros 50% vão para o dono do projeto<br>5) 50% do USDT é trocado para recomprar o token O2P e o restante será usado<br>   para financiar a certificação de novos projetos e fornecer liquidez a pools de liquidez',
+                
+                    
+                
                 
                 //bottom
                 'bottom-feature': 'Características',
@@ -393,19 +444,34 @@ $(function () {
                 'top-token': '토큰',
                 'top-blog':'블로그',
                 'top-contact': '연락하다',
+                'connect': '연결하다',
                 
                 
                 //middle description
                 'banner-title': '탄소 상쇄 금융 및 레버리지 암호화 농업 재생 DeFi',
                 'banner-description': '자금 흐름을 생성하는 탄소 상쇄 토큰으로 레버리지 암호화 농업 탄소 상쇄 프로젝트 인증 및 토큰화 자금 조달을 통한 수입.',
+                'whitepaper': '백지',
                 'intro-video': '소개 영상',
                 'financial-text1': '시드 라운드 시작',
                 //'프라이빗 라운드 A 시작',
                 //'프라이빗 라운드 B는 에서 시작합니다.',
 
+                'connectwallet':'지갑 연결',
 
-
+                //get whitelisted
+                'getwhitelisted':'참여할 수 있도록 허용 목록에 추가:',
+                'toparticipate':'파이낸셜 라운드 및 에어드롭에 참여하려면 다음 링크에서 작업을 완료하십시오.<br><a href="http//:www......">다음으로 이동하십시오. http//:www......</a>',
                 
+                //how to claim
+                'howtoclaim':'구매한 토큰을 청구하는 방법:',
+                'howtoclaim2':'모든 재정 라운드가 종료되면 매일 0.27%의 베스팅 비율로 구매한 토큰을 청구할 수 있습니다.<br>베스팅 토큰을 받는 동안 잠긴 나머지 베스팅 토큰에 대한 스테이킹 금고의 수익도 받게 됩니다.',
+                
+                //how it works
+                'howitworks':'작동 방식:',
+                'stephow': '1) O2 프로토콜은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하며 프로젝트 소유자와의 법적 계약에 구속됩니다.<br>2) 그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.<br>3) 그런 다음 NFT는 Toucan Protocol BCT 토큰으로 전환되고 USDT로 스왑됩니다.<br>4) O2 Protocol은 USDT의 50%를 보유하고 50%는 프로젝트 소유자에게 전달됩니다.<br>5) USDT의 50%는 O2P 토큰을 환매하기 위해 스왑되고 나머지는 사용됩니다.<br>   새로운 프로젝트 인증 자금 조달 및 풀에 유동성 제공',
+                
+                        
+                    
                 //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
@@ -421,17 +487,35 @@ $(function () {
                 'top-token': '代幣',
                 'top-blog':'博客',
                 'top-contact': '接觸',
+                'connect': '连接',
                 
                 //middle description
                 'banner-title': '碳抵消融資和槓桿加密農業再生 DeFi',
                 'banner-description': '利用碳抵消代幣產生資金流的槓桿加密農業通過碳抵消項目認證和代幣化融資獲得收入。',
+                'whitepaper': '白皮書',
                 'intro-video': '簡介視頻',
                 'financial-text1': '種子輪開始於',
                 //'私人A輪開始於',
                 //'私人 B 輪開始於',
 
+                'connectwallet':'連接錢包',
 
+                 //get whitelisted
+                'getwhitelisted':'獲得白名單參與：',
+                'toparticipate':'要參與財務輪次和空投，請完成以下鏈接中的任務：<br><a href="http//:www......">請前往 http//:www......</a>',
                 
+                //how to claim
+                'howtoclaim':'如何領取您購買的代幣：',
+                'howtoclaim2':'在所有財務回合結束後，您將能夠以每天 0.27% 的歸屬率領取您購買的代幣<br>當您收到您的歸屬代幣時，您還將從鎖倉中獲得鎖定的剩餘歸屬代幣的收益收入',
+                
+                //how it works
+                'howitworks':'怎麼運行的：',
+                'stephow': '1) O2 Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議<br>2) 然後通過 Toucan 協議 NFT 將 Verra 認證標記化<br>3）然後NFT到USDT<br>4) O2 Protocol 保留 50% 的 USDT，50% 歸項目所有者所有<br>5) 50%的USDT兌換回購O2P代幣，剩餘部分使用<br>   為新項目認證提供資金並為資金池提供流動性',
+                
+                    
+
+
+                    
                 //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
@@ -447,16 +531,35 @@ $(function () {
                 'top-token': 'トークン',
                 'top-blog':'ブログ',
                 'top-contact': 'コンタクト',
+                'connect': '接続する',
+                
                 
                 //middle description
                 'banner-title': 'カーボン オフセット ファイナンシングとレバレッジド クリプト ファーミング リジェネレーティブ DeFi',
                 'banner-description': 'マネー フローを生成するカーボン オフセット トークンを使用した仮想通貨ファーミングの活用 カーボンオフセットプロジェクトの認証とトークン化の資金調達による収入。',
+                'whitepaper': '白書',
                 'intro-video': '紹介ビデオ',
                 'financial-text1': 'シードラウンド開始',
                 //'プライベートラウンドA開始',
                 //'プライベート ラウンド B 開始時間',
                     
+                'connectwallet':'コネクトウォレット',
 
+                //get whitelisted
+                'getwhitelisted':'ホワイトリストに登録して参加する:',
+                'toparticipate':'ファイナンシャル ラウンドとエアドロップに参加するには、次のリンクのタスクを完了してください。<br><a href="http//:www......">http://:www にアクセスしてください......</a>',
+                
+
+                //how to claim
+                'howtoclaim':'購入したトークンを請求する方法',
+                'howtoclaim2':'すべてのファイナンシャル ラウンドが終了すると、購入したトークンを毎日 0.27% のベスティング レートで請求できるようになります。<br>権利確定トークンを受け取ると同時に、ロックされた残りの権利確定トークンのステーキング ボールトから収益収入も受け取ります。',
+                
+                //how it works
+                'howitworks':'使い方：',
+                'stephow': '1) O2 プロトコルは、Verra.org での CO2 プロジェクト認証に資金を提供し、プロジェクト所有者との法的契約に拘束されます。<br>2) Verra 認定は、オオハシ プロトコル NFT を介してトークン化されます。<br>3) NFT は USDT にスワップされます。<br>4) O2 プロトコルは USDT の 50% を保持し、50% はプロジェクト所有者に渡されます<br>5) USDT の 50% は O2P トークンを買い戻すためにスワップされ、残りは使用されます。<br>   新しいプロジェクトの認証に資金を提供し、プールに流動性を提供する',
+                
+                        
+                
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -465,6 +568,8 @@ $(function () {
             }
         }
         
+
+       
         // Define a function to update the text in the banner based on the selected language
         function updateBannerText(Lang) {
             //top banners titles
@@ -476,20 +581,39 @@ $(function () {
             const topToken = document.querySelector('[data-translate="top-token"]');
             const topBlog = document.querySelector('[data-translate="top-blog"]');
             const topContact = document.querySelector('[data-translate="top-contact"]');
+            const Connect = document.querySelector('[data-translate="connect"]');
+           
+
+            //ICO clock
+            const Whitepaper = document.querySelector('[data-translate="whitepaper"]');
             const introVideo = document.querySelector('[data-translate="intro-video"]');
             const playIcon = document.createElement('i');
             playIcon.className = 'fas fa-play';
             const FinancialText1 = document.querySelector('[data-translate="financial-text1"] h4');
+            const ConnectWallet = document.querySelector('[data-translate="connectwallet"]');
 
+
+            //get whitelisted
+            const GetWhiteListed = document.querySelector('[data-translate="getwhitelisted"]');
+            const ToParticipate = document.querySelector('[data-translate="toparticipate"]');
             
             
+            //how to claim
+            const HowToClaim = document.querySelector('[data-translate="howtoclaim"]');
+            const HowToClaim2 = document.querySelector('[data-translate="howtoclaim2"]');
+            
 
-
+            //bottom
             const bannerTitle = document.querySelector('[data-translate="banner-title"]');
             const bannerDescription = document.querySelector('[data-translate="banner-description"]');
             const bottomFeature = document.querySelector('[data-translate="bottom-feature"]');
             const bottomProduct = document.querySelector('[data-translate="bottom-product"]');
             const bottomRoadmap = document.querySelector('[data-translate="bottom-roadmap"]');
+
+            //how it works
+            const HowItWorks = document.querySelector('[data-translate="howitworks"]');
+            const StepHow = document.querySelector('[data-translate="stephow"]');
+            
             
             
             if (translations[Lang]) {
@@ -502,14 +626,32 @@ $(function () {
             topToken.innerHTML = translations[Lang]['top-token'];
             topBlog.innerHTML = translations[Lang]['top-blog'];
             topContact.innerHTML = translations[Lang]['top-contact'];
+            Connect.innerHTML = translations[Lang]['connect'];
+
+            //ICO clock
+            Whitepaper.innerHTML = translations[Lang]['whitepaper'];
             introVideo.innerHTML = translations[Lang]['intro-video'];
             introVideo.innerHTML = `<span>${playIcon.outerHTML}</span>${translations[Lang]['intro-video']}`;
             FinancialText1.innerHTML = translations[Lang]['financial-text1'];
-            
-            
+            ConnectWallet.innerHTML = translations[Lang]['connectwallet'];
+                        
+            //get whitelisted
+            GetWhiteListed.innerHTML = translations[Lang]['getwhitelisted'];
+            ToParticipate.innerHTML = translations[Lang]['toparticipate'];
             
 
+            //how to claim
+            HowToClaim.innerHTML = translations[Lang]['howtoclaim'];
+            HowToClaim2.innerHTML = translations[Lang]['howtoclaim2'];
             
+            //how it works
+            HowItWorks.innerHTML = translations[Lang]['howitworks'];
+            StepHow.innerHTML = translations[Lang]['stephow'];
+            
+            
+            
+            
+            //bottom
             bannerTitle.innerHTML = translations[Lang]['banner-title'];
             bannerDescription.innerHTML = translations[Lang]['banner-description'];
             bottomFeature.innerHTML = translations[Lang]['bottom-feature'];
@@ -585,14 +727,78 @@ $(function () {
 
     //jQuery countdown plugin
 
-    $('#clock').countdown('2023/03/01').on('update.countdown', function (event) {
+    /*$('#clock').countdown('2023/03/01').on('update.countdown', function (event) {
         var _DateInput = '' +
         '<div><span>%-D</span> Day%!d</div>' +
         '<div><span>%H</span> Hours</div>' +
         '<div><span>%M</span> Minutes</div>' +
         '<div><span>%S</span> Seconds</div>';
         var $this = $(this).html(event.strftime(_DateInput));
+    });*/
+
+    // Set up language selector event listener
+$('.dropdown-item').click(function() {
+    var language = $(this).text();
+    setLanguage(language);
+  });
+  
+  // Set the initial language to English
+  var language = 'EN';
+  setLanguage(language);
+  
+  // Function to update the countdown timer based on the selected language
+  function setLanguage(language) {
+    // Define the translations for each language
+    var translations = {
+      'EN': {
+        'days': 'Day%!d',
+        'hours': 'Hours',
+        'minutes': 'Minutes',
+        'seconds': 'Seconds'
+      },
+      'ES': {
+        'days': 'Día%!d',
+        'hours': 'Horas',
+        'minutes': 'Minutos',
+        'seconds': 'Segundos'
+      },
+      'PR': {
+        'days': 'Dia%!d',
+        'hours': 'Horas',
+        'minutes': 'Minutos',
+        'seconds': 'Segundos'
+      },
+      'KR': {
+        'days': '일%!d',
+        'hours': '시간',
+        'minutes': '분',
+        'seconds': '초'
+      },
+      'CH': {
+        'days': '天%!d',
+        'hours': '小时',
+        'minutes': '分钟',
+        'seconds': '秒'
+      },
+      'JP': {
+        'days': '%-d日',
+        'hours': '%-H時間',
+        'minutes': '%-M分',
+        'seconds': '%-S秒'
+      }
+    };
+  
+    // Update the countdown timer with the appropriate translations
+    var _DateInput = '' +
+      '<div><span>%-D</span> ' + translations[language]['days'] + '</div>' +
+      '<div><span>%H</span> ' + translations[language]['hours'] + '</div>' +
+      '<div><span>%M</span> ' + translations[language]['minutes'] + '</div>' +
+      '<div><span>%S</span> ' + translations[language]['seconds'] + '</div>';
+    $('#clock').countdown('2023/03/01').on('update.countdown', function(event) {
+      var $this = $(this).html(event.strftime(_DateInput));
     });
+  }
+  
 
     //progress bar
     $(".progress").each(function () {
