@@ -328,7 +328,15 @@ $(function () {
             'howitworks':'How it works:',
             'stephow': '1) O2 Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner<br>2) Verra certifications is then tokenized thru Toucan Protocol NFT<br>3) The NFT is then swaped to USDT<br>4) O2 Protocol keeps 50% of the USDT and 50% goes to the project owner<br>5) 50% of the USDT is swaped to buy back O2P token and remaining will be used<br>   to finance new projects certifcation and provide liquidity to the pools',
             
-                    
+                
+            //business model
+            'business-model': 'BUSINESS MODEL',
+            'o2p-token': 'O2P TOKEN',
+
+            'finance-carbon':'Finance of carbon offset certification projects. O2 Protocol keeps 50% of the face value of the certification at market prices in DEX',
+                                 
+
+
             
 
 
@@ -379,7 +387,13 @@ $(function () {
             'howitworks':'Como funciona:',
             'stephow': '1) O2 Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado con un acuerdo legal con el propietario del proyecto<br>2) Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT<br>3) Los NFT luego se cambian a USDT<br>4) O2 Protocol se queda con el 50 % del USDT y el otro 50 % va al propietario del proyecto<br>5) El 50% del USDT se intercambia para recomprar el token O2P y se utilizará el resto<br>   para financiar la certifcación de nuevos proyectos y dotar de liquidez a las piscinas de liquidez',
             
-                    
+
+            //business model
+            'business-model': 'MODELO DE NEGOCIO',
+            'o2p-token': 'TOKEN O2P',
+
+            'finance-carbon': 'Financiación de certificación de proyectos de compensación de carbono. O2 Protocol se queda con el 50 % del valor nominal de la certificación al precio del mercado en los DEX',
+
             
 
 
@@ -426,8 +440,17 @@ $(function () {
                 'howitworks':'Como funciona:',
                 'stephow': '1) O2 Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto<br>2) As certificações de Verra luego são tokenizadas através do Protocolo Toucan NFT<br>3) NFTs são então alterados para USDT<br>4) O2 Protocol fica com 50% do USDT e os outros 50% vão para o dono do projeto<br>5) 50% do USDT é trocado para recomprar o token O2P e o restante será usado<br>   para financiar a certificação de novos projetos e fornecer liquidez a pools de liquidez',
                 
-                    
                 
+                //business model
+                'business-model': 'MODELO DE NEGÓCIOS',
+                'o2p-token': 'TOKEN O2P',
+
+                'finance-carbon': 'Financiamento de cert carbono. O2 Protocol fica com 50% do valor nominal do certificação a preço de mercado em DEX',
+
+
+
+
+                    
                 
                 //bottom
                 'bottom-feature': 'Características',
@@ -470,6 +493,16 @@ $(function () {
                 'howitworks':'작동 방식:',
                 'stephow': '1) O2 프로토콜은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하며 프로젝트 소유자와의 법적 계약에 구속됩니다.<br>2) 그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.<br>3) 그런 다음 NFT는 Toucan Protocol BCT 토큰으로 전환되고 USDT로 스왑됩니다.<br>4) O2 Protocol은 USDT의 50%를 보유하고 50%는 프로젝트 소유자에게 전달됩니다.<br>5) USDT의 50%는 O2P 토큰을 환매하기 위해 스왑되고 나머지는 사용됩니다.<br>   새로운 프로젝트 인증 자금 조달 및 풀에 유동성 제공',
                 
+
+                //business model
+                'business-model': '비즈니스 모델',
+                'o2p-token': 'O2P 토큰',
+
+                'finance-carbon': '탄소 상쇄 인증 프로젝트의 재정. O2 Protocol은 인증의 액면가의 50%를 DEX에서 시가로 유지합니다.',
+
+
+
+
                         
                     
                 //bottom
@@ -512,7 +545,11 @@ $(function () {
                 'howitworks':'怎麼運行的：',
                 'stephow': '1) O2 Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議<br>2) 然後通過 Toucan 協議 NFT 將 Verra 認證標記化<br>3）然後NFT到USDT<br>4) O2 Protocol 保留 50% 的 USDT，50% 歸項目所有者所有<br>5) 50%的USDT兌換回購O2P代幣，剩餘部分使用<br>   為新項目認證提供資金並為資金池提供流動性',
                 
-                    
+                //business model
+                'business-model': '商業模式',
+                'o2p-token': 'O2P令牌', 
+
+                'finance-carbon': '碳抵消認證項目的融資。 O2 Protocol 在 DEX 中按市場價格保留 50% 的通證面值',
 
 
                     
@@ -558,7 +595,13 @@ $(function () {
                 'howitworks':'使い方：',
                 'stephow': '1) O2 プロトコルは、Verra.org での CO2 プロジェクト認証に資金を提供し、プロジェクト所有者との法的契約に拘束されます。<br>2) Verra 認定は、オオハシ プロトコル NFT を介してトークン化されます。<br>3) NFT は USDT にスワップされます。<br>4) O2 プロトコルは USDT の 50% を保持し、50% はプロジェクト所有者に渡されます<br>5) USDT の 50% は O2P トークンを買い戻すためにスワップされ、残りは使用されます。<br>   新しいプロジェクトの認証に資金を提供し、プールに流動性を提供する',
                 
-                        
+
+                //business model
+                'business-model': '事業の型',
+                'o2p-token': 'O2Pトークン',
+
+                'finance-carbon': 'カーボン オフセット認証プロジェクトの資金調達。 O2 プロトコルは、証明書の額面価格の 50% を DEX の市場価格で保持します。',
+                
                 
 
                 //bottom
@@ -601,8 +644,26 @@ $(function () {
             //how to claim
             const HowToClaim = document.querySelector('[data-translate="howtoclaim"]');
             const HowToClaim2 = document.querySelector('[data-translate="howtoclaim2"]');
-            
 
+            
+            //how it works
+            const HowItWorks = document.querySelector('[data-translate="howitworks"]');
+            const StepHow = document.querySelector('[data-translate="stephow"]');
+            
+            
+            
+            //business model
+            const BusinessModel = document.querySelector('[data-translate="business-model"]');
+            const O2PToken = document.querySelector('[data-translate="o2p-token"]');
+            const FinanceCarbon = document.querySelector('[data-translate="finance-carbon"]');
+
+
+            
+            
+            
+            
+            
+            
             //bottom
             const bannerTitle = document.querySelector('[data-translate="banner-title"]');
             const bannerDescription = document.querySelector('[data-translate="banner-description"]');
@@ -610,11 +671,6 @@ $(function () {
             const bottomProduct = document.querySelector('[data-translate="bottom-product"]');
             const bottomRoadmap = document.querySelector('[data-translate="bottom-roadmap"]');
 
-            //how it works
-            const HowItWorks = document.querySelector('[data-translate="howitworks"]');
-            const StepHow = document.querySelector('[data-translate="stephow"]');
-            
-            
             
             if (translations[Lang]) {
             //top banner titles
@@ -647,6 +703,13 @@ $(function () {
             //how it works
             HowItWorks.innerHTML = translations[Lang]['howitworks'];
             StepHow.innerHTML = translations[Lang]['stephow'];
+
+
+            //business model
+            BusinessModel.innerHTML = translations[Lang]['business-model'];
+            O2PToken.innerHTML = translations[Lang]['o2p-token'];
+            FinanceCarbon.innerHTML = translations[Lang]['finance-carbon'];
+
             
             
             
