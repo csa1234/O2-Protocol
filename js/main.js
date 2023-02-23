@@ -371,9 +371,24 @@ $(function () {
             'financing-title':'Reforestations, Solar Panels & Wind power projects',
             'financing-text':'Partnership with Solar panels & wind power companies startup projects.<br>O2-Protocol will be able to finance them and become also a shareholder.<br>Hydroelectrics will also be in the aim thru special partnership agreement with country governments in the future.',
 
+            //ROADMAP
+            'roadmap-title':'Roadmap',
+            'roadmap-description':'This is our 2023 roadmap, and its possible we agregate even more tasks thru the current year.',
+            'roadmap1':'<span>March, 2023</span>SEED ROUND',
+            'roadmap1-description': '● Seed financial round<br>● Private Sale A<br>● Legal status establishment<br>● Private Sale B',
 
-        
-                
+            'roadmap2':'<span>April, 2023</span>PROJECT LAUNCH',
+            'roadmap2-description': '● First leveraged liquidity pools<br>● APP Desktop version',
+
+            'roadmap3':'<span>July, 2023</span>NFT MARKETPLACE & BRIDGE',
+            'roadmap3-description': '● Self NFT tokenization bridge<br>● Carbon offset NFT marketplace<br>● Crowdfunding platform dAPP integration<br>● Mobile APP',
+
+            'roadmap4':'LEGAL COMPLIANCE & KYC',
+            'roadmap4-description': '● Soy, Rice, Wheat & Corn commodities tokenization<br>● KYC legal compliance<br>● Anti Money Laundry legal compliance<br>● Debit card',
+            
+            //ABOUT US
+            'aboutus': 'About Us',
+            'aboutus-description': 'O2-Protocol began as a conceptual idea at the beginning of 2019.<br><br>By 2020 O2-Protocol began a pre-incubation process with the National University of Asunción, Start-up Lab division, culminating the pre-incubation process in early 2022 after a long period of research in various areas such as marketing, finance, carbon offset market, agribusiness among other areas.<br><br>In mid-2022 we started the final incubation process.<br><br>This is the first time in the entire crypto world, where a DeFi project is combined with a real business model like carbon offset trading to generate a stream of income in the crypto environment.',
                                  
 
 
@@ -472,6 +487,25 @@ $(function () {
             'financing-title':'Reforestaciones, Paneles Solares y Proyectos Eólicos',
             'financing-text':'Asociación con proyectos de puesta en marcha de empresas de paneles solares y energía eólica.<br>O2-Protocol podrá financiarlos y convertirse también en accionista.<br>La energía hidroeléctrica también estará en el objetivo a través de un acuerdo de asociación especial con los gobiernos de los países en el futuro.',
 
+            //ROADMAP
+            'roadmap-title':'Hoja de ruta',
+            'roadmap-description':'Esta es nuestra hoja de ruta para 2023 y es posible que agreguemos aún más tareas hasta el año en curso.',
+            'roadmap1':'<span>Marzo, 2023</span>RONDA FINANCIERA: SEMILLA',
+            'roadmap1-description': '● Ronda financiera semilla<br>● Venta privada A<br>● Establecimiento de estatus legal<br>● Venta privada B',
+
+            'roadmap2':'<span>Abril, 2023</span>LANZAMIENTO DEL PROYECTO',
+            'roadmap2-description': '● Primeros fondos de liquidez apalancados<br>● APP Versión escritorio',
+
+            'roadmap3':'<span>Julio, 2023</span>MERCADO DE NFT Y PUENTE DE TOKENIZACIÓN',
+            'roadmap3-description': '● Puente de tokenización NFT propio<br>● Mercado NFT de compensación de carbono<br>● Integración dAPP de la plataforma de financiación colectiva<br>● Aplicación móvil',
+
+            'roadmap4':'<span>Noviembre, 2023</span>CUMPLIMIENTO LEGAL Y KYC',
+            'roadmap4-description': '● Tokenización de materias primas de soya, arroz, trigo y maíz<br> ● Cumplimiento legal de KYC<br> ● Cumplimiento legal contra el lavado de dinero<br> ● Tarjeta de débito',
+
+
+            //ABOUT US
+            'aboutus': 'Sobre nosotros',
+            'aboutus-description': 'O2-Protocol comenzó como una idea conceptual a principios de 2019.<br><br>Para 2020 O2-Protocol inició un proceso de pre-incubación con la Universidad Nacional de Asunción, división Start-up Lab, culminando el proceso de pre-incubación a principios de 2022 tras un largo periodo de investigación en varias áreas como marketing, finanzas, mercado de compensación de carbono, negocios agrícolas entre otras áreas.<br><br>A mediados de 2022 comenzamos el proceso de final de incubación y la etapa de resultado final es ahora.<br><br>Esta es la primera vez en todo el mundo criptográfico, donde un proyecto DeFi se combina con un modelo comercial real como el comercio de compensación de carbono para generar un flujo de ingresos en el entorno criptográfico.',
 
 
             //bottom
@@ -563,6 +597,24 @@ $(function () {
                 'financing-title':'Projetos de reflorestamento, painéis solares e energia eólica',
                 'financing-text':'Parceria com projetos de inicialização de empresas de painéis solares e energia eólica.<br>O2-Protocol poderá financiá-los e também se tornar um acionista.<br>As hidrelétricas também estarão no objetivo por meio de um acordo de parceria especial com os governos dos países no futuro.',
 
+                //ROADMAP
+                'roadmap-title':'Roteiro',
+                'roadmap-description':'Este é o nosso roteiro para 2023, e é possível que agreguemos ainda mais tarefas ao longo deste ano.',
+                'roadmap1':'<span>MARÇO, 2023</span>RODADA FINANCEIRA: SEMENTE',
+                'roadmap1-description': '● Rodada financeira semente<br>● Venda Privada A<br>● Constituição do Estatuto Jurídico<br>● Venda Privada B',
+
+                'roadmap2':'<span>Abril de 2023</span>LANÇAMENTO DO PROJETO',
+                'roadmap2-description': '● Primeiros fundos de liquidez alavancados<br>● Versão APP Desktop',
+
+                'roadmap3':'<span>julho de 2023</span>MERCADO NFT E PONTE DE TOKENIZAÇÃO',
+                'roadmap3-description': '● Ponte de tokenização de auto NFT<br>● Mercado NFT de compensação de carbono<br>● Plataforma de crowdfunding integração dAPP<br>● APP móvel',
+
+                'roadmap4':'<span>Novembro de 2023</span>CONFORMIDADE LEGAL E KYC',
+                'roadmap4-description': '● Tokenização de commodities de soja, arroz, trigo e milho<br>● Conformidade legal KYC<br>● Conformidade legal antilavagem de dinheiro<br>● Cartão de débito',
+
+                //ABOUT US
+                'aboutus': 'Sobre nós',
+                'aboutus-description': 'O2-Protocol começou como uma ideia conceitual no início de 2019.<br><br>Em 2020, O2-Protocol iniciou um processo de pré-incubação com a Universidade Nacional de Assunção, divisão de Start-up Lab, culminando no processo de pré-incubação no início de 2022 após um longo período de pesquisa em diversas áreas como marketing, finanças, mercado de compensação de carbono, agronegócio entre outras áreas.<br><br>Em meados de 2022 iniciamos o processo final de incubação.<br><br> Esta é a primeira vez em todo o mundo criptográfico, onde um projeto DeFi é combinado com um modelo de negócios real, como o comércio de compensação de carbono, para gerar um fluxo de renda no ambiente criptográfico.',
                     
                 
                 //bottom
@@ -648,8 +700,24 @@ $(function () {
                 'financing-title':'재조림, 태양광 패널 및 풍력 발전 프로젝트',
                 'financing-text':'태양광 패널 및 풍력 발전 회사 스타트업 프로젝트와의 파트너십.<br>O2-Protocol이 자금을 조달하고 주주가 될 수도 있습니다.<br>Hydroelectrics도 향후 국가 정부와의 특별 파트너십 계약을 통해 목표로 삼을 것입니다.',
 
+                //ROADMAP
+                'roadmap-title':'로드맵',
+                'roadmap-description':'이것은 우리의 2023년 로드맵이며 올해까지 더 많은 작업을 통합할 가능성이 있습니다.',
+                'roadmap1':'<span>2023년 3월</span>파이낸셜 라운드: SEED',
+                'roadmap1-description': '● 시드 파이낸셜 라운드<br>● 프라이빗 세일 A<br>● 법적 지위 확립<br>● 프라이빗 세일 B',
 
+                'roadmap2':'<span>2023년 4월</span>프로젝트 런칭',
+                'roadmap2-description': '● 최초의 레버리지 유동성 펀드<br>● 앱 데스크톱 버전',
 
+                'roadmap3':'<span>2023년 7월</span>NFT 시장 및 토큰화 브리지',
+                'roadmap3-description': '● 자체 NFT 토큰화 브릿지<br>● 탄소 상쇄 NFT 마켓플레이스<br>● 크라우드 펀딩 플랫폼 dAPP 통합<br>● 모바일 앱',
+
+                'roadmap4':'<span>2023년 11월</span>법적 준수 및 KYC',
+                'roadmap4-description': '● 콩, 쌀, 밀 및 옥수수 상품 토큰화<br>● KYC 법률 준수<br>● 자금 세탁 방지 법률 준수<br>● 직불 카드',
+
+                //ABOUT US
+                'aboutus': '회사 소개',
+                'aboutus-description': 'O2-Protocol은 2019년 초 개념적 아이디어로 시작되었습니다.<br><br>2020년까지 O2-Protocol은 National University of Asunción, Start-up Lab 부서와 사전 인큐베이션 프로세스를 시작하여 사전 인큐베이션 프로세스를 마무리했습니다. 마케팅, 금융, 탄소 상쇄 시장, 농업 관련 비즈니스 등 다양한 분야에서 오랜 연구 끝에 2022년 초에.<br><br>2022년 중반에 최종 인큐베이션 프로세스를 시작했습니다.<br><br> DeFi 프로젝트가 탄소 상쇄 거래와 같은 실제 비즈니스 모델과 결합되어 암호화 환경에서 수입 흐름을 생성하는 것은 전체 암호화폐 세계에서 처음입니다.',
 
                         
                     
@@ -734,7 +802,24 @@ $(function () {
                 'financing-title':'重新造林、太陽能電池板和風力發電項目',
                 'financing-text':'與太陽能電池板和風力發電公司的初創項目合作。<br>O2-Protocol 將能夠為其提供資金並成為其股東。<br>水電也將在未來通過與各國政府的特殊合作協議達成目標。',
 
+                //ROADMAP
+                'roadmap-title':'路線圖',
+                'roadmap-description':'這是我們的 2023 年路線圖，我們可能會在今年匯總更多任務。',
+                'roadmap1':'<span>2023 年 3 月</span>融資輪：SEED',
+                'roadmap1-description': '● 種子輪融資<br>● 私募A<br>● 法律地位確立<br>● 私募B',
 
+                'roadmap2':'<span>2023 年 4 月</span>項目啟動',
+                'roadmap2-description': '● 第一槓桿流動資金<br>● APP桌面版',
+
+                'roadmap3':'<span>2023 年 7 月</span>NFT 市場和代幣化橋樑',
+                'roadmap3-description': '● 自 NFT 代幣化橋樑<br>● 碳抵消 NFT 市場<br>● 眾籌平台 dAPP 集成<br>● 移動應用程序',
+
+                'roadmap4':'<span>2023 年 11 月</span>法律合規與 KYC',
+                'roadmap4-description': '● 大豆、大米、小麥和玉米商品代幣化<br>● KYC 合規性<br>● 反洗錢合規性<br>● 借記卡',
+
+                //ABOUT US
+                'aboutus': '關於我們',
+                'aboutus-description': 'O2-Protocol 始於 2019 年初的概念性想法。<br><br>到 2020 年，O2-Protocol 開始與亞松森國立大學初創實驗室部門進行預孵化過程，最終完成預孵化過程在營銷、金融、碳抵消市場、農業綜合企業等各個領域進行了長期研究後，於 2022 年初啟動。<br><br>2022 年年中，我們開始了最後的孵化過程。<br><br>這是整個加密世界中第一次將 DeFi 項目與碳抵消交易等真實商業模式相結合，從而在加密環境中產生收入流。',
 
 
                     
@@ -823,9 +908,24 @@ $(function () {
                 'financing-title':'植林、ソーラーパネル、風力発電プロジェクト',
                 'financing-text':'ソーラー パネルおよび風力発電会社のスタートアップ プロジェクトとのパートナーシップ。<br>O2-Protocol は、それらに資金を提供し、株主にもなることができます。<br>水力発電も、将来的には各国政府との特別なパートナーシップ契約を通じて目指す予定です。',
                 
+                //ROADMAP
+                'roadmap-title':'ロードマップ',
+                'roadmap-description':'これは 2023 年のロードマップであり、今年中にさらに多くのタスクを集約する可能性があります。',
+                'roadmap1':'<span>2023 年 3 月</span>ファイナンシャル ラウンド: シード',
+                'roadmap1-description': '●シード資金調達ラウンド<br>●プライベートセールA<br>●法的地位確立<br>●プライベートセールB',
 
+                'roadmap2':'<span>2023 年 4 月</span>プロジェクトの立ち上げ',
+                'roadmap2-description': '● 初めて活用された流動性ファンド<br>● APP デスクトップ バージョン',
 
+                'roadmap3':'<span>2023 年 7 月</span>NFT マーケットプレイス & トークナイゼーション ブリッジ',
+                'roadmap3-description': '● セルフ NFT トークン化ブリッジ<br>● カーボン オフセット NFT マーケットプレイス<br>● クラウドファンディング プラットフォーム dAPP 統合<br>● モバイル APP',
 
+                'roadmap4':'<span>2023 年 11 月</span>法令順守とKYC',
+                'roadmap4-description': '● 大豆、米、小麦、とうもろこし商品のトークン化<br>● KYC 法への準拠<br>● アンチマネー ランドリー法への準拠<br>● デビットカード',
+
+                //ABOUT US
+                'aboutus': '私たちに関しては',
+                'aboutus-description': 'O2-Protocol は 2019 年の初めに概念的なアイデアとして始まりました。<br><br>2020 年までに、O2-Protocol はアスンシオン国立大学のスタートアップ ラボ部門とのプレインキュベーション プロセスを開始し、プレインキュベーション プロセスの頂点に達しました。マーケティング、金融、カーボン オフセット市場、アグリビジネスなど、さまざまな分野での長期にわたる調査を経て、2022 年初頭に設立されました。<br><br>2022 年半ばに、最終的なインキュベーション プロセスを開始しました。<br><br>これは、DeFiプロジェクトがカーボンオフセット取引のような実際のビジネスモデルと組み合わされて、暗号環境で収入の流れを生み出す、暗号世界全体で初めてのことです。',
 
                 
 
@@ -915,6 +1015,27 @@ $(function () {
             const FinancingTitle = document.querySelector('[data-translate="financing-title"]');
             const FinancingText = document.querySelector('[data-translate="financing-text"]');
 
+            //ROADMAP
+
+            const RoadmapTitle = document.querySelector('[data-translate="roadmap-title"]');
+            const RoadmapDescription = document.querySelector('[data-translate="roadmap-description"]');
+            const Roadmap1 = document.querySelector('[data-translate="roadmap1"]');
+            const Roadmap1Description = document.querySelector('[data-translate="roadmap1-description"]');
+
+            const Roadmap2 = document.querySelector('[data-translate="roadmap2"]');
+            const Roadmap2Description = document.querySelector('[data-translate="roadmap2-description"]');
+
+            const Roadmap3= document.querySelector('[data-translate="roadmap3"]');
+            const Roadmap3Description = document.querySelector('[data-translate="roadmap3-description"]');
+
+            const Roadmap4 = document.querySelector('[data-translate="roadmap4"]');
+            const Roadmap4Description = document.querySelector('[data-translate="roadmap4-description"]');
+
+            //ABOUT US
+            const AboutUs = document.querySelector('[data-translate="aboutus"]');
+            const AboutUsDescription = document.querySelector('[data-translate="aboutus-description"]');
+
+            
             
             
             
@@ -999,6 +1120,27 @@ $(function () {
             TokenizationProductText.innerHTML = translations[Lang]['tokenization-product-text'];
             FinancingTitle.innerHTML = translations[Lang]['financing-title'];
             FinancingText.innerHTML = translations[Lang]['financing-text'];
+
+            //ROADMAP
+            RoadmapTitle.innerHTML = translations[Lang]['roadmap-title'];
+            RoadmapDescription.innerHTML = translations[Lang]['roadmap-description'];
+            Roadmap1.innerHTML = translations[Lang]['roadmap1'];
+            Roadmap1Description.innerHTML = translations[Lang]['roadmap1-description'];
+
+            Roadmap2.innerHTML = translations[Lang]['roadmap2'];
+            Roadmap2Description.innerHTML = translations[Lang]['roadmap2-description'];
+
+            Roadmap3.innerHTML = translations[Lang]['roadmap3'];
+            Roadmap3Description.innerHTML = translations[Lang]['roadmap3-description'];
+
+            Roadmap4.innerHTML = translations[Lang]['roadmap4'];
+            Roadmap4Description.innerHTML = translations[Lang]['roadmap4-description'];
+
+            //ABOUT USS
+            AboutUs.innerHTML = translations[Lang]['aboutus'];
+            AboutUsDescription.innerHTML = translations[Lang]['aboutus-description'];
+
+
 
 
 
