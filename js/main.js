@@ -390,9 +390,36 @@ $(function () {
             'aboutus': 'About Us',
             'aboutus-description': 'O2-Protocol began as a conceptual idea at the beginning of 2019.<br><br>By 2020 O2-Protocol began a pre-incubation process with the National University of Asunción, Start-up Lab division, culminating the pre-incubation process in early 2022 after a long period of research in various areas such as marketing, finance, carbon offset market, agribusiness among other areas.<br><br>In mid-2022 we started the final incubation process.<br><br>This is the first time in the entire crypto world, where a DeFi project is combined with a real business model like carbon offset trading to generate a stream of income in the crypto environment.',
                                  
+            //OPERATING TEAM
+            'operating':'OPERATING TEAM',
+            'cesar': 'Cesar is a lawyer and blockchain developer with over 12 years experience in laws and over<br>20 years in programming & stock exchange trades.',
+            'cesar-title':'Cesar Saguier<span>CEO/CTO, Blockchain dev<br>Lawyer, Founder</span>',
+            'maria':'>Maria Liz brings a solid portfolio of financial management and administrative experience.<br>She has vast experience in the field of laws & notary, as well as in administration and portfolio management.',
+            'maria-title':'Maria Liz Galeano<span>Chief Financial Officer & Legal Advisor</span>',
+            'ale':'Ale is a marketing stragist consultant and advisor, with a vast network of contacts at various levels internationally.<br>He has a Master of Science in engineering and management with more than 21 years.',
+            'ale-title':'Alejandro Nuñez<span>Chief Strategy Officer<br>Marketing & Innovation</span>',
+            'erika':'More than 20 years of professional experience as consultant & advisor.<br>Professional skils in the paradigm of sustainability, its environmental implications, sociocultural and economic at the regional level.',
+            'erika-title':'Erika Beckelmann<span>Architect in Sustainable Environmental Management</span>',
 
 
+            //100 MILLION
+            '100million':'100 Millions O2P Tokens',
+            '100million-text':'The voluntary carbon offset market, which was worth about $2 billion in 2021, will grow to $10-40 billion in value by 2030',
+            '100million-text2':'There will be no more than 100 millions O2P tokens and with current market size of $2 billions<br> that is a 1:20 ratio, which translate to a $20 per token with current Carbon offset market cap.<br>O2P will constanly add marketcap value thru the injection of new project certification and tokenization.',
             
+
+            //TOKEN DISTRIBUTION
+            'token-distribution':'Token Distribution',
+            'token-distribution-text':'O2-Protocol will utilize a vesting model of 12 months for each financial round at an average of 8.33% monthly vesting to avoid price dump and pump fluctuations.<br><br>● Seed round: O2P token price will be offered at 0.45 MATIC per token<br>● Private Sale A: O2P token price will be offered at 0.65 MATIC per token<br>● Private Sale B: O2P token price will be offered at 0.85 MATIC per token',
+            'tokentext1': 'Airdrop: 0.1%',
+            'tokentext2': 'Development: 20%',
+            'tokentext3': 'Liquidity Farming: 26%',
+            'tokentext4': 'Seed, Private Sale A & B: 25%',
+            'tokentext5': 'Team founder: 20%',
+            'tokentext6': '>Marketing & Advisors: 8.9%',
+
+
+
 
 
             //bottom
@@ -507,6 +534,31 @@ $(function () {
             'aboutus': 'Sobre nosotros',
             'aboutus-description': 'O2-Protocol comenzó como una idea conceptual a principios de 2019.<br><br>Para 2020 O2-Protocol inició un proceso de pre-incubación con la Universidad Nacional de Asunción, división Start-up Lab, culminando el proceso de pre-incubación a principios de 2022 tras un largo periodo de investigación en varias áreas como marketing, finanzas, mercado de compensación de carbono, negocios agrícolas entre otras áreas.<br><br>A mediados de 2022 comenzamos el proceso de final de incubación y la etapa de resultado final es ahora.<br><br>Esta es la primera vez en todo el mundo criptográfico, donde un proyecto DeFi se combina con un modelo comercial real como el comercio de compensación de carbono para generar un flujo de ingresos en el entorno criptográfico.',
 
+            //OPERATING TEAM
+            'operating':'EQUIPO OPERATIVO',
+            'cesar': 'Cesar es abogado y desarrollador de blockchain con más de 12 años de experiencia en leyes y más de 20 años en programación y operaciones bursátiles.',
+            'cesar-title':'Cesar Saguier<span>CEO/CTO, Dev. de Blockchain<br>Abogado, Fundador</span>',
+            'maria':'Maria Liz aporta un sólido portafolio de gestión financiera y experiencia administrativa.<br>Cuenta con vasta experiencia en el campo de leyes y notariado, así como en administración y manejo de portafolios.',
+            'maria-title':'Maria Liz Galeano<span>Directora Financiera y Asesora Legal</span>',
+            'ale':'Ale es consultor y asesor estratega de marketing, con una vasta red de contactos en varios niveles a nivel internacional.<br>Tiene una Maestría en Ciencias en ingeniería y administración con más de 21 años.',
+            'ale-title':'Alejandro Nuñez<span>Director de Estrategia<br>Marketing e Innovación</span>',
+            'erika':'Más de 20 años de experiencia profesional como consultor & asesor.<br>Competencias profesionales en el paradigma de la sustentabilidad, sus implicaciones ambientales, socioculturales y económicas a nivel regional.',
+            'erika-title':'Erika Beckelmann<span>Arquitecta en Gestión Ambiental Sostenible</span>',
+
+            //100 MILLION
+            '100million':'100 millones de tokens O2P',
+            '100million-text':'El mercado voluntario de compensación de carbono, que valía alrededor de $ 2 mil millones en 2021, crecerá a $ 10-40 mil millones en valor para 2030',
+            '100million-text2':'No habrá más de 100 millones de tokens O2P y con un tamaño de mercado actual de $ 2 mil millones<br> que es una proporción de 1:20, lo que se traduce en $ 20 por token con la capitalización actual de mercado de compensación de carbono.<br> O2P agregará constantemente valor de capitalización de mercado a través de la inyección de nueva certificación y tokenización de proyectos.',
+
+            //TOKEN DISTRIBUTION
+            'token-distribution':'Distribución de tokens',
+            'token-distribution-text':'O2-Protocol utilizará un modelo de adjudicación de 12 meses para cada ronda de financiación, con un promedio de 8,33 % de adjudicación mensual para evitar la presión de venta.<br><br> ● Ronda semilla: el precio del token O2P se ofrecerá a 0,45 MATIC por token<br>● Venta privada A: el precio del token O2P se ofrecerá a 0,65 MATIC por token<br>● Venta privada B: el precio del token O2P se ofrecerá a 0,85 MATIC por token',
+            'tokentext1': 'Airdrop: 0.1%',
+            'tokentext2': 'Desarrollo: 20%',
+            'tokentext3': 'Fondo de liquidez para agricultura criptográfica',
+            'tokentext4': 'Ronda Semilla, Venta Privada A y B: 25%',
+            'tokentext5': 'Equipo Fundador: 20%',
+            'tokentext6': 'Marketing y Asesores: 8,9%',
 
             //bottom
             'bottom-feature': 'Características',
@@ -615,8 +667,34 @@ $(function () {
                 //ABOUT US
                 'aboutus': 'Sobre nós',
                 'aboutus-description': 'O2-Protocol começou como uma ideia conceitual no início de 2019.<br><br>Em 2020, O2-Protocol iniciou um processo de pré-incubação com a Universidade Nacional de Assunção, divisão de Start-up Lab, culminando no processo de pré-incubação no início de 2022 após um longo período de pesquisa em diversas áreas como marketing, finanças, mercado de compensação de carbono, agronegócio entre outras áreas.<br><br>Em meados de 2022 iniciamos o processo final de incubação.<br><br> Esta é a primeira vez em todo o mundo criptográfico, onde um projeto DeFi é combinado com um modelo de negócios real, como o comércio de compensação de carbono, para gerar um fluxo de renda no ambiente criptográfico.',
-                    
                 
+                //OPERATING TEAM
+                'operating':'EQUIPE OPERACIONAL',
+                'cesar': 'Cesar é um advogado e desenvolvedor de blockchain com mais de 12 anos de experiência em leis e mais de<br>20 anos em programação e operações de bolsa de valores.',
+                'cesar-title':'Cesar Saguier<span>CEO/CTO, Blockchain dev<br>Advogado, Fundador</span>',
+                'maria':'Maria Liz traz consigo um forte portefólio de gestão financeira e experiência administrativa.<br>Tem uma vasta experiência na área jurídica e notarial, bem como em administração e gestão de carteiras.',
+                'maria-title':'Maria Liz Galeano<span>Diretora Financeira e Assessora Jurídica</span>',
+                'ale':'Ale é um consultor e conselheiro estratégico de marketing, com uma vasta rede de contactos a vários níveis a nível internacional.<br>Tem um Master of Science em engenharia e gestão com mais de 21 anos.',
+                'ale-title':'Alejandro Nuñez<span>Diretor de Estratégia<br>Marketing e Inovação</span>',
+                'erika':'Mais de 20 anos de experiência profissional como consultor & assessor.<br>Competências profissionais no paradigma da sustentabilidade, suas implicações ambientais, socioculturais e económicas a nível regional.',
+                'erika-title':'Erika Beckelmann<span>Arquiteta em Gestão Ambiental Sustentável</span>',
+
+                //100 MILLION
+                '100million':'100 milhões de tokens O2P',
+                '100million-text':'O mercado voluntário de compensação de carbono, que valia cerca de US$ 2 bilhões em 2021, crescerá para US$ 10-40 bilhões em valor até 2030',
+                '100million-text2':'Não haverá mais de 100 milhões de tokens O2P e com tamanho de mercado atual de US$ 2 bilhões<br> ou seja, uma proporção de 1:20, que se traduz em US$ 20 por token com valor de mercado de compensação de carbono atual.<br>O2P aumentará constantemente valor de mercado por meio da injeção de certificação e tokenização de novos projetos.',
+
+                   
+                //TOKEN DISTRIBUTION
+                'token-distribution':'Distribuição de tokens',
+                'token-distribution-text':'O2-Protocol usará um modelo de alocação de 12 meses para cada rodada de financiamento, com uma média de alocação mensal de 8,33% para evitar a pressão de venda.<br><br> ● Rodada inicial: o preço do token O2P será oferecido a 0,45 MATIC por token<br> ● Venda privada A: o preço do token O2P será oferecido a 0,65 MATIC por token<br>● Venda privada B: o preço do token O2P será oferecido a 0,85 MATIC por token',
+                'tokentext1': 'Airdrop: 0.1%',
+                'tokentext2': 'Desenvolvimento: 20%',
+                'tokentext3': 'Pool de liquidez para cultivo de criptomoedas: 26%',
+                'tokentext4': 'Semente, Venda Privada A & B: 25%',
+                'tokentext5': 'Fundador da equipe: 20%',
+                'tokentext6': 'Marketing & Consultores: 8,9%',
+
                 //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
@@ -719,7 +797,31 @@ $(function () {
                 'aboutus': '회사 소개',
                 'aboutus-description': 'O2-Protocol은 2019년 초 개념적 아이디어로 시작되었습니다.<br><br>2020년까지 O2-Protocol은 National University of Asunción, Start-up Lab 부서와 사전 인큐베이션 프로세스를 시작하여 사전 인큐베이션 프로세스를 마무리했습니다. 마케팅, 금융, 탄소 상쇄 시장, 농업 관련 비즈니스 등 다양한 분야에서 오랜 연구 끝에 2022년 초에.<br><br>2022년 중반에 최종 인큐베이션 프로세스를 시작했습니다.<br><br> DeFi 프로젝트가 탄소 상쇄 거래와 같은 실제 비즈니스 모델과 결합되어 암호화 환경에서 수입 흐름을 생성하는 것은 전체 암호화폐 세계에서 처음입니다.',
 
-                        
+                //OPERATING TEAM
+                'operating':'운영팀',
+                'cesar': 'Cesar는 법률 분야에서 12년 이상의 경력과 프로그래밍 및 증권 거래 분야에서 20년 이상의 경력을 가진 변호사이자 블록체인 개발자입니다.',
+                'cesar-title':'Cesar Saguier<span>CEO/CTO, Blockchain dev<br>변호사, 설립자</span>',
+                'maria':'Maria Liz는 강력한 재무 관리 및 관리 경험 포트폴리오를 제공합니다.<br>그녀는 법률 및 공증인 분야뿐만 아니라 관리 및 포트폴리오 관리 분야에서도 방대한 경험을 보유하고 있습니다.',
+                'maria-title':'Maria Liz Galeano<span>최고 재무 책임자 및 법률 고문</span>',
+                'ale':'Ale은 국제적으로 다양한 수준의 광대한 인맥 네트워크를 보유한 마케팅 전략가 컨설턴트이자 고문입니다.<br>그는 21년 이상 엔지니어링 및 관리 분야에서 이학 석사 학위를 받았습니다.',
+                'ale-title':'Alejandro Nuñez<span>최고 전략 책임자<br>마케팅 및 혁신</span>',
+                'erika':'컨설턴트 및 고문으로서 20년 이상의 전문적인 경험.<br>지속 가능성의 패러다임, 환경 영향, 지역 수준의 사회 문화적 및 경제적 전문 기술.',
+                'erika-title':'Erika Beckelmann<span>지속 가능한 환경 관리 설계자</span>',
+
+                //100 MILLION
+                '100million':'1억 개의 O2P 토큰',
+                '100million-text':'2021년 약 20억 달러 규모였던 자발적 탄소 상쇄 시장은 2030년까지 100~400억 달러 규모로 성장',
+                '100million-text2':'O2P 토큰은 1억 개를 넘지 않을 것이며 현재 시장 규모는 20억 달러<br>이며 이는 1:20 비율이며 현재 탄소 상쇄 시가 총액으로 토큰당 20달러에 해당합니다.<br>O2P는 지속적으로 추가할 것입니다. 새로운 프로젝트 인증 및 토큰화 주입을 통한 시가총액.',
+                 
+                //TOKEN DISTRIBUTION
+                'token-distribution':'토큰 분배',
+                'token-distribution-text':'O2-Protocol은 매도 압력을 피하기 위해 평균 8.33%의 월별 할당을 각 펀딩 라운드에 12개월 할당 모델을 사용합니다.<br><br> ● 시드 라운드: O2P 토큰 가격은 토큰당 0.45 MATIC으로 제공됩니다.<br> ● Private Sale A: O2P 토큰 가격은 토큰당 0.65 MATIC으로 제공됩니다.<br>● Private Sale B: O2P 토큰 가격은 토큰당 0.85 MATIC으로 제공됩니다.',
+                'tokentext1': '에어드랍: 0.1%',
+                'tokentext2': '개발: 20%',
+                'tokentext3': '암호화폐 농사를 위한 유동성 풀: 26%',
+                'tokentext4': '시드, 프라이빗 세일 A & B: 25%',
+                'tokentext5': '팀 설립자: 20%',
+                'tokentext6': '마케팅 및 고문: 8.9%',
                     
                 //bottom
                 'bottom-feature': 'Características',
@@ -821,8 +923,32 @@ $(function () {
                 'aboutus': '關於我們',
                 'aboutus-description': 'O2-Protocol 始於 2019 年初的概念性想法。<br><br>到 2020 年，O2-Protocol 開始與亞松森國立大學初創實驗室部門進行預孵化過程，最終完成預孵化過程在營銷、金融、碳抵消市場、農業綜合企業等各個領域進行了長期研究後，於 2022 年初啟動。<br><br>2022 年年中，我們開始了最後的孵化過程。<br><br>這是整個加密世界中第一次將 DeFi 項目與碳抵消交易等真實商業模式相結合，從而在加密環境中產生收入流。',
 
+                //OPERATING TEAM
+                'operating':'運營團隊',
+                'cesar': 'Cesar 是一名律師和區塊鏈開發人員，擁有超過 12 年的法律經驗和超過<br>20 年的編程和證券交易交易經驗。',
+                'cesar-title':'Cesar Saguier<span>首席執行官/首席技術官，區塊鏈開發人員<br>律師，創始人</span>',
+                'maria':'Maria Liz 擁有豐富的財務管理和行政經驗。<br>她在法律和公證領域以及行政和投資組合管理方面擁有豐富的經驗。',
+                'maria-title':'Maria Liz Galeano<span>首席財務官兼法律顧問</span>',
+                'ale':'Ale 是一名營銷戰略顧問和諮詢師，在國際上擁有廣泛的各級人脈網絡。<br>他擁有超過 21 年的工程和管理理學碩士學位。',
+                'ale-title':'Alejandro Nuñez<span>首席戰略官<br>營銷與創新</span>',
+                'erika':'擁有超過 20 年的顧問和顧問專業經驗。<br>在可持續發展範式、其環境影響、區域層面的社會文化和經濟方面具有專業技能。',
+                'erika-title':'Erika Beckelmann<span>可持續環境管理建築師</span>',
 
-                    
+                //100 MILLION
+                '100million':'1億個O2P代幣',
+                '100million-text':'自願碳抵消市場在 2021 年價值約 20 億美元，到 2030 年將增長到 10-400 億美元',
+                '100million-text2':'不會有超過 1 億個 O2P 代幣，目前的市場規模為 20 億美元<br>，即 1:20 的比率，這相當於每個代幣 20 美元，具有當前的碳抵消市值。<br>O2P 將不斷增加通過注入新項目認證和標記化來實現市值價值。',
+
+                //TOKEN DISTRIBUTION
+                'token-distribution':'代幣分配',
+                'token-distribution-text':'O2-Protocol 將在每輪融資中使用 12 個月的分配模式，平均每月分配 8.33% 以避免拋售壓力。<br><br> ● 種子輪：O2P 代幣價格將以每個代幣 0.45 MATIC 的價格提供<br> ● 私募 A：O2P 代幣價格將為每個代幣 0.65 MATIC<br>● 私募 B：O2P 代幣價格將為每個代幣 0.85 MATIC',
+                'tokentext1': '空投：0.1%',
+                'tokentext2': '發展：20%',
+                'tokentext3': '加密農業的流動資金池：26%',
+                'tokentext4': '種子、私募 A 和 B：25%',
+                'tokentext5': '團隊創始人：20%',
+                'tokentext6': '營銷和顧問：8.9%',
+                        
                 //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
@@ -927,7 +1053,31 @@ $(function () {
                 'aboutus': '私たちに関しては',
                 'aboutus-description': 'O2-Protocol は 2019 年の初めに概念的なアイデアとして始まりました。<br><br>2020 年までに、O2-Protocol はアスンシオン国立大学のスタートアップ ラボ部門とのプレインキュベーション プロセスを開始し、プレインキュベーション プロセスの頂点に達しました。マーケティング、金融、カーボン オフセット市場、アグリビジネスなど、さまざまな分野での長期にわたる調査を経て、2022 年初頭に設立されました。<br><br>2022 年半ばに、最終的なインキュベーション プロセスを開始しました。<br><br>これは、DeFiプロジェクトがカーボンオフセット取引のような実際のビジネスモデルと組み合わされて、暗号環境で収入の流れを生み出す、暗号世界全体で初めてのことです。',
 
+                //OPERATING TEAM
+                'operating':'運営チーム',
+                'cesar': 'Cesar は、法律分野で 12 年以上、プログラミングと証券取引で 20 年以上の経験を持つ弁護士兼ブロックチェーン開発者です。',
+                'cesar-title':'Cesar Saguier<span>CEO / CTO、ブロックチェーン デベロッパー<br>弁護士、創設者</span>',
+                'maria':'Maria Liz は、財務管理と管理の経験の強力なポートフォリオをもたらします。<br>彼女は、法律と公証人の分野だけでなく、管理とポートフォリオ管理の分野でも豊富な経験を持っています。',
+                'maria-title':'Maria Liz Galeano<span>最高財務責任者兼法律顧問</span>',
+                'ale':'Ale はマーケティング ストラジストのコンサルタント兼アドバイザーであり、国際的にさまざまなレベルで膨大な人脈を持っています。<br>彼は 21 年以上のエンジニアリングと管理の理学修士号を取得しています。',
+                'ale-title':'Alejandro Nuñez<span>最高戦略責任者<br>マーケティング & イノベーション</span>',
+                'erika':'コンサルタントおよびアドバイザーとして 20 年以上の専門的経験。<br>持続可能性のパラダイム、その環境への影響、地域レベルでの社会文化的および経済的側面における専門的スキル。',
+                'erika-title':'Erika Beckelmann<span>持続可能な環境管理の建築家</span>',
+
+                //100 MILLION
+                '100million':'1億のO2Pトークン',
+                '100million-text':'2021 年には約 20 億ドルの価値があった任意のカーボン オフセット市場は、2030 年までに 100 ～ 400 億ドルに成長する見込みです。',
+                '100million-text2':'O2P トークンは 1 億を超えず、現在の市場規模は 20 億ドルです。<br>これは 1:20 の比率であり、現在のカーボン オフセットの時価総額でトークンあたり 20 ドルに相当します。<br>O2P は常に追加されます。新しいプロジェクト認証とトークン化の注入による時価総額の価値。',
                 
+                //TOKEN DISTRIBUTION
+                'token-distribution':'トークンの配布',
+                'token-distribution-text':'O2-Protocol は、売り圧力を避けるために、各資金調達ラウンドに 12 か月の割り当てモデルを使用し、月間平均 8.33% の割り当てモデルを使用します。<br><br> ● シード ラウンド: O2P トークンの価格は、トークンあたり 0.45 MATIC で提供されます<br> ● プライベート セール A: O2P トークンの価格はトークンあたり 0.65 MATIC で提供されます<br>● プライベート セール B: O2P トークンの価格はトークンあたり 0.85 MATIC で提供されます',
+                'tokentext1': 'エアドロップ: 0.1%',
+                'tokentext2': '開発: 20%',
+                'tokentext3': 'クリプトファーミングの流動性プール: 26%',
+                'tokentext4': 'シード、プライベートセール A & B: 25%',
+                'tokentext5': 'チームの創設者: 20%',
+                'tokentex6':'マーケティングとアドバイザー: 8.9%',
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -1035,6 +1185,35 @@ $(function () {
             const AboutUs = document.querySelector('[data-translate="aboutus"]');
             const AboutUsDescription = document.querySelector('[data-translate="aboutus-description"]');
 
+            //OPERATING TEAM
+            const Operating = document.querySelector('[data-translate="operating"]');
+            const Cesar = document.querySelector('[data-translate="cesar"]');
+            const CesarTitle = document.querySelector('[data-translate="cesar-title"]');
+            const Maria = document.querySelector('[data-translate="maria"]');
+            const MariaTitle = document.querySelector('[data-translate="maria-title"]');
+            const Ale = document.querySelector('[data-translate="ale"]');
+            const AleTitle = document.querySelector('[data-translate="ale-title"]');
+            const Erika = document.querySelector('[data-translate="erika"]');
+            const ErikaTitle = document.querySelector('[data-translate="erika-title"]');
+
+            //100 MILLION
+            const Million = document.querySelector('[data-translate="100million"]');
+            const MillionText = document.querySelector('[data-translate="100million-text"]');
+            const MillionText2 = document.querySelector('[data-translate="100million-text2"]');
+
+            //TOKEN DISTRIBUTION
+            const TokenDistribution = document.querySelector('[data-translate="token-distribution"]');
+            const TokenDistributionText = document.querySelector('[data-translate="token-distribution-text"]');
+            const TokenText1 = document.querySelector('[data-translate="tokentext1"]');
+            const TokenText2 = document.querySelector('[data-translate="tokentext2"]');
+            const TokenText3 = document.querySelector('[data-translate="tokentext3"]');
+            const TokenText4 = document.querySelector('[data-translate="tokentext4"]');
+            const TokenText5 = document.querySelector('[data-translate="tokentext5"]');
+            const TokenText6 = document.querySelector('[data-translate="tokentext6"]');
+            
+
+            
+
             
             
             
@@ -1136,9 +1315,38 @@ $(function () {
             Roadmap4.innerHTML = translations[Lang]['roadmap4'];
             Roadmap4Description.innerHTML = translations[Lang]['roadmap4-description'];
 
+            //OPERATING TEAM
+            Operating.innerHTML = translations[Lang]['operating'];
+            Cesar.innerHTML = translations[Lang]['cesar'];
+            CesarTitle.innerHTML = translations[Lang]['cesar-title'];
+            Maria.innerHTML = translations[Lang]['maria'];
+            MariaTitle.innerHTML = translations[Lang]['maria-title'];
+            Ale.innerHTML = translations[Lang]['ale'];
+            AleTitle.innerHTML = translations[Lang]['ale-title'];
+            Erika.innerHTML = translations[Lang]['erika'];
+            ErikaTitle.innerHTML = translations[Lang]['erika-title'];
+
+            //100 MILLION
+            Million.innerHTML = translations[Lang]['100million'];
+            MillionText.innerHTML = translations[Lang]['100million-text'];
+            MillionText2.innerHTML = translations[Lang]['100million-text2'];
+
+
+
             //ABOUT USS
             AboutUs.innerHTML = translations[Lang]['aboutus'];
             AboutUsDescription.innerHTML = translations[Lang]['aboutus-description'];
+
+            //TOKEN DISTRIBUTION
+            TokenDistribution.innerHTML = translations[Lang]['token-distribution'];
+            TokenDistributionText.innerHTML = translations[Lang]['token-distribution-text'];
+
+            TokenText1.innerHTML = translations[Lang]['tokentext1'];
+            TokenText2.innerHTML = translations[Lang]['tokentext2'];
+            TokenText3.innerHTML = translations[Lang]['tokentext3'];
+            TokenText4.innerHTML = translations[Lang]['tokentext4'];
+            TokenText5.innerHTML = translations[Lang]['tokentext5'];
+            TokenText6.innerHTML = translations[Lang]['tokentext6'];
 
 
 
@@ -1436,7 +1644,7 @@ $('.dropdown-item').click(function() {
         "titles": [],
         "dataProvider": [{
                 "category": "Airdrop",
-                "column-1": "1"
+                "column-1": "0.1"
             },
             {
                 "category": "Development",
@@ -1448,7 +1656,7 @@ $('.dropdown-item').click(function() {
             },
             {
                 "category": "Marketing & Advisors",
-                "column-1": "8"
+                "column-1": "8.9"
             },
             {
                 "category": "Team founder",
