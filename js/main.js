@@ -326,14 +326,54 @@ $(function () {
             
             //how it works
             'howitworks':'How it works:',
-            'stephow': '1) O2 Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner<br>2) Verra certifications is then tokenized thru Toucan Protocol NFT<br>3) The NFT is then swaped to USDT<br>4) O2 Protocol keeps 50% of the USDT and 50% goes to the project owner<br>5) 50% of the USDT is swaped to buy back O2P token and remaining will be used<br>   to finance new projects certifcation and provide liquidity to the pools',
+            'stephow': '1) O2-Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner<br>2) Verra certifications is then tokenized thru Toucan Protocol NFT<br>3) The NFT is then swaped to USDT<br>4) O2-Protocol keeps 50% of the USDT and 50% goes to the project owner<br>5) 50% of the USDT is swaped to buy back O2P token and remaining will be used<br>   to finance new projects certifcation and provide liquidity to the pools',
             
                 
             //business model
             'business-model': 'BUSINESS MODEL',
             'o2p-token': 'O2P TOKEN',
 
-            'finance-carbon':'Finance of carbon offset certification projects. O2 Protocol keeps 50% of the face value of the certification at market prices in DEX',
+            'finance-carbon':'Finance of carbon offset certification projects. O2-Protocol keeps 50% of the face value of the certification at market prices in DEX',
+            'finance-banner': 'FINANCE',
+            'monetization-banner': 'MONETIZATION',
+            'monetization-text': 'Tokenization of carbon offset certificates allowing instantly the swapping for other cryptocurrencies through decentralized exchangers (DEX).',
+            'smart-text': 'Receive a proportional percentage on the amount of O2P token you lock on O2-Protocol smartcontract. NFT owners will have access to exclusive and special financial benefits.',
+            'smart-banner': 'SMART MANAGEMENT',
+
+            'retire-text': 'Convert and retire your NFT carbon offset credits back into real world.',
+            'retire-banner': 'RETIRE',
+
+            'tokenization-text': 'O2-Protocol will manage certification process and tokenization of selected projects elected thru votation by smartcontract locked O2P tokens holders .',
+            'tokenization-banner':'TOKENIZATION',
+
+            'farming-text': 'Profit revenues from O2-Protocol treasury will go to liquidity pools, which will become available to users for borrowing at premium discount for leverage farming.',
+            'farming-banner':'LEVERAGED FARMING',
+
+            'price-text': 'O2-Protocol will constantly create income from real world financial assets based on carbon offset certfications and buying back O2P tokens from the market creating buy pressure, which translate to a higher O2P price value.',
+            'price-banner':'PRICE STRATEGY',
+
+            'stake-text':'Lock your O2P token on our smartcontract (stake) and receive a share of the platform overall income revenues and access to voting power on the platform proposals like projects selections and liquidity farming pools creation for the leveraged farming.',
+            'stake-banner':'PASSIVE INCOME',
+
+            //PRODUCT DETAILS
+            'product-title':'Products Details',
+            'product-text': 'Get to known more about our farming strategies,carbon offset projects types & aims.',
+            'product-a':'PASSIVE INCOME',
+            'product-b':'TOKENIZATION',
+            'product-c':'FINANCING',
+
+            'leverage-title':'Leveraged Yield Farming<br>Estimated APR between 20% - 200% on leveraged liquidity pools.',
+            'leverage-text':'Liquidity pools tokens: Bitcoin, Ethereum, Matic, Litecoin, carbon offset tokens, stablecoins & O2P tokens.',
+
+            'tokenization-product-title':'Tokenization of carbon offset projects in Paraguay, Brazil, Argentina & Uruguay (MERCOSUR)<br>Reforestation & protection of forests',
+            'tokenization-product-text':'With an strategic alliance with NGOs in the MERCOSUR, O2-Protocol will<br>work forward with land owners helping them aquiring carbon offset certifications and tokenization<br>helping those project owners generate revenues income on their reforestation and/or forest protection<br>thru our platform.',
+
+            'financing-title':'Reforestations, Solar Panels & Wind power projects',
+            'financing-text':'Partnership with Solar panels & wind power companies startup projects.<br>O2-Protocol will be able to finance them and become also a shareholder.<br>Hydroelectrics will also be in the aim thru special partnership agreement with country governments in the future.',
+
+
+        
+                
                                  
 
 
@@ -385,16 +425,53 @@ $(function () {
             
             //how it works
             'howitworks':'Como funciona:',
-            'stephow': '1) O2 Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado con un acuerdo legal con el propietario del proyecto<br>2) Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT<br>3) Los NFT luego se cambian a USDT<br>4) O2 Protocol se queda con el 50 % del USDT y el otro 50 % va al propietario del proyecto<br>5) El 50% del USDT se intercambia para recomprar el token O2P y se utilizará el resto<br>   para financiar la certifcación de nuevos proyectos y dotar de liquidez a las piscinas de liquidez',
+            'stephow': '1) O2-Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado con un acuerdo legal con el propietario del proyecto<br>2) Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT<br>3) Los NFT luego se cambian a USDT<br>4) O2-Protocol se queda con el 50 % del USDT y el otro 50 % va al propietario del proyecto<br>5) El 50% del USDT se intercambia para recomprar el token O2P y se utilizará el resto<br>   para financiar la certifcación de nuevos proyectos y dotar de liquidez a las piscinas de liquidez',
             
 
             //business model
             'business-model': 'MODELO DE NEGOCIO',
             'o2p-token': 'TOKEN O2P',
 
-            'finance-carbon': 'Financiación de certificación de proyectos de compensación de carbono. O2 Protocol se queda con el 50 % del valor nominal de la certificación al precio del mercado en los DEX',
-
+            'finance-carbon': 'Financiación de certificación de proyectos de compensación de carbono. O2-Protocol se queda con el 50 % del valor nominal de la certificación al precio del mercado en los DEX',
+            'finance-banner': 'FINANZAS',
+            'monetization-banner': 'MONETIZACIÓN',
             
+            'monetization-text': 'Tokenización de certificados de compensación de carbono que permite el intercambio instantáneo por otras criptomonedas a través de cambistas descentralizados (DEX).',
+            'smart-text': 'Reciba un porcentaje proporcional sobre la cantidad de token O2P que bloquea en el contrato inteligente O2-Protocol. Los propietarios de NFT tendrán acceso a beneficios financieros exclusivos y especiales.',
+            'smart-banner': 'GESTIÓN INTELIGENTE',
+
+            'retire-text': 'Convierta y retire sus créditos de compensación de carbono NFT de vuelta al mundo real.',
+            'retire-banner': 'RETIRO',
+
+
+            'tokenization-text': 'O2-Protocol gestionará el proceso de certificación y tokenización de proyectos seleccionados elegidos mediante votación por titulares de tokens O2P bloqueados por contrato inteligente.',
+            'tokenization-banner':'TOKENIZACIÓN',
+
+            'farming-text': 'Los ingresos por ganancias de la tesorería de O2-Protocol se destinarán a fondos de liquidez, que estarán disponibles para que los usuarios tomen préstamos con un descuento premium para apalancar la agricultura criptográfica.',
+            'farming-banner':'GANANCIAS APALANCADAS',
+
+            'price-text': 'O2-Protocol creará constantemente ingresos a partir de activos financieros del mundo real basados ​​en certificaciones de compensación de carbono y la recompra de tokens O2P del mercado creando presión de compra, lo que se traduce en un valor de precio O2P más alto.',
+            'price-banner':'ESTRATEGIA DE PRECIO',
+
+            'stake-text':'Bloquee su token O2P en nuestro contrato inteligente (participación) y reciba una parte de los ingresos generales de la plataforma y acceso al poder de voto en las propuestas de la plataforma, como selecciones de proyectos y creación de fondos de agricultura de liquidez para la agricultura apalancada.',
+            'stake-banner':'INGRESOS PASIVOS',
+
+            'product-title':'Detalles de productos',
+            'product-text': 'Conozca más sobre nuestras estrategias agrícolas, tipos de proyectos de compensación de carbono y objetivos.',
+            'product-a':'INGRESOS PASIVOS',
+            'product-b':'TOKENIZACIÓN',
+            'product-c':'FINANCIACIÓN',
+
+
+            'leverage-title':'Agricultura criptográfica con rendimiento apalancado<br>APR estimado entre 20 % y 200 % en fondos de liquidez apalancados.',
+            'leverage-text':'Tokens de fondos de liquidez: Bitcoin, Ethereum, Matic, Litecoin, tokens de compensación de carbono, monedas estables y tokens O2P.',
+
+            'tokenization-product-title':'Tokenización de proyectos de compensación de carbono en Paraguay, Brasil, Argentina y Uruguay (MERCOSUR)<br>Reforestación y protección de bosques',
+            'tokenization-product-text':'Con una alianza estratégica con ONG en el MERCOSUR, O2-Protocol<br>trabajará con los propietarios de tierras ayudándolos a adquirir certificaciones de compensación de carbono y tokenización<br>ayudando a los propietarios de proyectos a generar ingresos en su reforestación y/o protección forestal< br>a través de nuestra plataforma.',
+
+            'financing-title':'Reforestaciones, Paneles Solares y Proyectos Eólicos',
+            'financing-text':'Asociación con proyectos de puesta en marcha de empresas de paneles solares y energía eólica.<br>O2-Protocol podrá financiarlos y convertirse también en accionista.<br>La energía hidroeléctrica también estará en el objetivo a través de un acuerdo de asociación especial con los gobiernos de los países en el futuro.',
+
 
 
             //bottom
@@ -438,17 +515,53 @@ $(function () {
                 
                 //how it works
                 'howitworks':'Como funciona:',
-                'stephow': '1) O2 Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto<br>2) As certificações de Verra luego são tokenizadas através do Protocolo Toucan NFT<br>3) NFTs são então alterados para USDT<br>4) O2 Protocol fica com 50% do USDT e os outros 50% vão para o dono do projeto<br>5) 50% do USDT é trocado para recomprar o token O2P e o restante será usado<br>   para financiar a certificação de novos projetos e fornecer liquidez a pools de liquidez',
+                'stephow': '1) O2-Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto<br>2) As certificações de Verra luego são tokenizadas através do Protocolo Toucan NFT<br>3) NFTs são então alterados para USDT<br>4) O2-Protocol fica com 50% do USDT e os outros 50% vão para o dono do projeto<br>5) 50% do USDT é trocado para recomprar o token O2P e o restante será usado<br>   para financiar a certificação de novos projetos e fornecer liquidez a pools de liquidez',
                 
                 
                 //business model
                 'business-model': 'MODELO DE NEGÓCIOS',
                 'o2p-token': 'TOKEN O2P',
 
-                'finance-carbon': 'Financiamento de cert carbono. O2 Protocol fica com 50% do valor nominal do certificação a preço de mercado em DEX',
+                'finance-carbon': 'Financiamento de cert carbono. O2-Protocol fica com 50% do valor nominal do certificação a preço de mercado em DEX',
+                'finance-banner': 'FINANÇA',
+                'monetization-banner': 'MONETIZAÇÃO',
+                'monetization-text': 'Tokenização de certificados de compensação de carbono que permite a troca instantânea por outras criptomoedas por meio de trocadores descentralizados (DEXs).',
+                'smart-text': 'Receba uma porcentagem proporcional sobre a quantidade de token O2P que você bloqueia no contrato inteligente O2-Protocol. Proprietários de NFT terão acesso a benefícios financeiros exclusivos e especiais.',
+                'smart-banner': 'GESTÃO INTELIGENTE',
+
+                'retire-text': 'Converta e retire seus créditos de compensação de carbono NFT de volta ao mundo real.',
+                'retire-banner': 'RETIRADA',
 
 
 
+                'tokenization-text': 'O2-Protocol gerenciará o processo de certificação e tokenização de projetos selecionados eleitos por meio de votação por detentores de tokens O2P bloqueados por contrato inteligente.',
+                'tokenization-banner':'TOKENIZAÇÃO',
+
+                'farming-text': 'As receitas de lucro da tesouraria O2-Protocol irão para pools de liquidez, que ficarão disponíveis aos usuários para empréstimos com desconto premium para alavancar o cultivo de criptomoedas.',
+                'farming-banner':'LUCROS ALAVANADOS',
+
+                'price-text': 'O2-Protocol criará constantemente receita de ativos financeiros do mundo real com base em certificações de compensação de carbono e recomprando tokens O2P do mercado, criando pressão de compra, que se traduz em um valor de preço O2P mais alto.',
+                'price-banner':'ESTRATÉGIA DE PREÇOS',
+
+                'stake-text':'Bloqueie seu token O2P em nosso contrato inteligente (aposta) e receba uma parte das receitas gerais da plataforma e acesso ao poder de voto nas propostas da plataforma, como seleções de projetos e criação de pools de agricultura de liquidez para a agricultura alavancada.',
+                'stake-banner':'INGRESSOS PASSIVOS',
+
+
+                'product-title':'Detalhes dos produtos',
+                'product-text': 'Conheça mais sobre nossas estratégias agrícolas, tipos e objetivos de projetos de compensação de carbono.',
+                'product-a':'INGRESSOS PASSIVOS',
+                'product-b':'TOKENIZAÇÃO',
+                'product-c':'FINANCIAMENTO',
+
+
+                'leverage-title':'Cultivo de criptografia de rendimento alavancado<br> APR estimado entre 20% e 200% em pools de liquidez alavancados.',
+                'leverage-text':'Tokens de pools de liquidez: Bitcoin, Ethereum, Matic, Litecoin, tokens de compensação de carbono, stablecoins e tokens O2P.',
+
+                'tokenization-product-title':'Tokenização de projetos de compensação de carbono no Paraguai, Brasil, Argentina e Uruguai (MERCOSUL)<br>Reflorestamento e proteção de florestas',
+                'tokenization-product-text':'Com uma aliança estratégica com ONGs no MERCOSUL, O2-Protocol<br>trabalhará adiante com os proprietários de terras, ajudando-os a adquirir certificações de compensação de carbono e tokenização<br>ajudando os proprietários de projetos a gerar receita com seu reflorestamento e/ou proteção florestal< br>através da nossa plataforma.',
+
+                'financing-title':'Projetos de reflorestamento, painéis solares e energia eólica',
+                'financing-text':'Parceria com projetos de inicialização de empresas de painéis solares e energia eólica.<br>O2-Protocol poderá financiá-los e também se tornar um acionista.<br>As hidrelétricas também estarão no objetivo por meio de um acordo de parceria especial com os governos dos países no futuro.',
 
                     
                 
@@ -488,17 +601,52 @@ $(function () {
                 //how to claim
                 'howtoclaim':'구매한 토큰을 청구하는 방법:',
                 'howtoclaim2':'모든 재정 라운드가 종료되면 매일 0.27%의 베스팅 비율로 구매한 토큰을 청구할 수 있습니다.<br>베스팅 토큰을 받는 동안 잠긴 나머지 베스팅 토큰에 대한 스테이킹 금고의 수익도 받게 됩니다.',
-                
+
                 //how it works
                 'howitworks':'작동 방식:',
-                'stephow': '1) O2 프로토콜은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하며 프로젝트 소유자와의 법적 계약에 구속됩니다.<br>2) 그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.<br>3) 그런 다음 NFT는 Toucan Protocol BCT 토큰으로 전환되고 USDT로 스왑됩니다.<br>4) O2 Protocol은 USDT의 50%를 보유하고 50%는 프로젝트 소유자에게 전달됩니다.<br>5) USDT의 50%는 O2P 토큰을 환매하기 위해 스왑되고 나머지는 사용됩니다.<br>   새로운 프로젝트 인증 자금 조달 및 풀에 유동성 제공',
+                'stephow': '1) O2 프로토콜은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하며 프로젝트 소유자와의 법적 계약에 구속됩니다.<br>2) 그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.<br>3) 그런 다음 NFT는 Toucan Protocol BCT 토큰으로 전환되고 USDT로 스왑됩니다.<br>4) O2-Protocol은 USDT의 50%를 보유하고 50%는 프로젝트 소유자에게 전달됩니다.<br>5) USDT의 50%는 O2P 토큰을 환매하기 위해 스왑되고 나머지는 사용됩니다.<br>   새로운 프로젝트 인증 자금 조달 및 풀에 유동성 제공',
                 
 
                 //business model
                 'business-model': '비즈니스 모델',
                 'o2p-token': 'O2P 토큰',
 
-                'finance-carbon': '탄소 상쇄 인증 프로젝트의 재정. O2 Protocol은 인증의 액면가의 50%를 DEX에서 시가로 유지합니다.',
+                'finance-carbon': '탄소 상쇄 인증 프로젝트의 재정. O2-Protocol은 인증의 액면가의 50%를 DEX에서 시가로 유지합니다.',
+                'finance-banner': '재원',
+                'monetization-banner': '수익화',
+                'monetization-text': '탈중앙화 교환기(DEX)를 통해 다른 암호화폐와 즉시 교환할 수 있는 탄소 상쇄 인증서의 토큰화.',
+                'smart-text': 'O2-Protocol 스마트 계약에 잠근 O2P 토큰 양에 비례하는 비율을 받습니다. NFT 소유자는 독점적이고 특별한 금융 혜택을 받을 수 있습니다.',
+                'smart-banner': '스마트 관리',
+
+                'retire-text': 'NFT 탄소 상쇄 크레딧을 다시 현실 세계로 변환하고 폐기하십시오.',
+                'retire-banner': '철수',
+
+                'tokenization-text': 'O2-Protocol은 스마트 계약으로 잠긴 O2P 토큰 보유자의 투표를 통해 선출된 선택된 프로젝트의 인증 프로세스 및 토큰화를 관리합니다.',
+                'tokenization-banner':'토큰화',
+
+                'farming-text': 'O2-Protocol 금고의 이익 수익은 유동성 풀로 이동하여 사용자가 레버리지 농업을 위해 프리미엄 할인으로 차용할 수 있게 됩니다.',
+                'farming-banner':'레버리지 수익',
+
+                'price-text': 'O2-Protocol은 탄소 상쇄 인증을 기반으로 실제 금융 자산에서 지속적으로 수입을 창출하고 시장에서 O2P 토큰을 다시 구매하여 더 높은 O2P 가격 가치로 변환되는 구매 압력을 생성합니다.',
+                'price-banner':'가격 전략',
+
+                'stake-text':'스마트 계약(지분)에 O2P 토큰을 잠그고 플랫폼 전체 수입 수익의 일부를 받고 레버리지 농업을 위한 프로젝트 선택 및 유동성 농업 풀 생성과 같은 플랫폼 제안에 대한 투표권에 대한 액세스 권한을 받으십시오.',
+                'stake-banner':'잉그레소스 파시보스',
+
+                'product-title':'제품 세부 정보',
+                'product-text': '농업 전략, 탄소 상쇄 프로젝트 유형 및 목표에 대해 자세히 알아보십시오.',
+                'product-a':'잉그레소스 파시보스',
+                'product-b':'토큰화',
+                'product-c':'파이낸싱',
+
+                'leverage-title':'레버리지 수익률 암호화 농업<br> 레버리지 유동성 풀에서 20%에서 200% 사이의 추정 연이율.',
+                'leverage-text':'유동성 풀 토큰: 비트코인, 이더리움, 매틱, 라이트코인, 탄소 상쇄 토큰, 스테이블 코인 및 O2P 토큰.',
+
+                'tokenization-product-title':'파라과이, 브라질, 아르헨티나 및 우루과이(MERCOSUR)의 탄소 상쇄 프로젝트 토큰화<br>삼림 재조림 및 보호',
+                'tokenization-product-text':'MERCOSUR의 NGO와 전략적 제휴를 맺은 O2-Protocol은 토지 소유자와 협력하여 탄소 상쇄 인증 및 토큰화 획득을 돕고<br>프로젝트 소유자가 재조림 및/또는 산림 보호를 통해 수익을 창출하도록 돕습니다.< 우리 플랫폼을 통해.',
+
+                'financing-title':'재조림, 태양광 패널 및 풍력 발전 프로젝트',
+                'financing-text':'태양광 패널 및 풍력 발전 회사 스타트업 프로젝트와의 파트너십.<br>O2-Protocol이 자금을 조달하고 주주가 될 수도 있습니다.<br>Hydroelectrics도 향후 국가 정부와의 특별 파트너십 계약을 통해 목표로 삼을 것입니다.',
 
 
 
@@ -543,13 +691,50 @@ $(function () {
                 
                 //how it works
                 'howitworks':'怎麼運行的：',
-                'stephow': '1) O2 Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議<br>2) 然後通過 Toucan 協議 NFT 將 Verra 認證標記化<br>3）然後NFT到USDT<br>4) O2 Protocol 保留 50% 的 USDT，50% 歸項目所有者所有<br>5) 50%的USDT兌換回購O2P代幣，剩餘部分使用<br>   為新項目認證提供資金並為資金池提供流動性',
+                'stephow': '1) O2-Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議<br>2) 然後通過 Toucan 協議 NFT 將 Verra 認證標記化<br>3）然後NFT到USDT<br>4) O2-Protocol 保留 50% 的 USDT，50% 歸項目所有者所有<br>5) 50%的USDT兌換回購O2P代幣，剩餘部分使用<br>   為新項目認證提供資金並為資金池提供流動性',
                 
                 //business model
                 'business-model': '商業模式',
                 'o2p-token': 'O2P令牌', 
 
-                'finance-carbon': '碳抵消認證項目的融資。 O2 Protocol 在 DEX 中按市場價格保留 50% 的通證面值',
+                'finance-carbon': '碳抵消認證項目的融資。 O2-Protocol 在 DEX 中按市場價格保留 50% 的通證面值',
+                'finance-banner': '金融',
+                'monetization-banner': '貨幣化',
+                'monetization-text': '碳抵消證書的標記化，允許通過去中心化交易所 (DEX) 即時交換其他加密貨幣。',
+                'smart-text': '收到您鎖定在 O2-Protocol 智能合約上的 O2P 代幣數量的比例百分比。 NFT 所有者將可以獲得獨家和特殊的經濟利益。',
+                'smart-banner': '智能管理',
+
+                'retire-text': '將您的 NFT 碳抵消額度轉換並退回現實世界。',
+                'retire-banner': '退出',
+                'tokenization-text': 'O2-Protocol 將管理通過智能合約鎖定的 O2P 代幣持有者投票選出的選定項目的認證過程和代幣化。',
+                'tokenization-banner':'代幣化',
+
+                'farming-text': 'O2-Protocol 資金庫的利潤收入將進入流動性池，用戶可以以溢價借款進行槓桿耕作。',
+                'farming-banner':'槓桿收益',
+
+                'price-text': 'O2-Protocol 將根據碳抵消認證不斷從現實世界的金融資產中創造收入，並從市場上回購 O2P 代幣，從而產生購買壓力，從而轉化為更高的 O2P 價格價值。',
+                'price-banner':'價格策略',
+
+
+                'stake-text':'將您的 O2P 代幣鎖定在我們的智能合約（股份）上，並獲得平台總收入的一部分，並獲得對平台提案的投票權，例如項目選擇和為槓桿農業創建流動性農業池。',
+                'stake-banner':'被動語態',
+
+                'product-title':'產品詳情',
+                'product-text': '進一步了解我們的農業戰略、碳抵消項目類型和目標。',
+                'product-a':'被動語態',
+                'product-b':'代幣化',
+                'product-c':'融資',
+
+                'leverage-title':'槓桿收益加密農業<br> 槓桿流動資金池的年利率估計在 20% 到 200% 之間。',
+                'leverage-text':'流動資金池代幣：比特幣、以太坊、Matic、萊特幣、碳抵消代幣、穩定幣和 O2P 代幣。',
+
+                'tokenization-product-title':'巴拉圭、巴西、阿根廷和烏拉圭 (MERCOSUR) 的碳抵消項目代幣化<br>再造林和森林保護',
+                'tokenization-product-text':'通過與 MERCOSUR 的非政府組織建立戰略聯盟，O2-Protocol 將<br>與土地所有者合作，幫助他們獲得碳抵消認證和代幣化<br>幫助這些項目所有者通過重新造林和/或森林保護產生收入< br>通過我們的平台。',
+
+                'financing-title':'重新造林、太陽能電池板和風力發電項目',
+                'financing-text':'與太陽能電池板和風力發電公司的初創項目合作。<br>O2-Protocol 將能夠為其提供資金並成為其股東。<br>水電也將在未來通過與各國政府的特殊合作協議達成目標。',
+
+
 
 
                     
@@ -601,7 +786,47 @@ $(function () {
                 'o2p-token': 'O2Pトークン',
 
                 'finance-carbon': 'カーボン オフセット認証プロジェクトの資金調達。 O2 プロトコルは、証明書の額面価格の 50% を DEX の市場価格で保持します。',
+                'finance-banner': 'ファイナンス',
+                'monetization-banner': '収益化',
+                'monetization-text': '分散型交換機 (DEX) を介して他の暗号通貨との即時交換を可能にするカーボン オフセット証明書のトークン化。',
+                'smart-text': 'O2-Protocol スマートコントラクトでロックした O2P トークンの量に比例したパーセンテージを受け取ります。 NFT の所有者は、排他的で特別な経済的利益にアクセスできます。',
+                'smart-banner': 'スマート管理',
+
+                'retire-text': 'NFT カーボン オフセット クレジットを変換して、現実の世界に戻します。',
+                'retire-banner': '出金',
+
+                'tokenization-text': 'O2-Protocol は、スマートコントラクトでロックされた O2P トークン保有者による投票を通じて選出された選択されたプロジェクトの認証プロセスとトークン化を管理します。',
+                'tokenization-banner':'トークン化',
+
+                'farming-text': 'O2-Protocol トレジャリーからの収益は流動性プールに送られ、ユーザーはこれを利用して、レバレッジ ファーミングのプレミアム割引価格で借りることができます。',
+                'farming-banner':'レバレッジ収益',
+
+                'price-text': 'O2-Protocol は、カーボン オフセット証明書に基づいて実世界の金融資産から常に収入を生み出し、市場から O2P トークンを買い戻して購入圧力を生み出し、O2P 価格の価値を高めます。',
+                'price-banner':'価格戦略',
+
+
+                'stake-text':'私たちのスマートコントラクト (ステーク) で O2P トークンをロックし、プラットフォーム全体の収入収入の一部を受け取り、プロジェクトの選択やレバレッジド ファーミングのための流動性ファーミング プールの作成などのプラットフォームの提案に対する投票権へのアクセスを受け取ります。',
+                'stake-banner':'イングレソス パッシブ',
+
+                'product-title':'製品詳細',
+                'product-text': '私たちの農業戦略、カーボン オフセット プロジェクトの種類と目的について詳しく知ることができます。',
+                'product-a':'イングレソス パッシブ',
+                'product-b':'トークン化',
+                'product-c':'資金調達',
+
+                'leverage-title':'レバレッジドイールド クリプトファーミング<br> レバレッジド流動性プールの推定 APR は 20% から 200% です。',
+                'leverage-text':'流動性プール トークン: ビットコイン、イーサリアム、マティック、ライトコイン、カーボン オフセット トークン、ステーブルコイン、O2P トークン。',
+
+                'tokenization-product-title':'パラグアイ、ブラジル、アルゼンチン、ウルグアイでのカーボン オフセット プロジェクトのトークン化 (MERCOSUR)<br>森林再生と森林保護',
+                'tokenization-product-text':'メルコスールの NGO との戦略的提携により、O2-Protocol は<br>土地所有者がカーボン オフセット認証とトークン化を取得するのを支援し、<br>これらのプロジェクト所有者が再植林および/または森林保護で収益を生み出すのを支援します<br>私たちのプラットフォームを通じて。',
+
+                'financing-title':'植林、ソーラーパネル、風力発電プロジェクト',
+                'financing-text':'ソーラー パネルおよび風力発電会社のスタートアップ プロジェクトとのパートナーシップ。<br>O2-Protocol は、それらに資金を提供し、株主にもなることができます。<br>水力発電も、将来的には各国政府との特別なパートナーシップ契約を通じて目指す予定です。',
                 
+
+
+
+
                 
 
                 //bottom
@@ -656,7 +881,39 @@ $(function () {
             const BusinessModel = document.querySelector('[data-translate="business-model"]');
             const O2PToken = document.querySelector('[data-translate="o2p-token"]');
             const FinanceCarbon = document.querySelector('[data-translate="finance-carbon"]');
+            const FinanceBanner = document.querySelector('[data-translate="finance-banner"]');
+            const MonetizationBanner = document.querySelector('[data-translate="monetization-banner"]');
+            const MonetizationText = document.querySelector('[data-translate="monetization-text"]');
+            const SmartText = document.querySelector('[data-translate="smart-text"]');
+            const SmartBanner = document.querySelector('[data-translate="smart-banner"]');
+            const RetireBanner = document.querySelector('[data-translate="retire-banner"]');
+            const RetireText = document.querySelector('[data-translate="retire-text"]');
 
+            const TokenizationBanner = document.querySelector('[data-translate="tokenization-banner"]');
+            const TokenizationText = document.querySelector('[data-translate="tokenization-text"]');
+
+            const FarmingBanner = document.querySelector('[data-translate="farming-banner"]');
+            const Farmingtext = document.querySelector('[data-translate="farming-text"]');
+
+            const PriceBanner = document.querySelector('[data-translate="price-banner"]');
+            const Pricetext = document.querySelector('[data-translate="price-text"]');
+
+            const StakeBanner = document.querySelector('[data-translate="stake-banner"]');
+            const Staketext = document.querySelector('[data-translate="stake-text"]');
+
+            //PRODUCT DETAILS
+            const ProductTitle = document.querySelector('[data-translate="product-title"]');
+            const ProductText = document.querySelector('[data-translate="product-text"]');
+            const Producta = document.querySelector('[data-translate="product-a"]');
+            const Productb = document.querySelector('[data-translate="product-b"]');
+            const Productc = document.querySelector('[data-translate="product-c"]');
+
+            const LeverageTitle = document.querySelector('[data-translate="leverage-title"]');
+            const LeverageText = document.querySelector('[data-translate="leverage-text"]');
+            const TokenizationProductTitle = document.querySelector('[data-translate="tokenization-product-title"]');
+            const TokenizationProductText = document.querySelector('[data-translate="tokenization-product-text"]');
+            const FinancingTitle = document.querySelector('[data-translate="financing-title"]');
+            const FinancingText = document.querySelector('[data-translate="financing-text"]');
 
             
             
@@ -709,9 +966,42 @@ $(function () {
             BusinessModel.innerHTML = translations[Lang]['business-model'];
             O2PToken.innerHTML = translations[Lang]['o2p-token'];
             FinanceCarbon.innerHTML = translations[Lang]['finance-carbon'];
+            FinanceBanner.innerHTML = translations[Lang]['finance-banner'];
+            MonetizationBanner.innerHTML = translations[Lang]['monetization-banner'];
+            MonetizationText.innerHTML = translations[Lang]['monetization-text'];
+            SmartBanner.innerHTML = translations[Lang]['smart-banner'];
+            SmartText.innerHTML = translations[Lang]['smart-text'];
+            RetireBanner.innerHTML = translations[Lang]['retire-banner'];
+            RetireText.innerHTML = translations[Lang]['retire-text'];
 
+            TokenizationBanner.innerHTML = translations[Lang]['tokenization-banner'];
+            TokenizationText.innerHTML = translations[Lang]['tokenization-text'];
+
+            FarmingBanner.innerHTML = translations[Lang]['farming-banner'];
+            Farmingtext.innerHTML = translations[Lang]['farming-text'];
             
-            
+            PriceBanner.innerHTML = translations[Lang]['price-banner'];
+            Pricetext.innerHTML = translations[Lang]['price-text'];
+
+            StakeBanner.innerHTML = translations[Lang]['stake-banner'];
+            Staketext.innerHTML = translations[Lang]['stake-text'];
+
+            //PRODUCT DETAILS
+            ProductTitle.innerHTML = translations[Lang]['product-title'];
+            ProductText.innerHTML = translations[Lang]['product-text'];
+            Producta.innerHTML = translations[Lang]['product-a'];
+            Productb.innerHTML = translations[Lang]['product-b'];
+            Productc.innerHTML = translations[Lang]['product-c'];
+
+            LeverageTitle.innerHTML = translations[Lang]['leverage-title'];
+            LeverageText.innerHTML = translations[Lang]['leverage-text'];
+            TokenizationProductTitle.innerHTML = translations[Lang]['tokenization-product-title'];
+            TokenizationProductText.innerHTML = translations[Lang]['tokenization-product-text'];
+            FinancingTitle.innerHTML = translations[Lang]['financing-title'];
+            FinancingText.innerHTML = translations[Lang]['financing-text'];
+
+
+
             
             
             //bottom
