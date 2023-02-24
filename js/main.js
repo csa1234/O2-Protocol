@@ -391,6 +391,7 @@ $(function () {
             'aboutus-description': 'O2-Protocol began as a conceptual idea at the beginning of 2019.<br><br>By 2020 O2-Protocol began a pre-incubation process with the National University of Asunción, Start-up Lab division, culminating the pre-incubation process in early 2022 after a long period of research in various areas such as marketing, finance, carbon offset market, agribusiness among other areas.<br><br>In mid-2022 we started the final incubation process.<br><br>This is the first time in the entire crypto world, where a DeFi project is combined with a real business model like carbon offset trading to generate a stream of income in the crypto environment.',
                                  
             //OPERATING TEAM
+            'team-members':'Team members',
             'operating':'OPERATING TEAM',
             'cesar': 'Cesar is a lawyer and blockchain developer with over 12 years experience in laws and over<br>20 years in programming & stock exchange trades.',
             'cesar-title':'Cesar Saguier<span>CEO/CTO, Blockchain dev<br>Lawyer, Founder</span>',
@@ -418,6 +419,27 @@ $(function () {
             'tokentext5': 'Team founder: 20%',
             'tokentext6': '>Marketing & Advisors: 8.9%',
 
+            //MEDIUM BLOG
+            'medium-title':'Latest Medium Blog Posts on O2-Protocol',
+            'medium-text':'Keep up to date with the latest news on O2-Protocol.',
+            
+            'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>February, 24</span>REGENERATIVE DEFI</a>',
+            'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>February, 24</span>CARBON OFFSET NFT CERTIFICATES</a>',
+            'blog3':'<a href="#" data-toggle="modal" data-target="#blog-modal-content3"><span>February, 24</span>LEVERAGED YIELD FARMING</a>',
+            'medium-link':'READ MORE BLOG POSTS',
+
+            //MODAL BLOG
+            'modal1-text':'REGENERATIVE DEFI',
+            'modal11-text':'A new concept in DeFi<br><br>We present to the world a new business model for Decentralized Finance that opens the doors to traditional business models to embark on the world of the crypto environment.<br><br>O2-Protocol focuses especially and exclusively on the market business model for carbon offsetting.<br><br>For this, I am going to explain in simple terms what this traditional business model consists of and how we take it to a crypto environment.<br><br>In the carbon offset market, factories and businesses are required to replenish the environment with the same amount of oxygen that they emit into the environment with greenhouse gases (CO2) by their factories or businesses.As a basic example: an aircraft factory in Germany releases carbon dioxide (CO2) when melting metals to make its aircraft.In order for this factory to continue operating due to government laws, it needs to demonstrate that the entire amount of CO2 emitted to the environment is compensated with O2 (oxygen) anywhere in the world. To do this, they use certificates for carbon compensation, these certificates confirm that in some part of the world, in a piece of land, X amount of oxygen is being produced, for X amount of trees, etc etc and many other data.The aircraft factory then searches these markets for holders or sellers of these certificates and thus present them to the regulatory government institutions in charge of controlling greenhouse gases, and thus be able to continue operating their business.<br><br>The next question is: who and where do these carbon credit certificates come from?… continue in the next blog',
+            'modal1-date':'<a href="#">February, 24 2023</a><a href="#">O2-Protocol</a>',
+            'modal2-date':'<a href="#">February, 24 2023</a><a href="#">O2-Protocol</a>',
+            'modal3-date':'<a href="#">February, 24 2023</a><a href="#">O2-Protocol</a>',
+
+            'modal2-text':'CARBON OFFSET NFT CERTIFICATES',
+            'modal22-text':'Where to get carbon offset certificates and how, finally how to monetize them on the blockchain.<br>There are two types of market for greenhouse gas offsets:<br><br>Public: run by the governments of each country< br>Private: voluntary carbon offset.<br><br>Lets focus on voluntary (private) carbon offset:<br>There are several non-governmental organizations known as NGOs that are in charge of verifying and certifying offset projects of carbon.< br>The two most renowned and well-known in the voluntary carbon offset market are Verra.org and Goldstandard.org<br>When the owner of a rural property decides to reforest his land, he needs these NGOs to certify it. <br>These certifications are carried out via satellite and therefore the cost of certifying any carbon offset project is very high, ranging from $5,000 to $15,000 depending on various factors.<br><br>Once that the owner pays these amounts to these NGOs, receives his certificate and then has to put it up for sale on the voluntary carbon market.<br><br>But where does O2-Protocol come into all this? Well, O2-Protocol will finance 100% of the certification costs for all those owners who need it. Once the project is certified, O2-Protocol is in charge of tokenizing these certificates and taking them to the blockchain, where it can be instantly monetized by other cryptocurrencies and/or crypto assets, leaving the owner with 50% of the value of the certificate. and the other 50% of the value for O2-Protocol as a concept for having financed the project and managing its tokenization and monetization.<br><br>But this does not end there, the holder of these NFT certificates will have access together with other users who do not have NFTs to other exclusive benefits such as doing leveraged farming and generating passive income on the blockchain through O2-Protocol.<br><br>In the next blog, I will explain how...',
+            'modal3-text':'LEVERAGE CRYPTO FARMING',
+            'modal33-text':'O2-Protocol – Will generate passive income with leveraged crypto farming.<br>Users will have access to collateralized loans and the option to borrow their capital with collateralized collateral to receive passive income.<br><br>O2-Protocol will use a leveraged crypto farming fork based on Impermax, but unlike all DeFi on the market, O2-Protocol constantly generates a stream of money to liquidity pools through business models such as carbon offset financing, which creates buying pressure on O2-Protocol native token called O2P token.<br>The function of the O2P token will not only serve to pay loan fees, but will also have voting power for the election of the projects to be financed, choice for the creation of liquidity funds in leveraged cryptographic farming, it will also give you access to the profits of the platform itself proportionally based on the amount held and deposited in the smart contracts, and many other options.<br><br>O2-Protocol will benefit from each project it certifies, as most of the revenue will go towards adding more funds to Leverage liquidity pools for crypto farming which translates into higher appreciative value in the O2P token market.',
+            
 
 
 
@@ -535,6 +557,7 @@ $(function () {
             'aboutus-description': 'O2-Protocol comenzó como una idea conceptual a principios de 2019.<br><br>Para 2020 O2-Protocol inició un proceso de pre-incubación con la Universidad Nacional de Asunción, división Start-up Lab, culminando el proceso de pre-incubación a principios de 2022 tras un largo periodo de investigación en varias áreas como marketing, finanzas, mercado de compensación de carbono, negocios agrícolas entre otras áreas.<br><br>A mediados de 2022 comenzamos el proceso de final de incubación y la etapa de resultado final es ahora.<br><br>Esta es la primera vez en todo el mundo criptográfico, donde un proyecto DeFi se combina con un modelo comercial real como el comercio de compensación de carbono para generar un flujo de ingresos en el entorno criptográfico.',
 
             //OPERATING TEAM
+            'team-members':'Miembros del equipo',
             'operating':'EQUIPO OPERATIVO',
             'cesar': 'Cesar es abogado y desarrollador de blockchain con más de 12 años de experiencia en leyes y más de 20 años en programación y operaciones bursátiles.',
             'cesar-title':'Cesar Saguier<span>CEO/CTO, Dev. de Blockchain<br>Abogado, Fundador</span>',
@@ -559,6 +582,29 @@ $(function () {
             'tokentext4': 'Ronda Semilla, Venta Privada A y B: 25%',
             'tokentext5': 'Equipo Fundador: 20%',
             'tokentext6': 'Marketing y Asesores: 8,9%',
+
+            //MEDIUM BLOG
+            'medium-title':'Últimas publicaciones Medium en O2-Protocol',
+            'medium-text':'Manténgase al día con las últimas noticias sobre O2-Protocol.',
+            
+            'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>Febrero, 24 2023</span>DEFI REGENERATIVO</a>',
+            'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>Febrero, 24 2023</span>NFT DE COMPENSACIÓN DE CARBONO</a>',
+            'blog3':'<a href="#" data-toggle="modal" data-target="#blog-modal-content3"><span>Febrero, 24 2023</span>AGRICULTURA DE RENDIMIENTO APALANCADO</a>',
+                        
+            'medium-link':'LEA MÁS PUBLICACIONES DEL BLOG',
+
+            //MODAL BLOG
+            'modal1-text':'DEFI REGENERATIVO',
+            'modal11-text':'Un nuevo concepto en DeFi<br><br>Presentamos al mundo un nuevo modelo de negocio para las Finanzas Descentralizadas que abre las puertas a los modelos de negocio tradicionales para embarcarse en el mundo del entorno criptográfico.<br><br>O2-Protocol se centra especial y exclusivamente en el modelo de negocio de mercado para la compensación de carbono.<br><br>Para ello, voy a explicar de forma sencilla en qué consiste este modelo de negocio tradicional y cómo lo llevamos a un entorno criptográfico.<br> <br>En el mercado de compensación de carbono, las fábricas y empresas deben reponer el medio ambiente con la misma cantidad de oxígeno que emiten al medio ambiente con gases de efecto invernadero (CO2) por sus fábricas o negocios. Como ejemplo básico: una fábrica de aviones en Alemania libera dióxido de carbono (CO2) al fundir metales para fabricar sus aviones. Para que esta fábrica siga funcionando debido a las leyes gubernamentales, debe demostrar que toda la cantidad de CO2 emitida al medio ambiente se compensa con O2 (oxígeno) en algún lugar del mundo. Para ello utilizan certificados de compensación de carbono, estos certificados confirman que en alguna parte del mundo, en un inmueble, se está produciendo X cantidad de oxígeno, para X cantidad de árboles, etc etc y muchos otros datos. Luego, la fábrica de aeronaves busca en estos mercados a los titulares o vendedores de estos certificados y así presentarlos a las instituciones gubernamentales reguladoras encargadas de controlar los gases de efecto invernadero, y así poder continuar operando su negocio.<br><br>La siguiente pregunta es: ¿de quién y de dónde vienen estos certificados de créditos de carbono?… continúa en el próximo blog.',
+            'modal1-date':'<a href="#">Febrero, 24 2023</a><a href="#">O2-Protocol</a>',
+            'modal2-date':'<a href="#">Febrero, 24 2023</a><a href="#">O2-Protocol</a>',
+            'modal3-date':'<a href="#">Febrero, 24 2023</a><a href="#">O2-Protocol</a>',
+
+            'modal2-text':'CERTIFICADOS NFT DE COMPENSACIÓN DE CARBONO',
+            'modal22-text':'Dónde obtener certificados de compensación de carbono y cómo, por último cómo monetizarlos en la cadena de bloques.<br>Existen dos tipos de mercado para la compensación de gases de efecto invernadero:<br><br>Público: administrado por los gobiernos de cada país< br>Privado: compensación de carbono voluntaria.<br><br>Centrémonos en la compensación de carbono voluntaria (privada):<br>Hay varias organizaciones no gubernamentales conocidas como ONG que se encargan de verificar y certificar proyectos de compensación de carbono.< br>Los dos más renombrados y conocidos en el mercado voluntario de compensación de carbono son Verra.org y Goldstandard.org<br>Cuando el propietario de un inmueble rural decide reforestar su tierra, necesita que estas ONG lo certifiquen.<br>Estas certificaciones se llevan a cabo vía satélite y, por lo tanto, el costo de certificar cualquier proyecto de compensación de carbono es muy alto, oscilando entre $5,000 y $15,000 dependiendo de varios factores.<br><br>Una vez que el propietario paga estos montos a estas ONG, recibe su certificado y luego tiene que ponerlo a la venta en el mercado voluntario de carbono.<br><br>¿Pero dónde entra O2-Protocol en todo esto? Pues bien, O2-Protocol financiará el 100% de los costes de certificación para todos aquellos propietarios que lo necesiten. Una vez certificado el proyecto, O2-Protocol se encarga de tokenizar estos certificados y llevarlos a la cadena de bloques, donde puede ser monetizado instantáneamente por otras criptomonedas y/o cripto activos, dejando al propietario con el 50% del valor del certificado. y el otro 50% del valor por O2-Protocol como concepto por haber financiado el proyecto y gestionar su tokenización y monetización.<br><br>Pero esto no acaba ahí, el titular de estos certificados NFT tendrá acceso en conjunto con otros usuarios que no tienen NFT a otros beneficios exclusivos, como hacer agricultura apalancada y generar ingresos pasivos en la cadena de bloques a través de O2-Protocol.<br><br>En el próximo blog, explicaré cómo…',
+
+            'modal3-text':'AGRICULTURA CRIPTOGRÁFICA APALANCADA',
+            'modal33-text':'O2-Protocol: generará ingresos pasivos con agricultura criptográfica apalancada.<br>Los usuarios tendrán acceso a préstamos colateralizados y la opción de ofrecer en préstamo su capital con garantías colateralizadas y así recibir ingresos pasivos.<br><br>O2-Protocol utilizará una bifurcación de agricultura criptográfica apalancada basada en el Impermax , pero a diferencia de todas las DeFi en el mercado, O2-Protocol genera constantemente un flujo de dinero a los fondos de liquidez a través de modelos comerciales como la financiación de la certificación de compensación de carbono, lo que crea presión de compra sobre el token nativo de O2-Protocol llamado token O2P.<br>La función del token O2P no solo servirá para pagar las comisiones de los préstamos, sino que también tendrá poder de voto para la elección de los proyectos a financiar, elección para la creación de fondos de liquidez en la agricultura criptográfica apalancada, además le dará acceso a las ganancias de la propia plataforma proporcionalmente según el monto retenido y depositado en los contratos inteligentes, y muchas otras opciones más.<br><br>O2-Protocol se beneficiara de cada proyecto que certifica, ya que la mayor parte de los ingresos se destinarán para agregar más fondos a las piscinas de liquidez apalancadas para la agricultura criptográfica lo que se traduce en mayor valor apreciativo en el mercado del token O2P.',
 
             //bottom
             'bottom-feature': 'Características',
@@ -669,6 +715,7 @@ $(function () {
                 'aboutus-description': 'O2-Protocol começou como uma ideia conceitual no início de 2019.<br><br>Em 2020, O2-Protocol iniciou um processo de pré-incubação com a Universidade Nacional de Assunção, divisão de Start-up Lab, culminando no processo de pré-incubação no início de 2022 após um longo período de pesquisa em diversas áreas como marketing, finanças, mercado de compensação de carbono, agronegócio entre outras áreas.<br><br>Em meados de 2022 iniciamos o processo final de incubação.<br><br> Esta é a primeira vez em todo o mundo criptográfico, onde um projeto DeFi é combinado com um modelo de negócios real, como o comércio de compensação de carbono, para gerar um fluxo de renda no ambiente criptográfico.',
                 
                 //OPERATING TEAM
+                'team-members':'Membros do time',
                 'operating':'EQUIPE OPERACIONAL',
                 'cesar': 'Cesar é um advogado e desenvolvedor de blockchain com mais de 12 anos de experiência em leis e mais de<br>20 anos em programação e operações de bolsa de valores.',
                 'cesar-title':'Cesar Saguier<span>CEO/CTO, Blockchain dev<br>Advogado, Fundador</span>',
@@ -694,6 +741,32 @@ $(function () {
                 'tokentext4': 'Semente, Venda Privada A & B: 25%',
                 'tokentext5': 'Fundador da equipe: 20%',
                 'tokentext6': 'Marketing & Consultores: 8,9%',
+
+                //MEDIUM BLOG
+                'medium-title':'Últimas publicações do Medium sobre O2-Protocol',
+                'medium-text':'Mantenha-se atualizado com as últimas notícias sobre O2-Protocol.',
+                
+                'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>24 de fevereiro de 2023</span>DEFI REGENERATIVO</a>',
+                'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>24 de fevereiro de 2023</span>NFT DE COMPENSAÇÃO DE CARBONO</a>',
+                'blog3':'<a href="#" data-toggle="modal" data-target="#blog-modal-content3"><span>24 de fevereiro de 2023</span>AGRICULTURA DE RENDIMENTO ALAVANADO</a>',
+                
+                
+                'medium-link':'LEIA MAIS POSTAGENS DO BLOG',
+
+                //MODAL BLOG
+                'modal1-text':'DEFI REGENERATIVO',
+                'modal11-text':'Um novo conceito em DeFi<br><br>Apresentamos ao mundo um novo modelo de negócios para Finanças Descentralizadas que abre as portas aos modelos de negócios tradicionais para embarcar no mundo do ambiente criptográfico.<br><br>O2- Protocol tem como foco especial e exclusivo o modelo de negócio de mercado para compensação de carbono.<br><br>Para isso, vou explicar de forma simples em que consiste esse modelo de negócio tradicional e como o levamos para um ambiente criptográfico.< br> <br>No mercado de compensação de carbono, fábricas e empresas devem reabastecer o meio ambiente com a mesma quantidade de oxigênio que emitem para o meio ambiente com gases de efeito estufa (CO2) por suas fábricas ou negócios. Como um exemplo básico: uma fábrica de aeronaves na Alemanha libera dióxido de carbono (CO2) ao derreter metais para fabricar seus aviões. Para que essa fábrica continue operando por força de leis governamentais, ela precisa provar que todo o CO2 lançado no meio ambiente é compensado por O2 (oxigênio) em algum lugar do mundo. Para isso eles usam certificados de compensação de carbono, esses certificados confirmam que em algum lugar do mundo, em um prédio, uma quantidade X de oxigênio está sendo produzida, para uma quantidade X de árvores, etc etc etc e muitos outros dados. Em seguida, a fábrica de aeronaves busca nesses mercados os detentores ou vendedores desses certificados e, assim, apresenta-os às instituições governamentais reguladoras responsáveis ​​pelo controle de gases de efeito estufa, podendo assim continuar operando seus negócios.<br><br>O O O a próxima pergunta é: de quem e de onde vêm esses certificados de crédito de carbono?… continua no próximo blog',
+                'modal1-date':'<a href="#">24 de fevereiro de 2023</a><a href="#">O2-Protocol</a>',
+                'modal2-date':'<a href="#">24 de fevereiro de 2023</a><a href="#">O2-Protocol</a>',
+                'modal3-date':'<a href="#">24 de fevereiro de 2023</a><a href="#">O2-Protocol</a>',
+
+                'modal2-text':'CERTIFICADOS NFT DE COMPENSAÇÃO DE CARBONO',
+                'modal22-text':'Onde obter certificados de compensação de carbono e como, finalmente, como monetizá-los no blockchain.<br>Existem dois tipos de mercado para compensações de gases de efeito estufa:<br><br>Público: administrado pelos governos de cada país< br> Privado: compensação de carbono voluntária.<br><br>Vamos nos concentrar na compensação de carbono voluntária (privada):<br>Existem várias organizações não governamentais conhecidas como ONGs que são responsáveis ​​por verificar e certificar projetos de compensação de carbono.< br >As duas mais conceituadas e conhecidas no mercado de compensação voluntária de carbono são Verra.org e Goldstandard.org<br>Quando o proprietário de uma propriedade rural decide reflorestar sua terra, ele precisa dessas ONGs para certificá-la. <br> Essas certificações são realizadas via satélite e, portanto, o custo de certificar qualquer projeto de compensação de carbono é muito alto, variando de US$ 5.000 a US$ 15.000, dependendo de vários fatores.<br><br>Uma vez que o proprietário paga esses valores para essas ONGs, recebe seu certificado e depois tem que colocar à venda no mercado voluntário de carbono.<br><br>Mas onde entra o O2-Protocol nisso tudo? Bem, a O2-Protocol financiará 100% dos custos de certificação para todos os proprietários que precisarem. Uma vez certificado o projeto, a O2-Protocol se encarrega de tokenizar esses certificados e levá-los para a blockchain, onde podem ser instantaneamente monetizados por outras criptomoedas e/ou ativos criptográficos, deixando o proprietário com 50% do valor do certificado . e os outros 50% do valor para O2-Protocol como conceito por ter financiado o projeto e gerenciado sua tokenização e monetização.<br><br>Mas não para por aí, o detentor desses certificados NFT terá acesso junto com outros usuários que não possuem NFTs para outros benefícios exclusivos, como fazer agricultura alavancada e gerar renda passiva no blockchain através do O2-Protocol.<br><br>No próximo blog, explicarei como…',
+
+                'modal3-text':'AGRICULTURA DE CRIPTO ALAVANCADA',
+                'modal33-text':'O2-Protocol – Gerará renda passiva com cripto cultivo alavancado.<br>Os usuários terão acesso a empréstimos garantidos e a opção de emprestar seu capital com garantias garantidas para receber renda passiva.<br><br>O2-Protocol usará um garfo de cultivo de criptografia alavancado baseado em Impermax, mas ao contrário de todos os DeFi no mercado, o O2-Protocol gera constantemente um fluxo de dinheiro para pools de liquidez por meio de modelos de negócios, como compensação de carbono de certificação de financiamento, o que cria pressão de compra no token nativo do O2-Protocol chamado O2P token.<br>A função do token O2P não servirá apenas para pagar taxas de empréstimos, mas também terá poder de voto para a eleição dos projetos a serem financiados, escolha para a criação de fundos de liquidez em agricultura criptográfica alavancada, também lhe dá acesso aos lucros da própria plataforma proporcionalmente com base no valor mantido e depositado nos contratos inteligentes, e muitas outras opções.<br><br>O2-Protocol se beneficiará de cada projeto que certificar, pois a maior parte da receita será destinada à adição de mais fundos aos pools de liquidez alavancados para o cultivo de criptografia, que se traduz em maior valor apreciativo no mercado de token O2P.',
+
+
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -798,6 +871,7 @@ $(function () {
                 'aboutus-description': 'O2-Protocol은 2019년 초 개념적 아이디어로 시작되었습니다.<br><br>2020년까지 O2-Protocol은 National University of Asunción, Start-up Lab 부서와 사전 인큐베이션 프로세스를 시작하여 사전 인큐베이션 프로세스를 마무리했습니다. 마케팅, 금융, 탄소 상쇄 시장, 농업 관련 비즈니스 등 다양한 분야에서 오랜 연구 끝에 2022년 초에.<br><br>2022년 중반에 최종 인큐베이션 프로세스를 시작했습니다.<br><br> DeFi 프로젝트가 탄소 상쇄 거래와 같은 실제 비즈니스 모델과 결합되어 암호화 환경에서 수입 흐름을 생성하는 것은 전체 암호화폐 세계에서 처음입니다.',
 
                 //OPERATING TEAM
+                'team-members':'팀 멤버',
                 'operating':'운영팀',
                 'cesar': 'Cesar는 법률 분야에서 12년 이상의 경력과 프로그래밍 및 증권 거래 분야에서 20년 이상의 경력을 가진 변호사이자 블록체인 개발자입니다.',
                 'cesar-title':'Cesar Saguier<span>CEO/CTO, Blockchain dev<br>변호사, 설립자</span>',
@@ -822,7 +896,32 @@ $(function () {
                 'tokentext4': '시드, 프라이빗 세일 A & B: 25%',
                 'tokentext5': '팀 설립자: 20%',
                 'tokentext6': '마케팅 및 고문: 8.9%',
-                    
+
+                //MEDIUM BLOG
+                'medium-title':'O2-Protocol에 대한 최신 매체 블로그 게시물',
+                'medium-text':'O2-Protocol의 최신 뉴스를 확인하세요.',
+                
+                'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>2023년 2월 24일</span>재생 데피</a>',
+                'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>2023년 2월 24일</span>NFT 탄소 오프셋 인증서</a>',
+                'blog3':'<a href="#" data-toggle="modal" data-target="#blog-modal-content3"><span>2023년 2월 24일</span>레버리지 수확 농업</a>',
+
+                'medium-link':'더 많은 블로그 게시물 읽기',
+
+                //MODAL BLOG
+                'modal1-text':'재생 데피',
+                'modal11-text':'DeFi의 새로운 개념<br><br>우리는 암호화 환경의 세계에 착수하기 위해 전통적인 비즈니스 모델의 문을 여는 탈중앙화 금융을 위한 새로운 비즈니스 모델을 전 세계에 제시합니다.<br><br>O2- 프로토콜 특히 탄소 상쇄를 위한 시장 비즈니스 모델에만 집중합니다.<br><br>이를 위해 이 전통적인 비즈니스 모델이 무엇으로 구성되어 있으며 이를 암호화 환경으로 가져오는 방법을 간단하게 설명하겠습니다.< br> <br>탄소 상쇄 시장에서 공장과 기업은 공장이나 기업에서 온실 가스(CO2)로 환경에 배출하는 것과 동일한 양의 산소로 환경을 보충해야 합니다. 기본 예: 독일의 항공기 공장은 비행기를 만들기 위해 금속을 녹일 때 이산화탄소(CO2)를 방출합니다. 정부법에 따라 이 공장이 계속 운영되기 위해서는 환경으로 배출되는 모든 CO2가 세계 어딘가의 O2(산소)에 의해 상쇄된다는 것을 증명해야 합니다. 이를 위해 그들은 탄소 상쇄 인증서를 사용합니다. 이 인증서는 세계 어딘가, 건물에서 X량의 나무 등 및 기타 많은 데이터에 대해 X량의 산소가 생산되고 있음을 확인합니다. 그러면 항공기 공장은 이러한 인증서의 보유자 또는 판매자를 이러한 시장을 검색하여 온실 가스 관리를 담당하는 규제 정부 기관에 제시하여 비즈니스를 계속 운영할 수 있습니다.<br><br>The The The The 다음 질문은 이 탄소 배출권 인증서는 누구와 어디서 오는 것입니까?… 다음 블로그에서 계속됩니다.',
+                'modal1-date':'<a href="#">2023년 2월 24일</a><a href="#">O2 프로토콜</a>',
+                'modal2-date':'<a href="#">2023년 2월 24일</a><a href="#">O2 프로토콜</a>',                    
+                'modal3-date':'<a href="#">2023년 2월 24일</a><a href="#">O2 프로토콜</a>',
+
+                'modal2-text':'탄소 상쇄 NFT 인증서',
+                'modal22-text':'탄소 상쇄 인증서를 얻을 수 있는 위치와 방법, 마지막으로 블록체인에서 수익을 창출하는 방법.<br>온실가스 상쇄 시장에는 두 가지 유형이 있습니다.<br><br>공공: 각 국가의 정부가 운영< br> 민간: 자발적인 탄소 상쇄.<br><br>자발적인(민간) 탄소 상쇄에 초점을 맞추자:<br>탄소 상쇄 프로젝트를 확인하고 인증하는 NGO로 알려진 여러 비정부 기구가 있습니다.< br >자발적 탄소 상쇄 시장에서 가장 유명하고 잘 알려진 두 곳은 Verra.org와 Goldstandard.org입니다<br>농촌 소유주가 자신의 토지를 재조림하기로 결정하면 이를 인증하기 위해 이러한 NGO가 필요합니다. <br> 이러한 인증은 위성을 통해 수행되므로 탄소 상쇄 프로젝트 인증 비용은 다양한 요인에 따라 $5,000에서 $15,000까지 매우 높습니다.<br><br>Once 소유자가 이러한 NGO에 이 금액을 지불하고 인증서를 받은 다음 자발적인 탄소 시장에 판매해야 합니다. 음, O2-Protocol은 인증이 필요한 모든 소유자를 위해 인증 비용의 100%를 지원합니다. 프로젝트가 인증되면 O2-Protocol은 이러한 인증서를 토큰화하고 다른 암호화폐 및/또는 암호화 자산으로 즉시 수익을 창출할 수 있는 블록체인으로 가져가 소유자에게 인증서 가치의 50%를 맡깁니다. . 나머지 50%는 프로젝트에 자금을 조달하고 토큰화 및 수익화를 관리하기 위한 개념으로 O2-Protocol의 가치입니다.<br><br>하지만 여기서 끝나지 않고 이러한 NFT 인증서 소유자는 함께 액세스할 수 있습니다. NFT가 없는 다른 사용자와 함께 O2-Protocol을 통해 레버리지 파밍을 하고 블록체인에서 소극적 소득을 창출하는 것과 같은 다른 독점 혜택을 받을 수 있습니다.<br><br>다음 블로그에서 방법을 설명하겠습니다.',
+
+                'modal3-text':'레버리지 암호화폐 파밍',
+                'modal33-text':'O2-Protocol – 레버리지 암호화폐 농법으로 소극적 소득을 창출합니다.<br>사용자는 담보 대출에 액세스할 수 있으며 담보 담보로 자본을 빌려 수동적 소득을 얻을 수 있습니다.<br><br>O2-Protocol은 Impermax를 기반으로 암호화폐 파밍 포크를 활용하지만 시장의 모든 DeFi와 달리 O2-Protocol은 O2P라는 O2-Protocol의 기본 토큰에 대한 구매 압력을 생성하는 인증 자금 조달 탄소 청산과 같은 비즈니스 모델을 통해 유동성 풀에 지속적으로 자금 흐름을 생성합니다. 토큰.<br>O2P 토큰의 기능은 대출 수수료를 지불하는 역할을 할 뿐만 아니라 자금을 조달할 프로젝트 선택에 대한 의결권, 레버리지 암호화 농업에서 유동성 자금 생성을 위한 선택, 또한 플랫폼 자체의 이익에 대한 액세스를 제공합니다. 스마트 계약에 보유 및 예치된 금액 및 기타 여러 옵션에 따라 비례합니다.<br><br>O2-Protocol은 대부분의 수익이 레버리지 유동성 풀에 더 많은 자금을 추가하는 데 사용되므로 인증하는 각 프로젝트에서 이익을 얻습니다. O2P 토큰 시장에서 더 높은 감사 가치로 변환되는 암호화 농업을 위해.',
+
+
+
                 //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
@@ -924,6 +1023,7 @@ $(function () {
                 'aboutus-description': 'O2-Protocol 始於 2019 年初的概念性想法。<br><br>到 2020 年，O2-Protocol 開始與亞松森國立大學初創實驗室部門進行預孵化過程，最終完成預孵化過程在營銷、金融、碳抵消市場、農業綜合企業等各個領域進行了長期研究後，於 2022 年初啟動。<br><br>2022 年年中，我們開始了最後的孵化過程。<br><br>這是整個加密世界中第一次將 DeFi 項目與碳抵消交易等真實商業模式相結合，從而在加密環境中產生收入流。',
 
                 //OPERATING TEAM
+                'team-members':'團隊成員',
                 'operating':'運營團隊',
                 'cesar': 'Cesar 是一名律師和區塊鏈開發人員，擁有超過 12 年的法律經驗和超過<br>20 年的編程和證券交易交易經驗。',
                 'cesar-title':'Cesar Saguier<span>首席執行官/首席技術官，區塊鏈開發人員<br>律師，創始人</span>',
@@ -948,7 +1048,29 @@ $(function () {
                 'tokentext4': '種子、私募 A 和 B：25%',
                 'tokentext5': '團隊創始人：20%',
                 'tokentext6': '營銷和顧問：8.9%',
-                        
+
+                //MEDIUM BLOG
+                'medium-title':'關於 O2 協議的最新中型博客文章',
+                'medium-text':'了解有關 O2-Protocol 的最新消息。',
+                
+                'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>2023 年 2 月 24 日</span>再生DEFI</a>',
+                'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>2023 年 2 月 24 日</span>NFT 碳抵消證書</a>',
+                'blog3':'<a href="#" data-toggle="modal" data-target="#blog-modal-content3"><span>2023 年 2 月 24 日</span>槓桿收益農業</a>',
+                
+                //MODAL BLOG
+                'modal1-text':'再生DEFI',
+                'modal11-text':'DeFi 中的一個新概念<br><br>我們向世界展示了一種新的去中心化金融商業模式，它打開了傳統商業模式的大門，從而踏上了加密環境的世界。<br><br>O2- 協議尤其專注於碳抵消的市場商業模式。<br><br>為此，我將以簡單的方式解釋這種傳統商業模式的組成以及我們如何將其應用到加密環境中。< br> <br>在碳抵消市場中，工廠和公司必須向環境補充與其工廠或企業排放到環境中的溫室氣體 (CO2) 等量的氧氣。舉一個基本的例子：德國的一家飛機製造廠在熔化金屬製造飛機時會釋放二氧化碳 (CO2)。為了讓這家工廠根據政府法律繼續運營，它必須證明所有釋放到環境中的 CO2 都被世界某個地方的 O2（氧氣）所抵消。為此，他們使用碳抵消證書，這些證書確認在世界的某個地方，在建築物中，正在生產 X 量的氧氣，用於 X 量的樹木等等以及許多其他數據。然後，飛機製造商在這些市場中搜索這些證書的持有者或銷售者，並將其提交給負責控制溫室氣體的政府監管機構，從而能夠繼續經營他們的業務。<br><br>The The下一個問題是：這些碳信用證書來自誰和哪裡？......在下一篇博客中繼續',
+                'modal1-date':'<a href="#">2023 年 2 月 24 日</a><a href="#">O2協議</a>', 
+                'modal2-date':'<a href="#">2023 年 2 月 24 日</a><a href="#">O2協議</a>', 
+                'modal3-date':'<a href="#">2023 年 2 月 24 日</a><a href="#">O2協議</a>', 
+
+                'modal2-text':'碳抵消 NFT 證書',
+                'modal22-text':'從哪裡獲得碳抵消證書以及如何，最後如何在區塊鏈上將其貨幣化。<br>溫室氣體抵消有兩種類型的市場：<br><br>公共：由各國政府運營< br>私人：自願碳抵消。<br><br>讓我們關注自願（私人）碳抵消：<br>有幾個稱為 NGO 的非政府組織負責驗證和認證碳抵消項目。< br >自願碳抵消市場中最著名和最知名的兩個是 Verra.org 和 Goldstandard.org<br>當農村財產的所有者決定重新造林他的土地時，他需要這些非政府組織來證明它。<br>這些認證是通過衛星進行的，因此認證任何碳補償項目的成本都非常高，根據各種因素從 5,000 美元到 15,000 美元不等。<br><br>一次所有者向這些非政府組織支付這些款項，收到他的證書，然後必須將其在自願碳市場上出售。<br><br>但是 O2-Protocol 從哪裡來參與這一切？那麼，O2-Protocol 將為所有需要它的所有者提供 100% 的認證費用。一旦項目通過認證，O2-Protocol 將負責將這些證書標記化並將它們帶到區塊鏈，在那裡它可以立即被其他加密貨幣和/或加密資產貨幣化，讓所有者獲得證書價值的 50% .以及 O2-Protocol 價值的另外 50% 作為為項目提供資金並管理其標記化和貨幣化的概念。<br><br>但這並沒有就此結束，這些 NFT 證書的持有者將可以一起訪問與其他沒有 NFT 的用戶一起享受其他獨家好處，例如通過 O2-Protocol 在區塊鏈上進行槓桿農業和產生被動收入。<br><br>在下一篇博客中，我將解釋如何......',
+
+                'modal3-text':'槓桿式加密農業',
+                'modal33-text':'O2-Protocol – 將通過槓桿加密貨幣耕作產生被動收入。<br>用戶將可以獲得抵押貸款，並可以選擇使用抵押品借入資本以獲得被動收入。<br><br>O2-Protocol 將使用基於 Impermax 的槓桿加密農業分叉，但與市場上所有的 DeFi 不同，O2-Protocol 通過清算認證資金碳等商業模式不斷地向流動性池產生資金流，這對 O2-Protocol 的原生代幣 O2P 造成了購買壓力代幣。<br>O2P代幣的功能不僅可以用於支付貸款費用，而且還將擁有選舉融資項目的投票權，選擇在槓桿加密農業中創建流動資金，它將還可以讓您獲得平臺本身的利潤根據智能合約中持有和存入的金額以及許多其他選項按比例分配。<br><br>O2-Protocol 將從其認證的每個項目中受益，因為大部分收入將用於向槓桿流動性池中添加更多資金用於加密農業，這在 O2P 代幣市場上轉化為更高的欣賞價值。',
+                
+
                 //bottom
                 'bottom-feature': 'Características',
                 'bottom-product': 'Productos',
@@ -1054,6 +1176,7 @@ $(function () {
                 'aboutus-description': 'O2-Protocol は 2019 年の初めに概念的なアイデアとして始まりました。<br><br>2020 年までに、O2-Protocol はアスンシオン国立大学のスタートアップ ラボ部門とのプレインキュベーション プロセスを開始し、プレインキュベーション プロセスの頂点に達しました。マーケティング、金融、カーボン オフセット市場、アグリビジネスなど、さまざまな分野での長期にわたる調査を経て、2022 年初頭に設立されました。<br><br>2022 年半ばに、最終的なインキュベーション プロセスを開始しました。<br><br>これは、DeFiプロジェクトがカーボンオフセット取引のような実際のビジネスモデルと組み合わされて、暗号環境で収入の流れを生み出す、暗号世界全体で初めてのことです。',
 
                 //OPERATING TEAM
+                'team-members':'チームメンバー',
                 'operating':'運営チーム',
                 'cesar': 'Cesar は、法律分野で 12 年以上、プログラミングと証券取引で 20 年以上の経験を持つ弁護士兼ブロックチェーン開発者です。',
                 'cesar-title':'Cesar Saguier<span>CEO / CTO、ブロックチェーン デベロッパー<br>弁護士、創設者</span>',
@@ -1078,6 +1201,32 @@ $(function () {
                 'tokentext4': 'シード、プライベートセール A & B: 25%',
                 'tokentext5': 'チームの創設者: 20%',
                 'tokentex6':'マーケティングとアドバイザー: 8.9%',
+
+
+                //MEDIUM BLOG
+                'medium-title':'O2-Protocol に関する最新の中規模ブログ投稿',
+                'medium-text':'O2-Protocol に関する最新ニュースを入手してください。',
+                
+
+                
+                'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>2023 年 2 月 24 日</span>リジェネレイティブデフィ</a>',
+                'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>2023 年 2 月 24 日</span>NFTカーボンオフセット証明書</a>',
+                'blog3':'<a href="#" data-toggle="modal" data-target="#blog-modal-content3"><span>2023 年 2 月 24 日</span>レバレッジドイールドファーミング</a>',
+
+
+                //MODAL BLOG
+                'modal1-text':'リジェネレイティブデフィ',
+                'modal11-text':'DeFi の新しい概念<br><br>分散型金融の新しいビジネス モデルを世界に提示します。これは、従来のビジネス モデルに扉を開き、暗号化環境の世界に乗り出すためのものです。<br><br>O2- プロトコル特に、カーボン オフセットの市場ビジネス モデルのみに焦点を当てています。<br><br>これを行うために、この従来のビジネス モデルの構成要素と、それをどのように暗号化環境に導入するかを簡単に説明します。< br> <br>カーボン オフセット市場では、工場や企業は、工場や企業が温室効果ガス (CO2) を環境に放出するのと同じ量の酸素を環境に補給する必要があります。基本的な例として、ドイツの航空機工場は、飛行機を作るために金属を溶かすときに二酸化炭素 (CO2) を放出します。この工場が政府の法律に従って操業を続けるためには、環境に放出されたすべての CO2 が世界のどこかで O2 (酸素) によって相殺されることを証明する必要があります。このために、彼らはカーボン オフセット証明書を使用します。これらの証明書は、世界のどこか、建物内で、X 量の酸素が生成されていること、X 量の木など、その他多くのデータを確認します。次に、航空機工場はこれらの証明書の所有者または販売者を市場で探し、温室効果ガスの管理を担当する規制政府機関に証明書を提示し、事業を継続できるようにします。<br><br>The The次の質問は、これらの炭素クレジット証明書は誰から、どこから来たのですか?…次のブログに続きます',
+                'modal1-date':'<a href="#">2023 年 2 月 24 日</a><a href="#">O2プロトコル</a>',
+                'modal2-date':'<a href="#">2023 年 2 月 24 日</a><a href="#">O2プロトコル</a>',
+                'modal3-date':'<a href="#">2023 年 2 月 24 日</a><a href="#">O2プロトコル</a>',
+
+                'modal2-text':'カーボンオフセットNFT証明書',
+                'modal22-text':'カーボン オフセット証明書をどこで入手し、どのようにしてブロックチェーン上で収益化するか。<br>温室効果ガス オフセットには 2 種類の市場があります。<br><br>公開: 各国政府が運営します< br>民間: 自主的なカーボン オフセット。<br><br>自主的な (民間の) カーボン オフセットに注目しましょう:<br>NGO として知られるいくつかの非政府組織が、炭素のオフセット プロジェクトの検証と認証を担当しています。< br >自主的なカーボン オフセット市場で最も有名でよく知られているのは、Verra.org と Goldstandard.org の 2 つです。これらの認証は衛星経由で行われるため、カーボン オフセット プロジェクトの認証費用は非常に高く、さまざまな要因に応じて 5,000 ドルから 15,000 ドルになります。<br><br>1 回所有者はこれらの金額をこれらの NGO に支払い、証明書を受け取り、任意の炭素市場で売りに出さなければなりません。 O2-Protocol は、それを必要とするすべての所有者の認証費用を 100% 負担します。プロジェクトが認証されると、O2-Protocol はこれらの証明書をトークン化してブロックチェーンに持ち込むことを担当します。ブロックチェーンでは、他の暗号通貨や暗号資産によって即座に収益化でき、証明書の価値の 50% が所有者に残ります。 .そして、プロジェクトに資金を提供し、そのトークン化と収益化を管理するためのコンセプトとしての O2-Protocol の価値の残りの 50%。 NFT を持っていない他のユーザーと一緒に、O2-Protocol を介してレバレッジド ファーミングを行ったり、ブロックチェーンで受動的収入を生成したりするなど、他の排他的な利点を得ることができます。<br><br>次のブログでは、その方法について説明します…',
+
+                'modal3-text':'レバレッジドクリプトファーミング',
+                'modal33-text':'O2-Protocol – レバレッジド クリプト ファーミングで受動的収入を生み出します。<br>ユーザーは担保付きローンにアクセスでき、担保付き担保で資本を借りて受動的収入を受け取ることができます。<br><br>O2-Protocol は、 Impermax に基づく暗号ファーミング フォークを活用しましたが、市場に出回っているすべての DeFi とは異なり、O2-Protocol は、O2-Protocol と呼ばれる O2-Protocol のネイティブ トークンに購入圧力を生み出す認証資金の炭素をクリアするなどのビジネス モデルを通じて、常に流動性プールへの資金の流れを生成します。トークン。<br>O2P トークンの機能は、ローン料金の支払いに役立つだけでなく、資金調達するプロジェクトの選択、レバレッジド暗号農業における流動性資金の作成の選択のための投票権も持ちます。プラットフォーム自体の利益にもアクセスできますスマート コントラクトで保持および入金された金額、およびその他の多くのオプションに基づいて比例します。<br><br>O2-Protocol は、認定した各プロジェクトから利益を得ることができます。収益のほとんどは、レバレッジド流動性プールにより多くの資金を追加することに向けられるためです。 O2Pトークン市場でより高い評価価値につながるクリプトファーミングに。',
+                
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -1186,6 +1335,7 @@ $(function () {
             const AboutUsDescription = document.querySelector('[data-translate="aboutus-description"]');
 
             //OPERATING TEAM
+            const TeamMembers = document.querySelector('[data-translate="team-members"]');
             const Operating = document.querySelector('[data-translate="operating"]');
             const Cesar = document.querySelector('[data-translate="cesar"]');
             const CesarTitle = document.querySelector('[data-translate="cesar-title"]');
@@ -1210,9 +1360,26 @@ $(function () {
             const TokenText4 = document.querySelector('[data-translate="tokentext4"]');
             const TokenText5 = document.querySelector('[data-translate="tokentext5"]');
             const TokenText6 = document.querySelector('[data-translate="tokentext6"]');
-            
 
+            //MEDIUM BLOG
+            const MediumTitle = document.querySelector('[data-translate="medium-title"]');
+            const MediumText = document.querySelector('[data-translate="medium-text"]');
+            const Blog1 = document.querySelector('[data-translate="blog1"]');
+            const Blog2 = document.querySelector('[data-translate="blog2"]');
+            const Blog3 = document.querySelector('[data-translate="blog3"]');
             
+            const MediumLink = document.querySelector('[data-translate="medium-link"]');
+
+            //MODAL
+            const Modal1Text = document.querySelector('[data-translate="modal1-text"]');
+            const Modal11Text = document.querySelector('[data-translate="modal11-text"]');
+            const Modal1Date = document.querySelector('[data-translate="modal1-date"]');
+            
+            const Modal2Text = document.querySelector('[data-translate="modal2-text"]');
+            const Modal22Text = document.querySelector('[data-translate="modal22-text"]');
+
+            const Modal3Text = document.querySelector('[data-translate="modal3-text"]');
+            const Modal33Text = document.querySelector('[data-translate="modal33-text"]');            
 
             
             
@@ -1316,6 +1483,7 @@ $(function () {
             Roadmap4Description.innerHTML = translations[Lang]['roadmap4-description'];
 
             //OPERATING TEAM
+            TeamMembers.innerHTML = translations[Lang]['team-members'];
             Operating.innerHTML = translations[Lang]['operating'];
             Cesar.innerHTML = translations[Lang]['cesar'];
             CesarTitle.innerHTML = translations[Lang]['cesar-title'];
@@ -1348,10 +1516,25 @@ $(function () {
             TokenText5.innerHTML = translations[Lang]['tokentext5'];
             TokenText6.innerHTML = translations[Lang]['tokentext6'];
 
+            //MEDIUM BLOG
+            MediumTitle.innerHTML = translations[Lang]['medium-title'];
+            MediumText.innerHTML = translations[Lang]['medium-text'];
+            MediumLink.innerHTML = translations[Lang]['medium-link'];
+            Blog1.innerHTML = translations[Lang]['blog1'];
+            Blog2.innerHTML = translations[Lang]['blog2'];
+            Blog3.innerHTML = translations[Lang]['blog3'];
+            
 
+            //MODAL
+            Modal1Text.innerHTML = translations[Lang]['modal1-text'];
+            Modal11Text.innerHTML = translations[Lang]['modal11-text'];
+            Modal1Date.innerHTML = translations[Lang]['modal1-date'];
 
+            Modal2Text.innerHTML = translations[Lang]['modal2-text'];
+            Modal22Text.innerHTML = translations[Lang]['modal22-text'];
 
-
+            Modal3Text.innerHTML = translations[Lang]['modal3-text'];
+            Modal33Text.innerHTML = translations[Lang]['modal33-text'];
             
             
             //bottom
