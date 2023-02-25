@@ -1347,10 +1347,23 @@ $(function () {
             }
         }
         
+        
 
        
         // Define a function to update the text in the banner based on the selected language
         function updateBannerText(Lang) {
+        const chart = AmCharts.charts[0];
+        const dataProvider = chart.dataProvider;
+        for (let i = 0; i < dataProvider.length; i++) {
+            const translationKey = dataProvider[i]['data-translate'];
+            if (translations[Lang] && translations[Lang][translationKey]) {
+            dataProvider[i].category = translations[Lang][translationKey];
+            }
+        }
+        chart.validateData();
+        }
+            
+            
             //top banners titles
             const topFeatures = document.querySelector('[data-translate="top-features"]');
             const topProduct = document.querySelector('[data-translate="top-products"]');
@@ -1473,12 +1486,10 @@ $(function () {
             const TokenText5 = document.querySelector('[data-translate="tokentext5"]');
             const TokenText6 = document.querySelector('[data-translate="tokentext6"]');
 
-            const Airdrop = document.querySelector('[data-translate="airdrop"]');
+
             const Development = document.querySelector('[data-translate="development"]');
-            const LiquidityFarming= document.querySelector('[data-translate="liquidity-farming"]');
-            const MarketingAdvisors = document.querySelector('[data-translate="marketing-advisors"]');
-            const TeamFounder = document.querySelector('[data-translate="team-founder"]');
-            const SeedRound = document.querySelector('[data-translate="seedround"]');
+
+            
                     
             
 
@@ -1651,22 +1662,9 @@ $(function () {
             TokenText3.innerHTML = translations[Lang]['tokentext3'];
             TokenText4.innerHTML = translations[Lang]['tokentext4'];
             TokenText5.innerHTML = translations[Lang]['tokentext5'];
-            TokenText6.innerHTML = translations[Lang]['tokentext6'];
-
-            Airdrop.innerHTML = translations[Lang]['airdrop'];
-            Development.innerHTML = translations[Lang]['development'];
-            LiquidityFarming.innerHTML = translations[Lang]['liquidity-farming'];
-            MarketingAdvisors.innerHTML = translations[Lang]['marketing-advisors'];
-            TeamFounder.innerHTML = translations[Lang]['team-founder'];
-            SeedRound.innerHTML = translations[Lang]['seedround'];
+            TokenText6.innerHTML = translations[Lang]['tokentext6'];   
             
-            
-            /*Airdrop.innerHTML = translations[Lang]['airdrop'];
-            Development.innerHTML = translations[Lang]['development'];
-            LiquidityFarming.innerHTML = translations[Lang]['liquidity-farming'];
-            MarketingAdvisors.innerHTML = translations[Lang]['marketing-advisors'];
-            TeamFounder.innerHTML = translations[Lang]['team-founder'];
-            SeedRound.innerHTML = translations[Lang]['seedround'];*/
+            Development.dataProvider = translations[Lang]['development'];   
 
 
             //MEDIUM BLOG
@@ -1991,34 +1989,34 @@ $('.dropdown-item').click(function() {
         "titles": [],
         "dataProvider": [{
                 "category": "Airdrop",
-                "column-1": "0.1",
-                "translationKey": "airdrop"},
+                "column-1": "0.1"},
+                
             {
                 "category": "Development",
                 "column-1": "20",
-                "translationKey": "development",
+                "data-translate": "development",
             },
             {
                 "category": "Liquidity farming",
                 "column-1": "26",
-                "translationKey": "liquidity-farming",
+                
             },
             {
                 "category": "Marketing & Advisors",
                 "column-1": "8.9",
-                "translationKey": "airdrop",
+                
                 
             },
             {
                 "category": "Team founder",
                 "column-1": "20",
-                "translationKey": "team-founder",
+                
             },
             {
                 "category": "Seed, Private sale A & B",
                 "column-1": "25",
-                "translationKey": "seedround",
-            }
+                
+            },
         ]
     });
 
