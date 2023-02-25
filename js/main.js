@@ -453,6 +453,13 @@ $(function () {
             //CONTACT US
             'contactus':'Contact Us',
 
+            //NEWSLETTER
+            'news-title':'Newsletter',
+            'news-text':'Sign up for ICO campaign updates',
+            'news-name':'Full Name',
+            'news-email':'e-mail address',
+            'news-submit':'SUBSCRIBE',
+
 
 
             //bottom
@@ -629,10 +636,25 @@ $(function () {
             //CONTACT US
             'contactus':'Contacta con nosotros',
 
+            //NEWSLETTER
+            'news-title':'Boletin informativo',
+            'news-text':'Regístrese para recibir actualizaciones de la campaña ICO',
+            'news-name':'Nombre',
+            'news-email':'e-mail',
+            'news-submit':'SUSCRIBIR',
+
             //bottom
+            'company-title':'O2-PROTOCOL',
+            'about-bottom':'Acerca de',
+            'team-bottom':'Equipo',
+            'blog-bottom':'Blog',
+            'contact-bottom':'Contacto',
+
+            'ico-funding':'FINANCIACIÓN ICO',
             'bottom-feature': 'Características',
             'bottom-product': 'Productos',
             'bottom-roadmap': 'Hoja de ruta',
+            'bottom-token':'Token',
 
 
             },
@@ -801,10 +823,27 @@ $(function () {
                 //CONTACT US
                 'contactus':'Contate-nos',
 
+                //NEWSLETTER
+                'news-title':'Boletim de Notícias',
+                'news-text':'Inscreva-se para receber atualizações da campanha da ICO',
+                'news-name':'Nome',
+                'news-email':'e-mail',
+                'news-submit':'ENVIAR',
+
                 //bottom
-                'bottom-feature': 'Características',
-                'bottom-product': 'Productos',
-                'bottom-roadmap': 'Hoja de ruta',
+
+                'company-title':'O2-PROTOCOL',
+                'about-bottom':'Sobre',
+                'team-bottom':'Equipe',
+                'blog-bottom':'Blog',
+                'contact-bottom':'Contato',
+
+
+                'ico-funding':'FINANCIAMENTO DA OIC',
+                'bottom-feature': 'Caracteristicas',
+                'bottom-product': 'Produtos',
+                'bottom-roadmap': 'Roteiro',
+                'bottom-token':'Token',
             },
             'kr': {
                 //top banners
@@ -965,10 +1004,25 @@ $(function () {
                 //CONTACT US
                 'contactus':'문의하기',
 
+                //NEWSLETTER
+                'news-title':'뉴스 레터',
+                'news-text':'ICO 캠페인 업데이트에 등록하십시오.',
+                'news-name':'전체 이름',
+                'news-email':'이메일',
+                'news-submit':'제출하다',
+
                 //bottom
-                'bottom-feature': 'Características',
-                'bottom-product': 'Productos',
-                'bottom-roadmap': 'Hoja de ruta',
+                'company-title':'O2 프로토콜',
+                'about-bottom':'에 대한',
+                'team-bottom':'팀',
+                'blog-bottom':'블로그',
+                'contact-bottom':'연락하다',
+
+                'ico-funding':'ICO 펀딩',
+                'bottom-feature': '형질',
+                'bottom-product': '제품',
+                'bottom-roadmap': '로드맵',
+                'bottom-token':'토큰',
             },
             'ch': {
                 //top banners
@@ -1126,12 +1180,27 @@ $(function () {
                 //CONTACT US
                 'contactus':'聯繫我們',
 
+                //NEWSLETTER
+                'news-title':'通訊',
+                'news-text':'註冊 ICO 活動更新。',
+                'news-name':'全名',
+                'news-email':'電子郵件',
+                'news-submit':'提交',
+
 
 
                 //bottom
-                'bottom-feature': 'Características',
-                'bottom-product': 'Productos',
-                'bottom-roadmap': 'Hoja de ruta',
+                'company-title':'O2協議',
+                'about-bottom':'關於',
+                'team-bottom':'團隊',
+                'blog-bottom':'博客',
+                'contact-bottom':'接觸',
+
+                'ico-funding':'ICO 資金',
+                'bottom-feature': '特徵',
+                'bottom-product': '產品',
+                'bottom-roadmap': '路線圖',
+                'bottom-token':'代幣',
             },
             'jp': {
                 //top banners
@@ -1296,11 +1365,26 @@ $(function () {
                 //CONTACT US
                 'contactus':'お問い合わせ',
 
+                //NEWSLETTER
+                'news-title':'ニュースレター',
+                'news-text':'ICO キャンペーンの更新にサインアップしてください。',
+                'news-name':'フルネーム',
+                'news-email':'Eメール',
+                'news-submit':'送信',
+
 
                 //bottom
-                'bottom-feature': 'Características',
-                'bottom-product': 'Productos',
-                'bottom-roadmap': 'Hoja de ruta',
+                'company-title':'O2プロトコル',
+                'about-bottom':'だいたい',
+                'team-bottom':'チーム',
+                'blog-bottom':'ブログ',
+                'contact-bottom':'コンタクト',
+
+                'ico-funding':'ICO資金調達',
+                'bottom-feature': '特徴',
+                'bottom-product': '製品',
+                'bottom-roadmap': 'ロードマップ',
+                'bottom-token':'Toトークンken',
             }
         }
         
@@ -1463,8 +1547,24 @@ $(function () {
 
             //CONTACT US
             const ContactUs = document.querySelector('[data-translate="contactus"]');
+
+            //NEWSLETTER
+            const NewsTitle = document.querySelector('[data-translate="news-title"]');
+            const NewsText = document.querySelector('[data-translate="news-text"]');
+            const NewsName = document.querySelector('[data-translate="news-name"]');
+            const NewsEmail = document.querySelector('[data-translate="news-email"]');
+            const NewsSubmit = document.querySelector('[data-translate="news-submit"]');
             
             //bottom
+            const CompanyTitle = document.querySelector('[data-translate="company-title"]');
+            const AboutBottom = document.querySelector('[data-translate="about-bottom"]');
+            const TeamBottom = document.querySelector('[data-translate="team-bottom"]');
+            const BlogBottom = document.querySelector('[data-translate="blog-bottom"]');
+            const ContactBottom = document.querySelector('[data-translate="contact-bottom"]');
+
+            const ICOFunding = document.querySelector('[data-translate="ico-funding"]');
+            const BottomToken = document.querySelector('[data-translate="bottom-token"]');
+            
             const bannerTitle = document.querySelector('[data-translate="banner-title"]');
             const bannerDescription = document.querySelector('[data-translate="banner-description"]');
             const bottomFeature = document.querySelector('[data-translate="bottom-feature"]');
@@ -1625,7 +1725,23 @@ $(function () {
             //CONTACT US
             ContactUs.innerHTML = translations[Lang]['contactus'];
 
+            //NEWSLETTER
+            NewsTitle.innerHTML = translations[Lang]['news-title'];
+            NewsText.innerHTML = translations[Lang]['news-text'];
+            NewsName.placeholder = translations[Lang]['news-name'];
+            NewsEmail.placeholder = translations[Lang]['news-email'];
+            NewsSubmit.innerHTML = translations[Lang]['news-submit'];
+
             //bottom
+            CompanyTitle.innerHTML = translations[Lang]['company-title'];
+            AboutBottom.innerHTML = translations[Lang]['about-bottom'];
+            TeamBottom.innerHTML = translations[Lang]['team-bottom'];
+            BlogBottom.innerHTML = translations[Lang]['blog-bottom'];
+            ContactBottom.innerHTML = translations[Lang]['contact-bottom'];
+
+            ICOFunding.innerHTML = translations[Lang]['ico-funding'];
+            BottomToken.innerHTML = translations[Lang]['bottom-token'];
+            
             bannerTitle.innerHTML = translations[Lang]['banner-title'];
             bannerDescription.innerHTML = translations[Lang]['banner-description'];
             bottomFeature.innerHTML = translations[Lang]['bottom-feature'];
