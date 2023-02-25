@@ -419,13 +419,6 @@ $(function () {
             'tokentext5': 'Team founder: 20%',
             'tokentext6': '>Marketing & Advisors: 8.9%',
 
-            'airdrop':'Airdrop',
-            'development': 'Development',
-            'liquidity-farming':'Liquidity farming',
-            'marketing-advisors':'Marketing & Advisors',
-            'team-founder':'Team founder',
-            'seedround':'Seed, Private sale A & B',
-
             //MEDIUM BLOG
             'medium-title':'Latest Medium Blog Posts on O2-Protocol',
             'medium-text':'Keep up to date with the latest news on O2-Protocol.',
@@ -601,13 +594,6 @@ $(function () {
             'tokentext5': 'Equipo Fundador: 20%',
             'tokentext6': 'Marketing y Asesores: 8,9%',
 
-            'airdrop':'Airdrop ESSSSSS',
-            'development': 'Desarrollo',
-            'liquidity-farming':'Liquidez Agricultura Criptográfica',
-            'marketing-advisors':'Marketing & Asesores',
-            'team-founder':'Equipo fundador',
-            'seedround':'Semilla, Venta Privada A & B',
-
             //MEDIUM BLOG
             'medium-title':'Últimas publicaciones Medium en O2-Protocol',
             'medium-text':'Manténgase al día con las últimas noticias sobre O2-Protocol.',
@@ -779,13 +765,6 @@ $(function () {
                 'tokentext5': 'Fundador da equipe: 20%',
                 'tokentext6': 'Marketing & Consultores: 8,9%',
 
-                'airdrop':'Airdrop',
-                'development': 'Development',
-                'liquidity-farming':'Liquidity farming',
-                'marketing-advisors':'Marketing & Advisors',
-                'team-founder':'Team founder',
-                'seedround':'Seed, Private sale A & B',
-
                 //MEDIUM BLOG
                 'medium-title':'Últimas publicações do Medium sobre O2-Protocol',
                 'medium-text':'Mantenha-se atualizado com as últimas notícias sobre O2-Protocol.',
@@ -951,13 +930,6 @@ $(function () {
                 'tokentext5': '팀 설립자: 20%',
                 'tokentext6': '마케팅 및 고문: 8.9%',
 
-                'airdrop':'Airdrop',
-                'development': 'Development',
-                'liquidity-farming':'Liquidity farming',
-                'marketing-advisors':'Marketing & Advisors',
-                'team-founder':'Team founder',
-                'seedround':'Seed, Private sale A & B',
-
                 //MEDIUM BLOG
                 'medium-title':'O2-Protocol에 대한 최신 매체 블로그 게시물',
                 'medium-text':'O2-Protocol의 최신 뉴스를 확인하세요.',
@@ -1119,13 +1091,6 @@ $(function () {
                 'tokentext4': '種子、私募 A 和 B：25%',
                 'tokentext5': '團隊創始人：20%',
                 'tokentext6': '營銷和顧問：8.9%',
-
-                'airdrop':'Airdrop',
-                'development': 'Development',
-                'liquidity-farming':'Liquidity farming',
-                'marketing-advisors':'Marketing & Advisors',
-                'team-founder':'Team founder',
-                'seedround':'Seed, Private sale A & B',
 
                 //MEDIUM BLOG
                 'medium-title':'關於 O2 協議的最新中型博客文章',
@@ -1294,14 +1259,6 @@ $(function () {
                 'tokentext5': 'チームの創設者: 20%',
                 'tokentex6':'マーケティングとアドバイザー: 8.9%',
 
-                'airdrop':'Airdrop',
-                'development': 'Development',
-                'liquidity-farming':'Liquidity farming',
-                'marketing-advisors':'Marketing & Advisors',
-                'team-founder':'Team founder',
-                'seedround':'Seed, Private sale A & B',
-
-
                 //MEDIUM BLOG
                 'medium-title':'O2-Protocol に関する最新の中規模ブログ投稿',
                 'medium-text':'O2-Protocol に関する最新ニュースを入手してください。',
@@ -1352,17 +1309,6 @@ $(function () {
        
         // Define a function to update the text in the banner based on the selected language
         function updateBannerText(Lang) {
-        const chart = AmCharts.charts[0];
-        const dataProvider = chart.dataProvider;
-        for (let i = 0; i < dataProvider.length; i++) {
-            const translationKey = dataProvider[i]['data-translate'];
-            if (translations[Lang] && translations[Lang][translationKey]) {
-            dataProvider[i].category = translations[Lang][translationKey];
-            }
-        }
-        chart.validateData();
-        }
-            
             
             //top banners titles
             const topFeatures = document.querySelector('[data-translate="top-features"]');
@@ -1486,16 +1432,6 @@ $(function () {
             const TokenText5 = document.querySelector('[data-translate="tokentext5"]');
             const TokenText6 = document.querySelector('[data-translate="tokentext6"]');
 
-
-            const Development = document.querySelector('[data-translate="development"]');
-
-            
-                    
-            
-
-
-
-
             //MEDIUM BLOG
             const MediumTitle = document.querySelector('[data-translate="medium-title"]');
             const MediumText = document.querySelector('[data-translate="medium-text"]');
@@ -1528,14 +1464,6 @@ $(function () {
             //CONTACT US
             const ContactUs = document.querySelector('[data-translate="contactus"]');
             
-
-            
-            
-            
-            
-            
-            
-            
             //bottom
             const bannerTitle = document.querySelector('[data-translate="banner-title"]');
             const bannerDescription = document.querySelector('[data-translate="banner-description"]');
@@ -1545,6 +1473,7 @@ $(function () {
 
             
             if (translations[Lang]) {
+            
             //top banner titles
             topFeatures.innerHTML = translations[Lang]['top-features'];
             topProduct.innerHTML = translations[Lang]['top-products'];
@@ -1664,9 +1593,6 @@ $(function () {
             TokenText5.innerHTML = translations[Lang]['tokentext5'];
             TokenText6.innerHTML = translations[Lang]['tokentext6'];   
             
-            Development.dataProvider = translations[Lang]['development'];   
-
-
             //MEDIUM BLOG
             MediumTitle.innerHTML = translations[Lang]['medium-title'];
             MediumText.innerHTML = translations[Lang]['medium-text'];
@@ -1708,6 +1634,9 @@ $(function () {
 
             }
         }
+        
+        
+
         
         // Add an event listener to the language selector dropdown to update the banner text when a new language is selected
         const languageDropdown = document.querySelector('.o-langualge .dropdown-menu');
@@ -1993,28 +1922,28 @@ $('.dropdown-item').click(function() {
                 
             {
                 "category": "Development",
-                "column-1": "20",
-                "data-translate": "development",
+                "column-1": "20"
+                
             },
             {
                 "category": "Liquidity farming",
-                "column-1": "26",
+                "column-1": "26"
                 
             },
             {
                 "category": "Marketing & Advisors",
-                "column-1": "8.9",
+                "column-1": "8.9"
                 
                 
             },
             {
                 "category": "Team founder",
-                "column-1": "20",
+                "column-1": "20"
                 
             },
             {
                 "category": "Seed, Private sale A & B",
-                "column-1": "25",
+                "column-1": "25"
                 
             },
         ]
