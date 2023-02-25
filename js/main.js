@@ -419,6 +419,13 @@ $(function () {
             'tokentext5': 'Team founder: 20%',
             'tokentext6': '>Marketing & Advisors: 8.9%',
 
+            'airdrop':'Airdrop',
+            'development': 'Development',
+            'liquidity-farming':'Liquidity farming',
+            'marketing-advisors':'Marketing & Advisors',
+            'team-founder':'Team founder',
+            'seedround':'Seed, Private sale A & B',
+
             //MEDIUM BLOG
             'medium-title':'Latest Medium Blog Posts on O2-Protocol',
             'medium-text':'Keep up to date with the latest news on O2-Protocol.',
@@ -441,6 +448,17 @@ $(function () {
             'modal33-text':'O2-Protocol – Will generate passive income with leveraged crypto farming.<br>Users will have access to collateralized loans and the option to borrow their capital with collateralized collateral to receive passive income.<br><br>O2-Protocol will use a leveraged crypto farming fork based on Impermax, but unlike all DeFi on the market, O2-Protocol constantly generates a stream of money to liquidity pools through business models such as carbon offset financing, which creates buying pressure on O2-Protocol native token called O2P token.<br>The function of the O2P token will not only serve to pay loan fees, but will also have voting power for the election of the projects to be financed, choice for the creation of liquidity funds in leveraged cryptographic farming, it will also give you access to the profits of the platform itself proportionally based on the amount held and deposited in the smart contracts, and many other options.<br><br>O2-Protocol will benefit from each project it certifies, as most of the revenue will go towards adding more funds to Leverage liquidity pools for crypto farming which translates into higher appreciative value in the O2P token market.',
             
 
+            //LEAVE US MESSAGE
+            'leave':'Leave us a meesage',
+            'firstname':'First Name',
+            'lastname':'Last Name',
+            'phone':'Phone',
+            'email':'e-mail',
+            'message':'Message',
+            'submit':'SUBMIT YOUR MESSAGE',
+
+            //CONTACT US
+            'contactus':'Contact Us',
 
 
 
@@ -583,6 +601,13 @@ $(function () {
             'tokentext5': 'Equipo Fundador: 20%',
             'tokentext6': 'Marketing y Asesores: 8,9%',
 
+            'airdrop':'Airdrop ESSSSSS',
+            'development': 'Desarrollo',
+            'liquidity-farming':'Liquidez Agricultura Criptográfica',
+            'marketing-advisors':'Marketing & Asesores',
+            'team-founder':'Equipo fundador',
+            'seedround':'Semilla, Venta Privada A & B',
+
             //MEDIUM BLOG
             'medium-title':'Últimas publicaciones Medium en O2-Protocol',
             'medium-text':'Manténgase al día con las últimas noticias sobre O2-Protocol.',
@@ -605,6 +630,18 @@ $(function () {
 
             'modal3-text':'AGRICULTURA CRIPTOGRÁFICA APALANCADA',
             'modal33-text':'O2-Protocol: generará ingresos pasivos con agricultura criptográfica apalancada.<br>Los usuarios tendrán acceso a préstamos colateralizados y la opción de ofrecer en préstamo su capital con garantías colateralizadas y así recibir ingresos pasivos.<br><br>O2-Protocol utilizará una bifurcación de agricultura criptográfica apalancada basada en el Impermax , pero a diferencia de todas las DeFi en el mercado, O2-Protocol genera constantemente un flujo de dinero a los fondos de liquidez a través de modelos comerciales como la financiación de la certificación de compensación de carbono, lo que crea presión de compra sobre el token nativo de O2-Protocol llamado token O2P.<br>La función del token O2P no solo servirá para pagar las comisiones de los préstamos, sino que también tendrá poder de voto para la elección de los proyectos a financiar, elección para la creación de fondos de liquidez en la agricultura criptográfica apalancada, además le dará acceso a las ganancias de la propia plataforma proporcionalmente según el monto retenido y depositado en los contratos inteligentes, y muchas otras opciones más.<br><br>O2-Protocol se beneficiara de cada proyecto que certifica, ya que la mayor parte de los ingresos se destinarán para agregar más fondos a las piscinas de liquidez apalancadas para la agricultura criptográfica lo que se traduce en mayor valor apreciativo en el mercado del token O2P.',
+
+            //LEAVE US MESSAGE
+            'leave':'Déjanos un mensaje',
+            'firstname':'Nombre',
+            'lastname':'Apellido',
+            'phone':'Teléfono',
+            'email':'e-mail',
+            'message':'Mensaje',
+            'submit':'ENVÍE SU MENSAJE',
+
+            //CONTACT US
+            'contactus':'Contacta con nosotros',
 
             //bottom
             'bottom-feature': 'Características',
@@ -742,6 +779,13 @@ $(function () {
                 'tokentext5': 'Fundador da equipe: 20%',
                 'tokentext6': 'Marketing & Consultores: 8,9%',
 
+                'airdrop':'Airdrop',
+                'development': 'Development',
+                'liquidity-farming':'Liquidity farming',
+                'marketing-advisors':'Marketing & Advisors',
+                'team-founder':'Team founder',
+                'seedround':'Seed, Private sale A & B',
+
                 //MEDIUM BLOG
                 'medium-title':'Últimas publicações do Medium sobre O2-Protocol',
                 'medium-text':'Mantenha-se atualizado com as últimas notícias sobre O2-Protocol.',
@@ -766,7 +810,17 @@ $(function () {
                 'modal3-text':'AGRICULTURA DE CRIPTO ALAVANCADA',
                 'modal33-text':'O2-Protocol – Gerará renda passiva com cripto cultivo alavancado.<br>Os usuários terão acesso a empréstimos garantidos e a opção de emprestar seu capital com garantias garantidas para receber renda passiva.<br><br>O2-Protocol usará um garfo de cultivo de criptografia alavancado baseado em Impermax, mas ao contrário de todos os DeFi no mercado, o O2-Protocol gera constantemente um fluxo de dinheiro para pools de liquidez por meio de modelos de negócios, como compensação de carbono de certificação de financiamento, o que cria pressão de compra no token nativo do O2-Protocol chamado O2P token.<br>A função do token O2P não servirá apenas para pagar taxas de empréstimos, mas também terá poder de voto para a eleição dos projetos a serem financiados, escolha para a criação de fundos de liquidez em agricultura criptográfica alavancada, também lhe dá acesso aos lucros da própria plataforma proporcionalmente com base no valor mantido e depositado nos contratos inteligentes, e muitas outras opções.<br><br>O2-Protocol se beneficiará de cada projeto que certificar, pois a maior parte da receita será destinada à adição de mais fundos aos pools de liquidez alavancados para o cultivo de criptografia, que se traduz em maior valor apreciativo no mercado de token O2P.',
 
+                //LEAVE US MESSAGE
+                'leave':'Deixe-nos uma mensagem',
+                'firstname':'Primeiro nome',
+                'lastname':'Sobrenome',
+                'phone':'Telefone',
+                'email':'e-mail',
+                'message':'Mensagem',
+                'submit':'ENVIE SUA MENSAGEM',
 
+                //CONTACT US
+                'contactus':'Contate-nos',
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -897,6 +951,13 @@ $(function () {
                 'tokentext5': '팀 설립자: 20%',
                 'tokentext6': '마케팅 및 고문: 8.9%',
 
+                'airdrop':'Airdrop',
+                'development': 'Development',
+                'liquidity-farming':'Liquidity farming',
+                'marketing-advisors':'Marketing & Advisors',
+                'team-founder':'Team founder',
+                'seedround':'Seed, Private sale A & B',
+
                 //MEDIUM BLOG
                 'medium-title':'O2-Protocol에 대한 최신 매체 블로그 게시물',
                 'medium-text':'O2-Protocol의 최신 뉴스를 확인하세요.',
@@ -920,7 +981,17 @@ $(function () {
                 'modal3-text':'레버리지 암호화폐 파밍',
                 'modal33-text':'O2-Protocol – 레버리지 암호화폐 농법으로 소극적 소득을 창출합니다.<br>사용자는 담보 대출에 액세스할 수 있으며 담보 담보로 자본을 빌려 수동적 소득을 얻을 수 있습니다.<br><br>O2-Protocol은 Impermax를 기반으로 암호화폐 파밍 포크를 활용하지만 시장의 모든 DeFi와 달리 O2-Protocol은 O2P라는 O2-Protocol의 기본 토큰에 대한 구매 압력을 생성하는 인증 자금 조달 탄소 청산과 같은 비즈니스 모델을 통해 유동성 풀에 지속적으로 자금 흐름을 생성합니다. 토큰.<br>O2P 토큰의 기능은 대출 수수료를 지불하는 역할을 할 뿐만 아니라 자금을 조달할 프로젝트 선택에 대한 의결권, 레버리지 암호화 농업에서 유동성 자금 생성을 위한 선택, 또한 플랫폼 자체의 이익에 대한 액세스를 제공합니다. 스마트 계약에 보유 및 예치된 금액 및 기타 여러 옵션에 따라 비례합니다.<br><br>O2-Protocol은 대부분의 수익이 레버리지 유동성 풀에 더 많은 자금을 추가하는 데 사용되므로 인증하는 각 프로젝트에서 이익을 얻습니다. O2P 토큰 시장에서 더 높은 감사 가치로 변환되는 암호화 농업을 위해.',
 
+                //LEAVE US MESSAGE
+                'leave':'메시지를 남겨주세요',
+                'firstname':'이름',
+                'lastname':'성',
+                'phone':'핸드폰',
+                'email':'이메일',
+                'message':'메시지',
+                'submit':'메시지 제출',
 
+                //CONTACT US
+                'contactus':'문의하기',
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -1049,9 +1120,17 @@ $(function () {
                 'tokentext5': '團隊創始人：20%',
                 'tokentext6': '營銷和顧問：8.9%',
 
+                'airdrop':'Airdrop',
+                'development': 'Development',
+                'liquidity-farming':'Liquidity farming',
+                'marketing-advisors':'Marketing & Advisors',
+                'team-founder':'Team founder',
+                'seedround':'Seed, Private sale A & B',
+
                 //MEDIUM BLOG
                 'medium-title':'關於 O2 協議的最新中型博客文章',
                 'medium-text':'了解有關 O2-Protocol 的最新消息。',
+                'medium-link':'閱讀更多博客文章',
                 
                 'blog1':'<a href="#" data-toggle="modal" data-target="#blog-modal-content"><span>2023 年 2 月 24 日</span>再生DEFI</a>',
                 'blog2':'<a href="#" data-toggle="modal" data-target="#blog-modal-content2"><span>2023 年 2 月 24 日</span>NFT 碳抵消證書</a>',
@@ -1070,6 +1149,19 @@ $(function () {
                 'modal3-text':'槓桿式加密農業',
                 'modal33-text':'O2-Protocol – 將通過槓桿加密貨幣耕作產生被動收入。<br>用戶將可以獲得抵押貸款，並可以選擇使用抵押品借入資本以獲得被動收入。<br><br>O2-Protocol 將使用基於 Impermax 的槓桿加密農業分叉，但與市場上所有的 DeFi 不同，O2-Protocol 通過清算認證資金碳等商業模式不斷地向流動性池產生資金流，這對 O2-Protocol 的原生代幣 O2P 造成了購買壓力代幣。<br>O2P代幣的功能不僅可以用於支付貸款費用，而且還將擁有選舉融資項目的投票權，選擇在槓桿加密農業中創建流動資金，它將還可以讓您獲得平臺本身的利潤根據智能合約中持有和存入的金額以及許多其他選項按比例分配。<br><br>O2-Protocol 將從其認證的每個項目中受益，因為大部分收入將用於向槓桿流動性池中添加更多資金用於加密農業，這在 O2P 代幣市場上轉化為更高的欣賞價值。',
                 
+                //LEAVE US MESSAGE
+                'leave':'給我們留言',
+                'firstname':'名',
+                'lastname':'姓',
+                'phone':'電話',
+                'email':'電子郵件',
+                'message':'信息',
+                'submit':'提交您的留言',
+
+                //CONTACT US
+                'contactus':'聯繫我們',
+
+
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -1202,10 +1294,18 @@ $(function () {
                 'tokentext5': 'チームの創設者: 20%',
                 'tokentex6':'マーケティングとアドバイザー: 8.9%',
 
+                'airdrop':'Airdrop',
+                'development': 'Development',
+                'liquidity-farming':'Liquidity farming',
+                'marketing-advisors':'Marketing & Advisors',
+                'team-founder':'Team founder',
+                'seedround':'Seed, Private sale A & B',
+
 
                 //MEDIUM BLOG
                 'medium-title':'O2-Protocol に関する最新の中規模ブログ投稿',
                 'medium-text':'O2-Protocol に関する最新ニュースを入手してください。',
+                'medium-link':'もっとブログ記事を読む',
                 
 
                 
@@ -1227,6 +1327,18 @@ $(function () {
                 'modal3-text':'レバレッジドクリプトファーミング',
                 'modal33-text':'O2-Protocol – レバレッジド クリプト ファーミングで受動的収入を生み出します。<br>ユーザーは担保付きローンにアクセスでき、担保付き担保で資本を借りて受動的収入を受け取ることができます。<br><br>O2-Protocol は、 Impermax に基づく暗号ファーミング フォークを活用しましたが、市場に出回っているすべての DeFi とは異なり、O2-Protocol は、O2-Protocol と呼ばれる O2-Protocol のネイティブ トークンに購入圧力を生み出す認証資金の炭素をクリアするなどのビジネス モデルを通じて、常に流動性プールへの資金の流れを生成します。トークン。<br>O2P トークンの機能は、ローン料金の支払いに役立つだけでなく、資金調達するプロジェクトの選択、レバレッジド暗号農業における流動性資金の作成の選択のための投票権も持ちます。プラットフォーム自体の利益にもアクセスできますスマート コントラクトで保持および入金された金額、およびその他の多くのオプションに基づいて比例します。<br><br>O2-Protocol は、認定した各プロジェクトから利益を得ることができます。収益のほとんどは、レバレッジド流動性プールにより多くの資金を追加することに向けられるためです。 O2Pトークン市場でより高い評価価値につながるクリプトファーミングに。',
                 
+                //LEAVE US MESSAGE
+                'leave':'メッセージを残してください',
+                'firstname':'ファーストネーム',
+                'lastname':'苗字',
+                'phone':'電話',
+                'email':'Eメール',
+                'message':'メッセージ',
+                'submit':'メッセージを送信',
+
+                //CONTACT US
+                'contactus':'お問い合わせ',
+
 
                 //bottom
                 'bottom-feature': 'Características',
@@ -1361,6 +1473,18 @@ $(function () {
             const TokenText5 = document.querySelector('[data-translate="tokentext5"]');
             const TokenText6 = document.querySelector('[data-translate="tokentext6"]');
 
+            const Airdrop = document.querySelector('[data-translate="airdrop"]');
+            const Development = document.querySelector('[data-translate="development"]');
+            const LiquidityFarming= document.querySelector('[data-translate="liquidity-farming"]');
+            const MarketingAdvisors = document.querySelector('[data-translate="marketing-advisors"]');
+            const TeamFounder = document.querySelector('[data-translate="team-founder"]');
+            const SeedRound = document.querySelector('[data-translate="seedround"]');
+                    
+            
+
+
+
+
             //MEDIUM BLOG
             const MediumTitle = document.querySelector('[data-translate="medium-title"]');
             const MediumText = document.querySelector('[data-translate="medium-text"]');
@@ -1379,7 +1503,20 @@ $(function () {
             const Modal22Text = document.querySelector('[data-translate="modal22-text"]');
 
             const Modal3Text = document.querySelector('[data-translate="modal3-text"]');
-            const Modal33Text = document.querySelector('[data-translate="modal33-text"]');            
+            const Modal33Text = document.querySelector('[data-translate="modal33-text"]');
+            
+            //LEAVE US MESSAGE
+            const LeaveUs = document.querySelector('[data-translate="leave"]');
+            const FirstName = document.querySelector('[data-translate="firstname"]');
+            const LastName = document.querySelector('[data-translate="lastname"]');
+            const Phone = document.querySelector('[data-translate="phone"]');
+            const eMail = document.querySelector('[data-translate="email"]');
+            const Message = document.querySelector('[data-translate="message"]');
+            const Submit = document.querySelector('[data-translate="submit"]');
+
+            //CONTACT US
+            const ContactUs = document.querySelector('[data-translate="contactus"]');
+            
 
             
             
@@ -1516,6 +1653,22 @@ $(function () {
             TokenText5.innerHTML = translations[Lang]['tokentext5'];
             TokenText6.innerHTML = translations[Lang]['tokentext6'];
 
+            Airdrop.innerHTML = translations[Lang]['airdrop'];
+            Development.innerHTML = translations[Lang]['development'];
+            LiquidityFarming.innerHTML = translations[Lang]['liquidity-farming'];
+            MarketingAdvisors.innerHTML = translations[Lang]['marketing-advisors'];
+            TeamFounder.innerHTML = translations[Lang]['team-founder'];
+            SeedRound.innerHTML = translations[Lang]['seedround'];
+            
+            
+            /*Airdrop.innerHTML = translations[Lang]['airdrop'];
+            Development.innerHTML = translations[Lang]['development'];
+            LiquidityFarming.innerHTML = translations[Lang]['liquidity-farming'];
+            MarketingAdvisors.innerHTML = translations[Lang]['marketing-advisors'];
+            TeamFounder.innerHTML = translations[Lang]['team-founder'];
+            SeedRound.innerHTML = translations[Lang]['seedround'];*/
+
+
             //MEDIUM BLOG
             MediumTitle.innerHTML = translations[Lang]['medium-title'];
             MediumText.innerHTML = translations[Lang]['medium-text'];
@@ -1535,8 +1688,19 @@ $(function () {
 
             Modal3Text.innerHTML = translations[Lang]['modal3-text'];
             Modal33Text.innerHTML = translations[Lang]['modal33-text'];
+
+            //LEAVE US MESSAGE
+            LeaveUs.innerHTML = translations[Lang]['leave'];
+            FirstName.placeholder = translations[Lang]['firstname'];
+            LastName.placeholder = translations[Lang]['lastname'];
+            Phone.placeholder = translations[Lang]['phone'];
+            eMail.placeholder = translations[Lang]['email'];
+            Message.placeholder = translations[Lang]['message'];
+            Submit.innerHTML = translations[Lang]['submit'];
             
-            
+            //CONTACT US
+            ContactUs.innerHTML = translations[Lang]['contactus'];
+
             //bottom
             bannerTitle.innerHTML = translations[Lang]['banner-title'];
             bannerDescription.innerHTML = translations[Lang]['banner-description'];
@@ -1827,27 +1991,33 @@ $('.dropdown-item').click(function() {
         "titles": [],
         "dataProvider": [{
                 "category": "Airdrop",
-                "column-1": "0.1"
-            },
+                "column-1": "0.1",
+                "translationKey": "airdrop"},
             {
                 "category": "Development",
-                "column-1": "20"
+                "column-1": "20",
+                "translationKey": "development",
             },
             {
                 "category": "Liquidity farming",
-                "column-1": "26"
+                "column-1": "26",
+                "translationKey": "liquidity-farming",
             },
             {
                 "category": "Marketing & Advisors",
-                "column-1": "8.9"
+                "column-1": "8.9",
+                "translationKey": "airdrop",
+                
             },
             {
                 "category": "Team founder",
-                "column-1": "20"
+                "column-1": "20",
+                "translationKey": "team-founder",
             },
             {
                 "category": "Seed, Private sale A & B",
-                "column-1": "25"
+                "column-1": "25",
+                "translationKey": "seedround",
             }
         ]
     });
