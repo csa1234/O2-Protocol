@@ -305,6 +305,7 @@ $(function () {
             'top-contact': 'Contact',
             'connect': 'Connect',
             'connectwallet':'CONNECT WALLET',
+            'disconnect':'Disconnect',
             
             
             
@@ -490,6 +491,7 @@ $(function () {
             'top-contact': 'Contacto',
             'connect': 'Conectar',
             'connectwallet':'CONECTAR BILLETERA',
+            'disconnect':'Desconectar',
             
             //middle description
             'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
@@ -677,6 +679,7 @@ $(function () {
                 'top-contact': 'Contato',
                 'connect': 'Conectar',
                 'connectwallet':'CONECTAR CARTEIRA',
+                'disconnect':'Desconectar',
                 
                 //middle description
                 'banner-title': 'Financiamento de compensação de carbono e cultivo de criptomoedas alavancado Regenerative DeFi',
@@ -865,6 +868,7 @@ $(function () {
                 'top-contact': '연락하다',
                 'connect': '연결하다',
                 'connectwallet':'지갑 연결',
+                'disconnect':'연결 끊기',
                 
                 
                 //middle description
@@ -877,7 +881,7 @@ $(function () {
                 //'프라이빗 라운드 B는 에서 시작합니다.',
 
                 'connectwallet':'지갑 연결',
-                'purchase-o2p':'COMPRAR TOKENS O2P',
+                'purchase-o2p':'O2P 토큰 구매',
 
                 //get whitelisted
                 'getwhitelisted':'참여할 수 있도록 허용 목록에 추가:',
@@ -1046,6 +1050,7 @@ $(function () {
                 'top-contact': '接觸',
                 'connect': '连接',
                 'connectwallet':'連接錢包',
+                'disconnect':'斷開',
                 
                 //middle description
                 'banner-title': '碳抵消融資和槓桿加密農業再生 DeFi',
@@ -1226,6 +1231,7 @@ $(function () {
                 'top-contact': 'コンタクト',
                 'connect': '接続する',
                 'connectwallet':'コネクトウォレット',
+                'disconnect':'切断する',
                 
                 
                 //middle description
@@ -1419,7 +1425,7 @@ $(function () {
             const topContact = document.querySelector('[data-translate="top-contact"]');
             const Connect = document.querySelector('[data-translate="connect"]');
 
-            const DisconnectButton = document.getElementById('disconnect');
+            const DisconnectButton = document.getElementById('disco');
             
             
            
@@ -1602,6 +1608,8 @@ $(function () {
             topBlog.innerHTML = translations[Lang]['top-blog'];
             topContact.innerHTML = translations[Lang]['top-contact'];
             Connect.innerHTML = translations[Lang]['connect'];
+
+            DisconnectButton.innerHTML = translations[Lang]['disconnect'];
             
             
 
