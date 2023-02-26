@@ -146,7 +146,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn secondary-btn" id="connectButton2" data-translate="connect" onclick="connectMetaMask()">Connect</a>
+                        <a class="btn secondary-btn2" id="connectButton2" data-translate="connect" onclick="connectMetaMask()">Connect</a>
+                        
+
+                        <a class="btn secondary-btn2" id="disconnect-button" style="display:none" data-translate="disconnect" onclick="disconnectWallet()">Discon.</a>
                     </li>
 
                     <li class="o-langualge">
@@ -216,9 +219,9 @@
                                 <!-- End of .progress -->
                                 
                                 <p id="progressText" style="display: none;">$0 of $5,625,000</p>
-                                <a href="#" class="btn secondary-btn" onclick="purchaseTokens()" style="display:none">PURCHASE O2P TOKENS</a>
+                                <a href="#" id="purchaseButton" class="btn secondary-btn"  onclick="purchaseTokens()" style="display:none" data-translate="purchase-o2p">PURCHASE O2P TOKENS</a>
                                 <br>
-                                <a href="#" id="connectButton" class="btn secondary-btn" data-translate="connectwallet" onclick="connectMetaMask()">CONNECT WALLET</a>
+                                <a href="#" id="connectButton" class="btn secondary-btn" onclick="connectMetaMask()" data-translate="connectwallet">CONNECT WALLET</a>
                                 <div id="account" style="display:none"></div>
                             </div>
                             

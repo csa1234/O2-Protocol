@@ -42,14 +42,6 @@ let initialize = () => {
     // ...
   }
 
-  
-  
-
-
-  
-  
-  
-
   async function buyTokens() {
     if (window.ethereum) {
       try {
@@ -136,105 +128,112 @@ let initialize = () => {
     }
   }
   
-
-  
 function purchaseTokens() {
   // Show the purchase modal
   $('#purchaseModal').modal('show');
 }
 
+const connectButton = document.getElementById('connectButton2');
+
+var conexion = false;
 // Connect to MetaMask
 function connectMetaMask() {
-    // Check if MetaMask is installed
-    if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
-      web3 = new Web3(window.ethereum);
-      window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
-        // Store the connected account information in local storage
-        localStorage.setItem("connectedAccount", accounts[0]);
-        // Hide the connect button
-        document.getElementById("connectButton").style.display = 'none';
-        
-        
-        
-  
-        // Define the vesting contract ABI and address
-        const vestingAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
-        const vestingABI = [{
-          "inputs": [
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            }
-          ],
-          "name": "vestingInfo",
-          "outputs": [
-            {
-              "internalType": "address",
-              "name": "user",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "totalVestedTokens",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "dailyVestedTokens",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "claimAmount",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function"
-        }];
-  
-          // Change the button to display disconnect
-          const connectButton = document.getElementById("connectButton2");
-          connectButton.innerHTML = "Discon.";
-          
+    if (conexion == false){
+        conexion = true;
+        // Check if MetaMask is installed
+        if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
+        web3 = new Web3(window.ethereum);
+        window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
+            
 
-          connectButton.onclick = disconnectMetaMask;
-          document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
-          document.getElementById("progressText").style.display = "block";
-          document.querySelector(".progress").style.display = "block";
-          // Display the connected message and account address
-          var account = document.getElementById("account");
-          account.style.display = 'block';
-          account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
-          // Get the vesting contract instance
-          const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
-          // Get the connected account's address
-          const userAddress = accounts[0];
-          // Call the vestingInfo function of the vesting contract, passing the user's address
-          vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
-          // Display the total vested tokens
-          const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
-          account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
+            // Store the connected account information in local storage
+            localStorage.setItem("connectedAccount", accounts[0]);
+            
+            // Hide the connect button
+            document.getElementById("connectButton").style.display = 'none';
+
+            // Change text of connectButton2 to "Discon."
+            document.getElementById("connectButton2").innerText = 'Discon.';
+            
+            // Change the button to display disconnect
+            const connectButton = document.getElementById("connectButton2");
+            connectButton.innerHTML = document.getElementById("connectButton2").innerText;
+            
+            // Define the vesting contract ABI and address
+            const vestingAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
+            const vestingABI = [{
+            "inputs": [
+                {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+                }
+            ],
+            "name": "vestingInfo",
+            "outputs": [
+                {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+                },
+                {
+                "internalType": "uint256",
+                "name": "totalVestedTokens",
+                "type": "uint256"
+                },
+                {
+                "internalType": "uint256",
+                "name": "dailyVestedTokens",
+                "type": "uint256"
+                },
+                {
+                "internalType": "uint256",
+                "name": "claimAmount",
+                "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+            }];
+    
+            
+            
+            connectButton.onclick = disconnectMetaMask;
+            document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+            document.getElementById("progressText").style.display = "block";
+            document.querySelector(".progress").style.display = "block";
+            // Display the connected message and account address
+            var account = document.getElementById("account");
+            account.style.display = 'block';
+            account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
+            // Get the vesting contract instance
+            const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
+            // Get the connected account's address
+            const userAddress = accounts[0];
+            // Call the vestingInfo function of the vesting contract, passing the user's address
+            vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
+            // Display the total vested tokens
+            const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
+            account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
+                }).catch(function(err) {
+            /*console.error(err);
+            alert('Error retrieving vesting information');*/
+            
+            });
+    
         }).catch(function(err) {
-          /*console.error(err);
-          alert('Error retrieving vesting information');*/
-          
+            console.error(err);
+            alert('Please install Metamask Wallet: https://metamask.io');
         });
-  
-      }).catch(function(err) {
-        console.error(err);
-        alert('Please install Metamask Wallet: https://metamask.io');
-      });
-    } else {
-      alert('Please install MetaMask');
+        } else {
+        alert('Please install MetaMask');
+        }
     }
-  }
-  
-  
+}
   
   function disconnectMetaMask() {
     // Clear the connected account information from local storage
+    conexion = false;
     localStorage.removeItem("connectedAccount");
   
     // Display the connect button
@@ -310,6 +309,8 @@ $(function () {
             'top-token': 'Token',
             'top-contact': 'Contact',
             'connect': 'Connect',
+            'disconnect': 'Disco123CSA',
+            
             
             
             //middle description
@@ -322,8 +323,8 @@ $(function () {
             //'PRIVATE ROUND B STARTS IN',
 
             'connectwallet':'CONNECT WALLET',
-
-
+            'purchase-o2p':'PURCHASE O2P TOKENS',
+            
             //get whitelisted
             'getwhitelisted':'Get whitelisted to participate:',
             'toparticipate':'To participate on the Financial rounds & airdrop, please complete the tasks on the following link:<br><a href="http//:www......">Please go to http//:www......</a>',
@@ -504,8 +505,9 @@ $(function () {
             // 'RONDA PRIVADA B EMPIEZA EN',
 
             'connectwallet':'CONECTAR BILLETERA',
+            'purchase-o2p':'COMPRAR TOKEN O2P',
 
-             //get whitelisted
+            //get whitelisted
             'getwhitelisted':'Consigue tu acceso de lista blanca para participar',
             'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo, complete las tareas en el siguiente enlace:<br><a href="http//:www......">Por favor ingresa a: http//:www......</a>',
             
@@ -689,6 +691,7 @@ $(function () {
                 //'RODADA B PRIVADA COMEÇA EM',
 
                 'connectwallet':'CONECTAR CARTEIRA',
+                'purchase-o2p':'COMPRAR TOKENS O2P',
 
                 //get whitelisted
                 'getwhitelisted':'Obtenha seu acesso à lista de permissões para participar',
@@ -876,6 +879,7 @@ $(function () {
                 //'프라이빗 라운드 B는 에서 시작합니다.',
 
                 'connectwallet':'지갑 연결',
+                'purchase-o2p':'COMPRAR TOKENS O2P',
 
                 //get whitelisted
                 'getwhitelisted':'참여할 수 있도록 허용 목록에 추가:',
@@ -1054,6 +1058,7 @@ $(function () {
                 //'私人 B 輪開始於',
 
                 'connectwallet':'連接錢包',
+                'purchase-o2p':'購買 O2P 代幣',
 
                  //get whitelisted
                 'getwhitelisted':'獲得白名單參與：',
@@ -1233,6 +1238,7 @@ $(function () {
                 //'プライベート ラウンド B 開始時間',
                     
                 'connectwallet':'コネクトウォレット',
+                'purchase-o2p':'O2P トークンを購入する',
 
                 //get whitelisted
                 'getwhitelisted':'ホワイトリストに登録して参加する:',
@@ -1412,6 +1418,8 @@ $(function () {
             const topBlog = document.querySelector('[data-translate="top-blog"]');
             const topContact = document.querySelector('[data-translate="top-contact"]');
             const Connect = document.querySelector('[data-translate="connect"]');
+            const Disconnect = document.querySelector('[data-translate="disconnect"]');
+            
            
 
             //ICO clock
@@ -1592,6 +1600,7 @@ $(function () {
             topBlog.innerHTML = translations[Lang]['top-blog'];
             topContact.innerHTML = translations[Lang]['top-contact'];
             Connect.innerHTML = translations[Lang]['connect'];
+            Disconnect.innerHTML = translations[Lang]['disconnect'];
 
             //ICO clock
             Whitepaper.innerHTML = translations[Lang]['whitepaper'];
