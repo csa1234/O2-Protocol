@@ -144,10 +144,6 @@ function connectMetaMask() {
         window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
             // Store the connected account information in local storage
             localStorage.setItem("connectedAccount", accounts[0]);
-            // Change text of connectButton2 to "Discon."
-            document.getElementById("connectButton2").innerText = 'Discon.';
-            // Change the button to display disconnect
-            const connectButton = document.getElementById("connectButton2");
             // Hide the connect button
             document.getElementById("connectButton").style.display = 'none';
             document.getElementById("connectButton2").style.display = 'none';
@@ -294,8 +290,6 @@ $(function () {
     // Define a translations object with the text in both English and Spanish
         const translations = {
             'en': {
-            
-            //top banners titles
             'top-features': 'Features',
             'top-products': 'Products',
             'top-roadmap': 'Roadmap',
@@ -306,8 +300,6 @@ $(function () {
             'connect': 'Connect',
             'connectwallet':'CONNECT WALLET',
             'disconnect':'Disconnect',
-            
-            
             
             //middle description
             'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
