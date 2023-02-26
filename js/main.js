@@ -133,8 +133,6 @@ function purchaseTokens() {
   $('#purchaseModal').modal('show');
 }
 
-const connectButton = document.getElementById('connectButton2');
-
 var conexion = false;
 // Connect to MetaMask
 function connectMetaMask() {
@@ -144,21 +142,17 @@ function connectMetaMask() {
         if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
         web3 = new Web3(window.ethereum);
         window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
-            
-
             // Store the connected account information in local storage
             localStorage.setItem("connectedAccount", accounts[0]);
-            
-            // Hide the connect button
-            document.getElementById("connectButton").style.display = 'none';
-
             // Change text of connectButton2 to "Discon."
             document.getElementById("connectButton2").innerText = 'Discon.';
-            
             // Change the button to display disconnect
             const connectButton = document.getElementById("connectButton2");
-            connectButton.innerHTML = document.getElementById("connectButton2").innerText;
-            
+            // Hide the connect button
+            document.getElementById("connectButton").style.display = 'none';
+            document.getElementById("connectButton2").style.display = 'none';
+            // Show Disconnect button
+            document.getElementById("disco").style.display = 'block';
             // Define the vesting contract ABI and address
             const vestingAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
             const vestingABI = [{
@@ -198,7 +192,6 @@ function connectMetaMask() {
     
             
             
-            connectButton.onclick = disconnectMetaMask;
             document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
             document.getElementById("progressText").style.display = "block";
             document.querySelector(".progress").style.display = "block";
@@ -236,6 +229,8 @@ function connectMetaMask() {
     conexion = false;
     localStorage.removeItem("connectedAccount");
   
+    document.getElementById("disco").style.display = 'none';
+
     // Display the connect button
     document.getElementById("connectButton2").style.display = 'block';
   
@@ -309,7 +304,7 @@ $(function () {
             'top-token': 'Token',
             'top-contact': 'Contact',
             'connect': 'Connect',
-            'disconnect': 'Disco123CSA',
+            'connectwallet':'CONNECT WALLET',
             
             
             
@@ -494,6 +489,7 @@ $(function () {
             'top-blog':'Blog',
             'top-contact': 'Contacto',
             'connect': 'Conectar',
+            'connectwallet':'CONECTAR BILLETERA',
             
             //middle description
             'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
@@ -680,6 +676,7 @@ $(function () {
                 'top-blog':'Blog',
                 'top-contact': 'Contato',
                 'connect': 'Conectar',
+                'connectwallet':'CONECTAR CARTEIRA',
                 
                 //middle description
                 'banner-title': 'Financiamento de compensação de carbono e cultivo de criptomoedas alavancado Regenerative DeFi',
@@ -867,6 +864,7 @@ $(function () {
                 'top-blog':'블로그',
                 'top-contact': '연락하다',
                 'connect': '연결하다',
+                'connectwallet':'지갑 연결',
                 
                 
                 //middle description
@@ -1047,6 +1045,7 @@ $(function () {
                 'top-blog':'博客',
                 'top-contact': '接觸',
                 'connect': '连接',
+                'connectwallet':'連接錢包',
                 
                 //middle description
                 'banner-title': '碳抵消融資和槓桿加密農業再生 DeFi',
@@ -1226,6 +1225,7 @@ $(function () {
                 'top-blog':'ブログ',
                 'top-contact': 'コンタクト',
                 'connect': '接続する',
+                'connectwallet':'コネクトウォレット',
                 
                 
                 //middle description
@@ -1418,7 +1418,9 @@ $(function () {
             const topBlog = document.querySelector('[data-translate="top-blog"]');
             const topContact = document.querySelector('[data-translate="top-contact"]');
             const Connect = document.querySelector('[data-translate="connect"]');
-            const Disconnect = document.querySelector('[data-translate="disconnect"]');
+
+            const DisconnectButton = document.getElementById('disconnect');
+            
             
            
 
@@ -1428,8 +1430,7 @@ $(function () {
             const playIcon = document.createElement('i');
             playIcon.className = 'fas fa-play';
             const FinancialText1 = document.querySelector('[data-translate="financial-text1"] h4');
-            const ConnectWallet = document.querySelector('[data-translate="connectwallet"]');
-
+            const ConnectWallet = document.getElementById('connectButton');
 
             //get whitelisted
             const GetWhiteListed = document.querySelector('[data-translate="getwhitelisted"]');
@@ -1600,7 +1601,8 @@ $(function () {
             topBlog.innerHTML = translations[Lang]['top-blog'];
             topContact.innerHTML = translations[Lang]['top-contact'];
             Connect.innerHTML = translations[Lang]['connect'];
-            Disconnect.innerHTML = translations[Lang]['disconnect'];
+            
+            
 
             //ICO clock
             Whitepaper.innerHTML = translations[Lang]['whitepaper'];
