@@ -1431,6 +1431,7 @@ $(function () {
             playIcon.className = 'fas fa-play';
             const FinancialText1 = document.querySelector('[data-translate="financial-text1"] h4');
             const ConnectWallet = document.getElementById('connectButton');
+            const PurchaseO2p = document.getElementById('purchaseButton');
 
             //get whitelisted
             const GetWhiteListed = document.querySelector('[data-translate="getwhitelisted"]');
@@ -1610,6 +1611,7 @@ $(function () {
             introVideo.innerHTML = `<span>${playIcon.outerHTML}</span>${translations[Lang]['intro-video']}`;
             FinancialText1.innerHTML = translations[Lang]['financial-text1'];
             ConnectWallet.innerHTML = translations[Lang]['connectwallet'];
+            PurchaseO2p.innerHTML = translations[Lang]['purchase-o2p'];
                         
             //get whitelisted
             GetWhiteListed.innerHTML = translations[Lang]['getwhitelisted'];
