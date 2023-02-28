@@ -188,9 +188,12 @@ function connectMetaMask() {
     
             
             
-            document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
-            document.getElementById("progressText").style.display = "block";
-            document.querySelector(".progress").style.display = "block";
+            //QUITAR COMENTARIOS CUANDO EMPIEZE LA RONDA DE FINANCIACION PARA MOSTAR LA BARRA
+            //document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+            //document.getElementById("progressText").style.display = "block";
+            //document.querySelector(".progress").style.display = "block";
+
+
             // Display the connected message and account address
             var account = document.getElementById("account");
             account.style.display = 'block';
@@ -323,7 +326,11 @@ $(function () {
             
             //how it works
             'howitworks':'How it works:',
-            'stephow': '1) O2-Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner<br>2) Verra certifications is then tokenized thru Toucan Protocol NFT<br>3) The NFT is then swaped to USDT<br>4) O2-Protocol keeps 50% of the USDT and 50% goes to the project owner<br>5) 50% of the USDT is swaped to buy back O2P token and remaining will be used<br>   to finance new projects certifcation and provide liquidity to the pools',
+            'stephow': 'O2-Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner',
+            'stephow2': 'Verra certifications is then tokenized thru Toucan Protocol NFT',
+            'stephow3': 'The NFTs are then converted into BCT token (Toucan Protocol) and swaped to USDT',
+            'stephow4': 'O2-Protocol keeps 50% of the USDT as a concept for having financed the certification and tokenization, the other 50% goes to the project owner',
+            'stephow5': 'The profits obtained will be distributed in the liquidity pools, financing of new projects, treasury vault, payment of salaries and marketing',
             
                 
             //business model
@@ -384,7 +391,7 @@ $(function () {
             'roadmap4-description': '● Soy, Rice, Wheat & Corn commodities tokenization<br>● KYC legal compliance<br>● Anti Money Laundry legal compliance<br>● Debit card',
             
             //ABOUT US
-            'aboutus': 'About Us',
+            'about1': 'About Us',
             'aboutus-description': 'O2-Protocol began as a conceptual idea at the beginning of 2019.<br><br>By 2020 O2-Protocol began a pre-incubation process with the National University of Asunción, Start-up Lab division, culminating the pre-incubation process in early 2022 after a long period of research in various areas such as marketing, finance, carbon offset market, agribusiness among other areas.<br><br>In mid-2022 we started the final incubation process.<br><br>This is the first time in the entire crypto world, where a DeFi project is combined with a real business model like carbon offset trading to generate a stream of income in the crypto environment.',
                                  
             //OPERATING TEAM
@@ -466,6 +473,16 @@ $(function () {
             'bottom-token': 'Token',
             'top-blog':'Blog',
             
+            
+
+            //MODAL PURCHASE
+            'modal-purchase':'Purchase O2P Tokens - Seed Round',
+            'modal-purchase-text':'Enter amount in MATIC to buy O2P<br>Current price: 0.45 MATIC per 1 token O2P',
+            'modal-purchase-button':'Purchase',
+            'modal-purchase-cancel':'Cancel',
+            'modal-purchase-sucessful':'',
+            'modal-purchase-receipt':'You just purchased <span id="successAmount"></span> O2P tokens.',
+            'modal-close':'',
 
 
 
@@ -507,8 +524,11 @@ $(function () {
             
             //how it works
             'howitworks':'Como funciona:',
-            'stephow': '1) O2-Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado con un acuerdo legal con el propietario del proyecto<br>2) Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT<br>3) Los NFT luego se cambian a USDT<br>4) O2-Protocol se queda con el 50 % del USDT y el otro 50 % va al propietario del proyecto<br>5) El 50% del USDT se intercambia para recomprar el token O2P y se utilizará el resto<br>   para financiar la certifcación de nuevos proyectos y dotar de liquidez a las piscinas de liquidez',
-            
+            'stephow': 'O2-Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado a un acuerdo legal con el propietario del proyecto',
+            'stephow2': 'Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT',
+            'stephow3': 'Los NFT luego se convierten en token BCT (Protocolo Toucan) y se intercambian a USDT',
+            'stephow4': 'O2-Protocol se queda con el 50% del USDT en concepto por haber financiado la certificacion y tokenización, el otro 50% va al propietario del proyecto',
+            'stephow5': 'Los beneficios obtenidos se distribuirán en las piscinas de liquidez, financiación de nuevos proyectos, caja de tesorería, pago de salarios y marketing',
 
             //business model
             'business-model': 'MODELO DE NEGOCIO',
@@ -571,7 +591,7 @@ $(function () {
 
 
             //ABOUT US
-            'aboutus': 'Sobre nosotros',
+            'about1': 'Sobre nosotros',
             'aboutus-description': 'O2-Protocol comenzó como una idea conceptual a principios de 2019.<br><br>Para 2020 O2-Protocol inició un proceso de pre-incubación con la Universidad Nacional de Asunción, división Start-up Lab, culminando el proceso de pre-incubación a principios de 2022 tras un largo periodo de investigación en varias áreas como marketing, finanzas, mercado de compensación de carbono, negocios agrícolas entre otras áreas.<br><br>A mediados de 2022 comenzamos el proceso de final de incubación y la etapa de resultado final es ahora.<br><br>Esta es la primera vez en todo el mundo criptográfico, donde un proyecto DeFi se combina con un modelo comercial real como el comercio de compensación de carbono para generar un flujo de ingresos en el entorno criptográfico.',
 
             //OPERATING TEAM
@@ -655,6 +675,7 @@ $(function () {
             'bottom-product': 'Productos',
             'bottom-roadmap': 'Hoja de ruta',
             'bottom-token':'Token',
+            
 
 
             },
@@ -695,8 +716,11 @@ $(function () {
                 
                 //how it works
                 'howitworks':'Como funciona:',
-                'stephow': '1) O2-Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto<br>2) As certificações de Verra luego são tokenizadas através do Protocolo Toucan NFT<br>3) NFTs são então alterados para USDT<br>4) O2-Protocol fica com 50% do USDT e os outros 50% vão para o dono do projeto<br>5) 50% do USDT é trocado para recomprar o token O2P e o restante será usado<br>   para financiar a certificação de novos projetos e fornecer liquidez a pools de liquidez',
-                
+                'stephow': 'O2-Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto',
+                'stephow2': 'As certificações Verra são então tokenizadas por meio do protocolo Toucan NFT',
+                'stephow3': 'Os NFTs são então convertidos em token BCT (Protocolo Tucano) e trocados por USDT',
+                'stephow4': 'O2-Protocol fica com 50% do USDT como conceito por ter financiado a certificação e tokenização, os outros 50% vão para o dono do projeto',
+                'stephow5': 'Os lucros obtidos serão distribuídos nos pools de liquidez, financiamento de novos projetos, cofre do tesouro, pagamento de salários e marketing',
                 
                 //business model
                 'business-model': 'MODELO DE NEGÓCIOS',
@@ -759,7 +783,7 @@ $(function () {
                 'roadmap4-description': '● Tokenização de commodities de soja, arroz, trigo e milho<br>● Conformidade legal KYC<br>● Conformidade legal antilavagem de dinheiro<br>● Cartão de débito',
 
                 //ABOUT US
-                'aboutus': 'Sobre nós',
+                'about1': 'Sobre nós',
                 'aboutus-description': 'O2-Protocol começou como uma ideia conceitual no início de 2019.<br><br>Em 2020, O2-Protocol iniciou um processo de pré-incubação com a Universidade Nacional de Assunção, divisão de Start-up Lab, culminando no processo de pré-incubação no início de 2022 após um longo período de pesquisa em diversas áreas como marketing, finanças, mercado de compensação de carbono, agronegócio entre outras áreas.<br><br>Em meados de 2022 iniciamos o processo final de incubação.<br><br> Esta é a primeira vez em todo o mundo criptográfico, onde um projeto DeFi é combinado com um modelo de negócios real, como o comércio de compensação de carbono, para gerar um fluxo de renda no ambiente criptográfico.',
                 
                 //OPERATING TEAM
@@ -885,7 +909,11 @@ $(function () {
 
                 //how it works
                 'howitworks':'작동 방식:',
-                'stephow': '1) O2 프로토콜은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하며 프로젝트 소유자와의 법적 계약에 구속됩니다.<br>2) 그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.<br>3) 그런 다음 NFT는 Toucan Protocol BCT 토큰으로 전환되고 USDT로 스왑됩니다.<br>4) O2-Protocol은 USDT의 50%를 보유하고 50%는 프로젝트 소유자에게 전달됩니다.<br>5) USDT의 50%는 O2P 토큰을 환매하기 위해 스왑되고 나머지는 사용됩니다.<br>   새로운 프로젝트 인증 자금 조달 및 풀에 유동성 제공',
+                'stephow': 'O2-Protocol은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하고 프로젝트 소유자와의 법적 계약에 구속됩니다.',
+                'stephow2': '그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.',
+                'stephow3': '그런 다음 NFT는 BCT 토큰(Toucan Protocol)으로 변환되고 USDT로 스왑됩니다.',
+                'stephow4': 'O2-Protocol은 인증 및 토큰화 자금 조달을 위한 개념으로 USDT의 50%를 유지하고 나머지 50%는 프로젝트 소유자에게 전달됩니다.',
+                'stephow5': '얻은 이익은 유동성 풀, 신규 프로젝트 자금 조달, 금고, 급여 지급 및 마케팅에 분배됩니다.',
                 
 
                 //business model
@@ -945,7 +973,7 @@ $(function () {
                 'roadmap4-description': '● 콩, 쌀, 밀 및 옥수수 상품 토큰화<br>● KYC 법률 준수<br>● 자금 세탁 방지 법률 준수<br>● 직불 카드',
 
                 //ABOUT US
-                'aboutus': '회사 소개',
+                'about1': '회사 소개',
                 'aboutus-description': 'O2-Protocol은 2019년 초 개념적 아이디어로 시작되었습니다.<br><br>2020년까지 O2-Protocol은 National University of Asunción, Start-up Lab 부서와 사전 인큐베이션 프로세스를 시작하여 사전 인큐베이션 프로세스를 마무리했습니다. 마케팅, 금융, 탄소 상쇄 시장, 농업 관련 비즈니스 등 다양한 분야에서 오랜 연구 끝에 2022년 초에.<br><br>2022년 중반에 최종 인큐베이션 프로세스를 시작했습니다.<br><br> DeFi 프로젝트가 탄소 상쇄 거래와 같은 실제 비즈니스 모델과 결합되어 암호화 환경에서 수입 흐름을 생성하는 것은 전체 암호화폐 세계에서 처음입니다.',
 
                 //OPERATING TEAM
@@ -1066,7 +1094,11 @@ $(function () {
                 
                 //how it works
                 'howitworks':'怎麼運行的：',
-                'stephow': '1) O2-Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議<br>2) 然後通過 Toucan 協議 NFT 將 Verra 認證標記化<br>3）然後NFT到USDT<br>4) O2-Protocol 保留 50% 的 USDT，50% 歸項目所有者所有<br>5) 50%的USDT兌換回購O2P代幣，剩餘部分使用<br>   為新項目認證提供資金並為資金池提供流動性',
+                'stephow': 'O2-Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議',
+                'stephow2': '然後通過 Toucan Protocol NFT 將 Verra 認證標記化',
+                'stephow3': '然後將 NFT 轉換為 BCT 令牌（Toucan 協議）並交換為 USDT',
+                'stephow4': 'O2-Protocol 保留 50% 的 USDT 作為為認證和代幣化提供資金的概念，另外 50% 歸項目所有者所有',
+                'stephow5': '獲得的利潤將分配到流動資金池、新項目融資、國庫、支付工資和營銷',
                 
                 //business model
                 'business-model': '商業模式',
@@ -1125,7 +1157,7 @@ $(function () {
                 'roadmap4-description': '● 大豆、大米、小麥和玉米商品代幣化<br>● KYC 合規性<br>● 反洗錢合規性<br>● 借記卡',
 
                 //ABOUT US
-                'aboutus': '關於我們',
+                'about1': '關於我們',
                 'aboutus-description': 'O2-Protocol 始於 2019 年初的概念性想法。<br><br>到 2020 年，O2-Protocol 開始與亞松森國立大學初創實驗室部門進行預孵化過程，最終完成預孵化過程在營銷、金融、碳抵消市場、農業綜合企業等各個領域進行了長期研究後，於 2022 年初啟動。<br><br>2022 年年中，我們開始了最後的孵化過程。<br><br>這是整個加密世界中第一次將 DeFi 項目與碳抵消交易等真實商業模式相結合，從而在加密環境中產生收入流。',
 
                 //OPERATING TEAM
@@ -1249,7 +1281,11 @@ $(function () {
                 
                 //how it works
                 'howitworks':'使い方：',
-                'stephow': '1) O2 プロトコルは、Verra.org での CO2 プロジェクト認証に資金を提供し、プロジェクト所有者との法的契約に拘束されます。<br>2) Verra 認定は、オオハシ プロトコル NFT を介してトークン化されます。<br>3) NFT は USDT にスワップされます。<br>4) O2 プロトコルは USDT の 50% を保持し、50% はプロジェクト所有者に渡されます<br>5) USDT の 50% は O2P トークンを買い戻すためにスワップされ、残りは使用されます。<br>   新しいプロジェクトの認証に資金を提供し、プールに流動性を提供する',
+                'stephow': 'O2-Protocol は Verra.org での CO2 プロジェクト認証に資金を提供し、プロジェクト所有者との法的契約に拘束されます。',
+                'stephow2': 'Verra 認定は、オオハシ プロトコル NFT を介してトークン化されます。',
+                'stephow3': 'その後、NFT は BCT トークン (オオハシ プロトコル) に変換され、USDT にスワップされます。',
+                'stephow4': 'O2-Protocol は USDT の 50% を認証とトークン化に資金を提供するためのコンセプトとして保持し、残りの 50% はプロジェクト オーナーに渡されます。',
+                'stephow5': '得られた利益は、流動性プール、新しいプロジェクトの資金調達、金庫室、給与の支払い、およびマーケティングに分配されます',
                 
 
                 //business model
@@ -1310,7 +1346,7 @@ $(function () {
                 'roadmap4-description': '● 大豆、米、小麦、とうもろこし商品のトークン化<br>● KYC 法への準拠<br>● アンチマネー ランドリー法への準拠<br>● デビットカード',
 
                 //ABOUT US
-                'aboutus': '私たちに関しては',
+                'about1': '私たちに関しては',
                 'aboutus-description': 'O2-Protocol は 2019 年の初めに概念的なアイデアとして始まりました。<br><br>2020 年までに、O2-Protocol はアスンシオン国立大学のスタートアップ ラボ部門とのプレインキュベーション プロセスを開始し、プレインキュベーション プロセスの頂点に達しました。マーケティング、金融、カーボン オフセット市場、アグリビジネスなど、さまざまな分野での長期にわたる調査を経て、2022 年初頭に設立されました。<br><br>2022 年半ばに、最終的なインキュベーション プロセスを開始しました。<br><br>これは、DeFiプロジェクトがカーボンオフセット取引のような実際のビジネスモデルと組み合わされて、暗号環境で収入の流れを生み出す、暗号世界全体で初めてのことです。',
 
                 //OPERATING TEAM
@@ -1416,10 +1452,12 @@ $(function () {
             const topBlog = document.querySelector('[data-translate="top-blog"]');
             const topContact = document.querySelector('[data-translate="top-contact"]');
             const Connect = document.querySelector('[data-translate="connect"]');
-
             const DisconnectButton = document.getElementById('disco');
             
-            
+
+            //TITLE
+            const bannerTitle = document.querySelector('[data-translate="banner-title"]');
+            const bannerDescription = document.querySelector('[data-translate="banner-description"]');
            
 
             //ICO clock
@@ -1445,6 +1483,10 @@ $(function () {
             const HowItWorks = document.querySelector('[data-translate="howitworks"]');
             const StepHow = document.querySelector('[data-translate="stephow"]');
             
+            const StepHow2 = document.querySelector('[data-translate="stephow2"]');
+            const StepHow3 = document.querySelector('[data-translate="stephow3"]');
+            const StepHow4 = document.querySelector('[data-translate="stephow4"]');
+            const StepHow5 = document.querySelector('[data-translate="stephow5"]');
             
             
             //business model
@@ -1502,7 +1544,7 @@ $(function () {
             const Roadmap4Description = document.querySelector('[data-translate="roadmap4-description"]');
 
             //ABOUT US
-            const AboutUs = document.querySelector('[data-translate="aboutus"]');
+            const About1 = document.querySelector('[data-translate="about1"]');
             const AboutUsDescription = document.querySelector('[data-translate="aboutus-description"]');
 
             //OPERATING TEAM
@@ -1580,9 +1622,6 @@ $(function () {
 
             const ICOFunding = document.querySelector('[data-translate="ico-funding"]');
             const BottomToken = document.querySelector('[data-translate="bottom-token"]');
-            
-            const bannerTitle = document.querySelector('[data-translate="banner-title"]');
-            const bannerDescription = document.querySelector('[data-translate="banner-description"]');
             const bottomFeature = document.querySelector('[data-translate="bottom-feature"]');
             const bottomProduct = document.querySelector('[data-translate="bottom-product"]');
             const bottomRoadmap = document.querySelector('[data-translate="bottom-roadmap"]');
@@ -1600,9 +1639,11 @@ $(function () {
             topBlog.innerHTML = translations[Lang]['top-blog'];
             topContact.innerHTML = translations[Lang]['top-contact'];
             Connect.innerHTML = translations[Lang]['connect'];
-
             DisconnectButton.innerHTML = translations[Lang]['disconnect'];
-            
+
+            //TITLE
+            bannerTitle.innerHTML = translations[Lang]['banner-title'];
+            bannerDescription.innerHTML = translations[Lang]['banner-description'];
             
 
             //ICO clock
@@ -1625,6 +1666,11 @@ $(function () {
             //how it works
             HowItWorks.innerHTML = translations[Lang]['howitworks'];
             StepHow.innerHTML = translations[Lang]['stephow'];
+
+            StepHow2.innerHTML = translations[Lang]['stephow2'];
+            StepHow3.innerHTML = translations[Lang]['stephow3'];
+            StepHow4.innerHTML = translations[Lang]['stephow4'];
+            StepHow5.innerHTML = translations[Lang]['stephow5'];
 
 
             //business model
@@ -1699,8 +1745,8 @@ $(function () {
 
 
 
-            //ABOUT USS
-            AboutUs.innerHTML = translations[Lang]['aboutus'];
+            //ABOUT US
+            About1.innerHTML = translations[Lang]['about1'];
             AboutUsDescription.innerHTML = translations[Lang]['aboutus-description'];
 
             //TOKEN DISTRIBUTION
@@ -1762,9 +1808,6 @@ $(function () {
 
             ICOFunding.innerHTML = translations[Lang]['ico-funding'];
             BottomToken.innerHTML = translations[Lang]['bottom-token'];
-            
-            bannerTitle.innerHTML = translations[Lang]['banner-title'];
-            bannerDescription.innerHTML = translations[Lang]['banner-description'];
             bottomFeature.innerHTML = translations[Lang]['bottom-feature'];
             bottomProduct.innerHTML = translations[Lang]['bottom-product'];
             bottomRoadmap.innerHTML = translations[Lang]['bottom-roadmap'];
@@ -1908,7 +1951,7 @@ $('.dropdown-item').click(function() {
       '<div><span>%H</span> ' + translations[language]['hours'] + '</div>' +
       '<div><span>%M</span> ' + translations[language]['minutes'] + '</div>' +
       '<div><span>%S</span> ' + translations[language]['seconds'] + '</div>';
-    $('#clock').countdown('2023/03/01').on('update.countdown', function(event) {
+    $('#clock').countdown('2023/04/01').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(_DateInput));
     });
   }
