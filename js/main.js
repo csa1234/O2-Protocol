@@ -305,7 +305,7 @@ $(function () {
             'disconnect':'Disconnect',
             
             //middle description
-            'banner-title': 'Carbon offset financing & leveraged farming<br>Regenerative DeFi',
+            'banner-title': 'Carbon Offset Financing & Leveraged Crypto farming De-Fi',
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
             'whitepaper': 'WHITEPAPER',
             'intro-video': 'Intro Video',
@@ -503,7 +503,7 @@ $(function () {
             'disconnect':'Desconectar',
             
             //middle description
-            'banner-title': 'Financiación de compensación de carbono y agricultura criptográfica apalancada<br>DeFi Regenerativo',
+            'banner-title': 'Financiación de Compensación de Carbono y Agricultura Criptográfica apalancada De-Fi<br>Finanzas Descentralizadas',
             'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
             'whitepaper': 'WHITEPAPER',
             'intro-video': 'Video de Introducción',
@@ -695,7 +695,7 @@ $(function () {
                 'disconnect':'Desconectar',
                 
                 //middle description
-                'banner-title': 'Financiamento de compensação de carbono e cultivo de criptomoedas alavancado Regenerative DeFi',
+                'banner-title': 'Finanças de Compensação de Carbono e Agricultura de Criptografia alavancada De-Fi<br>Finanças descentralizadas',
                 'banner-description': 'Agricultura de criptografia alavancada com tokens de compensação de carbono gerando fluxo de dinheiro receita através do financiamento de certificação e tokenização de projetos de compensação de carbono.',
                 'whitepaper': 'WHITEPAPER',
                 'intro-video': 'Vídeo de introdução',
@@ -888,7 +888,7 @@ $(function () {
                 
                 
                 //middle description
-                'banner-title': '탄소 상쇄 금융 및 레버리지 암호화 농업 재생 DeFi',
+                'banner-title': '탄소 상쇄 금융 및 레버리지 크립토 파밍 디파이<br>탈중앙화 금융',
                 'banner-description': '자금 흐름을 생성하는 탄소 상쇄 토큰으로 레버리지 암호화 농업 탄소 상쇄 프로젝트 인증 및 토큰화 자금 조달을 통한 수입.',
                 'whitepaper': '백지',
                 'intro-video': '소개 영상',
@@ -1073,7 +1073,7 @@ $(function () {
                 'disconnect':'斷開',
                 
                 //middle description
-                'banner-title': '碳抵消融資和槓桿加密農業再生 DeFi',
+                'banner-title': '碳抵消金融和槓桿加密農業 De-Fi<br>去中心化金融',
                 'banner-description': '利用碳抵消代幣產生資金流的槓桿加密農業通過碳抵消項目認證和代幣化融資獲得收入。',
                 'whitepaper': '白皮書',
                 'intro-video': '簡介視頻',
@@ -1259,7 +1259,7 @@ $(function () {
                 
                 
                 //middle description
-                'banner-title': 'カーボン オフセット ファイナンシングとレバレッジド クリプト ファーミング リジェネレーティブ DeFi',
+                'banner-title': 'カーボン オフセット ファイナンスとレバレッジド クリプト ファーミング De-Fi<br>分散型ファイナンス',
                 'banner-description': 'マネー フローを生成するカーボン オフセット トークンを使用した仮想通貨ファーミングの活用 カーボンオフセットプロジェクトの認証とトークン化の資金調達による収入。',
                 'whitepaper': '白書',
                 'intro-video': '紹介ビデオ',
