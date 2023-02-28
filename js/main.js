@@ -317,8 +317,13 @@ $(function () {
             'purchase-o2p':'PURCHASE O2P TOKENS',
             
             //get whitelisted
-            'getwhitelisted':'Get whitelisted to participate:',
-            'toparticipate':'To participate on the Financial rounds & airdrop, please complete the tasks on the following link:<br><a href="http//:www......">Please go to http//:www......</a>',
+            'getwhitelisted':'Get your access to the whitelist and receive in Airdrop 100 O2P tokens (approx. value $100)',
+            'toparticipate':'To participate on the Financial rounds & raffle airdrop, please complete next tasks:',
+            'toparticipate2':'Retweet, like and share with 5 contacts <a href="http//:www......">  Twiter</a>',
+            'toparticipate3':'Like and share with 5 contacts <a href="http//:www......">  Instagram</a>',
+            'toparticipate4':'Join our <a href="http//:www......">  Discord</a>',
+            'toparticipate5':'Join our <a href="http//:www......">  Telegram</a>',
+            'toparticipate6':'To be able to participate on each financial round user must be whitelisted by completing above tasks<br>Raffle will go live on YouTube the days April 1st, April 20th, May 10th<br>Signup to our newsletter for further notice and alerts',
             
             //how to claim
             'howtoclaim':'How to claim your purchased tokens:',
@@ -515,8 +520,13 @@ $(function () {
             'purchase-o2p':'COMPRAR TOKEN O2P',
 
             //get whitelisted
-            'getwhitelisted':'Consigue tu acceso de lista blanca para participar',
-            'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo, complete las tareas en el siguiente enlace:<br><a href="http//:www......">Por favor ingresa a: http//:www......</a>',
+            'getwhitelisted':'Obtenga su acceso a la lista blanca y reciba en Airdrop 100 tokens O2P (valor aproximado de $ 100)',
+            'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo de rifas, complete las siguientes tareas:',
+            'toparticipate2':'Retuitea, dale me gusta y comparte con 5 contactos <a href="http//:www......"> Twiter</a>',
+            'toparticipate3':'Dale me gusta y compartir con 5 contactos <a href="http//:www......"> Instagram</a>',
+            'toparticipate4':'Únete a nuestro canal en <a href="http//:www......">  Discord</a>',
+            'toparticipate5':'Junte-se ao nosso canal no <a href="http//:www......">Telegram</a>',
+            'toparticipate6':'Para poder participar en cada ronda financiera, el usuario debe estar en la lista blanca completando las tareas anteriores<br>La rifa se lanzará en YouTube los días 1 de abril, 20 de abril y 10 de mayo<br>Suscríbase a nuestro boletín para recibir más avisos y alertas',
             
             //how to claim
             'howtoclaim':'Cómo reclamar sus tokens comprados:',
@@ -707,9 +717,14 @@ $(function () {
                 'purchase-o2p':'COMPRAR TOKENS O2P',
 
                 //get whitelisted
-                'getwhitelisted':'Obtenha seu acesso à lista de permissões para participar',
-                'toparticipate':'Para participar das rodadas financeiras e airdrop, conclua as tarefas no seguinte link:<br><a href="http//:www......">Por favor vá a: http//:www. .. ...</a>',
-                
+                'getwhitelisted':'Obtenha seu acesso à lista de permissões e receba no Airdrop 100 tokens O2P (aprox. valor $ 100)',
+                'toparticipate':'Para participar das rodadas financeiras e airdrop do sorteio, conclua as próximas tarefas:',
+                'toparticipate2':'Retuíte, curta e compartilhe com 5 contatos <a href="http//:www......"> Twiter</a>',
+                'toparticipate3':'Curta e compartilhe com 5 contatos do <a href="http//:www......">Instagram</a>',
+                'toparticipate4':'Junte-se ao nosso canal no <a href="http//:www......">Discord</a>',
+                'toparticipate5':'Junte-se ao nosso canal no <a href="http//:www......">Telegram</a>',
+                'toparticipate6':'Para poder participar de cada rodada financeira, o usuário deve estar na lista de permissões concluindo as tarefas acima<br>O sorteio será lançado no YouTube nos dias 1º de abril, 20 de abril e 10 de maio<br>Inscreva-se em nosso boletim informativo para mais avisos e alertas',
+                    
                 //how to claim
                 'howtoclaim':'Como reivindicar seus tokens comprados:',
                 'howtoclaim2':'Depois que todas as rodadas financeiras terminarem, você poderá reivindicar seus tokens comprados a uma taxa de aquisição diária de 0,27%.<br>Enquanto você recebe seus Tokens Adquiridos, você também receberá receita de desempenho do Cofre da Estaca por quaisquer Tokens Adquiridos restantes que ainda estiverem bloqueados.',
@@ -900,9 +915,14 @@ $(function () {
                 'purchase-o2p':'O2P 토큰 구매',
 
                 //get whitelisted
-                'getwhitelisted':'참여할 수 있도록 허용 목록에 추가:',
-                'toparticipate':'파이낸셜 라운드 및 에어드롭에 참여하려면 다음 링크에서 작업을 완료하십시오.<br><a href="http//:www......">다음으로 이동하십시오. http//:www......</a>',
-                
+                'getwhitelisted':'화이트리스트에 액세스하고 Airdrop 100 O2P 토큰(약 $100 상당)을 받으세요.',
+                'toparticipate':'파이낸셜 라운드 및 추첨 에어드롭에 참여하려면 다음 작업을 완료하세요.',
+                'toparticipate2':'5명의 연락처 <a href="http//:www......"> Twitter</a>와 리트윗, 좋아요 및 공유',
+                'toparticipate3':'5명의 <a href="http//:www......">Instagram</a> 연락처에 좋아요를 누르고 공유하세요.',
+                'toparticipate4':'<a href="http//:www......">Discord</a>에서 저희 채널에 가입하세요',
+                'toparticipate5':'<a href="http//:www......">Telegram</a>에서 저희 채널에 가입하세요',
+                'toparticipate6':'각 금융 라운드에 참여하려면 사용자가 위의 작업을 완료하여 화이트리스트에 추가되어야 합니다.<br>Raffle은 4월 1일, 4월 20일, 5월 10일에 YouTube에서 생중계됩니다.<br>추가 공지 및 알림을 받으려면 뉴스레터에 가입하세요.',
+                    
                 //how to claim
                 'howtoclaim':'구매한 토큰을 청구하는 방법:',
                 'howtoclaim2':'모든 재정 라운드가 종료되면 매일 0.27%의 베스팅 비율로 구매한 토큰을 청구할 수 있습니다.<br>베스팅 토큰을 받는 동안 잠긴 나머지 베스팅 토큰에 대한 스테이킹 금고의 수익도 받게 됩니다.',
@@ -1085,9 +1105,14 @@ $(function () {
                 'purchase-o2p':'購買 O2P 代幣',
 
                  //get whitelisted
-                'getwhitelisted':'獲得白名單參與：',
-                'toparticipate':'要參與財務輪次和空投，請完成以下鏈接中的任務：<br><a href="http//:www......">請前往 http//:www......</a>',
-                
+                'getwhitelisted':'獲得白名單訪問權並獲得空投 100 個 O2P 代幣（價值約 100 美元）',
+                'toparticipate':'要參與財務輪次和抽獎空投，請完成以下任務：',
+                'toparticipate2':'轉發、點贊並與 5 個聯繫人分享 <a href="http//:www......"> 推特</a>',
+                'toparticipate3':'點贊並分享給 5 個 <a href="http//:www......">Instagram</a> 聯繫人',
+                'toparticipate4':'在 <a href="http//:www ......">Discord</a> 上加入我們的頻道',
+                'toparticipate5':'在 <a href="http//:www ......">Telegram</a> 上加入我們的頻道',
+                'toparticipate6':'為了能夠參與每個財務回合，用戶必須通過完成上述任務列入白名單<br>Raffle 將於 4 月 1 日、4 月 20 日、5 月 10 日在 YouTube 上直播<br>註冊我們的時事通訊以獲取進一步的通知和提醒',
+                    
                 //how to claim
                 'howtoclaim':'如何領取您購買的代幣：',
                 'howtoclaim2':'在所有財務回合結束後，您將能夠以每天 0.27% 的歸屬率領取您購買的代幣<br>當您收到您的歸屬代幣時，您還將從鎖倉中獲得鎖定的剩餘歸屬代幣的收益收入',
@@ -1271,9 +1296,14 @@ $(function () {
                 'purchase-o2p':'O2P トークンを購入する',
 
                 //get whitelisted
-                'getwhitelisted':'ホワイトリストに登録して参加する:',
-                'toparticipate':'ファイナンシャル ラウンドとエアドロップに参加するには、次のリンクのタスクを完了してください。<br><a href="http//:www......">http://:www にアクセスしてください......</a>',
-                
+                'getwhitelisted':'ホワイトリストへのアクセスを取得し、Airdrop で 100 O2P トークン (約 $100 の価値) を受け取ります',
+                'toparticipate':'ファイナンシャル ラウンドとラッフル エアドロップに参加するには、次のタスクを完了してください。',
+                'toparticipate2':'リツイート、いいね、5 人の連絡先 <a href="http//:www......"> Twiter</a> と共有',
+                'toparticipate3':'5 人の <a href="http//:www......">Instagram</a> の連絡先といいねして共有する',
+                'toparticipate4':'<a href="http//:www......">Discord</a> のチャンネルに参加してください',
+                'toparticipate5':'<a href="http//:www......">Telegram</a> のチャンネルに参加してください',
+                'toparticipate6':'各財務ラウンドに参加できるようにするには、上記のタスクを完了してユーザーをホワイトリストに登録する必要があります<br>ラッフルは 4 月 1 日、4 月 20 日、5 月 10 日に YouTube でライブ配信されます<br>ニュースレターにサインアップして、詳細な通知とアラートを入手してください',
+                    
 
                 //how to claim
                 'howtoclaim':'購入したトークンを請求する方法',
@@ -1472,6 +1502,11 @@ $(function () {
             //get whitelisted
             const GetWhiteListed = document.querySelector('[data-translate="getwhitelisted"]');
             const ToParticipate = document.querySelector('[data-translate="toparticipate"]');
+            const ToParticipate2 = document.querySelector('[data-translate="toparticipate2"]');
+            const ToParticipate3 = document.querySelector('[data-translate="toparticipate3"]');
+            const ToParticipate4 = document.querySelector('[data-translate="toparticipate4"]');
+            const ToParticipate5 = document.querySelector('[data-translate="toparticipate5"]');
+            const ToParticipate6 = document.querySelector('[data-translate="toparticipate6"]');
             
             
             //how to claim
@@ -1657,6 +1692,11 @@ $(function () {
             //get whitelisted
             GetWhiteListed.innerHTML = translations[Lang]['getwhitelisted'];
             ToParticipate.innerHTML = translations[Lang]['toparticipate'];
+            ToParticipate2.innerHTML = translations[Lang]['toparticipate2'];
+            ToParticipate3.innerHTML = translations[Lang]['toparticipate3'];
+            ToParticipate4.innerHTML = translations[Lang]['toparticipate4'];
+            ToParticipate5.innerHTML = translations[Lang]['toparticipate5'];
+            ToParticipate6.innerHTML = translations[Lang]['toparticipate6'];
             
 
             //how to claim
