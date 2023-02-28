@@ -392,7 +392,7 @@ $(function () {
             
             //ABOUT US
             'about1': 'About Us',
-            'aboutus-description': 'O2-Protocol began as a conceptual idea at the beginning of 2019.<br><br>By 2020 O2-Protocol began a pre-incubation process with the National University of Asunción, Start-up Lab division, culminating the pre-incubation process in early 2022 after a long period of research in various areas such as marketing, finance, carbon offset market, agribusiness among other areas.<br><br>In mid-2022 we started the final incubation process.<br><br>This is the first time in the entire crypto world, where a DeFi project is combined with a real business model like carbon offset trading to generate a stream of income in the crypto environment.',
+            'aboutus-description': 'O2-Protocol began as a conceptual idea at the beginning of 2020.<br><br>By 2021 O2-Protocol began a pre-incubation process with the National University of Asunción, Start-up Lab division, culminating the pre-incubation process in early 2022 after a long period of research in various areas such as marketing, finance, carbon offset market, agribusiness among other areas.<br><br>In mid-2022 we started the final incubation process.<br><br>This is the first time in the entire crypto world, where a DeFi project is combined with a real business model like carbon offset trading to generate a stream of income in the crypto environment.',
                                  
             //OPERATING TEAM
             'team-members':'Team members',
@@ -592,7 +592,7 @@ $(function () {
 
             //ABOUT US
             'about1': 'Sobre nosotros',
-            'aboutus-description': 'O2-Protocol comenzó como una idea conceptual a principios de 2019.<br><br>Para 2020 O2-Protocol inició un proceso de pre-incubación con la Universidad Nacional de Asunción, división Start-up Lab, culminando el proceso de pre-incubación a principios de 2022 tras un largo periodo de investigación en varias áreas como marketing, finanzas, mercado de compensación de carbono, negocios agrícolas entre otras áreas.<br><br>A mediados de 2022 comenzamos el proceso de final de incubación y la etapa de resultado final es ahora.<br><br>Esta es la primera vez en todo el mundo criptográfico, donde un proyecto DeFi se combina con un modelo comercial real como el comercio de compensación de carbono para generar un flujo de ingresos en el entorno criptográfico.',
+            'aboutus-description': 'O2-Protocol comenzó como una idea conceptual a principios de 2020.<br><br>Para 2021 O2-Protocol inició un proceso de pre-incubación con la Universidad Nacional de Asunción, división Start-up Lab, culminando el proceso de pre-incubación a principios de 2022 tras un largo periodo de investigación en varias áreas como marketing, finanzas, mercado de compensación de carbono, negocios agrícolas entre otras áreas.<br><br>A mediados de 2022 comenzamos el proceso de final de incubación y la etapa de resultado final es ahora.<br><br>Esta es la primera vez en todo el mundo criptográfico, donde un proyecto DeFi se combina con un modelo comercial real como el comercio de compensación de carbono para generar un flujo de ingresos en el entorno criptográfico.',
 
             //OPERATING TEAM
             'team-members':'Miembros del equipo',
@@ -784,7 +784,7 @@ $(function () {
 
                 //ABOUT US
                 'about1': 'Sobre nós',
-                'aboutus-description': 'O2-Protocol começou como uma ideia conceitual no início de 2019.<br><br>Em 2020, O2-Protocol iniciou um processo de pré-incubação com a Universidade Nacional de Assunção, divisão de Start-up Lab, culminando no processo de pré-incubação no início de 2022 após um longo período de pesquisa em diversas áreas como marketing, finanças, mercado de compensação de carbono, agronegócio entre outras áreas.<br><br>Em meados de 2022 iniciamos o processo final de incubação.<br><br> Esta é a primeira vez em todo o mundo criptográfico, onde um projeto DeFi é combinado com um modelo de negócios real, como o comércio de compensação de carbono, para gerar um fluxo de renda no ambiente criptográfico.',
+                'aboutus-description': 'O2-Protocol começou como uma ideia conceitual no início de 2020.<br><br>Em 2021, O2-Protocol iniciou um processo de pré-incubação com a Universidade Nacional de Assunção, divisão de Start-up Lab, culminando no processo de pré-incubação no início de 2022 após um longo período de pesquisa em diversas áreas como marketing, finanças, mercado de compensação de carbono, agronegócio entre outras áreas.<br><br>Em meados de 2022 iniciamos o processo final de incubação.<br><br> Esta é a primeira vez em todo o mundo criptográfico, onde um projeto DeFi é combinado com um modelo de negócios real, como o comércio de compensação de carbono, para gerar um fluxo de renda no ambiente criptográfico.',
                 
                 //OPERATING TEAM
                 'team-members':'Membros do time',
@@ -974,7 +974,7 @@ $(function () {
 
                 //ABOUT US
                 'about1': '회사 소개',
-                'aboutus-description': 'O2-Protocol은 2019년 초 개념적 아이디어로 시작되었습니다.<br><br>2020년까지 O2-Protocol은 National University of Asunción, Start-up Lab 부서와 사전 인큐베이션 프로세스를 시작하여 사전 인큐베이션 프로세스를 마무리했습니다. 마케팅, 금융, 탄소 상쇄 시장, 농업 관련 비즈니스 등 다양한 분야에서 오랜 연구 끝에 2022년 초에.<br><br>2022년 중반에 최종 인큐베이션 프로세스를 시작했습니다.<br><br> DeFi 프로젝트가 탄소 상쇄 거래와 같은 실제 비즈니스 모델과 결합되어 암호화 환경에서 수입 흐름을 생성하는 것은 전체 암호화폐 세계에서 처음입니다.',
+                'aboutus-description': 'O2-Protocol은 2020년 초 개념적 아이디어로 시작되었습니다.<br><br>2021년까지 O2-Protocol은 National University of Asunción, Start-up Lab 부서와 사전 인큐베이션 프로세스를 시작하여 사전 인큐베이션 프로세스를 마무리했습니다. 마케팅, 금융, 탄소 상쇄 시장, 농업 관련 비즈니스 등 다양한 분야에서 오랜 연구 끝에 2022년 초에.<br><br>2022년 중반에 최종 인큐베이션 프로세스를 시작했습니다.<br><br> DeFi 프로젝트가 탄소 상쇄 거래와 같은 실제 비즈니스 모델과 결합되어 암호화 환경에서 수입 흐름을 생성하는 것은 전체 암호화폐 세계에서 처음입니다.',
 
                 //OPERATING TEAM
                 'team-members':'팀 멤버',
@@ -1158,7 +1158,7 @@ $(function () {
 
                 //ABOUT US
                 'about1': '關於我們',
-                'aboutus-description': 'O2-Protocol 始於 2019 年初的概念性想法。<br><br>到 2020 年，O2-Protocol 開始與亞松森國立大學初創實驗室部門進行預孵化過程，最終完成預孵化過程在營銷、金融、碳抵消市場、農業綜合企業等各個領域進行了長期研究後，於 2022 年初啟動。<br><br>2022 年年中，我們開始了最後的孵化過程。<br><br>這是整個加密世界中第一次將 DeFi 項目與碳抵消交易等真實商業模式相結合，從而在加密環境中產生收入流。',
+                'aboutus-description': 'O2-Protocol 始於 2020 年初的概念性想法。<br><br>到 2021 年，O2-Protocol 開始與亞松森國立大學初創實驗室部門進行預孵化過程，最終完成預孵化過程在營銷、金融、碳抵消市場、農業綜合企業等各個領域進行了長期研究後，於 2022 年初啟動。<br><br>2022 年年中，我們開始了最後的孵化過程。<br><br>這是整個加密世界中第一次將 DeFi 項目與碳抵消交易等真實商業模式相結合，從而在加密環境中產生收入流。',
 
                 //OPERATING TEAM
                 'team-members':'團隊成員',
@@ -1347,7 +1347,7 @@ $(function () {
 
                 //ABOUT US
                 'about1': '私たちに関しては',
-                'aboutus-description': 'O2-Protocol は 2019 年の初めに概念的なアイデアとして始まりました。<br><br>2020 年までに、O2-Protocol はアスンシオン国立大学のスタートアップ ラボ部門とのプレインキュベーション プロセスを開始し、プレインキュベーション プロセスの頂点に達しました。マーケティング、金融、カーボン オフセット市場、アグリビジネスなど、さまざまな分野での長期にわたる調査を経て、2022 年初頭に設立されました。<br><br>2022 年半ばに、最終的なインキュベーション プロセスを開始しました。<br><br>これは、DeFiプロジェクトがカーボンオフセット取引のような実際のビジネスモデルと組み合わされて、暗号環境で収入の流れを生み出す、暗号世界全体で初めてのことです。',
+                'aboutus-description': 'O2-Protocol は 2020 年の初めに概念的なアイデアとして始まりました。<br><br>2021 年までに、O2-Protocol はアスンシオン国立大学のスタートアップ ラボ部門とのプレインキュベーション プロセスを開始し、プレインキュベーション プロセスの頂点に達しました。マーケティング、金融、カーボン オフセット市場、アグリビジネスなど、さまざまな分野での長期にわたる調査を経て、2022 年初頭に設立されました。<br><br>2022 年半ばに、最終的なインキュベーション プロセスを開始しました。<br><br>これは、DeFiプロジェクトがカーボンオフセット取引のような実際のビジネスモデルと組み合わされて、暗号環境で収入の流れを生み出す、暗号世界全体で初めてのことです。',
 
                 //OPERATING TEAM
                 'team-members':'チームメンバー',
