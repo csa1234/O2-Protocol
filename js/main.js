@@ -319,7 +319,7 @@ $(function () {
             //get whitelisted
             'getwhitelisted':'Get your access to the whitelist and receive in Airdrop 100 O2P tokens (approx. value $100)',
             'toparticipate':'To participate on the Financial rounds & raffle airdrop, please complete next tasks:',
-            'toparticipate2':'Retweet, like and share with 5 contacts <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20" target="_blank" rel="noopener noreferrer">  Twiter</a>',
+            'toparticipate2':'Retweet, like and share with 5 contacts <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer">  Twiter</a>',
             'toparticipate3':'Like and share with 5 contacts <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">  Instagram</a>',
             'toparticipate4':'Join our <a href="https://discord.gg/DxpFhzNr" target="_blank" rel="noopener noreferrer">  Discord</a>',
             'toparticipate5':'Join our <a href="https://t.me/+yB50AQTUJoozM2U5" target="_blank" rel="noopener noreferrer">  Telegram</a>',
@@ -522,7 +522,7 @@ $(function () {
             //get whitelisted
             'getwhitelisted':'Obtenga su acceso a la lista blanca y reciba en Airdrop 100 tokens O2P (valor aproximado de $ 100)',
             'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo de rifas, complete las siguientes tareas:',
-            'toparticipate2':'Retuitea, dale me gusta y comparte con 5 contactos <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a>',
+            'toparticipate2':'Retuitea, dale me gusta y comparte con 5 contactos <a href="https://twitter.com/o2_protocolDAO/status/1631017592851660802?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a>',
             'toparticipate3':'Dale me gusta y compartir con 5 contactos <a href="https://www.instagram.com/reel/CpQOlA9Asdp/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer"> Instagram</a>',
             'toparticipate4':'Únete a nuestro canal en <a href="https://discord.gg/DxpFhzNr" target="_blank" rel="noopener noreferrer">  Discord</a>',
             'toparticipate5':'Únete a nuestro canal en <a href="https://t.me/+yB50AQTUJoozM2U5" target="_blank" rel="noopener noreferrer">  Telegram</a>',
@@ -719,7 +719,7 @@ $(function () {
                 //get whitelisted
                 'getwhitelisted':'Obtenha seu acesso à lista de permissões e receba no Airdrop 100 tokens O2P (aprox. valor $ 100)',
                 'toparticipate':'Para participar das rodadas financeiras e airdrop do sorteio, conclua as próximas tarefas:',
-                'toparticipate2':'Retuíte, curta e compartilhe com 5 contatos <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a>',
+                'toparticipate2':'Retuíte, curta e compartilhe com 5 contatos <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a>',
                 'toparticipate3':'Curta e compartilhe com 5 contatos do <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a>',
                 'toparticipate4':'Junte-se ao nosso canal no <a href="https://discord.gg/DxpFhzNr">Discord</a>',
                 'toparticipate5':'Junte-se ao nosso canal no <a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a>',
@@ -917,7 +917,7 @@ $(function () {
                 //get whitelisted
                 'getwhitelisted':'화이트리스트에 액세스하고 Airdrop 100 O2P 토큰(약 $100 상당)을 받으세요.',
                 'toparticipate':'파이낸셜 라운드 및 추첨 에어드롭에 참여하려면 다음 작업을 완료하세요.',
-                'toparticipate2':'5명의 연락처 <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20" target="_blank" rel="noopener noreferrer"> Twitter</a>와 리트윗, 좋아요 및 공유',
+                'toparticipate2':'5명의 연락처 <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> Twitter</a>와 리트윗, 좋아요 및 공유',
                 'toparticipate3':'5명의 <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a> 연락처에 좋아요를 누르고 공유하세요.',
                 'toparticipate4':'<a href="https://discord.gg/DxpFhzNr">Discord</a>에서 저희 채널에 가입하세요',
                 'toparticipate5':'<a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a>에서 저희 채널에 가입하세요',
@@ -1107,7 +1107,7 @@ $(function () {
                  //get whitelisted
                 'getwhitelisted':'獲得白名單訪問權並獲得空投 100 個 O2P 代幣（價值約 100 美元）',
                 'toparticipate':'要參與財務輪次和抽獎空投，請完成以下任務：',
-                'toparticipate2':'轉發、點贊並與 5 個聯繫人分享 <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20" target="_blank" rel="noopener noreferrer"> 推特</a>',
+                'toparticipate2':'轉發、點贊並與 5 個聯繫人分享 <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> 推特</a>',
                 'toparticipate3':'點贊並分享給 5 個 <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a> 聯繫人',
                 'toparticipate4':'在 <a href="https://discord.gg/DxpFhzNr">Discord</a> 上加入我們的頻道',
                 'toparticipate5':'在 <a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a> 上加入我們的頻道',
@@ -1298,7 +1298,7 @@ $(function () {
                 //get whitelisted
                 'getwhitelisted':'ホワイトリストへのアクセスを取得し、Airdrop で 100 O2P トークン (約 $100 の価値) を受け取ります',
                 'toparticipate':'ファイナンシャル ラウンドとラッフル エアドロップに参加するには、次のタスクを完了してください。',
-                'toparticipate2':'リツイート、いいね、5 人の連絡先 <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a> と共有',
+                'toparticipate2':'リツイート、いいね、5 人の連絡先 <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a> と共有',
                 'toparticipate3':'5 人の <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a> の連絡先といいねして共有する',
                 'toparticipate4':'<a href="https://discord.gg/DxpFhzNr" target="_blank" rel="noopener noreferrer">Discord</a> のチャンネルに参加してください',
                 'toparticipate5':'<a href="https://t.me/+yB50AQTUJoozM2U5" target="_blank" rel="noopener noreferrer">Telegram</a> のチャンネルに参加してください',
