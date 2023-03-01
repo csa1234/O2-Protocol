@@ -319,10 +319,10 @@ $(function () {
             //get whitelisted
             'getwhitelisted':'Get your access to the whitelist and receive in Airdrop 100 O2P tokens (approx. value $100)',
             'toparticipate':'To participate on the Financial rounds & raffle airdrop, please complete next tasks:',
-            'toparticipate2':'Retweet, like and share with 5 contacts <a href="http//:www......">  Twiter</a>',
-            'toparticipate3':'Like and share with 5 contacts <a href="http//:www......">  Instagram</a>',
-            'toparticipate4':'Join our <a href="http//:www......">  Discord</a>',
-            'toparticipate5':'Join our <a href="http//:www......">  Telegram</a>',
+            'toparticipate2':'Retweet, like and share with 5 contacts <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20">  Twiter</a>',
+            'toparticipate3':'Like and share with 5 contacts <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link">  Instagram</a>',
+            'toparticipate4':'Join our <a href="https://discord.gg/DxpFhzNr">  Discord</a>',
+            'toparticipate5':'Join our <a href="https://t.me/+yB50AQTUJoozM2U5">  Telegram</a>',
             'toparticipate6':'To be able to participate on each financial round user must be whitelisted by completing above tasks<br>Raffle will go live on YouTube the days April 1st, April 20th, May 10th<br>Signup to our newsletter for further notice and alerts',
             
             //how to claim
@@ -383,17 +383,17 @@ $(function () {
             //ROADMAP
             'roadmap-title':'Roadmap',
             'roadmap-description':'This is our 2023 roadmap, and its possible we agregate even more tasks thru the current year.',
-            'roadmap1':'<span>March, 2023</span>SEED ROUND',
-            'roadmap1-description': '● Seed financial round<br>● Private Sale A<br>● Legal status establishment<br>● Private Sale B',
+            'roadmap1':'<span>April, 2023</span>SEED ROUND',
+            'roadmap1-description': '● Seed Financial Round<br>● Private Sale A<br>● Private Sale B<br>● Legal status establishment',
 
-            'roadmap2':'<span>April, 2023</span>PROJECT LAUNCH',
-            'roadmap2-description': '● First leveraged liquidity pools<br>● APP Desktop version',
+            'roadmap2':'<span>May, 2023</span>PROJECT LAUNCH',
+            'roadmap2-description': '● Leveraged DAPP<br>● Integration Crowdfunding platform DAPP<br>● Launchpad Carbon Offset Projects',
 
             'roadmap3':'<span>July, 2023</span>NFT MARKETPLACE & BRIDGE',
-            'roadmap3-description': '● Self NFT tokenization bridge<br>● Carbon offset NFT marketplace<br>● Crowdfunding platform dAPP integration<br>● Mobile APP',
+            'roadmap3-description': '● Carbon Offset NFT Marketplace<br>● Carbon Offset Tokenization Bridge<br>● Mobile APP',
 
-            'roadmap4':'LEGAL COMPLIANCE & KYC',
-            'roadmap4-description': '● Soy, Rice, Wheat & Corn commodities tokenization<br>● KYC legal compliance<br>● Anti Money Laundry legal compliance<br>● Debit card',
+            'roadmap4':'<span>November, 2023</span>LEGAL COMPLIANCE & KYC',
+            'roadmap4-description': '● Soy, Rice, Wheat & Corn commodities tokenization<br>● KYC legal compliance<br>● Anti Money Laundry legal compliance<br>● Debit Card partnership',
             
             //ABOUT US
             'about1': 'About Us',
@@ -522,10 +522,10 @@ $(function () {
             //get whitelisted
             'getwhitelisted':'Obtenga su acceso a la lista blanca y reciba en Airdrop 100 tokens O2P (valor aproximado de $ 100)',
             'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo de rifas, complete las siguientes tareas:',
-            'toparticipate2':'Retuitea, dale me gusta y comparte con 5 contactos <a href="http//:www......"> Twiter</a>',
-            'toparticipate3':'Dale me gusta y compartir con 5 contactos <a href="http//:www......"> Instagram</a>',
-            'toparticipate4':'Únete a nuestro canal en <a href="http//:www......">  Discord</a>',
-            'toparticipate5':'Junte-se ao nosso canal no <a href="http//:www......">Telegram</a>',
+            'toparticipate2':'Retuitea, dale me gusta y comparte con 5 contactos <a href="https://twitter.com/o2_protocolDAO/status/1630966982727041041?s=20"> Twiter</a>',
+            'toparticipate3':'Dale me gusta y compartir con 5 contactos <a href="https://www.instagram.com/reel/CpQOlA9Asdp/?utm_source=ig_web_copy_link"> Instagram</a>',
+            'toparticipate4':'Únete a nuestro canal en <a href="https://discord.gg/DxpFhzNr">  Discord</a>',
+            'toparticipate5':'Únete a nuestro canal en <a href="https://t.me/+yB50AQTUJoozM2U5">  Telegram</a>',
             'toparticipate6':'Para poder participar en cada ronda financiera, el usuario debe estar en la lista blanca completando las tareas anteriores<br>La rifa se lanzará en YouTube los días 1 de abril, 20 de abril y 10 de mayo<br>Suscríbase a nuestro boletín para recibir más avisos y alertas',
             
             //how to claim
@@ -587,14 +587,14 @@ $(function () {
             //ROADMAP
             'roadmap-title':'Hoja de ruta',
             'roadmap-description':'Esta es nuestra hoja de ruta para 2023 y es posible que agreguemos aún más tareas hasta el año en curso.',
-            'roadmap1':'<span>Marzo, 2023</span>RONDA FINANCIERA: SEMILLA',
-            'roadmap1-description': '● Ronda financiera semilla<br>● Venta privada A<br>● Establecimiento de estatus legal<br>● Venta privada B',
+            'roadmap1':'<span>Abril, 2023</span>RONDA FINANCIERA: SEMILLA',
+            'roadmap1-description': '● Ronda Financiera Semilla <br>● Venta privada A<br>● Venta Privada B<br>● Establecimiento de la personería jurídica',
 
-            'roadmap2':'<span>Abril, 2023</span>LANZAMIENTO DEL PROYECTO',
-            'roadmap2-description': '● Primeros fondos de liquidez apalancados<br>● APP Versión escritorio',
+            'roadmap2':'<span>Mayo, 2023</span>LANZAMIENTO DEL PROYECTO',
+            'roadmap2-description': '● DAPP apalancado<br>● Integración Plataforma de Crowdfunding<br>● Plataforma de lanzamiento de proyectos de Compensación de Carbono',
 
             'roadmap3':'<span>Julio, 2023</span>MERCADO DE NFT Y PUENTE DE TOKENIZACIÓN',
-            'roadmap3-description': '● Puente de tokenización NFT propio<br>● Mercado NFT de compensación de carbono<br>● Integración dAPP de la plataforma de financiación colectiva<br>● Aplicación móvil',
+            'roadmap3-description': '● Mercado NFT de compensación de carbono<br>● Puente de tokenización de compensación de carbono<br>● APLICACIÓN móvil',
 
             'roadmap4':'<span>Noviembre, 2023</span>CUMPLIMIENTO LEGAL Y KYC',
             'roadmap4-description': '● Tokenización de materias primas de soya, arroz, trigo y maíz<br> ● Cumplimiento legal de KYC<br> ● Cumplimiento legal contra el lavado de dinero<br> ● Tarjeta de débito',
@@ -721,8 +721,8 @@ $(function () {
                 'toparticipate':'Para participar das rodadas financeiras e airdrop do sorteio, conclua as próximas tarefas:',
                 'toparticipate2':'Retuíte, curta e compartilhe com 5 contatos <a href="http//:www......"> Twiter</a>',
                 'toparticipate3':'Curta e compartilhe com 5 contatos do <a href="http//:www......">Instagram</a>',
-                'toparticipate4':'Junte-se ao nosso canal no <a href="http//:www......">Discord</a>',
-                'toparticipate5':'Junte-se ao nosso canal no <a href="http//:www......">Telegram</a>',
+                'toparticipate4':'Junte-se ao nosso canal no <a href="https://discord.gg/DxpFhzNr">Discord</a>',
+                'toparticipate5':'Junte-se ao nosso canal no <a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a>',
                 'toparticipate6':'Para poder participar de cada rodada financeira, o usuário deve estar na lista de permissões concluindo as tarefas acima<br>O sorteio será lançado no YouTube nos dias 1º de abril, 20 de abril e 10 de maio<br>Inscreva-se em nosso boletim informativo para mais avisos e alertas',
                     
                 //how to claim
@@ -785,14 +785,14 @@ $(function () {
                 //ROADMAP
                 'roadmap-title':'Roteiro',
                 'roadmap-description':'Este é o nosso roteiro para 2023, e é possível que agreguemos ainda mais tarefas ao longo deste ano.',
-                'roadmap1':'<span>MARÇO, 2023</span>RODADA FINANCEIRA: SEMENTE',
-                'roadmap1-description': '● Rodada financeira semente<br>● Venda Privada A<br>● Constituição do Estatuto Jurídico<br>● Venda Privada B',
+                'roadmap1':'<span>Abril, 2023</span>RODADA FINANCEIRA: SEMENTE',
+                'roadmap1-description': '● Rodada Financeira Semente<br>● Venda Privada A<br>● Venda Privada B<br>● Estabelecimento de status legal',
 
-                'roadmap2':'<span>Abril de 2023</span>LANÇAMENTO DO PROJETO',
-                'roadmap2-description': '● Primeiros fundos de liquidez alavancados<br>● Versão APP Desktop',
+                'roadmap2':'<span>Maio de 2023</span>LANÇAMENTO DO PROJETO',
+                'roadmap2-description': '● DAPP alavancado<br>● Integração da plataforma de crowdfunding<br>● Plataforma para lançamento de projetos de compensação de carbono',
 
-                'roadmap3':'<span>julho de 2023</span>MERCADO NFT E PONTE DE TOKENIZAÇÃO',
-                'roadmap3-description': '● Ponte de tokenização de auto NFT<br>● Mercado NFT de compensação de carbono<br>● Plataforma de crowdfunding integração dAPP<br>● APP móvel',
+                'roadmap3':'<span>Julho de 2023</span>MERCADO NFT E PONTE DE TOKENIZAÇÃO',
+                'roadmap3-description': '● Mercado NFT de compensação de carbono<br>● Ponte de tokenização de compensação de carbono<br>● APLICATIVO móvel',
 
                 'roadmap4':'<span>Novembro de 2023</span>CONFORMIDADE LEGAL E KYC',
                 'roadmap4-description': '● Tokenização de commodities de soja, arroz, trigo e milho<br>● Conformidade legal KYC<br>● Conformidade legal antilavagem de dinheiro<br>● Cartão de débito',
@@ -919,8 +919,8 @@ $(function () {
                 'toparticipate':'파이낸셜 라운드 및 추첨 에어드롭에 참여하려면 다음 작업을 완료하세요.',
                 'toparticipate2':'5명의 연락처 <a href="http//:www......"> Twitter</a>와 리트윗, 좋아요 및 공유',
                 'toparticipate3':'5명의 <a href="http//:www......">Instagram</a> 연락처에 좋아요를 누르고 공유하세요.',
-                'toparticipate4':'<a href="http//:www......">Discord</a>에서 저희 채널에 가입하세요',
-                'toparticipate5':'<a href="http//:www......">Telegram</a>에서 저희 채널에 가입하세요',
+                'toparticipate4':'<a href="https://discord.gg/DxpFhzNr">Discord</a>에서 저희 채널에 가입하세요',
+                'toparticipate5':'<a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a>에서 저희 채널에 가입하세요',
                 'toparticipate6':'각 금융 라운드에 참여하려면 사용자가 위의 작업을 완료하여 화이트리스트에 추가되어야 합니다.<br>Raffle은 4월 1일, 4월 20일, 5월 10일에 YouTube에서 생중계됩니다.<br>추가 공지 및 알림을 받으려면 뉴스레터에 가입하세요.',
                     
                 //how to claim
@@ -980,14 +980,14 @@ $(function () {
                 //ROADMAP
                 'roadmap-title':'로드맵',
                 'roadmap-description':'이것은 우리의 2023년 로드맵이며 올해까지 더 많은 작업을 통합할 가능성이 있습니다.',
-                'roadmap1':'<span>2023년 3월</span>파이낸셜 라운드: SEED',
-                'roadmap1-description': '● 시드 파이낸셜 라운드<br>● 프라이빗 세일 A<br>● 법적 지위 확립<br>● 프라이빗 세일 B',
+                'roadmap1':'<span>2023년 4월</span>파이낸셜 라운드: SEED',
+                'roadmap1-description': '● 시드 파이낸셜 라운드<br>● 프라이빗 세일 A<br>● 프라이빗 세일 B<br>● 법적 지위 확립',
 
-                'roadmap2':'<span>2023년 4월</span>프로젝트 런칭',
-                'roadmap2-description': '● 최초의 레버리지 유동성 펀드<br>● 앱 데스크톱 버전',
+                'roadmap2':'<span>2023년 5월</span>프로젝트 런칭',
+                'roadmap2-description': '● 레버리지 DAPP<br>● 통합 크라우드펀딩 플랫폼 DAPP 비즈니스<br>● 런치패드 탄소 상쇄 프로젝트',
 
                 'roadmap3':'<span>2023년 7월</span>NFT 시장 및 토큰화 브리지',
-                'roadmap3-description': '● 자체 NFT 토큰화 브릿지<br>● 탄소 상쇄 NFT 마켓플레이스<br>● 크라우드 펀딩 플랫폼 dAPP 통합<br>● 모바일 앱',
+                'roadmap3-description': '● Carbon Offset NFT 마켓플레이스<br>● Carbon Offset Tokenization Bridge<br>● 모바일 앱',
 
                 'roadmap4':'<span>2023년 11월</span>법적 준수 및 KYC',
                 'roadmap4-description': '● 콩, 쌀, 밀 및 옥수수 상품 토큰화<br>● KYC 법률 준수<br>● 자금 세탁 방지 법률 준수<br>● 직불 카드',
@@ -1109,8 +1109,8 @@ $(function () {
                 'toparticipate':'要參與財務輪次和抽獎空投，請完成以下任務：',
                 'toparticipate2':'轉發、點贊並與 5 個聯繫人分享 <a href="http//:www......"> 推特</a>',
                 'toparticipate3':'點贊並分享給 5 個 <a href="http//:www......">Instagram</a> 聯繫人',
-                'toparticipate4':'在 <a href="http//:www ......">Discord</a> 上加入我們的頻道',
-                'toparticipate5':'在 <a href="http//:www ......">Telegram</a> 上加入我們的頻道',
+                'toparticipate4':'在 <a href="https://discord.gg/DxpFhzNr">Discord</a> 上加入我們的頻道',
+                'toparticipate5':'在 <a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a> 上加入我們的頻道',
                 'toparticipate6':'為了能夠參與每個財務回合，用戶必須通過完成上述任務列入白名單<br>Raffle 將於 4 月 1 日、4 月 20 日、5 月 10 日在 YouTube 上直播<br>註冊我們的時事通訊以獲取進一步的通知和提醒',
                     
                 //how to claim
@@ -1169,11 +1169,11 @@ $(function () {
                 //ROADMAP
                 'roadmap-title':'路線圖',
                 'roadmap-description':'這是我們的 2023 年路線圖，我們可能會在今年匯總更多任務。',
-                'roadmap1':'<span>2023 年 3 月</span>融資輪：SEED',
-                'roadmap1-description': '● 種子輪融資<br>● 私募A<br>● 法律地位確立<br>● 私募B',
+                'roadmap1':'<span>2023 年 4 月</span>融資輪：SEED',
+                'roadmap1-description': '● 種子輪融資<br>● 私募A<br>● 私募B<br>● 法律地位確立',
 
-                'roadmap2':'<span>2023 年 4 月</span>項目啟動',
-                'roadmap2-description': '● 第一槓桿流動資金<br>● APP桌面版',
+                'roadmap2':'<span>2023 年 5 月</span>項目啟動',
+                'roadmap2-description': '● 槓桿式DAPP<br>● 集成眾籌平台DAPP業務<br>● Launchpad碳抵消項目',
 
                 'roadmap3':'<span>2023 年 7 月</span>NFT 市場和代幣化橋樑',
                 'roadmap3-description': '● 自 NFT 代幣化橋樑<br>● 碳抵消 NFT 市場<br>● 眾籌平台 dAPP 集成<br>● 移動應用程序',
@@ -1300,8 +1300,8 @@ $(function () {
                 'toparticipate':'ファイナンシャル ラウンドとラッフル エアドロップに参加するには、次のタスクを完了してください。',
                 'toparticipate2':'リツイート、いいね、5 人の連絡先 <a href="http//:www......"> Twiter</a> と共有',
                 'toparticipate3':'5 人の <a href="http//:www......">Instagram</a> の連絡先といいねして共有する',
-                'toparticipate4':'<a href="http//:www......">Discord</a> のチャンネルに参加してください',
-                'toparticipate5':'<a href="http//:www......">Telegram</a> のチャンネルに参加してください',
+                'toparticipate4':'<a href="https://discord.gg/DxpFhzNr">Discord</a> のチャンネルに参加してください',
+                'toparticipate5':'<a href="https://t.me/+yB50AQTUJoozM2U5">Telegram</a> のチャンネルに参加してください',
                 'toparticipate6':'各財務ラウンドに参加できるようにするには、上記のタスクを完了してユーザーをホワイトリストに登録する必要があります<br>ラッフルは 4 月 1 日、4 月 20 日、5 月 10 日に YouTube でライブ配信されます<br>ニュースレターにサインアップして、詳細な通知とアラートを入手してください',
                     
 
@@ -1363,11 +1363,11 @@ $(function () {
                 //ROADMAP
                 'roadmap-title':'ロードマップ',
                 'roadmap-description':'これは 2023 年のロードマップであり、今年中にさらに多くのタスクを集約する可能性があります。',
-                'roadmap1':'<span>2023 年 3 月</span>ファイナンシャル ラウンド: シード',
-                'roadmap1-description': '●シード資金調達ラウンド<br>●プライベートセールA<br>●法的地位確立<br>●プライベートセールB',
+                'roadmap1':'<span>2023年4月</span>ファイナンシャル ラウンド: シード',
+                'roadmap1-description': '● シード ファイナンシャル ラウンド<br>● プライベート セール A<br>● プライベート セール B<br>● 法的地位の確立',
 
-                'roadmap2':'<span>2023 年 4 月</span>プロジェクトの立ち上げ',
-                'roadmap2-description': '● 初めて活用された流動性ファンド<br>● APP デスクトップ バージョン',
+                'roadmap2':'<span>2023年5月</span>プロジェクトの立ち上げ',
+                'roadmap2-description': '● DAPP の活用<br>● インテグレーション クラウドファンディング プラットフォーム DAPP ビジネス<br>● Launchpad カーボン オフセット プロジェクト',
 
                 'roadmap3':'<span>2023 年 7 月</span>NFT マーケットプレイス & トークナイゼーション ブリッジ',
                 'roadmap3-description': '● セルフ NFT トークン化ブリッジ<br>● カーボン オフセット NFT マーケットプレイス<br>● クラウドファンディング プラットフォーム dAPP 統合<br>● モバイル APP',
@@ -1991,7 +1991,7 @@ $('.dropdown-item').click(function() {
       '<div><span>%H</span> ' + translations[language]['hours'] + '</div>' +
       '<div><span>%M</span> ' + translations[language]['minutes'] + '</div>' +
       '<div><span>%S</span> ' + translations[language]['seconds'] + '</div>';
-    $('#clock').countdown('2023/04/01').on('update.countdown', function(event) {
+    $('#clock').countdown('2023/04/03').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(_DateInput));
     });
   }
