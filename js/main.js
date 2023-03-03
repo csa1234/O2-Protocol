@@ -303,6 +303,9 @@ $(function () {
             'connect': 'Connect',
             'connectwallet':'CONNECT WALLET',
             'disconnect':'Disconnect',
+
+            //video
+            'intro-video-url': 'https://www.youtube.com/watch?v=sEMTHlAfMR4',
             
             //middle description
             'banner-title': 'Carbon Offset Financing & Leveraged Crypto farming De-Fi',
@@ -506,6 +509,9 @@ $(function () {
             'connect': 'Conectar',
             'connectwallet':'CONECTAR BILLETERA',
             'disconnect':'Desconectar',
+
+            //video
+            'intro-video-url': 'https://www.youtube.com/watch?v=_WbSnw9zMhI',
             
             //middle description
             'banner-title': 'Financiación de Compensación de Carbono y Agricultura Criptográfica apalancada De-Fi<br>Finanzas Descentralizadas',
@@ -703,6 +709,9 @@ $(function () {
                 'connect': 'Conectar',
                 'connectwallet':'CONECTAR CARTEIRA',
                 'disconnect':'Desconectar',
+
+                //video
+                'intro-video-url': 'https://www.youtube.com/watch?v=Pfe7tyapJ3A',
                 
                 //middle description
                 'banner-title': 'Finanças de Compensação de Carbono e Agricultura de Criptografia alavancada De-Fi<br>Finanças descentralizadas',
@@ -901,6 +910,8 @@ $(function () {
                 'connectwallet':'지갑 연결',
                 'disconnect':'연결 끊기',
                 
+                //video
+                'intro-video-url': 'https://www.youtube.com/watch?v=DuEkvI88PbE&t=1s',
                 
                 //middle description
                 'banner-title': '탄소 상쇄 금융 및 레버리지 크립토 파밍 디파이<br>탈중앙화 금융',
@@ -1092,6 +1103,9 @@ $(function () {
                 'connectwallet':'連接錢包',
                 'disconnect':'斷開',
                 
+                //video 
+                'intro-video-url': 'https://www.youtube.com/watch?v=_4s_6KweAHE&t=1s',
+
                 //middle description
                 'banner-title': '碳抵消金融和槓桿加密農業 De-Fi<br>去中心化金融',
                 'banner-description': '利用碳抵消代幣產生資金流的槓桿加密農業通過碳抵消項目認證和代幣化融資獲得收入。',
@@ -1282,6 +1296,8 @@ $(function () {
                 'connectwallet':'コネクトウォレット',
                 'disconnect':'切断する',
                 
+                //video
+                'intro-video-url': 'https://www.youtube.com/watch?v=trYNFSefEAU',
                 
                 //middle description
                 'banner-title': 'カーボン オフセット ファイナンスとレバレッジド クリプト ファーミング De-Fi<br>分散型ファイナンス',
@@ -1499,6 +1515,9 @@ $(function () {
             const ConnectWallet = document.getElementById('connectButton');
             const PurchaseO2p = document.getElementById('purchaseButton');
 
+            //video
+            //const videoLink = document.querySelector('.video-popup');
+
             //get whitelisted
             const GetWhiteListed = document.querySelector('[data-translate="getwhitelisted"]');
             const ToParticipate = document.querySelector('[data-translate="toparticipate"]');
@@ -1688,6 +1707,12 @@ $(function () {
             FinancialText1.innerHTML = translations[Lang]['financial-text1'];
             ConnectWallet.innerHTML = translations[Lang]['connectwallet'];
             PurchaseO2p.innerHTML = translations[Lang]['purchase-o2p'];
+
+            //video
+            //videoLink.href = videoLink.dataset[lang];
+
+            const introVideoLink = document.querySelector('.btn-play.video-popup');
+            introVideoLink.href = translations[Lang]['intro-video-url'];
                         
             //get whitelisted
             GetWhiteListed.innerHTML = translations[Lang]['getwhitelisted'];
