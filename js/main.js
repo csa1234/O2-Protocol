@@ -149,49 +149,395 @@ function connectMetaMask() {
             document.getElementById("connectButton2").style.display = 'none';
             // Show Disconnect button
             document.getElementById("disco").style.display = 'block';
+                                    
             // Define the vesting contract ABI and address
-            const vestingAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
-            const vestingABI = [{
-            "inputs": [
+            const vestingAddress = "0x4B6875Ce1d005D46b9425971eBA7C21ad61bE9CA"; //mumbai
+            const vestingABI = [
                 {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
+                    "inputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                },
+                {
+                    "anonymous": false,
+                    "inputs": [],
+                    "name": "Pause",
+                    "type": "event"
+                },
+                {
+                    "inputs": [],
+                    "name": "Percentage",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "TokenSold",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "TotalAmount",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "_forwardFunds",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "approve_claim",
+                    "outputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "buyTokens",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "claimVesting",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "owner",
+                    "outputs": [
+                        {
+                            "internalType": "address",
+                            "name": "",
+                            "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "pause",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "paused",
+                    "outputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "rate",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round0_Rate",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round0_Supply",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round1_Rate",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round1_Supply",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round2_Rate",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round2_Supply",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round3_Rate",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "round3_Supply",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "_newOwner",
+                            "type": "address"
+                        }
+                    ],
+                    "name": "setNewOwner",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "_round",
+                            "type": "uint256"
+                        }
+                    ],
+                    "name": "setRound",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "_vestingStart",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "setVesting",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "_newtreasury",
+                            "type": "address"
+                        }
+                    ],
+                    "name": "set_treasury",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "supply",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "token",
+                    "outputs": [
+                        {
+                            "internalType": "contract ERC20",
+                            "name": "",
+                            "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "unpause",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "",
+                            "type": "address"
+                        }
+                    ],
+                    "name": "vestingInfo",
+                    "outputs": [
+                        {
+                            "internalType": "address",
+                            "name": "user",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "totalVestedTokens",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "dailyVestedTokens",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "claimAmount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "inputs": [],
+                    "name": "vestingStart",
+                    "outputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
                 }
-            ],
-            "name": "vestingInfo",
-            "outputs": [
-                {
-                "internalType": "address",
-                "name": "user",
-                "type": "address"
-                },
-                {
-                "internalType": "uint256",
-                "name": "totalVestedTokens",
-                "type": "uint256"
-                },
-                {
-                "internalType": "uint256",
-                "name": "dailyVestedTokens",
-                "type": "uint256"
-                },
-                {
-                "internalType": "uint256",
-                "name": "claimAmount",
-                "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-            }];
-    
-            
-            
+            ]
+                           
             //QUITAR COMENTARIOS CUANDO EMPIEZE LA RONDA DE FINANCIACION PARA MOSTAR LA BARRA
             //document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
             //document.getElementById("progressText").style.display = "block";
-            //document.querySelector(".progress").style.display = "block";
+            document.querySelector(".progress").style.display = "block";
 
 
             // Display the connected message and account address
@@ -206,24 +552,52 @@ function connectMetaMask() {
             vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
             // Display the total vested tokens
             const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
-            account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
-                }).catch(function(err) {
-            /*console.error(err);
-            alert('Error retrieving vesting information');*/
-            
+            if (totalVestedTokens === '0') {
+                account.innerHTML += `<br>Total token O2P purchased: 0`;
+            } else {
+                account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
+            }
+           // Call the TokenSold function of the vesting contract
+            vestingContract.methods.TokenSold().call().then(function(TokenSold) {
+            // Display the TokenSold
+            const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
+            const formattedTokenSold = parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+            account.innerHTML += `<br>Token sold: ${formattedTokenSold}`;
+
+            // Call the TotalAmount function of the vesting contract
+            vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
+                const TotalAmountInEther = web3.utils.fromWei(TotalAmount, 'ether');
+                // Display the TotalAmount with commas for thousands
+                const formattedTotalAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+                account.innerHTML += `<br>Total amount: ${formattedTotalAmount}`;
+                
+                // Calculate the percentage of tokens sold
+                const percentageSold = parseFloat(TokenSoldInEther) * 100 / parseFloat(TotalAmountInEther);
+                console.log("Percentage sold: " + percentageSold);
+                
+                // Set the progress bar
+                const progressBar = document.querySelector('.progress-bar');
+                progressBar.setAttribute('aria-valuenow', percentageSold);
+                progressBar.style.width = percentageSold + '%';
+                progressBar.dataset.transitiongoal = percentageSold;
+
+                
+
             });
-    
-        }).catch(function(err) {
-            console.error(err);
-            alert('Please install Metamask Wallet: https://metamask.io');
-        });
-        } else {
-        alert('Please install MetaMask');
-        }
+            });
+            });
+                
+        })
+        } 
     }
 }
   
-  function disconnectMetaMask() {
+  
+
+
+
+
+function disconnectMetaMask() {
     // Clear the connected account information from local storage
     conexion = false;
     localStorage.removeItem("connectedAccount");
