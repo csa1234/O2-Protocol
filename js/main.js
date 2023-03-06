@@ -53,7 +53,7 @@ let initialize = () => {
         const web3 = new Web3(window.ethereum);
   
         // Contract address and ABI
-        const contractAddress = "0xd173D3b057eB8Feb8DE766e15c08173989b98a15";
+        const contractAddress = "0x4B6875Ce1d005D46b9425971eBA7C21ad61bE9CA";
         const abi = [
           {
             "inputs": [],
@@ -133,469 +133,495 @@ function purchaseTokens() {
   $('#purchaseModal').modal('show');
 }
 
+
+
+  
+
+
+
+
 var conexion = false;
+
 // Connect to MetaMask
 function connectMetaMask() {
     if (conexion == false){
         conexion = true;
         // Check if MetaMask is installed
         if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
-        web3 = new Web3(window.ethereum);
-        window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
-            // Store the connected account information in local storage
-            localStorage.setItem("connectedAccount", accounts[0]);
-            // Hide the connect button
-            document.getElementById("connectButton").style.display = 'none';
-            document.getElementById("connectButton2").style.display = 'none';
-            // Show Disconnect button
-            document.getElementById("disco").style.display = 'block';
-                                    
-            // Define the vesting contract ABI and address
-            const vestingAddress = "0x4B6875Ce1d005D46b9425971eBA7C21ad61bE9CA"; //mumbai
-            const vestingABI = [
-                {
-                    "inputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "constructor"
-                },
-                {
-                    "anonymous": false,
-                    "inputs": [],
-                    "name": "Pause",
-                    "type": "event"
-                },
-                {
-                    "inputs": [],
-                    "name": "Percentage",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "TokenSold",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "TotalAmount",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "_forwardFunds",
-                    "outputs": [],
-                    "stateMutability": "payable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "approve_claim",
-                    "outputs": [
-                        {
-                            "internalType": "bool",
-                            "name": "",
-                            "type": "bool"
-                        }
-                    ],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "buyTokens",
-                    "outputs": [],
-                    "stateMutability": "payable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "claimVesting",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "owner",
-                    "outputs": [
-                        {
-                            "internalType": "address",
-                            "name": "",
-                            "type": "address"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "pause",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "paused",
-                    "outputs": [
-                        {
-                            "internalType": "bool",
-                            "name": "",
-                            "type": "bool"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "rate",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round0_Rate",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round0_Supply",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round1_Rate",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round1_Supply",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round2_Rate",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round2_Supply",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round3_Rate",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "round3_Supply",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "address",
-                            "name": "_newOwner",
-                            "type": "address"
-                        }
-                    ],
-                    "name": "setNewOwner",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "_round",
-                            "type": "uint256"
-                        }
-                    ],
-                    "name": "setRound",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "bool",
-                            "name": "_vestingStart",
-                            "type": "bool"
-                        }
-                    ],
-                    "name": "setVesting",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "address",
-                            "name": "_newtreasury",
-                            "type": "address"
-                        }
-                    ],
-                    "name": "set_treasury",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "supply",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "token",
-                    "outputs": [
-                        {
-                            "internalType": "contract ERC20",
-                            "name": "",
-                            "type": "address"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "unpause",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "address",
-                            "name": "",
-                            "type": "address"
-                        }
-                    ],
-                    "name": "vestingInfo",
-                    "outputs": [
-                        {
-                            "internalType": "address",
-                            "name": "user",
-                            "type": "address"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "totalVestedTokens",
-                            "type": "uint256"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "dailyVestedTokens",
-                            "type": "uint256"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "claimAmount",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "name": "vestingStart",
-                    "outputs": [
-                        {
-                            "internalType": "bool",
-                            "name": "",
-                            "type": "bool"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
+            web3 = new Web3(window.ethereum);
+            window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
+                
+                // Check if connected to Mumbai network
+                const networkId = await ethereum.request({ method: 'eth_chainId' });
+                if (networkId == '0x13881') {
+                    action(accounts);
                 }
-            ]
-                           
-            //QUITAR COMENTARIOS CUANDO EMPIEZE LA RONDA DE FINANCIACION PARA MOSTAR LA BARRA
-            //document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
-            //document.getElementById("progressText").style.display = "block";
-            document.querySelector(".progress").style.display = "block";
-
-
-            // Display the connected message and account address
-            var account = document.getElementById("account");
-            account.style.display = 'block';
-            account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
-            // Get the vesting contract instance
-            const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
-            // Get the connected account's address
-            const userAddress = accounts[0];
-            // Call the vestingInfo function of the vesting contract, passing the user's address
-            vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
-            // Display the total vested tokens
-            const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
-            if (totalVestedTokens === '0') {
-                account.innerHTML += `<br>Total token O2P purchased: 0`;
-            } else {
-                account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
-            }
-           // Call the TokenSold function of the vesting contract
-            vestingContract.methods.TokenSold().call().then(function(TokenSold) {
-            // Display the TokenSold
-            const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
-            const formattedTokenSold = parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
-            account.innerHTML += `<br>Token sold: ${formattedTokenSold}`;
-
-            // Call the TotalAmount function of the vesting contract
-            vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
-                const TotalAmountInEther = web3.utils.fromWei(TotalAmount, 'ether');
-                // Display the TotalAmount with commas for thousands
-                const formattedTotalAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
-                account.innerHTML += `<br>Total amount: ${formattedTotalAmount}`;
-                
-                // Calculate the percentage of tokens sold
-                const percentageSold = parseFloat(TokenSoldInEther) * 100 / parseFloat(TotalAmountInEther);
-                console.log("Percentage sold: " + percentageSold);
-                
-                // Set the progress bar
-                const progressBar = document.querySelector('.progress-bar');
-                progressBar.setAttribute('aria-valuenow', percentageSold);
-                progressBar.style.width = percentageSold + '%';
-                progressBar.dataset.transitiongoal = percentageSold;
-
-                
-
-            });
-            });
-            });
-                
-        })
+                else {
+                    // Switch to Mumbai network
+                    await window.ethereum.request({
+                        method: 'wallet_switchEthereumChain',
+                        params: [{ chainId: '0x13881' }], // Mumbai network chain ID
+                    });
+                    action(accounts);
+                }
+            })
         } 
     }
 }
+
+
+
+function action(accounts){
+    // Store the connected account information in local storage
+    localStorage.setItem("connectedAccount", accounts[0]);
+    // Hide the connect button
+    document.getElementById("connectButton").style.display = 'none';
+    document.getElementById("connectButton2").style.display = 'none';
+    // Show Disconnect button
+    document.getElementById("disco").style.display = 'block';
+                            
+    // Define the vesting contract ABI and address
+    const vestingAddress = "0x4B6875Ce1d005D46b9425971eBA7C21ad61bE9CA"; //mumbai
+    const vestingABI = [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Pause",
+            "type": "event"
+        },
+        {
+            "inputs": [],
+            "name": "Percentage",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "TokenSold",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "TotalAmount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "_forwardFunds",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "approve_claim",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "buyTokens",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "claimVesting",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "pause",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "paused",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round0_Rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round0_Supply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round1_Rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round1_Supply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round2_Rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round2_Supply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round3_Rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round3_Supply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "setNewOwner",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_round",
+                    "type": "uint256"
+                }
+            ],
+            "name": "setRound",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "_vestingStart",
+                    "type": "bool"
+                }
+            ],
+            "name": "setVesting",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_newtreasury",
+                    "type": "address"
+                }
+            ],
+            "name": "set_treasury",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "supply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "token",
+            "outputs": [
+                {
+                    "internalType": "contract ERC20",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "unpause",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "vestingInfo",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "totalVestedTokens",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "dailyVestedTokens",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "claimAmount",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "vestingStart",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+                   
+    //QUITAR COMENTARIOS CUANDO EMPIEZE LA RONDA DE FINANCIACION PARA MOSTAR LA BARRA
+    document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+    
+    // Display the connected message and account address
+    var account = document.getElementById("account");
+    account.style.display = 'block';
+    account.innerHTML = "Connected to: " + accounts[0].slice(0, 6) + '...' + accounts[0].slice(-4);
+    // Get the vesting contract instance
+    const vestingContract = new web3.eth.Contract(vestingABI, vestingAddress);
+    // Get the connected account's address
+    const userAddress = accounts[0];
+    // Call the vestingInfo function of the vesting contract, passing the user's address
+    vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
+    // Display the total vested tokens
+    const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
+    if (totalVestedTokens === '0') {
+        account.innerHTML += `<br>Total token O2P purchased: 0`;
+    } else {
+        account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
+    }
+   // Call the TokenSold function of the vesting contract
+    vestingContract.methods.TokenSold().call().then(function(TokenSold) {
+    // Display the TokenSold
+    const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
+    const formattedTokenSold = parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+    //muestra valores TokenSold
+    //account.innerHTML += `<br>Token sold: ${formattedTokenSold}`;
+
+    // Call the TotalAmount function of the vesting contract
+    vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
+        const TotalAmountInEther = web3.utils.fromWei(TotalAmount, 'ether');
+        // Display the TotalAmount with commas for thousands
+        const formattedTotalAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+        //muestra valores TotalAmount
+        //account.innerHTML += `<br>Total amount: ${formattedTotalAmount}`;
+        
+        // Calculate the percentage of tokens sold
+        const percentageSold = parseFloat(TokenSoldInEther) * 100 / parseFloat(TotalAmountInEther);
+        
+        // Set the progress bar
+        const progressBar = document.querySelector('.progress-bar');
+        progressBar.setAttribute('aria-valuenow', percentageSold);
+        progressBar.style.width = percentageSold;
+        progressBar.dataset.transitiongoal = percentageSold;
+
+        // Update progress text
+        const progressText = document.getElementById('progressText');
+        const formattedTokenAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+        //OCULTAR BARRA Y TEXTO
+        progressText.textContent = `${formattedTokenSold} of ${formattedTokenAmount} O2P Token`;
+        progressText.style.display = 'block';
+    });
+    });
+    });
+
+}
+
   
-  
-
-
-
 
 function disconnectMetaMask() {
     // Clear the connected account information from local storage
@@ -708,11 +734,11 @@ $(function () {
             
             //how it works
             'howitworks':'How it works:',
-            'stephow': 'O2-Protocol will finance CO2 projects certification at Verra.org, binded with a legal agreement with the project owner',
-            'stephow2': 'Verra certifications is then tokenized thru Toucan Protocol NFT',
-            'stephow3': 'The NFTs are then converted into BCT token (Toucan Protocol) and swaped to USDT',
-            'stephow4': 'O2-Protocol keeps 50% of the USDT as a concept for having financed the certification and tokenization, the other 50% goes to the project owner',
-            'stephow5': 'The profits obtained will be distributed in the liquidity pools, financing of new projects, treasury vault, payment of salaries and marketing',
+            'stephow': 'O2-Protocol will finance CO2 projects certification thru NGO like Verra, Goldstandard or others, binded with a legal agreement with the project owner',
+            'stephow2': 'Those certifications are then tokenized thru Toucan Protocol NFT or another tokenization bridging services',
+            'stephow3': 'NFT is then converted to carbon offset tokens and swaped to USDT',
+            'stephow4': 'O2-Protocol keeps 50% of the USDT and 50% goes to the project owner',
+            'stephow5': '50% of the USDT is swaped to buy back O2P token and remaining will be used to finance new projects certifcation and provide liquidity to the pools',
             
                 
             //business model
@@ -914,9 +940,9 @@ $(function () {
             
             //how it works
             'howitworks':'Como funciona:',
-            'stephow': 'O2-Protocol financiará la certificación de proyectos de CO2 en Verra.org, vinculado a un acuerdo legal con el propietario del proyecto',
-            'stephow2': 'Las certificaciones de Verra luego se tokenizan a través del Protocolo Toucan NFT',
-            'stephow3': 'Los NFT luego se convierten en token BCT (Protocolo Toucan) y se intercambian a USDT',
+            'stephow': 'O2-Protocol financiará la certificación de proyectos de CO2 a través de ONG como Verra, Goldstandard u otros, vinculado a un acuerdo legal con el propietario del proyecto',
+            'stephow2': 'Las certificaciones luego se tokenizan a través del Protocolo Toucan NFT u otros similares',
+            'stephow3': 'Los NFT luego se convierten en token de compensación de carbono y se intercambian a USDT',
             'stephow4': 'O2-Protocol se queda con el 50% del USDT en concepto por haber financiado la certificacion y tokenización, el otro 50% va al propietario del proyecto',
             'stephow5': 'Los beneficios obtenidos se distribuirán en las piscinas de liquidez, financiación de nuevos proyectos, caja de tesorería, pago de salarios y marketing',
 
@@ -1114,12 +1140,12 @@ $(function () {
                 
                 //how it works
                 'howitworks':'Como funciona:',
-                'stephow': 'O2-Protocol financiará a certificação de projetos de CO2 em Verra.org, vinculada a um acordo legal com o proprietário do projeto',
-                'stephow2': 'As certificações Verra são então tokenizadas por meio do protocolo Toucan NFT',
-                'stephow3': 'Os NFTs são então convertidos em token BCT (Protocolo Tucano) e trocados por USDT',
-                'stephow4': 'O2-Protocol fica com 50% do USDT como conceito por ter financiado a certificação e tokenização, os outros 50% vão para o dono do projeto',
-                'stephow5': 'Os lucros obtidos serão distribuídos nos pools de liquidez, financiamento de novos projetos, cofre do tesouro, pagamento de salários e marketing',
-                
+                'stephow': 'O2-Protocol financiará a certificação de projetos de CO2 através de ONGs como Verra, Goldstandard ou outras, vinculadas a um acordo legal com o proprietário do projeto',
+                'stephow2': 'As certificações são então tokenizadas através do protocolo Toucan NFT ou outros similares',
+                'stephow3': 'NFTs são então convertidos em tokens de compensação de carbono e trocados por USDT',
+                'stephow4': 'O2-Protocol fica com 50% do USDT por ter financiado a certificação e tokenização, os outros 50% vão para o dono do projeto',
+                'stephow5': 'Os lucros obtidos serão distribuídos nos pools de liquidez, financiamento de novos projetos, caixa do tesouro, pagamento de salários e marketing',
+                    
                 //business model
                 'business-model': 'MODELO DE NEGÓCIOS',
                 'o2p-token': 'TOKEN O2P',
@@ -1314,11 +1340,11 @@ $(function () {
 
                 //how it works
                 'howitworks':'작동 방식:',
-                'stephow': 'O2-Protocol은 Verra.org에서 CO2 프로젝트 인증에 자금을 지원하고 프로젝트 소유자와의 법적 계약에 구속됩니다.',
-                'stephow2': '그런 다음 Verra 인증은 Toucan Protocol NFT를 통해 토큰화됩니다.',
-                'stephow3': '그런 다음 NFT는 BCT 토큰(Toucan Protocol)으로 변환되고 USDT로 스왑됩니다.',
-                'stephow4': 'O2-Protocol은 인증 및 토큰화 자금 조달을 위한 개념으로 USDT의 50%를 유지하고 나머지 50%는 프로젝트 소유자에게 전달됩니다.',
-                'stephow5': '얻은 이익은 유동성 풀, 신규 프로젝트 자금 조달, 금고, 급여 지급 및 마케팅에 분배됩니다.',
+                'stephow': 'O2-Protocol은 Verra, Goldstandard 등과 같은 NGO를 통해 프로젝트 소유자와의 법적 계약과 연결된 CO2 프로젝트 인증에 자금을 지원합니다.',
+                'stephow2': '인증은 Toucan NFT 프로토콜 또는 기타 유사한 프로토콜을 통해 토큰화됩니다.',
+                'stephow3': 'NFT는 탄소 상쇄 토큰으로 변환되어 USDT로 교환됩니다.',
+                'stephow4': 'O2-Protocol은 인증 및 토큰화 자금 조달을 위해 USDT의 50%를 유지하고 나머지 50%는 프로젝트 소유자에게 갑니다.',
+                'stephow5': '획득한 수익은 유동성 풀, 신규 프로젝트 자금 조달, 금고, 급여 지급 및 마케팅에 분배됩니다.',
                 
 
                 //business model
@@ -1507,11 +1533,11 @@ $(function () {
                 
                 //how it works
                 'howitworks':'怎麼運行的：',
-                'stephow': 'O2-Protocol 將資助 Verra.org 上的 CO2 項目認證，並與項目所有者簽訂法律協議',
-                'stephow2': '然後通過 Toucan Protocol NFT 將 Verra 認證標記化',
-                'stephow3': '然後將 NFT 轉換為 BCT 令牌（Toucan 協議）並交換為 USDT',
-                'stephow4': 'O2-Protocol 保留 50% 的 USDT 作為為認證和代幣化提供資金的概念，另外 50% 歸項目所有者所有',
-                'stephow5': '獲得的利潤將分配到流動資金池、新項目融資、國庫、支付工資和營銷',
+                'stephow': 'O2-Protocol 將通過 Verra、Goldstandard 或其他非政府組織資助 CO2 項目的認證，並與項目所有者簽訂法律協議',
+                'stephow2':'然後通過 Toucan NFT 協議或其他類似協議對證書進行標記化',
+                'stephow3': 'NFTs 然後被轉換為碳抵消代幣並兌換成 USDT',
+                'stephow4': 'O2-Protocol 保留 50% 的 USDT 用於資助認證和代幣化，另外 50% 歸項目所有者',
+                'stephow5': '獲得的利潤將分配到流動資金池、新項目融資、金庫、工資支付和營銷',
                 
                 //business model
                 'business-model': '商業模式',
@@ -1701,11 +1727,11 @@ $(function () {
                 
                 //how it works
                 'howitworks':'使い方：',
-                'stephow': 'O2-Protocol は Verra.org での CO2 プロジェクト認証に資金を提供し、プロジェクト所有者との法的契約に拘束されます。',
-                'stephow2': 'Verra 認定は、オオハシ プロトコル NFT を介してトークン化されます。',
-                'stephow3': 'その後、NFT は BCT トークン (オオハシ プロトコル) に変換され、USDT にスワップされます。',
-                'stephow4': 'O2-Protocol は USDT の 50% を認証とトークン化に資金を提供するためのコンセプトとして保持し、残りの 50% はプロジェクト オーナーに渡されます。',
-                'stephow5': '得られた利益は、流動性プール、新しいプロジェクトの資金調達、金庫室、給与の支払い、およびマーケティングに分配されます',
+                'stephow': 'O2-Protocol は、Verra、Goldstandard などの NGO を通じて CO2 プロジェクトの認証に資金を提供し、プロジェクト所有者との法的契約にリンクしています',
+                'stephow2': '証明書は、オオハシNFTプロトコルまたは他の同様のものを介してトークン化されます',
+                'stephow3': 'その後、NFT はカーボン オフセット トークンに変換され、USDT に交換されます',
+                'stephow4': 'O2-Protocol は、認証とトークン化に資金を提供した USDT の 50% を保持し、残りの 50% はプロジェクト オーナーに渡されます',
+                'stephow5': '得られた利益は、流動性プール、新しいプロジェクトの資金調達、財務ボックス、給与の支払い、およびマーケティングに分配されます',
                 
 
                 //business model
