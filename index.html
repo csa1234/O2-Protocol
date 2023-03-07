@@ -223,7 +223,7 @@
                                 </div>
                                 <!-- End of .progress -->
                                 
-                                <p id="progressText" style="display: none;">0   OF  5,625,000 O2P</p>
+                                <p id="progressText" style="display: none;">0   OF  12,500,000 O2P</p>
                                 <a href="#" id="purchaseButton" class="btn secondary-btn"  onclick="purchaseTokens()" style="display:none" data-translate="purchase-o2p">PURCHASE O2P TOKENS</a>
                                 <br>
                                 <a href="#" id="connectButton" class="btn secondary-btn" onclick="connectMetaMask()" data-translate="connectwallet">CONNECT WALLET</a>
@@ -857,9 +857,9 @@
                                 <p data-translate="token-distribution-text">O2-Protocol will utilize a vesting model of 12 months for each financial round at an average
                                     of 8.33% monthly vesting to avoid price dump and pump fluctuations.
                                     <br>
-                                    <br>● Seed round: O2P token price will be offered at 0.45 MATIC per token
-                                    <br>● Private Sale A: O2P token price will be offered at 0.65 MATIC per token
-                                    <br>● Private Sale B: O2P token price will be offered at 0.85 MATIC per token</p>
+                                    <br>● Seed round: O2P token price will be offered at 1.55 O2P per 1 MATIC per token
+                                    <br>● Private Sale A: O2P token price will be offered at 1.50 O2P per 1 MATIC per token
+                                    <br>● Private Sale B: O2P token price will be offered at 1.45 O2P per 1 MATIC per token</p>
 
                                 <div class="progressbar-block row">
                                     <div class="col-md-6">
@@ -1524,7 +1524,7 @@
 <div class="modal" id="successModal">
     
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="background-color: #1f3268; border-radius: 3%;"> 
+        <div class="modal-content" style="background-color: #194cda; border-radius: 3%;"> 
                     
         <!-- Modal Header -->
         <div class="modal-header">
@@ -1534,18 +1534,49 @@
   
        <!-- Modal body -->
 <div class="modal-body">
-    <p style="font-size: 18px; color: white;" data-translate="modal-purchase-receipt">You just purchased <span id="successAmount"></span> O2P tokens.</p>
+    <p style="font-size: 18px; color: white;" data-translate="modal-purchase-receipt">You just purchased <span id="successAmount"></span> O2P tokens.<br>Please refresh to show your purchased tokens.
+    </p>
 </div>
 
 <!-- Modal footer -->
 <div class="modal-footer">
-  <button type="button" class="btn btn-secondary" data-dismiss="modal" data-translate="modal-close">Close</button>
+    
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-translate="modal-close">Close</button>
 </div>
 
   
       </div>
     </div>
   </div>
+
+
+  <!-- Stdand by Modal -->
+<div class="modal" id="standbyModal">
+    
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content" style="background-color: #194cda; border-radius: 3%;"> 
+                    
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" data-translate="modal-standby">Stand by</h4>
+          
+        </div>
+  
+       <!-- Modal body -->
+<div class="modal-body">
+    <p style="font-size: 18px; color: white;" data-translate="modal-standby-confirming">Awaiting TX to be confirmed...</p>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+  
+</div>
+
+  
+      </div>
+    </div>
+  </div>
+
   
       
 

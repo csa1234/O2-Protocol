@@ -53,7 +53,7 @@ let initialize = () => {
         const web3 = new Web3(window.ethereum);
   
         // Contract address and ABI
-        const contractAddress = "0x4B6875Ce1d005D46b9425971eBA7C21ad61bE9CA";
+        const contractAddress = "0x82cFff3C66c534CC59f1Fe3Ac3A5347B0823b0c7";
         const abi = [
           {
             "inputs": [],
@@ -105,18 +105,30 @@ let initialize = () => {
         // Convert amount to wei
         const amountWei = web3.utils.toWei(amount, "ether");
   
+        // show the standby modal
+        $('#standbyModal').modal('show');
+        
+
         // Send transaction to the contract
         const result = await contract.methods.buyTokens().send({
           from: account,
           value: amountWei
+
+          
         });
-  
+        
+        // hide the standby modal
+        $('#standbyModal').modal('hide');
         // Hide the purchase modal
         $("#purchaseModal").modal("hide");
-  
+
+               
+
         // Display the success modal with the amount of tokens purchased
         $("#successAmount").text(tokensToPurchase.toFixed(8));
         $("#successModal").modal("show");
+
+        
   
       } catch (error) {
         // Handle error
@@ -132,11 +144,6 @@ function purchaseTokens() {
   // Show the purchase modal
   $('#purchaseModal').modal('show');
 }
-
-
-
-  
-
 
 
 
@@ -181,7 +188,7 @@ function action(accounts){
     document.getElementById("disco").style.display = 'block';
                             
     // Define the vesting contract ABI and address
-    const vestingAddress = "0x4B6875Ce1d005D46b9425971eBA7C21ad61bE9CA"; //mumbai
+    const vestingAddress = "0x82cFff3C66c534CC59f1Fe3Ac3A5347B0823b0c7"; //mumbai
     const vestingABI = [
         {
             "inputs": [],
@@ -193,19 +200,6 @@ function action(accounts){
             "inputs": [],
             "name": "Pause",
             "type": "event"
-        },
-        {
-            "inputs": [],
-            "name": "Percentage",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
         },
         {
             "inputs": [],
@@ -562,9 +556,9 @@ function action(accounts){
             "stateMutability": "view",
             "type": "function"
         }
-    ]
+    ];
                    
-    //QUITAR COMENTARIOS CUANDO EMPIEZE LA RONDA DE FINANCIACION PARA MOSTAR LA BARRA
+    //// ------- REMOVER AL EMPEZAR SEED ROUND
     document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
     
     // Display the connected message and account address
@@ -577,20 +571,25 @@ function action(accounts){
     const userAddress = accounts[0];
     // Call the vestingInfo function of the vesting contract, passing the user's address
     vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
-    // Display the total vested tokens
+    
+        // Display the total vested tokens
+    // ------- REMOVER AL EMPEZAR SEED ROUND
     const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
     if (totalVestedTokens === '0') {
         account.innerHTML += `<br>Total token O2P purchased: 0`;
     } else {
         account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
     }
+
    // Call the TokenSold function of the vesting contract
     vestingContract.methods.TokenSold().call().then(function(TokenSold) {
-    // Display the TokenSold
+    
+    // ------- REMOVER AL EMPEZAR SEED ROUND
+        // Display the TokenSold
     const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
     const formattedTokenSold = parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
-    //muestra valores TokenSold
-    //account.innerHTML += `<br>Token sold: ${formattedTokenSold}`;
+    
+    
 
     // Call the TotalAmount function of the vesting contract
     vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
@@ -598,7 +597,10 @@ function action(accounts){
         // Display the TotalAmount with commas for thousands
         const formattedTotalAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
         //muestra valores TotalAmount
-        //account.innerHTML += `<br>Total amount: ${formattedTotalAmount}`;
+        account.innerHTML += `<br>Total tokens for sale: ${formattedTotalAmount}`;
+
+        //muestra valores TokenSold
+        account.innerHTML += `<br>Tokens sold: ${formattedTokenSold}`;
         
         // Calculate the percentage of tokens sold
         const percentageSold = parseFloat(TokenSoldInEther) * 100 / parseFloat(TotalAmountInEther);
@@ -608,6 +610,8 @@ function action(accounts){
         progressBar.setAttribute('aria-valuenow', percentageSold);
         progressBar.style.width = percentageSold;
         progressBar.dataset.transitiongoal = percentageSold;
+        $('.progress').css('display', 'block');
+
 
         // Update progress text
         const progressText = document.getElementById('progressText');
@@ -620,8 +624,6 @@ function action(accounts){
     });
 
 }
-
-  
 
 function disconnectMetaMask() {
     // Clear the connected account information from local storage
@@ -823,7 +825,7 @@ $(function () {
 
             //TOKEN DISTRIBUTION
             'token-distribution':'Token Distribution',
-            'token-distribution-text':'O2-Protocol will utilize a vesting model of 12 months for each financial round at an average of 8.33% monthly vesting to avoid price dump and pump fluctuations.<br><br>● Seed round: O2P token price will be offered at 0.45 MATIC per token<br>● Private Sale A: O2P token price will be offered at 0.65 MATIC per token<br>● Private Sale B: O2P token price will be offered at 0.85 MATIC per token',
+            'token-distribution-text':'O2-Protocol will utilize a vesting model of 12 months for each financial round at an average of 8.33% monthly vesting to avoid price dump and pump fluctuations.<br><br>● Seed round: O2P token price will be offered at 1.55 O2P per 1 MATIC per token<br>● Private Sale A: O2P token price will be offered at 1.50 O2P per 1 MATIC<br>● Private Sale B: O2P token price will be offered at 1.45 O2P per 1 MATIC',
             'tokentext1': 'Airdrop: 0.1%',
             'tokentext2': 'Development: 20%',
             'tokentext3': 'Liquidity Farming: 26%',
@@ -1029,7 +1031,7 @@ $(function () {
 
             //TOKEN DISTRIBUTION
             'token-distribution':'Distribución de tokens',
-            'token-distribution-text':'O2-Protocol utilizará un modelo de adjudicación de 12 meses para cada ronda de financiación, con un promedio de 8,33 % de adjudicación mensual para evitar la presión de venta.<br><br> ● Ronda semilla: el precio del token O2P se ofrecerá a 0,45 MATIC por token<br>● Venta privada A: el precio del token O2P se ofrecerá a 0,65 MATIC por token<br>● Venta privada B: el precio del token O2P se ofrecerá a 0,85 MATIC por token',
+            'token-distribution-text':'O2-Protocol utilizará un modelo de adjudicación de 12 meses para cada ronda de financiación, con un promedio de 8,33 % de adjudicación mensual para evitar la presión de venta.<br><br> ● Ronda semilla: el precio del token O2P se ofrecerá a 1.55 O2P por 1 MATIC<br>● Venta privada A: el precio del token O2P se ofrecerá a 1.50 O2P por 1 MATIC<br>● Venta privada B: el precio del token O2P se ofrecerá a 1.45 O2P por 1 MATIC',
             'tokentext1': 'Airdrop: 0.1%',
             'tokentext2': 'Desarrollo: 20%',
             'tokentext3': 'Fondo de liquidez para agricultura criptográfica',
@@ -1230,7 +1232,7 @@ $(function () {
                    
                 //TOKEN DISTRIBUTION
                 'token-distribution':'Distribuição de tokens',
-                'token-distribution-text':'O2-Protocol usará um modelo de alocação de 12 meses para cada rodada de financiamento, com uma média de alocação mensal de 8,33% para evitar a pressão de venda.<br><br> ● Rodada inicial: o preço do token O2P será oferecido a 0,45 MATIC por token<br> ● Venda privada A: o preço do token O2P será oferecido a 0,65 MATIC por token<br>● Venda privada B: o preço do token O2P será oferecido a 0,85 MATIC por token',
+                'token-distribution-text':'O2-Protocol usará um modelo de alocação de 12 meses para cada rodada de financiamento, com uma média de alocação mensal de 8,33% para evitar a pressão de venda.<br><br> ● Rodada inicial: o preço do token O2P será oferecido a 1.55 O2P por 1 MATIC<br> ● Venda privada A: o preço do token O2P será oferecido a 1.50 O2P por 1 MATIC<br>● Venda privada B: o preço do token O2P será oferecido a 1.45 O2P por 1 MATIC',
                 'tokentext1': 'Airdrop: 0.1%',
                 'tokentext2': 'Desenvolvimento: 20%',
                 'tokentext3': 'Pool de liquidez para cultivo de criptomoedas: 26%',
@@ -1426,7 +1428,7 @@ $(function () {
                  
                 //TOKEN DISTRIBUTION
                 'token-distribution':'토큰 분배',
-                'token-distribution-text':'O2-Protocol은 매도 압력을 피하기 위해 평균 8.33%의 월별 할당을 각 펀딩 라운드에 12개월 할당 모델을 사용합니다.<br><br> ● 시드 라운드: O2P 토큰 가격은 토큰당 0.45 MATIC으로 제공됩니다.<br> ● Private Sale A: O2P 토큰 가격은 토큰당 0.65 MATIC으로 제공됩니다.<br>● Private Sale B: O2P 토큰 가격은 토큰당 0.85 MATIC으로 제공됩니다.',
+                'token-distribution-text':'O2-Protocol은 판매 압력을 피하기 위해 평균 8.33%의 월별 할당으로 각 자금 조달 라운드에 12개월 할당 모델을 사용합니다.<br><br> ● 시드 라운드: O2P 토큰은 1 MATIC당 1.55 O2P로 가격이 책정됩니다. <br> ● Private Sale A: O2P 토큰 가격은 1 MATIC당 1.50 O2P로 제공됩니다.<br>● Private Sale B: O2P 토큰 가격은 1 MATIC당 1.45 O2P로 제공됩니다.',
                 'tokentext1': '에어드랍: 0.1%',
                 'tokentext2': '개발: 20%',
                 'tokentext3': '암호화폐 농사를 위한 유동성 풀: 26%',
@@ -1618,7 +1620,7 @@ $(function () {
 
                 //TOKEN DISTRIBUTION
                 'token-distribution':'代幣分配',
-                'token-distribution-text':'O2-Protocol 將在每輪融資中使用 12 個月的分配模式，平均每月分配 8.33% 以避免拋售壓力。<br><br> ● 種子輪：O2P 代幣價格將以每個代幣 0.45 MATIC 的價格提供<br> ● 私募 A：O2P 代幣價格將為每個代幣 0.65 MATIC<br>● 私募 B：O2P 代幣價格將為每個代幣 0.85 MATIC',
+                'token-distribution-text':'O2-Protocol 對每輪融資採用 12 個月的分配模式，平均每月分配 8.33% 以避免拋售壓力。<br><br> ● 種子輪：O2P 代幣的價格為每 1 個 MATIC 1.55 O2P。 <br> ● 私募 A：O2P 代幣價格為每 1 MATIC 1.50 O2P。<br>● 私募 B：O2P 代幣價格為每 1 MATIC 1.45 O2P。',
                 'tokentext1': '空投：0.1%',
                 'tokentext2': '發展：20%',
                 'tokentext3': '加密農業的流動資金池：26%',
@@ -1814,7 +1816,7 @@ $(function () {
                 
                 //TOKEN DISTRIBUTION
                 'token-distribution':'トークンの配布',
-                'token-distribution-text':'O2-Protocol は、売り圧力を避けるために、各資金調達ラウンドに 12 か月の割り当てモデルを使用し、月間平均 8.33% の割り当てモデルを使用します。<br><br> ● シード ラウンド: O2P トークンの価格は、トークンあたり 0.45 MATIC で提供されます<br> ● プライベート セール A: O2P トークンの価格はトークンあたり 0.65 MATIC で提供されます<br>● プライベート セール B: O2P トークンの価格はトークンあたり 0.85 MATIC で提供されます',
+                'token-distribution-text':'O2-Protocol は、売り圧力を避けるために、各資金調達ラウンドに 12 か月の割り当てモデルを使用し、毎月の平均割り当ては 8.33% です。<br><br> ● シード ラウンド: O2P トークンの価格は、1 MATIC あたり 1.55 O2P です。 <br> ● プライベート セール A: O2P トークンの価格は 1 MATIC あたり 1.50 O2P で提供されます。<br>● プライベート セール B: O2P トークンの価格は 1 MATIC あたり 1.45 O2P で提供されます。',
                 'tokentext1': 'エアドロップ: 0.1%',
                 'tokentext2': '開発: 20%',
                 'tokentext3': 'クリプトファーミングの流動性プール: 26%',
