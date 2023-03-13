@@ -23,9 +23,6 @@ pragma solidity ^0.8.19;
         uint256 Claimtime;
         bool Claim24h;
         uint256 claimable_store;
-        uint256 StartTime;
-        uint256 timeStart;
-        uint256 timeStart2;
         uint256 accumulatedTokens;
         uint256 daysPassed;
         uint256 currentTime;
@@ -56,20 +53,20 @@ pragma solidity ^0.8.19;
         event Stop();
         
         constructor() {
-            treasuryAddress = payable(0x75f2F9e62e965670e77aaDc71Cef043fFbd5F383);
-            tokenAddress = 0x61612Ba3bEbA5D46cF652e67e9789f6C1cA17B83;
+            treasuryAddress = payable(0xF9826c32B837270e485C4Dc17041c643BcBC9BB8);
+            tokenAddress = 0x1c64DaA605358e97fE365077C08d35C1E71D97C9;
             token = ERC20(tokenAddress);
-            tokenName = "TEST0031";
+            tokenName = "O2PR";
             owner = msg.sender;
             round0_Supply = 0;
             round1_Supply = 12500000 * 10**18;
             round2_Supply = 6250000 * 10**18;
             round3_Supply = 6250000 * 10 **18;
             round0_Rate = 0;
-            round1_Rate = 1500000000000000000;
-            round2_Rate = 1450000000000000000;
-            round3_Rate = 1400000000000000000;
-            rate = 1500000000000000000;
+            round1_Rate = 1538461538461538000;
+            round2_Rate = 1492537313432836000;
+            round3_Rate = 1449275362318841000;
+            rate = 1538461538461538000;
             round = 1;
             supply = round1_Supply;
             TokenSold = 0 ether;
@@ -188,4 +185,9 @@ pragma solidity ^0.8.19;
                 vestingInfo[msg.sender].claim24h = true;
             }
         }
-    }  
+
+        function transferToTreasury(uint256 _amount) public {
+            require(msg.sender == owner, "Only contract owner can call this function");
+            token.transfer(treasuryAddress, _amount);
+        }
+    }

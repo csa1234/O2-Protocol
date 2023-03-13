@@ -576,9 +576,9 @@ function action(accounts){
     // ------- REMOVER AL EMPEZAR SEED ROUND
     const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
     if (totalVestedTokens === '0') {
-        account.innerHTML += `<br>Total token O2P purchased: 0`;
+        account.innerHTML += `<br>Total token O2PR purchased: 0`;
     } else {
-        account.innerHTML += `<br>Total token O2P purchased: ${totalVestedTokens}`;
+        account.innerHTML += `<br>Total token O2PR purchased: ${totalVestedTokens}`;
     }
 
    // Call the TokenSold function of the vesting contract
@@ -617,7 +617,7 @@ function action(accounts){
         const progressText = document.getElementById('progressText');
         const formattedTokenAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
         //OCULTAR BARRA Y TEXTO
-        progressText.textContent = `${formattedTokenSold} of ${formattedTokenAmount} O2P Token`;
+        progressText.textContent = `${formattedTokenSold} of ${formattedTokenAmount} O2PR Token`;
         progressText.style.display = 'block';
     });
     });
@@ -719,10 +719,10 @@ $(function () {
             //'PRIVATE ROUND B STARTS IN',
 
             'connectwallet':'CONNECT WALLET',
-            'purchase-o2p':'PURCHASE O2P TOKENS',
+            'purchase-o2p':'PURCHASE O2PR TOKENS',
             
             //get whitelisted
-            'getwhitelisted':'Get your access to the whitelist and receive in Airdrop 100 O2P tokens (approx. value $100)',
+            'getwhitelisted':'Get your access to the whitelist and receive in Airdrop 100 O2PR tokens (approx. value $100)',
             'toparticipate':'To participate on the Financial rounds & raffle airdrop, please complete next tasks:',
             'toparticipate2':'Retweet, like and share with 5 contacts <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer">  Twiter</a>',
             'toparticipate3':'Like and share with 5 contacts <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">  Instagram</a>',
@@ -740,33 +740,33 @@ $(function () {
             'stephow2': 'Those certifications are then tokenized thru Toucan Protocol NFT or another tokenization bridging services',
             'stephow3': 'NFT is then converted to carbon offset tokens and swaped to USDT',
             'stephow4': 'O2-Protocol keeps 50% of the USDT and 50% goes to the project owner',
-            'stephow5': '50% of the USDT is swaped to buy back O2P token and remaining will be used to finance new projects certifcation and provide liquidity to the pools',
+            'stephow5': '50% of the USDT is swaped to buy back O2PR token and remaining will be used to finance new projects certifcation and provide liquidity to the pools',
             
                 
             //business model
             'business-model': 'BUSINESS MODEL',
-            'o2p-token': 'O2P TOKEN',
+            'o2p-token': 'O2PR TOKEN',
 
             'finance-carbon':'Finance of carbon offset certification projects. O2-Protocol keeps 50% of the face value of the certification at market prices in DEX',
             'finance-banner': 'FINANCE',
             'monetization-banner': 'MONETIZATION',
             'monetization-text': 'Tokenization of carbon offset certificates allowing instantly the swapping for other cryptocurrencies through decentralized exchangers (DEX).',
-            'smart-text': 'Receive a proportional percentage on the amount of O2P token you lock on O2-Protocol smartcontract. NFT owners will have access to exclusive and special financial benefits.',
+            'smart-text': 'Receive a proportional percentage on the amount of O2PR token you lock on O2-Protocol smartcontract. NFT owners will have access to exclusive and special financial benefits.',
             'smart-banner': 'SMART MANAGEMENT',
 
             'retire-text': 'Convert and retire your NFT carbon offset credits back into real world.',
             'retire-banner': 'RETIRE',
 
-            'tokenization-text': 'O2-Protocol will manage certification process and tokenization of selected projects elected thru votation by smartcontract locked O2P tokens holders .',
+            'tokenization-text': 'O2-Protocol will manage certification process and tokenization of selected projects elected thru votation by smartcontract locked O2PR tokens holders .',
             'tokenization-banner':'TOKENIZATION',
 
             'farming-text': 'Profit revenues from O2-Protocol treasury will go to liquidity pools, which will become available to users for borrowing at premium discount for leverage farming.',
             'farming-banner':'LEVERAGED FARMING',
 
-            'price-text': 'O2-Protocol will constantly create income from real world financial assets based on carbon offset certfications and buying back O2P tokens from the market creating buy pressure, which translate to a higher O2P price value.',
+            'price-text': 'O2-Protocol will constantly create income from real world financial assets based on carbon offset certfications and buying back O2PR tokens from the market creating buy pressure, which translate to a higher O2PR price value.',
             'price-banner':'PRICE STRATEGY',
 
-            'stake-text':'Lock your O2P token on our smartcontract (stake) and receive a share of the platform overall income revenues and access to voting power on the platform proposals like projects selections and liquidity farming pools creation for the leveraged farming.',
+            'stake-text':'Lock your O2PR token on our smartcontract (stake) and receive a share of the platform overall income revenues and access to voting power on the platform proposals like projects selections and liquidity farming pools creation for the leveraged farming.',
             'stake-banner':'PASSIVE INCOME',
 
             //PRODUCT DETAILS
@@ -777,7 +777,7 @@ $(function () {
             'product-c':'FINANCING',
 
             'leverage-title':'Leveraged Yield Farming<br>Estimated APR between 20% - 200% on leveraged liquidity pools.',
-            'leverage-text':'Liquidity pools tokens: Bitcoin, Ethereum, Matic, Litecoin, carbon offset tokens, stablecoins & O2P tokens.',
+            'leverage-text':'Liquidity pools tokens: Bitcoin, Ethereum, Matic, Litecoin, carbon offset tokens, stablecoins & O2PR tokens.',
 
             'tokenization-product-title':'Tokenization of carbon offset projects in Paraguay, Brazil, Argentina & Uruguay (MERCOSUR)<br>Reforestation & protection of forests',
             'tokenization-product-text':'With an strategic alliance with NGOs in the MERCOSUR, O2-Protocol will<br>work forward with land owners helping them aquiring carbon offset certifications and tokenization<br>helping those project owners generate revenues income on their reforestation and/or forest protection<br>thru our platform.',
@@ -818,14 +818,14 @@ $(function () {
 
 
             //100 MILLION
-            '100million':'100 Millions O2P Tokens',
+            '100million':'100 Millions O2PR Tokens',
             '100million-text':'The voluntary carbon offset market, which was worth about $2 billion in 2021, will grow to $10-40 billion in value by 2030',
-            '100million-text2':'There will be no more than 100 millions O2P tokens and with current market size of $2 billions<br> that is a 1:20 ratio, which translate to a $20 per token with current Carbon offset market cap.<br>O2P will constanly add marketcap value thru the injection of new project certification and tokenization.',
+            '100million-text2':'There will be no more than 100 millions O2PR tokens and with current market size of $2 billions<br> that is a 1:20 ratio, which translate to a $20 per token with current Carbon offset market cap.<br>O2PR will constanly add marketcap value thru the injection of new project certification and tokenization.',
             
 
             //TOKEN DISTRIBUTION
             'token-distribution':'Token Distribution',
-            'token-distribution-text':'O2-Protocol will utilize a vesting model of 12 months for each financial round at an average of 8.33% monthly vesting to avoid price dump and pump fluctuations.<br><br>● Seed round: O2P token price will be offered at 1.55 O2P per 1 MATIC per token<br>● Private Sale A: O2P token price will be offered at 1.50 O2P per 1 MATIC<br>● Private Sale B: O2P token price will be offered at 1.45 O2P per 1 MATIC',
+            'token-distribution-text':'O2-Protocol will utilize a vesting model of 12 months for each financial round at an average of 8.33% monthly vesting to avoid price dump and pump fluctuations.<br><br>● Seed round: O2PR token price will be offered at 0.65 MATIC per 1 O2PR token<br>● Private Sale A: O2PR token price will be offered at 0.67 MATIC per 1 O2PR token<br>● Private Sale B: O2PR token price will be offered at 0.69 MATIC per 1 O2PR token',
             'tokentext1': 'Airdrop: 0.1%',
             'tokentext2': 'Development: 20%',
             'tokentext3': 'Liquidity Farming: 26%',
@@ -852,7 +852,7 @@ $(function () {
             'modal2-text':'CARBON OFFSET NFT CERTIFICATES',
             'modal22-text':'Where to get carbon offset certificates and how, finally how to monetize them on the blockchain.<br>There are two types of market for greenhouse gas offsets:<br><br>Public: run by the governments of each country< br>Private: voluntary carbon offset.<br><br>Lets focus on voluntary (private) carbon offset:<br>There are several non-governmental organizations known as NGOs that are in charge of verifying and certifying offset projects of carbon.< br>The two most renowned and well-known in the voluntary carbon offset market are Verra.org and Goldstandard.org<br>When the owner of a rural property decides to reforest his land, he needs these NGOs to certify it. <br>These certifications are carried out via satellite and therefore the cost of certifying any carbon offset project is very high, ranging from $5,000 to $15,000 depending on various factors.<br><br>Once that the owner pays these amounts to these NGOs, receives his certificate and then has to put it up for sale on the voluntary carbon market.<br><br>But where does O2-Protocol come into all this? Well, O2-Protocol will finance 100% of the certification costs for all those owners who need it. Once the project is certified, O2-Protocol is in charge of tokenizing these certificates and taking them to the blockchain, where it can be instantly monetized by other cryptocurrencies and/or crypto assets, leaving the owner with 50% of the value of the certificate. and the other 50% of the value for O2-Protocol as a concept for having financed the project and managing its tokenization and monetization.<br><br>But this does not end there, the holder of these NFT certificates will have access together with other users who do not have NFTs to other exclusive benefits such as doing leveraged farming and generating passive income on the blockchain through O2-Protocol.<br><br>In the next blog, I will explain how...',
             'modal3-text':'LEVERAGE CRYPTO FARMING',
-            'modal33-text':'O2-Protocol – Will generate passive income with leveraged crypto farming.<br>Users will have access to collateralized loans and the option to borrow their capital with collateralized collateral to receive passive income.<br><br>O2-Protocol will use a leveraged crypto farming fork based on Impermax, but unlike all DeFi on the market, O2-Protocol constantly generates a stream of money to liquidity pools through business models such as carbon offset financing, which creates buying pressure on O2-Protocol native token called O2P token.<br>The function of the O2P token will not only serve to pay loan fees, but will also have voting power for the election of the projects to be financed, choice for the creation of liquidity funds in leveraged cryptographic farming, it will also give you access to the profits of the platform itself proportionally based on the amount held and deposited in the smart contracts, and many other options.<br><br>O2-Protocol will benefit from each project it certifies, as most of the revenue will go towards adding more funds to Leverage liquidity pools for crypto farming which translates into higher appreciative value in the O2P token market.',
+            'modal33-text':'O2-Protocol – Will generate passive income with leveraged crypto farming.<br>Users will have access to collateralized loans and the option to borrow their capital with collateralized collateral to receive passive income.<br><br>O2-Protocol will use a leveraged crypto farming fork based on Impermax, but unlike all DeFi on the market, O2-Protocol constantly generates a stream of money to liquidity pools through business models such as carbon offset financing, which creates buying pressure on O2-Protocol native token called O2PR token.<br>The function of the O2PR token will not only serve to pay loan fees, but will also have voting power for the election of the projects to be financed, choice for the creation of liquidity funds in leveraged cryptographic farming, it will also give you access to the profits of the platform itself proportionally based on the amount held and deposited in the smart contracts, and many other options.<br><br>O2-Protocol will benefit from each project it certifies, as most of the revenue will go towards adding more funds to Leverage liquidity pools for crypto farming which translates into higher appreciative value in the O2PR token market.',
             
 
             //LEAVE US MESSAGE
@@ -886,12 +886,12 @@ $(function () {
             
 
             //MODAL PURCHASE
-            'modal-purchase':'Purchase O2P Tokens - Seed Round',
-            'modal-purchase-text':'Enter amount in MATIC to buy O2P<br>Current price: 0.45 MATIC per 1 token O2P',
+            'modal-purchase':'Purchase O2PR Tokens - Seed Round',
+            'modal-purchase-text':'Enter amount in MATIC to buy O2PR<br>Current price: 0.45 MATIC per 1 token O2PR',
             'modal-purchase-button':'Purchase',
             'modal-purchase-cancel':'Cancel',
             'modal-purchase-sucessful':'',
-            'modal-purchase-receipt':'You just purchased <span id="successAmount"></span> O2P tokens.',
+            'modal-purchase-receipt':'You just purchased <span id="successAmount"></span> O2PR tokens.',
             'modal-close':'',
 
 
@@ -925,10 +925,10 @@ $(function () {
             // 'RONDA PRIVADA B EMPIEZA EN',
 
             'connectwallet':'CONECTAR BILLETERA',
-            'purchase-o2p':'COMPRAR TOKEN O2P',
+            'purchase-o2p':'COMPRAR TOKEN O2PR',
 
             //get whitelisted
-            'getwhitelisted':'Obtenga su acceso a la lista blanca y reciba en Airdrop 100 tokens O2P (valor aproximado de $ 100)',
+            'getwhitelisted':'Obtenga su acceso a la lista blanca y reciba en Airdrop 100 tokens O2PR (valor aproximado de $ 100)',
             'toparticipate':'Para participar en las rondas financieras y lanzamiento aéreo de rifas, complete las siguientes tareas:',
             'toparticipate2':'Retuitea, dale me gusta y comparte con 5 contactos <a href="https://twitter.com/o2_protocolDAO/status/1631017592851660802?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a>',
             'toparticipate3':'Dale me gusta y compartir con 5 contactos <a href="https://www.instagram.com/reel/CpQOlA9Asdp/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer"> Instagram</a>',
@@ -950,30 +950,30 @@ $(function () {
 
             //business model
             'business-model': 'MODELO DE NEGOCIO',
-            'o2p-token': 'TOKEN O2P',
+            'o2p-token': 'TOKEN O2PR',
 
             'finance-carbon': 'Financiación de certificación de proyectos de compensación de carbono. O2-Protocol se queda con el 50 % del valor nominal de la certificación al precio del mercado en los DEX',
             'finance-banner': 'FINANZAS',
             'monetization-banner': 'MONETIZACIÓN',
             
             'monetization-text': 'Tokenización de certificados de compensación de carbono que permite el intercambio instantáneo por otras criptomonedas a través de cambistas descentralizados (DEX).',
-            'smart-text': 'Reciba un porcentaje proporcional sobre la cantidad de token O2P que bloquea en el contrato inteligente O2-Protocol. Los propietarios de NFT tendrán acceso a beneficios financieros exclusivos y especiales.',
+            'smart-text': 'Reciba un porcentaje proporcional sobre la cantidad de token O2PR que bloquea en el contrato inteligente O2-Protocol. Los propietarios de NFT tendrán acceso a beneficios financieros exclusivos y especiales.',
             'smart-banner': 'GESTIÓN INTELIGENTE',
 
             'retire-text': 'Convierta y retire sus créditos de compensación de carbono NFT de vuelta al mundo real.',
             'retire-banner': 'RETIRO',
 
 
-            'tokenization-text': 'O2-Protocol gestionará el proceso de certificación y tokenización de proyectos seleccionados elegidos mediante votación por titulares de tokens O2P bloqueados por contrato inteligente.',
+            'tokenization-text': 'O2-Protocol gestionará el proceso de certificación y tokenización de proyectos seleccionados elegidos mediante votación por titulares de tokens O2PR bloqueados por contrato inteligente.',
             'tokenization-banner':'TOKENIZACIÓN',
 
             'farming-text': 'Los ingresos por ganancias de la tesorería de O2-Protocol se destinarán a fondos de liquidez, que estarán disponibles para que los usuarios tomen préstamos con un descuento premium para apalancar la agricultura criptográfica.',
             'farming-banner':'GANANCIAS APALANCADAS',
 
-            'price-text': 'O2-Protocol creará constantemente ingresos a partir de activos financieros del mundo real basados ​​en certificaciones de compensación de carbono y la recompra de tokens O2P del mercado creando presión de compra, lo que se traduce en un valor de precio O2P más alto.',
+            'price-text': 'O2-Protocol creará constantemente ingresos a partir de activos financieros del mundo real basados ​​en certificaciones de compensación de carbono y la recompra de tokens O2PR del mercado creando presión de compra, lo que se traduce en un valor de precio O2PR más alto.',
             'price-banner':'ESTRATEGIA DE PRECIO',
 
-            'stake-text':'Bloquee su token O2P en nuestro contrato inteligente (participación) y reciba una parte de los ingresos generales de la plataforma y acceso al poder de voto en las propuestas de la plataforma, como selecciones de proyectos y creación de fondos de agricultura de liquidez para la agricultura apalancada.',
+            'stake-text':'Bloquee su token O2PR en nuestro contrato inteligente (participación) y reciba una parte de los ingresos generales de la plataforma y acceso al poder de voto en las propuestas de la plataforma, como selecciones de proyectos y creación de fondos de agricultura de liquidez para la agricultura apalancada.',
             'stake-banner':'INGRESOS PASIVOS',
 
             'product-title':'Detalles de productos',
@@ -984,7 +984,7 @@ $(function () {
 
 
             'leverage-title':'Agricultura criptográfica con rendimiento apalancado<br>APR estimado entre 20 % y 200 % en fondos de liquidez apalancados.',
-            'leverage-text':'Tokens de fondos de liquidez: Bitcoin, Ethereum, Matic, Litecoin, tokens de compensación de carbono, monedas estables y tokens O2P.',
+            'leverage-text':'Tokens de fondos de liquidez: Bitcoin, Ethereum, Matic, Litecoin, tokens de compensación de carbono, monedas estables y tokens O2PR.',
 
             'tokenization-product-title':'Tokenización de proyectos de compensación de carbono en Paraguay, Brasil, Argentina y Uruguay (MERCOSUR)<br>Reforestación y protección de bosques',
             'tokenization-product-text':'Con una alianza estratégica con ONG en el MERCOSUR, O2-Protocol<br>trabajará con los propietarios de tierras ayudándolos a adquirir certificaciones de compensación de carbono y tokenización<br>ayudando a los propietarios de proyectos a generar ingresos en su reforestación y/o protección forestal< br>a través de nuestra plataforma.',
@@ -1025,13 +1025,13 @@ $(function () {
             'erika-title':'Erika Beckelmann<span>Arquitecta en Gestión Ambiental Sostenible</span>',
 
             //100 MILLION
-            '100million':'100 millones de tokens O2P',
+            '100million':'100 millones de tokens O2PR',
             '100million-text':'El mercado voluntario de compensación de carbono, que valía alrededor de $ 2 mil millones en 2021, crecerá a $ 10-40 mil millones en valor para 2030',
-            '100million-text2':'No habrá más de 100 millones de tokens O2P y con un tamaño de mercado actual de $ 2 mil millones<br> que es una proporción de 1:20, lo que se traduce en $ 20 por token con la capitalización actual de mercado de compensación de carbono.<br> O2P agregará constantemente valor de capitalización de mercado a través de la inyección de nueva certificación y tokenización de proyectos.',
+            '100million-text2':'No habrá más de 100 millones de tokens O2PR y con un tamaño de mercado actual de $ 2 mil millones<br> que es una proporción de 1:20, lo que se traduce en $ 20 por token con la capitalización actual de mercado de compensación de carbono.<br> O2PR agregará constantemente valor de capitalización de mercado a través de la inyección de nueva certificación y tokenización de proyectos.',
 
             //TOKEN DISTRIBUTION
             'token-distribution':'Distribución de tokens',
-            'token-distribution-text':'O2-Protocol utilizará un modelo de adjudicación de 12 meses para cada ronda de financiación, con un promedio de 8,33 % de adjudicación mensual para evitar la presión de venta.<br><br> ● Ronda semilla: el precio del token O2P se ofrecerá a 1.55 O2P por 1 MATIC<br>● Venta privada A: el precio del token O2P se ofrecerá a 1.50 O2P por 1 MATIC<br>● Venta privada B: el precio del token O2P se ofrecerá a 1.45 O2P por 1 MATIC',
+            'token-distribution-text':'O2-Protocol utilizará un modelo de adjudicación de 12 meses para cada ronda de financiación, con un promedio de 8,33 % de adjudicación mensual para evitar la presión de venta.<br><br> ● Ronda semilla: el precio del token O2PR se ofrecerá a 0.65 MATIC por 1 O2PR token<br>● Venta privada A: el precio del token O2PR se ofrecerá a 0.67 MATIC por 1 O2PR token<br>● Venta privada B: el precio del token O2PR se ofrecerá a 0.69 MATIC por 1 O2PR token',
             'tokentext1': 'Airdrop: 0.1%',
             'tokentext2': 'Desarrollo: 20%',
             'tokentext3': 'Fondo de liquidez para agricultura criptográfica',
@@ -1060,7 +1060,7 @@ $(function () {
             'modal22-text':'Dónde obtener certificados de compensación de carbono y cómo, por último cómo monetizarlos en la cadena de bloques.<br>Existen dos tipos de mercado para la compensación de gases de efecto invernadero:<br><br>Público: administrado por los gobiernos de cada país< br>Privado: compensación de carbono voluntaria.<br><br>Centrémonos en la compensación de carbono voluntaria (privada):<br>Hay varias organizaciones no gubernamentales conocidas como ONG que se encargan de verificar y certificar proyectos de compensación de carbono.< br>Los dos más renombrados y conocidos en el mercado voluntario de compensación de carbono son Verra.org y Goldstandard.org<br>Cuando el propietario de un inmueble rural decide reforestar su tierra, necesita que estas ONG lo certifiquen.<br>Estas certificaciones se llevan a cabo vía satélite y, por lo tanto, el costo de certificar cualquier proyecto de compensación de carbono es muy alto, oscilando entre $5,000 y $15,000 dependiendo de varios factores.<br><br>Una vez que el propietario paga estos montos a estas ONG, recibe su certificado y luego tiene que ponerlo a la venta en el mercado voluntario de carbono.<br><br>¿Pero dónde entra O2-Protocol en todo esto? Pues bien, O2-Protocol financiará el 100% de los costes de certificación para todos aquellos propietarios que lo necesiten. Una vez certificado el proyecto, O2-Protocol se encarga de tokenizar estos certificados y llevarlos a la cadena de bloques, donde puede ser monetizado instantáneamente por otras criptomonedas y/o cripto activos, dejando al propietario con el 50% del valor del certificado. y el otro 50% del valor por O2-Protocol como concepto por haber financiado el proyecto y gestionar su tokenización y monetización.<br><br>Pero esto no acaba ahí, el titular de estos certificados NFT tendrá acceso en conjunto con otros usuarios que no tienen NFT a otros beneficios exclusivos, como hacer agricultura apalancada y generar ingresos pasivos en la cadena de bloques a través de O2-Protocol.<br><br>En el próximo blog, explicaré cómo…',
 
             'modal3-text':'AGRICULTURA CRIPTOGRÁFICA APALANCADA',
-            'modal33-text':'O2-Protocol: generará ingresos pasivos con agricultura criptográfica apalancada.<br>Los usuarios tendrán acceso a préstamos colateralizados y la opción de ofrecer en préstamo su capital con garantías colateralizadas y así recibir ingresos pasivos.<br><br>O2-Protocol utilizará una bifurcación de agricultura criptográfica apalancada basada en el Impermax , pero a diferencia de todas las DeFi en el mercado, O2-Protocol genera constantemente un flujo de dinero a los fondos de liquidez a través de modelos comerciales como la financiación de la certificación de compensación de carbono, lo que crea presión de compra sobre el token nativo de O2-Protocol llamado token O2P.<br>La función del token O2P no solo servirá para pagar las comisiones de los préstamos, sino que también tendrá poder de voto para la elección de los proyectos a financiar, elección para la creación de fondos de liquidez en la agricultura criptográfica apalancada, además le dará acceso a las ganancias de la propia plataforma proporcionalmente según el monto retenido y depositado en los contratos inteligentes, y muchas otras opciones más.<br><br>O2-Protocol se beneficiara de cada proyecto que certifica, ya que la mayor parte de los ingresos se destinarán para agregar más fondos a las piscinas de liquidez apalancadas para la agricultura criptográfica lo que se traduce en mayor valor apreciativo en el mercado del token O2P.',
+            'modal33-text':'O2-Protocol: generará ingresos pasivos con agricultura criptográfica apalancada.<br>Los usuarios tendrán acceso a préstamos colateralizados y la opción de ofrecer en préstamo su capital con garantías colateralizadas y así recibir ingresos pasivos.<br><br>O2-Protocol utilizará una bifurcación de agricultura criptográfica apalancada basada en el Impermax , pero a diferencia de todas las DeFi en el mercado, O2-Protocol genera constantemente un flujo de dinero a los fondos de liquidez a través de modelos comerciales como la financiación de la certificación de compensación de carbono, lo que crea presión de compra sobre el token nativo de O2-Protocol llamado token O2PR.<br>La función del token O2PR no solo servirá para pagar las comisiones de los préstamos, sino que también tendrá poder de voto para la elección de los proyectos a financiar, elección para la creación de fondos de liquidez en la agricultura criptográfica apalancada, además le dará acceso a las ganancias de la propia plataforma proporcionalmente según el monto retenido y depositado en los contratos inteligentes, y muchas otras opciones más.<br><br>O2-Protocol se beneficiara de cada proyecto que certifica, ya que la mayor parte de los ingresos se destinarán para agregar más fondos a las piscinas de liquidez apalancadas para la agricultura criptográfica lo que se traduce en mayor valor apreciativo en el mercado del token O2PR.',
 
             //LEAVE US MESSAGE
             'leave':'Déjanos un mensaje',
@@ -1125,10 +1125,10 @@ $(function () {
                 //'RODADA B PRIVADA COMEÇA EM',
 
                 'connectwallet':'CONECTAR CARTEIRA',
-                'purchase-o2p':'COMPRAR TOKENS O2P',
+                'purchase-o2p':'COMPRAR TOKENS O2PR',
 
                 //get whitelisted
-                'getwhitelisted':'Obtenha seu acesso à lista de permissões e receba no Airdrop 100 tokens O2P (aprox. valor $ 100)',
+                'getwhitelisted':'Obtenha seu acesso à lista de permissões e receba no Airdrop 100 tokens O2PR (aprox. valor $ 100)',
                 'toparticipate':'Para participar das rodadas financeiras e airdrop do sorteio, conclua as próximas tarefas:',
                 'toparticipate2':'Retuíte, curta e compartilhe com 5 contatos <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a>',
                 'toparticipate3':'Curta e compartilhe com 5 contatos do <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a>',
@@ -1150,13 +1150,13 @@ $(function () {
                     
                 //business model
                 'business-model': 'MODELO DE NEGÓCIOS',
-                'o2p-token': 'TOKEN O2P',
+                'o2p-token': 'TOKEN O2PR',
 
                 'finance-carbon': 'Financiamento de cert carbono. O2-Protocol fica com 50% do valor nominal do certificação a preço de mercado em DEX',
                 'finance-banner': 'FINANÇA',
                 'monetization-banner': 'MONETIZAÇÃO',
                 'monetization-text': 'Tokenização de certificados de compensação de carbono que permite a troca instantânea por outras criptomoedas por meio de trocadores descentralizados (DEXs).',
-                'smart-text': 'Receba uma porcentagem proporcional sobre a quantidade de token O2P que você bloqueia no contrato inteligente O2-Protocol. Proprietários de NFT terão acesso a benefícios financeiros exclusivos e especiais.',
+                'smart-text': 'Receba uma porcentagem proporcional sobre a quantidade de token O2PR que você bloqueia no contrato inteligente O2-Protocol. Proprietários de NFT terão acesso a benefícios financeiros exclusivos e especiais.',
                 'smart-banner': 'GESTÃO INTELIGENTE',
 
                 'retire-text': 'Converta e retire seus créditos de compensação de carbono NFT de volta ao mundo real.',
@@ -1164,16 +1164,16 @@ $(function () {
 
 
 
-                'tokenization-text': 'O2-Protocol gerenciará o processo de certificação e tokenização de projetos selecionados eleitos por meio de votação por detentores de tokens O2P bloqueados por contrato inteligente.',
+                'tokenization-text': 'O2-Protocol gerenciará o processo de certificação e tokenização de projetos selecionados eleitos por meio de votação por detentores de tokens O2PR bloqueados por contrato inteligente.',
                 'tokenization-banner':'TOKENIZAÇÃO',
 
                 'farming-text': 'As receitas de lucro da tesouraria O2-Protocol irão para pools de liquidez, que ficarão disponíveis aos usuários para empréstimos com desconto premium para alavancar o cultivo de criptomoedas.',
                 'farming-banner':'LUCROS ALAVANADOS',
 
-                'price-text': 'O2-Protocol criará constantemente receita de ativos financeiros do mundo real com base em certificações de compensação de carbono e recomprando tokens O2P do mercado, criando pressão de compra, que se traduz em um valor de preço O2P mais alto.',
+                'price-text': 'O2-Protocol criará constantemente receita de ativos financeiros do mundo real com base em certificações de compensação de carbono e recomprando tokens O2PR do mercado, criando pressão de compra, que se traduz em um valor de preço O2PR mais alto.',
                 'price-banner':'ESTRATÉGIA DE PREÇOS',
 
-                'stake-text':'Bloqueie seu token O2P em nosso contrato inteligente (aposta) e receba uma parte das receitas gerais da plataforma e acesso ao poder de voto nas propostas da plataforma, como seleções de projetos e criação de pools de agricultura de liquidez para a agricultura alavancada.',
+                'stake-text':'Bloqueie seu token O2PR em nosso contrato inteligente (aposta) e receba uma parte das receitas gerais da plataforma e acesso ao poder de voto nas propostas da plataforma, como seleções de projetos e criação de pools de agricultura de liquidez para a agricultura alavancada.',
                 'stake-banner':'INGRESSOS PASSIVOS',
 
 
@@ -1185,7 +1185,7 @@ $(function () {
 
 
                 'leverage-title':'Cultivo de criptografia de rendimento alavancado<br> APR estimado entre 20% e 200% em pools de liquidez alavancados.',
-                'leverage-text':'Tokens de pools de liquidez: Bitcoin, Ethereum, Matic, Litecoin, tokens de compensação de carbono, stablecoins e tokens O2P.',
+                'leverage-text':'Tokens de pools de liquidez: Bitcoin, Ethereum, Matic, Litecoin, tokens de compensação de carbono, stablecoins e tokens O2PR.',
 
                 'tokenization-product-title':'Tokenização de projetos de compensação de carbono no Paraguai, Brasil, Argentina e Uruguai (MERCOSUL)<br>Reflorestamento e proteção de florestas',
                 'tokenization-product-text':'Com uma aliança estratégica com ONGs no MERCOSUL, O2-Protocol<br>trabalhará adiante com os proprietários de terras, ajudando-os a adquirir certificações de compensação de carbono e tokenização<br>ajudando os proprietários de projetos a gerar receita com seu reflorestamento e/ou proteção florestal< br>através da nossa plataforma.',
@@ -1225,14 +1225,14 @@ $(function () {
                 'erika-title':'Erika Beckelmann<span>Arquiteta em Gestão Ambiental Sustentável</span>',
 
                 //100 MILLION
-                '100million':'100 milhões de tokens O2P',
+                '100million':'100 milhões de tokens O2PR',
                 '100million-text':'O mercado voluntário de compensação de carbono, que valia cerca de US$ 2 bilhões em 2021, crescerá para US$ 10-40 bilhões em valor até 2030',
-                '100million-text2':'Não haverá mais de 100 milhões de tokens O2P e com tamanho de mercado atual de US$ 2 bilhões<br> ou seja, uma proporção de 1:20, que se traduz em US$ 20 por token com valor de mercado de compensação de carbono atual.<br>O2P aumentará constantemente valor de mercado por meio da injeção de certificação e tokenização de novos projetos.',
+                '100million-text2':'Não haverá mais de 100 milhões de tokens O2PR e com tamanho de mercado atual de US$ 2 bilhões<br> ou seja, uma proporção de 1:20, que se traduz em US$ 20 por token com valor de mercado de compensação de carbono atual.<br>O2PR aumentará constantemente valor de mercado por meio da injeção de certificação e tokenização de novos projetos.',
 
                    
                 //TOKEN DISTRIBUTION
                 'token-distribution':'Distribuição de tokens',
-                'token-distribution-text':'O2-Protocol usará um modelo de alocação de 12 meses para cada rodada de financiamento, com uma média de alocação mensal de 8,33% para evitar a pressão de venda.<br><br> ● Rodada inicial: o preço do token O2P será oferecido a 1.55 O2P por 1 MATIC<br> ● Venda privada A: o preço do token O2P será oferecido a 1.50 O2P por 1 MATIC<br>● Venda privada B: o preço do token O2P será oferecido a 1.45 O2P por 1 MATIC',
+                'token-distribution-text':'O2-Protocol usará um modelo de alocação de 12 meses para cada rodada de financiamento, com uma média de alocação mensal de 8,33% para evitar a pressão de venda.<br><br> ● Rodada inicial: o preço do token O2PR será oferecido a 0.65 MATIC por 1 O2PR token<br> ● Venda privada A: o preço do token O2PR será oferecido a 0.67 MATIC por 1 O2PR token<br>● Venda privada B: o preço do token O2PR será oferecido a 0.69 MATIC por 1 O2PR token',
                 'tokentext1': 'Airdrop: 0.1%',
                 'tokentext2': 'Desenvolvimento: 20%',
                 'tokentext3': 'Pool de liquidez para cultivo de criptomoedas: 26%',
@@ -1262,7 +1262,7 @@ $(function () {
                 'modal22-text':'Onde obter certificados de compensação de carbono e como, finalmente, como monetizá-los no blockchain.<br>Existem dois tipos de mercado para compensações de gases de efeito estufa:<br><br>Público: administrado pelos governos de cada país< br> Privado: compensação de carbono voluntária.<br><br>Vamos nos concentrar na compensação de carbono voluntária (privada):<br>Existem várias organizações não governamentais conhecidas como ONGs que são responsáveis ​​por verificar e certificar projetos de compensação de carbono.< br >As duas mais conceituadas e conhecidas no mercado de compensação voluntária de carbono são Verra.org e Goldstandard.org<br>Quando o proprietário de uma propriedade rural decide reflorestar sua terra, ele precisa dessas ONGs para certificá-la. <br> Essas certificações são realizadas via satélite e, portanto, o custo de certificar qualquer projeto de compensação de carbono é muito alto, variando de US$ 5.000 a US$ 15.000, dependendo de vários fatores.<br><br>Uma vez que o proprietário paga esses valores para essas ONGs, recebe seu certificado e depois tem que colocar à venda no mercado voluntário de carbono.<br><br>Mas onde entra o O2-Protocol nisso tudo? Bem, a O2-Protocol financiará 100% dos custos de certificação para todos os proprietários que precisarem. Uma vez certificado o projeto, a O2-Protocol se encarrega de tokenizar esses certificados e levá-los para a blockchain, onde podem ser instantaneamente monetizados por outras criptomoedas e/ou ativos criptográficos, deixando o proprietário com 50% do valor do certificado . e os outros 50% do valor para O2-Protocol como conceito por ter financiado o projeto e gerenciado sua tokenização e monetização.<br><br>Mas não para por aí, o detentor desses certificados NFT terá acesso junto com outros usuários que não possuem NFTs para outros benefícios exclusivos, como fazer agricultura alavancada e gerar renda passiva no blockchain através do O2-Protocol.<br><br>No próximo blog, explicarei como…',
 
                 'modal3-text':'AGRICULTURA DE CRIPTO ALAVANCADA',
-                'modal33-text':'O2-Protocol – Gerará renda passiva com cripto cultivo alavancado.<br>Os usuários terão acesso a empréstimos garantidos e a opção de emprestar seu capital com garantias garantidas para receber renda passiva.<br><br>O2-Protocol usará um garfo de cultivo de criptografia alavancado baseado em Impermax, mas ao contrário de todos os DeFi no mercado, o O2-Protocol gera constantemente um fluxo de dinheiro para pools de liquidez por meio de modelos de negócios, como compensação de carbono de certificação de financiamento, o que cria pressão de compra no token nativo do O2-Protocol chamado O2P token.<br>A função do token O2P não servirá apenas para pagar taxas de empréstimos, mas também terá poder de voto para a eleição dos projetos a serem financiados, escolha para a criação de fundos de liquidez em agricultura criptográfica alavancada, também lhe dá acesso aos lucros da própria plataforma proporcionalmente com base no valor mantido e depositado nos contratos inteligentes, e muitas outras opções.<br><br>O2-Protocol se beneficiará de cada projeto que certificar, pois a maior parte da receita será destinada à adição de mais fundos aos pools de liquidez alavancados para o cultivo de criptografia, que se traduz em maior valor apreciativo no mercado de token O2P.',
+                'modal33-text':'O2-Protocol – Gerará renda passiva com cripto cultivo alavancado.<br>Os usuários terão acesso a empréstimos garantidos e a opção de emprestar seu capital com garantias garantidas para receber renda passiva.<br><br>O2-Protocol usará um garfo de cultivo de criptografia alavancado baseado em Impermax, mas ao contrário de todos os DeFi no mercado, o O2-Protocol gera constantemente um fluxo de dinheiro para pools de liquidez por meio de modelos de negócios, como compensação de carbono de certificação de financiamento, o que cria pressão de compra no token nativo do O2-Protocol chamado O2PR token.<br>A função do token O2PR não servirá apenas para pagar taxas de empréstimos, mas também terá poder de voto para a eleição dos projetos a serem financiados, escolha para a criação de fundos de liquidez em agricultura criptográfica alavancada, também lhe dá acesso aos lucros da própria plataforma proporcionalmente com base no valor mantido e depositado nos contratos inteligentes, e muitas outras opções.<br><br>O2-Protocol se beneficiará de cada projeto que certificar, pois a maior parte da receita será destinada à adição de mais fundos aos pools de liquidez alavancados para o cultivo de criptografia, que se traduz em maior valor apreciativo no mercado de token O2PR.',
 
                 //LEAVE US MESSAGE
                 'leave':'Deixe-nos uma mensagem',
@@ -1325,10 +1325,10 @@ $(function () {
                 //'프라이빗 라운드 B는 에서 시작합니다.',
 
                 'connectwallet':'지갑 연결',
-                'purchase-o2p':'O2P 토큰 구매',
+                'purchase-o2p':'O2PR 토큰 구매',
 
                 //get whitelisted
-                'getwhitelisted':'화이트리스트에 액세스하고 Airdrop 100 O2P 토큰(약 $100 상당)을 받으세요.',
+                'getwhitelisted':'화이트리스트에 액세스하고 Airdrop 100 O2PR 토큰(약 $100 상당)을 받으세요.',
                 'toparticipate':'파이낸셜 라운드 및 추첨 에어드롭에 참여하려면 다음 작업을 완료하세요.',
                 'toparticipate2':'5명의 연락처 <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> Twitter</a>와 리트윗, 좋아요 및 공유',
                 'toparticipate3':'5명의 <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a> 연락처에 좋아요를 누르고 공유하세요.',
@@ -1351,28 +1351,28 @@ $(function () {
 
                 //business model
                 'business-model': '비즈니스 모델',
-                'o2p-token': 'O2P 토큰',
+                'o2p-token': 'O2PR 토큰',
 
                 'finance-carbon': '탄소 상쇄 인증 프로젝트의 재정. O2-Protocol은 인증의 액면가의 50%를 DEX에서 시가로 유지합니다.',
                 'finance-banner': '재원',
                 'monetization-banner': '수익화',
                 'monetization-text': '탈중앙화 교환기(DEX)를 통해 다른 암호화폐와 즉시 교환할 수 있는 탄소 상쇄 인증서의 토큰화.',
-                'smart-text': 'O2-Protocol 스마트 계약에 잠근 O2P 토큰 양에 비례하는 비율을 받습니다. NFT 소유자는 독점적이고 특별한 금융 혜택을 받을 수 있습니다.',
+                'smart-text': 'O2-Protocol 스마트 계약에 잠근 O2PR 토큰 양에 비례하는 비율을 받습니다. NFT 소유자는 독점적이고 특별한 금융 혜택을 받을 수 있습니다.',
                 'smart-banner': '스마트 관리',
 
                 'retire-text': 'NFT 탄소 상쇄 크레딧을 다시 현실 세계로 변환하고 폐기하십시오.',
                 'retire-banner': '철수',
 
-                'tokenization-text': 'O2-Protocol은 스마트 계약으로 잠긴 O2P 토큰 보유자의 투표를 통해 선출된 선택된 프로젝트의 인증 프로세스 및 토큰화를 관리합니다.',
+                'tokenization-text': 'O2-Protocol은 스마트 계약으로 잠긴 O2PR 토큰 보유자의 투표를 통해 선출된 선택된 프로젝트의 인증 프로세스 및 토큰화를 관리합니다.',
                 'tokenization-banner':'토큰화',
 
                 'farming-text': 'O2-Protocol 금고의 이익 수익은 유동성 풀로 이동하여 사용자가 레버리지 농업을 위해 프리미엄 할인으로 차용할 수 있게 됩니다.',
                 'farming-banner':'레버리지 수익',
 
-                'price-text': 'O2-Protocol은 탄소 상쇄 인증을 기반으로 실제 금융 자산에서 지속적으로 수입을 창출하고 시장에서 O2P 토큰을 다시 구매하여 더 높은 O2P 가격 가치로 변환되는 구매 압력을 생성합니다.',
+                'price-text': 'O2-Protocol은 탄소 상쇄 인증을 기반으로 실제 금융 자산에서 지속적으로 수입을 창출하고 시장에서 O2PR 토큰을 다시 구매하여 더 높은 O2PR 가격 가치로 변환되는 구매 압력을 생성합니다.',
                 'price-banner':'가격 전략',
 
-                'stake-text':'스마트 계약(지분)에 O2P 토큰을 잠그고 플랫폼 전체 수입 수익의 일부를 받고 레버리지 농업을 위한 프로젝트 선택 및 유동성 농업 풀 생성과 같은 플랫폼 제안에 대한 투표권에 대한 액세스 권한을 받으십시오.',
+                'stake-text':'스마트 계약(지분)에 O2PR 토큰을 잠그고 플랫폼 전체 수입 수익의 일부를 받고 레버리지 농업을 위한 프로젝트 선택 및 유동성 농업 풀 생성과 같은 플랫폼 제안에 대한 투표권에 대한 액세스 권한을 받으십시오.',
                 'stake-banner':'잉그레소스 파시보스',
 
                 'product-title':'제품 세부 정보',
@@ -1382,7 +1382,7 @@ $(function () {
                 'product-c':'파이낸싱',
 
                 'leverage-title':'레버리지 수익률 암호화 농업<br> 레버리지 유동성 풀에서 20%에서 200% 사이의 추정 연이율.',
-                'leverage-text':'유동성 풀 토큰: 비트코인, 이더리움, 매틱, 라이트코인, 탄소 상쇄 토큰, 스테이블 코인 및 O2P 토큰.',
+                'leverage-text':'유동성 풀 토큰: 비트코인, 이더리움, 매틱, 라이트코인, 탄소 상쇄 토큰, 스테이블 코인 및 O2PR 토큰.',
 
                 'tokenization-product-title':'파라과이, 브라질, 아르헨티나 및 우루과이(MERCOSUR)의 탄소 상쇄 프로젝트 토큰화<br>삼림 재조림 및 보호',
                 'tokenization-product-text':'MERCOSUR의 NGO와 전략적 제휴를 맺은 O2-Protocol은 토지 소유자와 협력하여 탄소 상쇄 인증 및 토큰화 획득을 돕고<br>프로젝트 소유자가 재조림 및/또는 산림 보호를 통해 수익을 창출하도록 돕습니다.< 우리 플랫폼을 통해.',
@@ -1422,13 +1422,13 @@ $(function () {
                 'erika-title':'Erika Beckelmann<span>지속 가능한 환경 관리 설계자</span>',
 
                 //100 MILLION
-                '100million':'1억 개의 O2P 토큰',
+                '100million':'1억 개의 O2PR 토큰',
                 '100million-text':'2021년 약 20억 달러 규모였던 자발적 탄소 상쇄 시장은 2030년까지 100~400억 달러 규모로 성장',
-                '100million-text2':'O2P 토큰은 1억 개를 넘지 않을 것이며 현재 시장 규모는 20억 달러<br>이며 이는 1:20 비율이며 현재 탄소 상쇄 시가 총액으로 토큰당 20달러에 해당합니다.<br>O2P는 지속적으로 추가할 것입니다. 새로운 프로젝트 인증 및 토큰화 주입을 통한 시가총액.',
+                '100million-text2':'O2PR 토큰은 1억 개를 넘지 않을 것이며 현재 시장 규모는 20억 달러<br>이며 이는 1:20 비율이며 현재 탄소 상쇄 시가 총액으로 토큰당 20달러에 해당합니다.<br>O2PR는 지속적으로 추가할 것입니다. 새로운 프로젝트 인증 및 토큰화 주입을 통한 시가총액.',
                  
                 //TOKEN DISTRIBUTION
                 'token-distribution':'토큰 분배',
-                'token-distribution-text':'O2-Protocol은 판매 압력을 피하기 위해 평균 8.33%의 월별 할당으로 각 자금 조달 라운드에 12개월 할당 모델을 사용합니다.<br><br> ● 시드 라운드: O2P 토큰은 1 MATIC당 1.55 O2P로 가격이 책정됩니다. <br> ● Private Sale A: O2P 토큰 가격은 1 MATIC당 1.50 O2P로 제공됩니다.<br>● Private Sale B: O2P 토큰 가격은 1 MATIC당 1.45 O2P로 제공됩니다.',
+                'token-distribution-text':'O2-Protocol은 판매 압력을 피하기 위해 평균 8.33%의 월별 할당으로 각 자금 조달 라운드에 12개월 할당 모델을 사용합니다.<br><br> ● 초기 라운드: O2PR 토큰은 1개의 O2PR 토큰에 대해 0.65 MATIC으로 가격이 책정됩니다. <br> ● 프라이빗 세일 A: O2PR 토큰 가격은 O2PR 토큰 1개당 0.67 MATIC으로 제공됩니다.<br> ● 프라이빗 세일 B: O2PR 토큰 가격은 O2PR 토큰 1개당 0.69 MATIC으로 제공됩니다.',
                 'tokentext1': '에어드랍: 0.1%',
                 'tokentext2': '개발: 20%',
                 'tokentext3': '암호화폐 농사를 위한 유동성 풀: 26%',
@@ -1457,7 +1457,7 @@ $(function () {
                 'modal22-text':'탄소 상쇄 인증서를 얻을 수 있는 위치와 방법, 마지막으로 블록체인에서 수익을 창출하는 방법.<br>온실가스 상쇄 시장에는 두 가지 유형이 있습니다.<br><br>공공: 각 국가의 정부가 운영< br> 민간: 자발적인 탄소 상쇄.<br><br>자발적인(민간) 탄소 상쇄에 초점을 맞추자:<br>탄소 상쇄 프로젝트를 확인하고 인증하는 NGO로 알려진 여러 비정부 기구가 있습니다.< br >자발적 탄소 상쇄 시장에서 가장 유명하고 잘 알려진 두 곳은 Verra.org와 Goldstandard.org입니다<br>농촌 소유주가 자신의 토지를 재조림하기로 결정하면 이를 인증하기 위해 이러한 NGO가 필요합니다. <br> 이러한 인증은 위성을 통해 수행되므로 탄소 상쇄 프로젝트 인증 비용은 다양한 요인에 따라 $5,000에서 $15,000까지 매우 높습니다.<br><br>Once 소유자가 이러한 NGO에 이 금액을 지불하고 인증서를 받은 다음 자발적인 탄소 시장에 판매해야 합니다. 음, O2-Protocol은 인증이 필요한 모든 소유자를 위해 인증 비용의 100%를 지원합니다. 프로젝트가 인증되면 O2-Protocol은 이러한 인증서를 토큰화하고 다른 암호화폐 및/또는 암호화 자산으로 즉시 수익을 창출할 수 있는 블록체인으로 가져가 소유자에게 인증서 가치의 50%를 맡깁니다. . 나머지 50%는 프로젝트에 자금을 조달하고 토큰화 및 수익화를 관리하기 위한 개념으로 O2-Protocol의 가치입니다.<br><br>하지만 여기서 끝나지 않고 이러한 NFT 인증서 소유자는 함께 액세스할 수 있습니다. NFT가 없는 다른 사용자와 함께 O2-Protocol을 통해 레버리지 파밍을 하고 블록체인에서 소극적 소득을 창출하는 것과 같은 다른 독점 혜택을 받을 수 있습니다.<br><br>다음 블로그에서 방법을 설명하겠습니다.',
 
                 'modal3-text':'레버리지 암호화폐 파밍',
-                'modal33-text':'O2-Protocol – 레버리지 암호화폐 농법으로 소극적 소득을 창출합니다.<br>사용자는 담보 대출에 액세스할 수 있으며 담보 담보로 자본을 빌려 수동적 소득을 얻을 수 있습니다.<br><br>O2-Protocol은 Impermax를 기반으로 암호화폐 파밍 포크를 활용하지만 시장의 모든 DeFi와 달리 O2-Protocol은 O2P라는 O2-Protocol의 기본 토큰에 대한 구매 압력을 생성하는 인증 자금 조달 탄소 청산과 같은 비즈니스 모델을 통해 유동성 풀에 지속적으로 자금 흐름을 생성합니다. 토큰.<br>O2P 토큰의 기능은 대출 수수료를 지불하는 역할을 할 뿐만 아니라 자금을 조달할 프로젝트 선택에 대한 의결권, 레버리지 암호화 농업에서 유동성 자금 생성을 위한 선택, 또한 플랫폼 자체의 이익에 대한 액세스를 제공합니다. 스마트 계약에 보유 및 예치된 금액 및 기타 여러 옵션에 따라 비례합니다.<br><br>O2-Protocol은 대부분의 수익이 레버리지 유동성 풀에 더 많은 자금을 추가하는 데 사용되므로 인증하는 각 프로젝트에서 이익을 얻습니다. O2P 토큰 시장에서 더 높은 감사 가치로 변환되는 암호화 농업을 위해.',
+                'modal33-text':'O2-Protocol – 레버리지 암호화폐 농법으로 소극적 소득을 창출합니다.<br>사용자는 담보 대출에 액세스할 수 있으며 담보 담보로 자본을 빌려 수동적 소득을 얻을 수 있습니다.<br><br>O2-Protocol은 Impermax를 기반으로 암호화폐 파밍 포크를 활용하지만 시장의 모든 DeFi와 달리 O2-Protocol은 O2PR라는 O2-Protocol의 기본 토큰에 대한 구매 압력을 생성하는 인증 자금 조달 탄소 청산과 같은 비즈니스 모델을 통해 유동성 풀에 지속적으로 자금 흐름을 생성합니다. 토큰.<br>O2PR 토큰의 기능은 대출 수수료를 지불하는 역할을 할 뿐만 아니라 자금을 조달할 프로젝트 선택에 대한 의결권, 레버리지 암호화 농업에서 유동성 자금 생성을 위한 선택, 또한 플랫폼 자체의 이익에 대한 액세스를 제공합니다. 스마트 계약에 보유 및 예치된 금액 및 기타 여러 옵션에 따라 비례합니다.<br><br>O2-Protocol은 대부분의 수익이 레버리지 유동성 풀에 더 많은 자금을 추가하는 데 사용되므로 인증하는 각 프로젝트에서 이익을 얻습니다. O2PR 토큰 시장에서 더 높은 감사 가치로 변환되는 암호화 농업을 위해.',
 
                 //LEAVE US MESSAGE
                 'leave':'메시지를 남겨주세요',
@@ -1518,10 +1518,10 @@ $(function () {
                 //'私人 B 輪開始於',
 
                 'connectwallet':'連接錢包',
-                'purchase-o2p':'購買 O2P 代幣',
+                'purchase-o2p':'購買 O2PR 代幣',
 
                  //get whitelisted
-                'getwhitelisted':'獲得白名單訪問權並獲得空投 100 個 O2P 代幣（價值約 100 美元）',
+                'getwhitelisted':'獲得白名單訪問權並獲得空投 100 個 O2PR 代幣（價值約 100 美元）',
                 'toparticipate':'要參與財務輪次和抽獎空投，請完成以下任務：',
                 'toparticipate2':'轉發、點贊並與 5 個聯繫人分享 <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> 推特</a>',
                 'toparticipate3':'點贊並分享給 5 個 <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a> 聯繫人',
@@ -1543,28 +1543,28 @@ $(function () {
                 
                 //business model
                 'business-model': '商業模式',
-                'o2p-token': 'O2P令牌', 
+                'o2p-token': 'O2PR令牌', 
 
                 'finance-carbon': '碳抵消認證項目的融資。 O2-Protocol 在 DEX 中按市場價格保留 50% 的通證面值',
                 'finance-banner': '金融',
                 'monetization-banner': '貨幣化',
                 'monetization-text': '碳抵消證書的標記化，允許通過去中心化交易所 (DEX) 即時交換其他加密貨幣。',
-                'smart-text': '收到您鎖定在 O2-Protocol 智能合約上的 O2P 代幣數量的比例百分比。 NFT 所有者將可以獲得獨家和特殊的經濟利益。',
+                'smart-text': '收到您鎖定在 O2-Protocol 智能合約上的 O2PR 代幣數量的比例百分比。 NFT 所有者將可以獲得獨家和特殊的經濟利益。',
                 'smart-banner': '智能管理',
 
                 'retire-text': '將您的 NFT 碳抵消額度轉換並退回現實世界。',
                 'retire-banner': '退出',
-                'tokenization-text': 'O2-Protocol 將管理通過智能合約鎖定的 O2P 代幣持有者投票選出的選定項目的認證過程和代幣化。',
+                'tokenization-text': 'O2-Protocol 將管理通過智能合約鎖定的 O2PR 代幣持有者投票選出的選定項目的認證過程和代幣化。',
                 'tokenization-banner':'代幣化',
 
                 'farming-text': 'O2-Protocol 資金庫的利潤收入將進入流動性池，用戶可以以溢價借款進行槓桿耕作。',
                 'farming-banner':'槓桿收益',
 
-                'price-text': 'O2-Protocol 將根據碳抵消認證不斷從現實世界的金融資產中創造收入，並從市場上回購 O2P 代幣，從而產生購買壓力，從而轉化為更高的 O2P 價格價值。',
+                'price-text': 'O2-Protocol 將根據碳抵消認證不斷從現實世界的金融資產中創造收入，並從市場上回購 O2PR 代幣，從而產生購買壓力，從而轉化為更高的 O2PR 價格價值。',
                 'price-banner':'價格策略',
 
 
-                'stake-text':'將您的 O2P 代幣鎖定在我們的智能合約（股份）上，並獲得平台總收入的一部分，並獲得對平台提案的投票權，例如項目選擇和為槓桿農業創建流動性農業池。',
+                'stake-text':'將您的 O2PR 代幣鎖定在我們的智能合約（股份）上，並獲得平台總收入的一部分，並獲得對平台提案的投票權，例如項目選擇和為槓桿農業創建流動性農業池。',
                 'stake-banner':'被動語態',
 
                 'product-title':'產品詳情',
@@ -1574,7 +1574,7 @@ $(function () {
                 'product-c':'融資',
 
                 'leverage-title':'槓桿收益加密農業<br> 槓桿流動資金池的年利率估計在 20% 到 200% 之間。',
-                'leverage-text':'流動資金池代幣：比特幣、以太坊、Matic、萊特幣、碳抵消代幣、穩定幣和 O2P 代幣。',
+                'leverage-text':'流動資金池代幣：比特幣、以太坊、Matic、萊特幣、碳抵消代幣、穩定幣和 O2PR 代幣。',
 
                 'tokenization-product-title':'巴拉圭、巴西、阿根廷和烏拉圭 (MERCOSUR) 的碳抵消項目代幣化<br>再造林和森林保護',
                 'tokenization-product-text':'通過與 MERCOSUR 的非政府組織建立戰略聯盟，O2-Protocol 將<br>與土地所有者合作，幫助他們獲得碳抵消認證和代幣化<br>幫助這些項目所有者通過重新造林和/或森林保護產生收入< br>通過我們的平台。',
@@ -1614,13 +1614,13 @@ $(function () {
                 'erika-title':'Erika Beckelmann<span>可持續環境管理建築師</span>',
 
                 //100 MILLION
-                '100million':'1億個O2P代幣',
+                '100million':'1億個O2PR代幣',
                 '100million-text':'自願碳抵消市場在 2021 年價值約 20 億美元，到 2030 年將增長到 10-400 億美元',
-                '100million-text2':'不會有超過 1 億個 O2P 代幣，目前的市場規模為 20 億美元<br>，即 1:20 的比率，這相當於每個代幣 20 美元，具有當前的碳抵消市值。<br>O2P 將不斷增加通過注入新項目認證和標記化來實現市值價值。',
+                '100million-text2':'不會有超過 1 億個 O2PR 代幣，目前的市場規模為 20 億美元<br>，即 1:20 的比率，這相當於每個代幣 20 美元，具有當前的碳抵消市值。<br>O2PR 將不斷增加通過注入新項目認證和標記化來實現市值價值。',
 
                 //TOKEN DISTRIBUTION
                 'token-distribution':'代幣分配',
-                'token-distribution-text':'O2-Protocol 對每輪融資採用 12 個月的分配模式，平均每月分配 8.33% 以避免拋售壓力。<br><br> ● 種子輪：O2P 代幣的價格為每 1 個 MATIC 1.55 O2P。 <br> ● 私募 A：O2P 代幣價格為每 1 MATIC 1.50 O2P。<br>● 私募 B：O2P 代幣價格為每 1 MATIC 1.45 O2P。',
+                'token-distribution-text':'O2-Protocol 對每輪融資採用 12 個月的分配模式，平均每月分配 8.33% 以避免拋售壓力。<br><br> ● 首輪：O2PR 代幣的價格為 0.65 MATIC，1 個 O2PR 代幣。 <br> ● 私募 A：O2PR 代幣價格為每 1 個 O2PR 代幣 0.67 MATIC..<br> ● 私募 B：O2PR 代幣價格為每 1 個 O2PR 代幣 0.69 MATIC。',
                 'tokentext1': '空投：0.1%',
                 'tokentext2': '發展：20%',
                 'tokentext3': '加密農業的流動資金池：26%',
@@ -1648,7 +1648,7 @@ $(function () {
                 'modal22-text':'從哪裡獲得碳抵消證書以及如何，最後如何在區塊鏈上將其貨幣化。<br>溫室氣體抵消有兩種類型的市場：<br><br>公共：由各國政府運營< br>私人：自願碳抵消。<br><br>讓我們關注自願（私人）碳抵消：<br>有幾個稱為 NGO 的非政府組織負責驗證和認證碳抵消項目。< br >自願碳抵消市場中最著名和最知名的兩個是 Verra.org 和 Goldstandard.org<br>當農村財產的所有者決定重新造林他的土地時，他需要這些非政府組織來證明它。<br>這些認證是通過衛星進行的，因此認證任何碳補償項目的成本都非常高，根據各種因素從 5,000 美元到 15,000 美元不等。<br><br>一次所有者向這些非政府組織支付這些款項，收到他的證書，然後必須將其在自願碳市場上出售。<br><br>但是 O2-Protocol 從哪裡來參與這一切？那麼，O2-Protocol 將為所有需要它的所有者提供 100% 的認證費用。一旦項目通過認證，O2-Protocol 將負責將這些證書標記化並將它們帶到區塊鏈，在那裡它可以立即被其他加密貨幣和/或加密資產貨幣化，讓所有者獲得證書價值的 50% .以及 O2-Protocol 價值的另外 50% 作為為項目提供資金並管理其標記化和貨幣化的概念。<br><br>但這並沒有就此結束，這些 NFT 證書的持有者將可以一起訪問與其他沒有 NFT 的用戶一起享受其他獨家好處，例如通過 O2-Protocol 在區塊鏈上進行槓桿農業和產生被動收入。<br><br>在下一篇博客中，我將解釋如何......',
 
                 'modal3-text':'槓桿式加密農業',
-                'modal33-text':'O2-Protocol – 將通過槓桿加密貨幣耕作產生被動收入。<br>用戶將可以獲得抵押貸款，並可以選擇使用抵押品借入資本以獲得被動收入。<br><br>O2-Protocol 將使用基於 Impermax 的槓桿加密農業分叉，但與市場上所有的 DeFi 不同，O2-Protocol 通過清算認證資金碳等商業模式不斷地向流動性池產生資金流，這對 O2-Protocol 的原生代幣 O2P 造成了購買壓力代幣。<br>O2P代幣的功能不僅可以用於支付貸款費用，而且還將擁有選舉融資項目的投票權，選擇在槓桿加密農業中創建流動資金，它將還可以讓您獲得平臺本身的利潤根據智能合約中持有和存入的金額以及許多其他選項按比例分配。<br><br>O2-Protocol 將從其認證的每個項目中受益，因為大部分收入將用於向槓桿流動性池中添加更多資金用於加密農業，這在 O2P 代幣市場上轉化為更高的欣賞價值。',
+                'modal33-text':'O2-Protocol – 將通過槓桿加密貨幣耕作產生被動收入。<br>用戶將可以獲得抵押貸款，並可以選擇使用抵押品借入資本以獲得被動收入。<br><br>O2-Protocol 將使用基於 Impermax 的槓桿加密農業分叉，但與市場上所有的 DeFi 不同，O2-Protocol 通過清算認證資金碳等商業模式不斷地向流動性池產生資金流，這對 O2-Protocol 的原生代幣 O2PR 造成了購買壓力代幣。<br>O2PR代幣的功能不僅可以用於支付貸款費用，而且還將擁有選舉融資項目的投票權，選擇在槓桿加密農業中創建流動資金，它將還可以讓您獲得平臺本身的利潤根據智能合約中持有和存入的金額以及許多其他選項按比例分配。<br><br>O2-Protocol 將從其認證的每個項目中受益，因為大部分收入將用於向槓桿流動性池中添加更多資金用於加密農業，這在 O2PR 代幣市場上轉化為更高的欣賞價值。',
                 
                 //LEAVE US MESSAGE
                 'leave':'給我們留言',
@@ -1711,10 +1711,10 @@ $(function () {
                 //'プライベート ラウンド B 開始時間',
                     
                 'connectwallet':'コネクトウォレット',
-                'purchase-o2p':'O2P トークンを購入する',
+                'purchase-o2p':'O2PR トークンを購入する',
 
                 //get whitelisted
-                'getwhitelisted':'ホワイトリストへのアクセスを取得し、Airdrop で 100 O2P トークン (約 $100 の価値) を受け取ります',
+                'getwhitelisted':'ホワイトリストへのアクセスを取得し、Airdrop で 100 O2PR トークン (約 $100 の価値) を受け取ります',
                 'toparticipate':'ファイナンシャル ラウンドとラッフル エアドロップに参加するには、次のタスクを完了してください。',
                 'toparticipate2':'リツイート、いいね、5 人の連絡先 <a href="https://twitter.com/o2_protocolDAO/status/1631017830215819264?s=20" target="_blank" rel="noopener noreferrer"> Twiter</a> と共有',
                 'toparticipate3':'5 人の <a href="https://www.instagram.com/reel/CpQOeVdANUj/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a> の連絡先といいねして共有する',
@@ -1738,29 +1738,29 @@ $(function () {
 
                 //business model
                 'business-model': '事業の型',
-                'o2p-token': 'O2Pトークン',
+                'o2p-token': 'O2PRトークン',
 
                 'finance-carbon': 'カーボン オフセット認証プロジェクトの資金調達。 O2 プロトコルは、証明書の額面価格の 50% を DEX の市場価格で保持します。',
                 'finance-banner': 'ファイナンス',
                 'monetization-banner': '収益化',
                 'monetization-text': '分散型交換機 (DEX) を介して他の暗号通貨との即時交換を可能にするカーボン オフセット証明書のトークン化。',
-                'smart-text': 'O2-Protocol スマートコントラクトでロックした O2P トークンの量に比例したパーセンテージを受け取ります。 NFT の所有者は、排他的で特別な経済的利益にアクセスできます。',
+                'smart-text': 'O2-Protocol スマートコントラクトでロックした O2PR トークンの量に比例したパーセンテージを受け取ります。 NFT の所有者は、排他的で特別な経済的利益にアクセスできます。',
                 'smart-banner': 'スマート管理',
 
                 'retire-text': 'NFT カーボン オフセット クレジットを変換して、現実の世界に戻します。',
                 'retire-banner': '出金',
 
-                'tokenization-text': 'O2-Protocol は、スマートコントラクトでロックされた O2P トークン保有者による投票を通じて選出された選択されたプロジェクトの認証プロセスとトークン化を管理します。',
+                'tokenization-text': 'O2-Protocol は、スマートコントラクトでロックされた O2PR トークン保有者による投票を通じて選出された選択されたプロジェクトの認証プロセスとトークン化を管理します。',
                 'tokenization-banner':'トークン化',
 
                 'farming-text': 'O2-Protocol トレジャリーからの収益は流動性プールに送られ、ユーザーはこれを利用して、レバレッジ ファーミングのプレミアム割引価格で借りることができます。',
                 'farming-banner':'レバレッジ収益',
 
-                'price-text': 'O2-Protocol は、カーボン オフセット証明書に基づいて実世界の金融資産から常に収入を生み出し、市場から O2P トークンを買い戻して購入圧力を生み出し、O2P 価格の価値を高めます。',
+                'price-text': 'O2-Protocol は、カーボン オフセット証明書に基づいて実世界の金融資産から常に収入を生み出し、市場から O2PR トークンを買い戻して購入圧力を生み出し、O2PR 価格の価値を高めます。',
                 'price-banner':'価格戦略',
 
 
-                'stake-text':'私たちのスマートコントラクト (ステーク) で O2P トークンをロックし、プラットフォーム全体の収入収入の一部を受け取り、プロジェクトの選択やレバレッジド ファーミングのための流動性ファーミング プールの作成などのプラットフォームの提案に対する投票権へのアクセスを受け取ります。',
+                'stake-text':'私たちのスマートコントラクト (ステーク) で O2PR トークンをロックし、プラットフォーム全体の収入収入の一部を受け取り、プロジェクトの選択やレバレッジド ファーミングのための流動性ファーミング プールの作成などのプラットフォームの提案に対する投票権へのアクセスを受け取ります。',
                 'stake-banner':'イングレソス パッシブ',
 
                 'product-title':'製品詳細',
@@ -1770,7 +1770,7 @@ $(function () {
                 'product-c':'資金調達',
 
                 'leverage-title':'レバレッジドイールド クリプトファーミング<br> レバレッジド流動性プールの推定 APR は 20% から 200% です。',
-                'leverage-text':'流動性プール トークン: ビットコイン、イーサリアム、マティック、ライトコイン、カーボン オフセット トークン、ステーブルコイン、O2P トークン。',
+                'leverage-text':'流動性プール トークン: ビットコイン、イーサリアム、マティック、ライトコイン、カーボン オフセット トークン、ステーブルコイン、O2PR トークン。',
 
                 'tokenization-product-title':'パラグアイ、ブラジル、アルゼンチン、ウルグアイでのカーボン オフセット プロジェクトのトークン化 (MERCOSUR)<br>森林再生と森林保護',
                 'tokenization-product-text':'メルコスールの NGO との戦略的提携により、O2-Protocol は<br>土地所有者がカーボン オフセット認証とトークン化を取得するのを支援し、<br>これらのプロジェクト所有者が再植林および/または森林保護で収益を生み出すのを支援します<br>私たちのプラットフォームを通じて。',
@@ -1810,13 +1810,13 @@ $(function () {
                 'erika-title':'Erika Beckelmann<span>持続可能な環境管理の建築家</span>',
 
                 //100 MILLION
-                '100million':'1億のO2Pトークン',
+                '100million':'1億のO2PRトークン',
                 '100million-text':'2021 年には約 20 億ドルの価値があった任意のカーボン オフセット市場は、2030 年までに 100 ～ 400 億ドルに成長する見込みです。',
-                '100million-text2':'O2P トークンは 1 億を超えず、現在の市場規模は 20 億ドルです。<br>これは 1:20 の比率であり、現在のカーボン オフセットの時価総額でトークンあたり 20 ドルに相当します。<br>O2P は常に追加されます。新しいプロジェクト認証とトークン化の注入による時価総額の価値。',
+                '100million-text2':'O2PR トークンは 1 億を超えず、現在の市場規模は 20 億ドルです。<br>これは 1:20 の比率であり、現在のカーボン オフセットの時価総額でトークンあたり 20 ドルに相当します。<br>O2PR は常に追加されます。新しいプロジェクト認証とトークン化の注入による時価総額の価値。',
                 
                 //TOKEN DISTRIBUTION
                 'token-distribution':'トークンの配布',
-                'token-distribution-text':'O2-Protocol は、売り圧力を避けるために、各資金調達ラウンドに 12 か月の割り当てモデルを使用し、毎月の平均割り当ては 8.33% です。<br><br> ● シード ラウンド: O2P トークンの価格は、1 MATIC あたり 1.55 O2P です。 <br> ● プライベート セール A: O2P トークンの価格は 1 MATIC あたり 1.50 O2P で提供されます。<br>● プライベート セール B: O2P トークンの価格は 1 MATIC あたり 1.45 O2P で提供されます。',
+                'token-distribution-text':'O2-Protocol は、売り圧力を避けるために、各資金調達ラウンドに 12 か月の割り当てモデルを使用し、毎月の平均割り当ては 8.33% です。<br><br> ● 最初のラウンド: O2PR トークンの価格は、1 O2PR トークンに対して 0.65 MATIC です。 <br> ● プライベート セール A: O2PR トークンの価格は、1 O2PR トークンあたり 0.67 MATIC で提供されます。<br> ● プライベート セール B: O2PR トークンの価格は、1 O2PR トークンあたり 0.69 MATIC で提供されます。',
                 'tokentext1': 'エアドロップ: 0.1%',
                 'tokentext2': '開発: 20%',
                 'tokentext3': 'クリプトファーミングの流動性プール: 26%',
@@ -1847,7 +1847,7 @@ $(function () {
                 'modal22-text':'カーボン オフセット証明書をどこで入手し、どのようにしてブロックチェーン上で収益化するか。<br>温室効果ガス オフセットには 2 種類の市場があります。<br><br>公開: 各国政府が運営します< br>民間: 自主的なカーボン オフセット。<br><br>自主的な (民間の) カーボン オフセットに注目しましょう:<br>NGO として知られるいくつかの非政府組織が、炭素のオフセット プロジェクトの検証と認証を担当しています。< br >自主的なカーボン オフセット市場で最も有名でよく知られているのは、Verra.org と Goldstandard.org の 2 つです。これらの認証は衛星経由で行われるため、カーボン オフセット プロジェクトの認証費用は非常に高く、さまざまな要因に応じて 5,000 ドルから 15,000 ドルになります。<br><br>1 回所有者はこれらの金額をこれらの NGO に支払い、証明書を受け取り、任意の炭素市場で売りに出さなければなりません。 O2-Protocol は、それを必要とするすべての所有者の認証費用を 100% 負担します。プロジェクトが認証されると、O2-Protocol はこれらの証明書をトークン化してブロックチェーンに持ち込むことを担当します。ブロックチェーンでは、他の暗号通貨や暗号資産によって即座に収益化でき、証明書の価値の 50% が所有者に残ります。 .そして、プロジェクトに資金を提供し、そのトークン化と収益化を管理するためのコンセプトとしての O2-Protocol の価値の残りの 50%。 NFT を持っていない他のユーザーと一緒に、O2-Protocol を介してレバレッジド ファーミングを行ったり、ブロックチェーンで受動的収入を生成したりするなど、他の排他的な利点を得ることができます。<br><br>次のブログでは、その方法について説明します…',
 
                 'modal3-text':'レバレッジドクリプトファーミング',
-                'modal33-text':'O2-Protocol – レバレッジド クリプト ファーミングで受動的収入を生み出します。<br>ユーザーは担保付きローンにアクセスでき、担保付き担保で資本を借りて受動的収入を受け取ることができます。<br><br>O2-Protocol は、 Impermax に基づく暗号ファーミング フォークを活用しましたが、市場に出回っているすべての DeFi とは異なり、O2-Protocol は、O2-Protocol と呼ばれる O2-Protocol のネイティブ トークンに購入圧力を生み出す認証資金の炭素をクリアするなどのビジネス モデルを通じて、常に流動性プールへの資金の流れを生成します。トークン。<br>O2P トークンの機能は、ローン料金の支払いに役立つだけでなく、資金調達するプロジェクトの選択、レバレッジド暗号農業における流動性資金の作成の選択のための投票権も持ちます。プラットフォーム自体の利益にもアクセスできますスマート コントラクトで保持および入金された金額、およびその他の多くのオプションに基づいて比例します。<br><br>O2-Protocol は、認定した各プロジェクトから利益を得ることができます。収益のほとんどは、レバレッジド流動性プールにより多くの資金を追加することに向けられるためです。 O2Pトークン市場でより高い評価価値につながるクリプトファーミングに。',
+                'modal33-text':'O2-Protocol – レバレッジド クリプト ファーミングで受動的収入を生み出します。<br>ユーザーは担保付きローンにアクセスでき、担保付き担保で資本を借りて受動的収入を受け取ることができます。<br><br>O2-Protocol は、 Impermax に基づく暗号ファーミング フォークを活用しましたが、市場に出回っているすべての DeFi とは異なり、O2-Protocol は、O2-Protocol と呼ばれる O2-Protocol のネイティブ トークンに購入圧力を生み出す認証資金の炭素をクリアするなどのビジネス モデルを通じて、常に流動性プールへの資金の流れを生成します。トークン。<br>O2PR トークンの機能は、ローン料金の支払いに役立つだけでなく、資金調達するプロジェクトの選択、レバレッジド暗号農業における流動性資金の作成の選択のための投票権も持ちます。プラットフォーム自体の利益にもアクセスできますスマート コントラクトで保持および入金された金額、およびその他の多くのオプションに基づいて比例します。<br><br>O2-Protocol は、認定した各プロジェクトから利益を得ることができます。収益のほとんどは、レバレッジド流動性プールにより多くの資金を追加することに向けられるためです。 O2PRトークン市場でより高い評価価値につながるクリプトファーミングに。',
                 
                 //LEAVE US MESSAGE
                 'leave':'メッセージを残してください',
