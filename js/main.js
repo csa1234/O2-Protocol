@@ -39,7 +39,7 @@ let initialize = () => {
 
     web3.eth.defaultAccount = account;
     
-    // ...
+    
   }
 
   async function buyTokens() {
@@ -53,29 +53,8 @@ let initialize = () => {
         const web3 = new Web3(window.ethereum);
   
         // Contract address and ABI
-        const contractAddress = "0x82cFff3C66c534CC59f1Fe3Ac3A5347B0823b0c7";
-        const abi = [
-          {
-            "inputs": [],
-            "name": "buyTokens",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-          },
-          {
-            "inputs": [],
-            "name": "rate",
-            "outputs": [
-              {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-              }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-          }
-        ];
+        const contractAddress = "0xbdBF1aF9b3631D5ae2EF404f56E5a51aD0eA44e9";
+        const abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Start","type":"event"},{"anonymous":false,"inputs":[],"name":"Stop","type":"event"},{"inputs":[],"name":"TokenSold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_forwardFunds","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"buyTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"claimVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"paused","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"round","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_newOwner","type":"address"}],"name":"setNewOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_round","type":"uint256"}],"name":"setRound","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"setVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"stopVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"supply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract ERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"transferToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"unpause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"vestingInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"uint256","name":"totalVestedTokens","type":"uint256"},{"internalType":"uint256","name":"dailyVestedTokens","type":"uint256"},{"internalType":"uint256","name":"claimAmount","type":"uint256"},{"internalType":"uint256","name":"claimtime","type":"uint256"},{"internalType":"bool","name":"claim24h","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"vestingStart","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}];
   
         // Create a new contract instance
         const contract = new web3.eth.Contract(abi, contractAddress);
@@ -89,13 +68,13 @@ let initialize = () => {
         //set rate value
         var currentRate;
         if (rate == 1) {
-            currentRate = 0.45;
+            currentRate = 0.65;
             
         } else if (rate == 2) {
-            currentRate == 0.65;
+            currentRate == 0.67;
            
         } else if (rate == 3) {
-            currentRate == 0.85;
+            currentRate == 0.69;
 
         }
   
@@ -158,23 +137,37 @@ function connectMetaMask() {
             web3 = new Web3(window.ethereum);
             window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
                 
-                // Check if connected to Mumbai network
+                // Check if connected to Polygon network
                 const networkId = await ethereum.request({ method: 'eth_chainId' });
-                if (networkId == '0x13881') {
+                if (networkId == '0x89') {
                     action(accounts);
                 }
                 else {
-                    // Switch to Mumbai network
-                    await window.ethereum.request({
-                        method: 'wallet_switchEthereumChain',
-                        params: [{ chainId: '0x13881' }], // Mumbai network chain ID
+                    // Add Polygon network if not already added
+                    const chainData = {
+                        chainId: '0x89',
+                        chainName: 'Polygon',
+                        nativeCurrency: {
+                            name: 'MATIC',
+                            symbol: 'MATIC',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://rpc-mainnet.maticvigil.com/'],
+                        blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com/']
+                    };
+
+                    await ethereum.request({
+                        method: 'wallet_addEthereumChain',
+                        params: [chainData]
                     });
+
                     action(accounts);
                 }
             })
         } 
     }
 }
+
 
 
 
@@ -188,378 +181,11 @@ function action(accounts){
     document.getElementById("disco").style.display = 'block';
                             
     // Define the vesting contract ABI and address
-    const vestingAddress = "0x82cFff3C66c534CC59f1Fe3Ac3A5347B0823b0c7"; //mumbai
-    const vestingABI = [
-        {
-            "inputs": [],
-            "stateMutability": "nonpayable",
-            "type": "constructor"
-        },
-        {
-            "anonymous": false,
-            "inputs": [],
-            "name": "Pause",
-            "type": "event"
-        },
-        {
-            "inputs": [],
-            "name": "TokenSold",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "TotalAmount",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "_forwardFunds",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "approve_claim",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "buyTokens",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "claimVesting",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "owner",
-            "outputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "pause",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "paused",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round0_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round0_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round1_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round1_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round2_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round2_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round3_Rate",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "round3_Supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_newOwner",
-                    "type": "address"
-                }
-            ],
-            "name": "setNewOwner",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_round",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setRound",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "bool",
-                    "name": "_vestingStart",
-                    "type": "bool"
-                }
-            ],
-            "name": "setVesting",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_newtreasury",
-                    "type": "address"
-                }
-            ],
-            "name": "set_treasury",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "supply",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "token",
-            "outputs": [
-                {
-                    "internalType": "contract ERC20",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "unpause",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "name": "vestingInfo",
-            "outputs": [
-                {
-                    "internalType": "address",
-                    "name": "user",
-                    "type": "address"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "totalVestedTokens",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "dailyVestedTokens",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "claimAmount",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "vestingStart",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        }
-    ];
-                   
+    const vestingAddress = "0xbdBF1aF9b3631D5ae2EF404f56E5a51aD0eA44e9";
+    const vestingABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Start","type":"event"},{"anonymous":false,"inputs":[],"name":"Stop","type":"event"},{"inputs":[],"name":"TokenSold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_forwardFunds","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"buyTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"claimVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"paused","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"round","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_newOwner","type":"address"}],"name":"setNewOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_round","type":"uint256"}],"name":"setRound","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"setVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"stopVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"supply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract ERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"transferToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"unpause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"vestingInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"uint256","name":"totalVestedTokens","type":"uint256"},{"internalType":"uint256","name":"dailyVestedTokens","type":"uint256"},{"internalType":"uint256","name":"claimAmount","type":"uint256"},{"internalType":"uint256","name":"claimtime","type":"uint256"},{"internalType":"bool","name":"claim24h","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"vestingStart","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}];
+                       
     //// ------- REMOVER AL EMPEZAR SEED ROUND
-    document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+    //document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
     
     // Display the connected message and account address
     var account = document.getElementById("account");
@@ -589,8 +215,6 @@ function action(accounts){
     const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
     const formattedTokenSold = parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
     
-    
-
     // Call the TotalAmount function of the vesting contract
     vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
         const TotalAmountInEther = web3.utils.fromWei(TotalAmount, 'ether');
