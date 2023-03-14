@@ -152,8 +152,8 @@ function connectMetaMask() {
                             symbol: 'MATIC',
                             decimals: 18
                         },
-                        rpcUrls: ['https://rpc-mainnet.maticvigil.com/'],
-                        blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com/']
+                        rpcUrls: ['https://polygon-rpc.com/'],
+                        blockExplorerUrls: ['https://polygonscan.com/']
                     };
 
                     await ethereum.request({
