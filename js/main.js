@@ -129,7 +129,7 @@ function purchaseTokens() {
 var conexion = false;
 
 // Connect to MetaMask
-function connectMetaMask() {
+/*function connectMetaMask() {
     if (conexion == false){
         conexion = true;
         // Check if MetaMask is installed
@@ -166,7 +166,51 @@ function connectMetaMask() {
             })
         } 
     }
-}
+}*/
+
+function connectMetaMask() {
+    if (conexion == false){
+      conexion = true;
+      // Check if MetaMask is installed
+      if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
+        web3 = new Web3(window.ethereum);
+        window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
+  
+          // Check if connected to Polygon network
+          const networkId = await ethereum.request({ method: 'eth_chainId' });
+          if (networkId == '0x89') {
+            action(accounts);
+          }
+          else {
+            // Add Polygon network if not already added
+            const chainData = {
+              chainId: '0x89',
+              chainName: 'Polygon',
+              nativeCurrency: {
+                name: 'MATIC',
+                symbol: 'MATIC',
+                decimals: 18
+              },
+              rpcUrls: ['https://polygon-rpc.com/'],
+              blockExplorerUrls: ['https://polygonscan.com/']
+            };
+  
+            await ethereum.request({
+              method: 'wallet_addEthereumChain',
+              params: [chainData]
+            });
+  
+            action(accounts);
+          }
+        })
+      }
+      else {
+        console.log('Metamask is not installed on your browser.');
+        alert('Please install Metamask: www.metamask.io');
+      }
+    }
+  }
+  
 
 
 
