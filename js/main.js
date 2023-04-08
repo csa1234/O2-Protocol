@@ -53,8 +53,281 @@ let initialize = () => {
         const web3 = new Web3(window.ethereum);
   
         // Contract address and ABI
-        const contractAddress = "0xbdBF1aF9b3631D5ae2EF404f56E5a51aD0eA44e9";
-        const abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Start","type":"event"},{"anonymous":false,"inputs":[],"name":"Stop","type":"event"},{"inputs":[],"name":"TokenSold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_forwardFunds","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"buyTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"claimVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"paused","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"round","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_newOwner","type":"address"}],"name":"setNewOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_round","type":"uint256"}],"name":"setRound","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"setVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"stopVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"supply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract ERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"transferToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"unpause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"vestingInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"uint256","name":"totalVestedTokens","type":"uint256"},{"internalType":"uint256","name":"dailyVestedTokens","type":"uint256"},{"internalType":"uint256","name":"claimAmount","type":"uint256"},{"internalType":"uint256","name":"claimtime","type":"uint256"},{"internalType":"bool","name":"claim24h","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"vestingStart","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}];
+        const contractAddress = "0xa4FBacAD097f0cB650cEF69255E306292263c93B";
+        const abi = [
+            {
+                "inputs": [],
+                "name": "_forwardFunds",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "buyTokens",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "claimVesting",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "pause",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "setVesting",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+            },
+            {
+                "anonymous": false,
+                "inputs": [],
+                "name": "Pause",
+                "type": "event"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "_newOwner",
+                        "type": "address"
+                    }
+                ],
+                "name": "setNewOwner",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "_round",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "setRound",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "anonymous": false,
+                "inputs": [],
+                "name": "Start",
+                "type": "event"
+            },
+            {
+                "anonymous": false,
+                "inputs": [],
+                "name": "Stop",
+                "type": "event"
+            },
+            {
+                "inputs": [],
+                "name": "stopVesting",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "_amount",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "transferToTreasury",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "unpause",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "owner",
+                "outputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "paused",
+                "outputs": [
+                    {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "rate",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "round",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "supply",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "token",
+                "outputs": [
+                    {
+                        "internalType": "contract ERC20",
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "TokenSold",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "TotalAmount",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "name": "vestingInfo",
+                "outputs": [
+                    {
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "totalVestedTokens",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "dailyVestedTokens",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "claimAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "claimtime",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "claim24h",
+                        "type": "bool"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "vestingStart",
+                "outputs": [
+                    {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            }
+        ];
   
         // Create a new contract instance
         const contract = new web3.eth.Contract(abi, contractAddress);
@@ -63,7 +336,7 @@ let initialize = () => {
         const amount = document.getElementById("_amount").value;
   
         // Get the rate from the contract
-        const rate = await contract.methods.rate().call();
+        const rate = await contract.methods.round().call();
         
         //set rate value
         var currentRate;
@@ -77,6 +350,8 @@ let initialize = () => {
             currentRate == 0.69;
 
         }
+        
+
   
         // Calculate the amount of tokens to purchase based on the rate
         const tokensToPurchase = (amount / currentRate);
@@ -89,13 +364,30 @@ let initialize = () => {
         
 
         // Send transaction to the contract
-        const result = await contract.methods.buyTokens().send({
+        /*const result = await contract.methods.buyTokens().send({
           from: account,
           value: amountWei
+        });*/
 
-          
+        // Get the gas price from the network
+        const gasPrice = await web3.eth.getGasPrice();
+
+        // Estimate the gas required for the transaction
+        const gasLimit = await contract.methods.buyTokens().estimateGas({
+        from: account,
+        value: amountWei
+        
+        });
+
+        // Send the transaction with the automatically calculated gas values
+        const result = await contract.methods.buyTokens().send({
+        from: account,
+        value: amountWei,
+        gasPrice: gasPrice,
+        gas: gasLimit
         });
         
+    
         // hide the standby modal
         $('#standbyModal').modal('hide');
         // Hide the purchase modal
@@ -128,46 +420,6 @@ function purchaseTokens() {
 
 var conexion = false;
 
-// Connect to MetaMask
-/*function connectMetaMask() {
-    if (conexion == false){
-        conexion = true;
-        // Check if MetaMask is installed
-        if (typeof window.ethereum !== 'undefined' || typeof window.web3 !== 'undefined') {
-            web3 = new Web3(window.ethereum);
-            window.ethereum.request({ method: 'eth_requestAccounts' }).then(async function (accounts) {
-                
-                // Check if connected to Polygon network
-                const networkId = await ethereum.request({ method: 'eth_chainId' });
-                if (networkId == '0x89') {
-                    action(accounts);
-                }
-                else {
-                    // Add Polygon network if not already added
-                    const chainData = {
-                        chainId: '0x89',
-                        chainName: 'Polygon',
-                        nativeCurrency: {
-                            name: 'MATIC',
-                            symbol: 'MATIC',
-                            decimals: 18
-                        },
-                        rpcUrls: ['https://polygon-rpc.com/'],
-                        blockExplorerUrls: ['https://polygonscan.com/']
-                    };
-
-                    await ethereum.request({
-                        method: 'wallet_addEthereumChain',
-                        params: [chainData]
-                    });
-
-                    action(accounts);
-                }
-            })
-        } 
-    }
-}*/
-
 function connectMetaMask() {
     if (conexion == false){
       conexion = true;
@@ -184,16 +436,17 @@ function connectMetaMask() {
           else {
             // Add Polygon network if not already added
             const chainData = {
-              chainId: '0x89',
-              chainName: 'Polygon',
-              nativeCurrency: {
-                name: 'MATIC',
-                symbol: 'MATIC',
-                decimals: 18
-              },
-              rpcUrls: ['https://polygon-rpc.com/'],
-              blockExplorerUrls: ['https://polygonscan.com/']
-            };
+                chainId: '0x89',
+                chainName: 'Polygon',
+                nativeCurrency: {
+                  name: 'MATIC',
+                  symbol: 'MATIC',
+                  decimals: 18
+                },
+                rpcUrls: ['https://polygon-rpc.com/'],
+                blockExplorerUrls: ['https://polygonscan.com/']
+              };
+              
   
             await ethereum.request({
               method: 'wallet_addEthereumChain',
@@ -225,11 +478,284 @@ function action(accounts){
     document.getElementById("disco").style.display = 'block';
                             
     // Define the vesting contract ABI and address
-    const vestingAddress = "0xbdBF1aF9b3631D5ae2EF404f56E5a51aD0eA44e9";
-    const vestingABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Start","type":"event"},{"anonymous":false,"inputs":[],"name":"Stop","type":"event"},{"inputs":[],"name":"TokenSold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_forwardFunds","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"buyTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"claimVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"paused","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"round","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_newOwner","type":"address"}],"name":"setNewOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_round","type":"uint256"}],"name":"setRound","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"setVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"stopVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"supply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract ERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"transferToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"unpause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"vestingInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"uint256","name":"totalVestedTokens","type":"uint256"},{"internalType":"uint256","name":"dailyVestedTokens","type":"uint256"},{"internalType":"uint256","name":"claimAmount","type":"uint256"},{"internalType":"uint256","name":"claimtime","type":"uint256"},{"internalType":"bool","name":"claim24h","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"vestingStart","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}];
+    const vestingAddress = "0xa4FBacAD097f0cB650cEF69255E306292263c93B";
+    const vestingABI = [
+        {
+            "inputs": [],
+            "name": "_forwardFunds",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "buyTokens",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "claimVesting",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "pause",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "setVesting",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Pause",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "setNewOwner",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_round",
+                    "type": "uint256"
+                }
+            ],
+            "name": "setRound",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Start",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [],
+            "name": "Stop",
+            "type": "event"
+        },
+        {
+            "inputs": [],
+            "name": "stopVesting",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "transferToTreasury",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "unpause",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "paused",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "round",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "supply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "token",
+            "outputs": [
+                {
+                    "internalType": "contract ERC20",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "TokenSold",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "TotalAmount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "vestingInfo",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "totalVestedTokens",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "dailyVestedTokens",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "claimAmount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "claimtime",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "claim24h",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "vestingStart",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ];
                        
     //// ------- REMOVER AL EMPEZAR SEED ROUND
-    //document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+    document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
     
     // Display the connected message and account address
     var account = document.getElementById("account");
@@ -240,25 +766,26 @@ function action(accounts){
     // Get the connected account's address
     const userAddress = accounts[0];
     // Call the vestingInfo function of the vesting contract, passing the user's address
-    vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
     
-        // Display the total vested tokens
-    // ------- REMOVER AL EMPEZAR SEED ROUND
-    const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
-    if (totalVestedTokens === '0') {
-        account.innerHTML += `<br>Total token O2PR purchased: 0`;
-    } else {
-        account.innerHTML += `<br>Total token O2PR purchased: ${totalVestedTokens}`;
-    }
-
-   // Call the TokenSold function of the vesting contract
+    vestingContract.methods.vestingInfo(userAddress).call().then(function(info) {
+        
+        const totalVestedTokens = web3.utils.fromWei(info.totalVestedTokens, "ether");
+        if (totalVestedTokens === '0') {
+            account.innerHTML += `<br>Total token O2PR purchased: 0`;
+        } else {
+            account.innerHTML += `<br>Total token O2PR purchased: ${totalVestedTokens}`;
+        }
+        //console.log(totalVestedTokens);
+        // Call the TokenSold function of the vesting contract
     vestingContract.methods.TokenSold().call().then(function(TokenSold) {
+
+        
     
     // ------- REMOVER AL EMPEZAR SEED ROUND
         // Display the TokenSold
     const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
-    const formattedTokenSold = parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
-    
+    const formattedTokenSold = TokenSoldInEther; // parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+    //console.log(formattedTokenSold);
     // Call the TotalAmount function of the vesting contract
     vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
         const TotalAmountInEther = web3.utils.fromWei(TotalAmount, 'ether');
@@ -382,7 +909,7 @@ $(function () {
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
             'whitepaper': 'WHITEPAPER',
             'intro-video': 'Intro Video',
-            'financial-text1': 'SEED ROUND STARTS IN',
+            'financial-text1': 'SEED ROUND END IN',
             //'PRIVATE ROUND A STARTS IN',
             //'PRIVATE ROUND B STARTS IN',
 
@@ -408,7 +935,7 @@ $(function () {
             'stephow2': 'Those certifications are then tokenized thru Toucan Protocol NFT or another tokenization bridging services',
             'stephow3': 'NFT is then converted to carbon offset tokens and swaped to USDT',
             'stephow4': 'O2-Protocol keeps 50% of the USDT and 50% goes to the project owner',
-            'stephow5': '50% of the USDT is swaped to buy back O2PR token and remaining will be used to finance new projects certifcation and provide liquidity to the pools',
+            'stephow5': '50% of the USDT is swaped to buy back O2PR token and remaining will be used to finance new projects certifcation and liquidity provider pools',
             
                 
             //business model
@@ -588,7 +1115,7 @@ $(function () {
             'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
             'whitepaper': 'WHITEPAPER',
             'intro-video': 'Video de Introducción',
-            'financial-text1': 'RONDA SEMILLA EMPIEZA EN',
+            'financial-text1': 'RONDA TERMINA EN',
             // 'RONDA PRIVADA A EMPIEZA EN',
             // 'RONDA PRIVADA B EMPIEZA EN',
 
@@ -788,7 +1315,7 @@ $(function () {
                 'banner-description': 'Agricultura de criptografia alavancada com tokens de compensação de carbono gerando fluxo de dinheiro receita através do financiamento de certificação e tokenização de projetos de compensação de carbono.',
                 'whitepaper': 'WHITEPAPER',
                 'intro-video': 'Vídeo de introdução',
-                'financial-text1': 'RODADA DE SEMENTES COMEÇA EM',
+                'financial-text1': 'SEMENTES REDONDAS TERMINA EM',
                 //'RODADA A PRIVADA COMEÇA EM',
                 //'RODADA B PRIVADA COMEÇA EM',
 
@@ -988,7 +1515,7 @@ $(function () {
                 'banner-description': '자금 흐름을 생성하는 탄소 상쇄 토큰으로 레버리지 암호화 농업 탄소 상쇄 프로젝트 인증 및 토큰화 자금 조달을 통한 수입.',
                 'whitepaper': '백지',
                 'intro-video': '소개 영상',
-                'financial-text1': '시드 라운드 시작',
+                'financial-text1': '시드 라운드 종료',
                 //'프라이빗 라운드 A 시작',
                 //'프라이빗 라운드 B는 에서 시작합니다.',
 
@@ -1181,7 +1708,7 @@ $(function () {
                 'banner-description': '利用碳抵消代幣產生資金流的槓桿加密農業通過碳抵消項目認證和代幣化融資獲得收入。',
                 'whitepaper': '白皮書',
                 'intro-video': '簡介視頻',
-                'financial-text1': '種子輪開始於',
+                'financial-text1': '種子輪結束於',
                 //'私人A輪開始於',
                 //'私人 B 輪開始於',
 
@@ -1374,7 +1901,7 @@ $(function () {
                 'banner-description': 'マネー フローを生成するカーボン オフセット トークンを使用した仮想通貨ファーミングの活用 カーボンオフセットプロジェクトの認証とトークン化の資金調達による収入。',
                 'whitepaper': '白書',
                 'intro-video': '紹介ビデオ',
-                'financial-text1': 'シードラウンド開始',
+                'financial-text1': 'シードラウンド終了',
                 //'プライベートラウンドA開始',
                 //'プライベート ラウンド B 開始時間',
                     
@@ -2086,7 +2613,7 @@ $('.dropdown-item').click(function() {
       '<div><span>%H</span> ' + translations[language]['hours'] + '</div>' +
       '<div><span>%M</span> ' + translations[language]['minutes'] + '</div>' +
       '<div><span>%S</span> ' + translations[language]['seconds'] + '</div>';
-    $('#clock').countdown('2023/04/03').on('update.countdown', function(event) {
+    $('#clock').countdown('2023/04/15').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(_DateInput));
     });
   }
