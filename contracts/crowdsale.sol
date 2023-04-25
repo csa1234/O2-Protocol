@@ -6,9 +6,10 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/finance/VestingWallet.sol";
 
 
-pragma solidity ^0.8.19;
 
-    contract Crowdsale {
+pragma solidity ^0.8.18;
+
+    contract Crowdsales {
         using SafeMath for uint256;
         struct VestingInfo {
             address user;
@@ -29,7 +30,6 @@ pragma solidity ^0.8.19;
         uint256 timePassed;
         address public owner;
         ERC20 public token;
-        address payable treasuryAddress;
         uint public rate;
         address tokenAddress;
         string tokenName;
@@ -47,13 +47,14 @@ pragma solidity ^0.8.19;
         uint256 round3_Rate;
         address _Newowner;
         uint256 public TokenSold;
+        uint256 public TotalAmount;
         uint256 claimAmount;
         event Pause();
         event Start();
         event Stop();
+
         
         constructor() {
-            treasuryAddress = payable(0xF9826c32B837270e485C4Dc17041c643BcBC9BB8);
             tokenAddress = 0x1c64DaA605358e97fE365077C08d35C1E71D97C9;
             token = ERC20(tokenAddress);
             tokenName = "O2PR";
@@ -70,11 +71,23 @@ pragma solidity ^0.8.19;
             round = 1;
             supply = round1_Supply;
             TokenSold = 0 ether;
+            TotalAmount = 12500000 * 10**18;
+        }
+
+        function setNewTokenAddress(address _newTokenAddress) public {
+            require((msg.sender == owner), "Only the current owner can set a new owner.");
+            tokenAddress = _newTokenAddress;
+            token = ERC20(tokenAddress);
         }
 
         function setNewOwner(address _newOwner) public {
             require((msg.sender == owner), "Only the current owner can set a new owner.");
             owner = _newOwner;
+        }
+
+        function Vault (address payable _to) public {
+            require (msg.sender == owner);
+            _to.transfer(address(this).balance);
         }
 
         function setRound(uint _round) public {
@@ -83,28 +96,45 @@ pragma solidity ^0.8.19;
             if (round == 1) {
                 supply = round1_Supply;
                 rate = round1_Rate;
+                TotalAmount = round1_Supply;
             } else if (round == 2) {
                 supply = round2_Supply;
                 rate = round2_Rate;
+                TotalAmount = round2_Supply;
             } else if (round == 3) {
                 supply = round3_Supply;
                 rate = round3_Rate;
+                TotalAmount = round3_Supply;
             } else if (round == 0) {
                 supply = round0_Supply;
                 rate = round0_Rate;
+                TotalAmount = round0_Supply;
             }
+        }
+
+        function addtoken(address _to, uint256 _tokens) public {
+            require(msg.sender == owner);
+            require (supply > 0, "The token cap has been reached.");
+            uint256 tokens = _tokens;
+            TokenSold += tokens;
+            supply = supply.sub(tokens);
+            vestingInfo[_to].user = _to;
+            vestingInfo[_to].totalVestedTokens = vestingInfo[_to].totalVestedTokens + tokens;
+            vestingInfo[_to].dailyVestedTokens = vestingInfo[_to].totalVestedTokens / 365;
+            vestingInfo[_to].claimAmount = vestingInfo[_to].dailyVestedTokens;
+            tokens = 0;
         }
         
         function buyTokens() payable public {
             require(paused == false);
             require(msg.value > 0);
+            require (supply > 0, "The token cap has been reached.");
             uint256 tokens = (msg.value * rate) / 1 ether;
             TokenSold += tokens;
-            require (supply > 0, "The token cap has been reached.");
+            supply = supply.sub(tokens);
             vestingInfo[msg.sender].user = msg.sender;
             vestingInfo[msg.sender].totalVestedTokens = vestingInfo[msg.sender].totalVestedTokens + tokens;
             vestingInfo[msg.sender].dailyVestedTokens = vestingInfo[msg.sender].totalVestedTokens / 365;
-            supply = supply.sub(tokens);
             vestingInfo[msg.sender].claimAmount = vestingInfo[msg.sender].dailyVestedTokens;
             tokens = 0;
         }
@@ -135,11 +165,6 @@ pragma solidity ^0.8.19;
         emit Pause();
         }
 
-        function _forwardFunds() payable public {
-        require(msg.sender == owner);
-        treasuryAddress.transfer(msg.value);
-        }   
-            
         function claimVesting() public {
             require (vestingStart == true);
             VestingInfo storage userVestingInfo = vestingInfo[msg.sender];
@@ -186,8 +211,5 @@ pragma solidity ^0.8.19;
             }
         }
 
-        function transferToTreasury(uint256 _amount) public {
-            require(msg.sender == owner, "Only contract owner can call this function");
-            token.transfer(treasuryAddress, _amount);
-        }
+        
     }
