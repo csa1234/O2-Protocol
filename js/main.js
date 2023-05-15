@@ -212,8 +212,9 @@ function action(accounts){
     const vestingAddress = "0x46fa7171b6f14Ea50e575C9E2957FeBa2fA5c232";
     const vestingABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Start","type":"event"},{"anonymous":false,"inputs":[],"name":"Stop","type":"event"},{"inputs":[],"name":"TokenSold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"TotalAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address payable","name":"_to","type":"address"}],"name":"Vault","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_to","type":"address"},{"internalType":"uint256","name":"_tokens","type":"uint256"}],"name":"addtoken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"buyTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"claimVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"paused","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"round","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_newOwner","type":"address"}],"name":"setNewOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_newTokenAddress","type":"address"}],"name":"setNewTokenAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_round","type":"uint256"}],"name":"setRound","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"setVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"stopVesting","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"supply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract ERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"unpause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"vestingInfo","outputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"uint256","name":"totalVestedTokens","type":"uint256"},{"internalType":"uint256","name":"dailyVestedTokens","type":"uint256"},{"internalType":"uint256","name":"claimAmount","type":"uint256"},{"internalType":"uint256","name":"claimtime","type":"uint256"},{"internalType":"bool","name":"claim24h","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"vestingStart","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}];
                        
-    //// ***************** **************QUITAR PARA QUE APAREZCA BOTON COMPRA
-    document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
+    // REMOVER para quitar boton purchase token y cambiar a BLOCK
+    document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "none";
+    //document.querySelector('a.btn.secondary-btn[onclick="purchaseTokens()"]').style.display = "block";
     
     // Display the connected message and account address
     var account = document.getElementById("account");
@@ -241,8 +242,9 @@ function action(accounts){
     
     // ------- REMOVER AL EMPEZAR SEED ROUND
         // Display the TokenSold
-    const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
-    const formattedTokenSold = TokenSoldInEther; // parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+    //const TokenSoldInEther = web3.utils.fromWei(TokenSold, 'ether');
+    //const formattedTokenSold = TokenSoldInEther; // parseFloat(TokenSoldInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+    
     //console.log(formattedTokenSold);
     // Call the TotalAmount function of the vesting contract
     vestingContract.methods.TotalAmount().call().then(function(TotalAmount) {
@@ -252,7 +254,7 @@ function action(accounts){
         //muestra valores TotalAmount
         
         //*************REMOVER AL EPMEZAR SEED ROUND
-        account.innerHTML += `<br>Total tokens for sale: ${formattedTotalAmount}`;
+        /*account.innerHTML += `<br>Total tokens for sale: ${formattedTotalAmount}`;
 
         //muestra valores TokenSold
         account.innerHTML += `<br>Tokens sold: ${formattedTokenSold}`;
@@ -265,12 +267,13 @@ function action(accounts){
         progressBar.setAttribute('aria-valuenow', percentageSold);
         progressBar.style.width = percentageSold;
         progressBar.dataset.transitiongoal = percentageSold;
-        $('.progress').css('display', 'block');
+        $('.progress').css('display', 'block');*/
 
 
         // Update progress text
         const progressText = document.getElementById('progressText');
         const formattedTokenAmount = parseFloat(TotalAmountInEther).toLocaleString('en-US', {maximumFractionDigits: 2});
+        
         //OCULTAR BARRA Y TEXTO
         progressText.textContent = `${formattedTokenSold} of ${formattedTokenAmount} O2PR Token`;
         progressText.style.display = 'block';
@@ -369,7 +372,7 @@ $(function () {
             'banner-description': 'Leveraged farming with carbon offset tokens generating money flow<br>income thru the financing of carbon offset projects certification & tokenization.',
             'whitepaper': 'WHITEPAPER',
             'intro-video': 'Intro Video',
-            'financial-text1': 'SEED ROUND END IN',
+            'financial-text1': 'PRIVATE SALE B START IN',
             //'PRIVATE ROUND A STARTS IN',
             //'PRIVATE ROUND B STARTS IN',
 
@@ -575,7 +578,7 @@ $(function () {
             'banner-description': 'Agricultura criptográfica apalancada con tokens de compensación de carbono que generan flujo de dinero e ingresos a través <br>de la financiación de la certificación y tokenización de proyectos de compensación de carbono.',
             'whitepaper': 'WHITEPAPER',
             'intro-video': 'Video de Introducción',
-            'financial-text1': 'RONDA TERMINA EN',
+            'financial-text1': 'RONDA B EMPIEZA EN',
             // 'RONDA PRIVADA A EMPIEZA EN',
             // 'RONDA PRIVADA B EMPIEZA EN',
 
@@ -775,7 +778,7 @@ $(function () {
                 'banner-description': 'Agricultura de criptografia alavancada com tokens de compensação de carbono gerando fluxo de dinheiro receita através do financiamento de certificação e tokenização de projetos de compensação de carbono.',
                 'whitepaper': 'WHITEPAPER',
                 'intro-video': 'Vídeo de introdução',
-                'financial-text1': 'SEMENTES REDONDAS TERMINA EM',
+                'financial-text1': 'A RODADA B COMEÇA EM',
                 //'RODADA A PRIVADA COMEÇA EM',
                 //'RODADA B PRIVADA COMEÇA EM',
 
@@ -975,7 +978,7 @@ $(function () {
                 'banner-description': '자금 흐름을 생성하는 탄소 상쇄 토큰으로 레버리지 암호화 농업 탄소 상쇄 프로젝트 인증 및 토큰화 자금 조달을 통한 수입.',
                 'whitepaper': '백지',
                 'intro-video': '소개 영상',
-                'financial-text1': '시드 라운드 종료',
+                'financial-text1': '라운드 B 시작',
                 //'프라이빗 라운드 A 시작',
                 //'프라이빗 라운드 B는 에서 시작합니다.',
 
@@ -1168,7 +1171,7 @@ $(function () {
                 'banner-description': '利用碳抵消代幣產生資金流的槓桿加密農業通過碳抵消項目認證和代幣化融資獲得收入。',
                 'whitepaper': '白皮書',
                 'intro-video': '簡介視頻',
-                'financial-text1': '種子輪結束於',
+                'financial-text1': 'B 輪開始於',
                 //'私人A輪開始於',
                 //'私人 B 輪開始於',
 
@@ -1361,7 +1364,7 @@ $(function () {
                 'banner-description': 'マネー フローを生成するカーボン オフセット トークンを使用した仮想通貨ファーミングの活用 カーボンオフセットプロジェクトの認証とトークン化の資金調達による収入。',
                 'whitepaper': '白書',
                 'intro-video': '紹介ビデオ',
-                'financial-text1': 'シードラウンド終了',
+                'financial-text1': 'ラウンド B 開始',
                 //'プライベートラウンドA開始',
                 //'プライベート ラウンド B 開始時間',
                     
@@ -2073,7 +2076,7 @@ $('.dropdown-item').click(function() {
       '<div><span>%H</span> ' + translations[language]['hours'] + '</div>' +
       '<div><span>%M</span> ' + translations[language]['minutes'] + '</div>' +
       '<div><span>%S</span> ' + translations[language]['seconds'] + '</div>';
-    $('#clock').countdown('2023/05/08').on('update.countdown', function(event) {
+    $('#clock').countdown('2023/06/01').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(_DateInput));
     });
   }
