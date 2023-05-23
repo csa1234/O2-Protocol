@@ -1,0 +1,15 @@
+
+
+1: git clone https://github.com/adrianhajdin/project_crowdfunding.git
+2: entrtar a archivo \client\src\mainjsx y cambiar el chain id:
+	<ThirdwebProvider desiredChainId={ChainId.Mumbai}> (se puede apretar CTRL y click sobre Mumbai para ver las redes o chainID)
+3: entrar a archivo \web3\hardhat.config.js
+4: entrar a carpeta web3 y client y ejecutar comando en terminal: npm install (en cada carpeta)
+5: entrar a carpeta \client y ejectutar comando en terminal: npx thirdweb creat --app
+
+	Seguir estos pasos:
+	- What is your project name: ./
+	- Framenetwork: ENV y luego Vite - luego Javascript
+6: desde carpeta \client ejecutar comando: npm run dev (se va a ejecutar la app en la PC Local)
+7: entrar a Netlify y subir manualmente arrastrando toda la carpeta DIST
+8: desde carpeta \client ejecutar comando en terminal: npm run build
